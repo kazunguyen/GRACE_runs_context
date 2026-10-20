@@ -1,0 +1,136 @@
+{
+  "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+  "C4": "shared evaluator, always enabled",
+  "C6_graph_source_adaptation": "User-selected existing PDG with verified target ID/code; differs from legacy AST/edge prefix in baseline; this contrast includes graph-source adaptation",
+  "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+  "arm": "plus_c6",
+  "baseline_graph_coverage": 0.9511873350923483,
+  "baseline_prompt_equivalence_checked": false,
+  "cache_policy": "read heavy baseline caches in place; new derived artifacts only in _v2/test_v2",
+  "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+  "config": {
+    "batch_size": 4,
+    "dataset": "reveal",
+    "inference_workers": 10,
+    "joern_shard_count": 1,
+    "joern_shard_index": 0,
+    "lexical_weight": 0.7,
+    "max_targets": null,
+    "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+    "reuse_legacy_reveal_test_embeddings": true,
+    "root": "/mnt/c/MY-FILES/LAB-THAY-THO",
+    "semantic_top_k": 5,
+    "split": "test",
+    "tsne_dim": 2,
+    "tsne_iterations": 1000,
+    "tsne_perplexity": 30.0,
+    "variant": "code",
+    "whitening_dim": 256,
+    "workers": 4
+  },
+  "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+  "dataset": "reveal",
+  "disabled_improvements": [
+    "C1",
+    "C2",
+    "C3",
+    "C5",
+    "C7",
+    "C8"
+  ],
+  "enabled_improvements": [
+    "C6"
+  ],
+  "graph_feature_identity": "9942df291bde194b2a25f0e41e99e2e9abe965982a8f896b267f5177cfcc0440",
+  "graph_schema_counts": {
+    "joern_legacy_text_v1": 122,
+    "joern_whole_graph_v3": 2152
+  },
+  "native_stages": [
+    "CodeT5 CLS",
+    "train-only whitening/IP",
+    "common top50",
+    "semantic top5",
+    "native lexical/syntactic reranking unless C1",
+    "single demo unless C2",
+    "raw graph unless C5/C6",
+    "baseline instruction unless C3/C7",
+    "shared model/context/parser/evaluator"
+  ],
+  "pdg_sha256": "09fdf2241b0f7e0a6e2a899f327c2f5d078001158cc0529c9fb64b705959e863",
+  "profile": "code",
+  "prompt_graph_available_count": 2044,
+  "prompt_graph_unavailable_count": 230,
+  "runner_sha256": "f990cc48e972ee5c6d91c62935ac3db5bfe384076a431c3489823c89844fb346",
+  "schema": "code_based_ablation_v2",
+  "slice_status_counts": {
+    "graph_unavailable": 229,
+    "no_sink_whole_prefix": 1844,
+    "reverse_reachable_pdg": 201
+  },
+  "source_run_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+  "source_run_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+  "split": "test",
+  "status": "prepared_before_inference",
+  "target_count": 2274,
+  "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+  "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+  "vector_manifest": {
+    "pooling": "cls",
+    "targets": {
+      "provenance": {
+        "bundle_manifest_sha256": "13d4f729c6a0b41ea17afeccf5db0fc2af6d6f0d398329c4eef08ff89524edbe",
+        "legacy_encoder_notebook_sha256": "ee49dae41751d49f4fbda28ebeaab2ab5a53fecd2f7d42540b1515c4d694ab7d",
+        "model_equivalence": "assumed by user for this run; not independently verified",
+        "model_revision": "unknown; cache has no model weight revision metadata",
+        "ordered_code_hashes_verified": 2274,
+        "pooling": "CLS (verified in legacy encoder notebook)",
+        "source_npz": "Graduation-Project/Ablation_V2/Reproduced-Code-Based/shared_cache/codet5/legacy_reveal_test/codet5_cache.npz",
+        "source_npz_sha256": "b93623ec4f5d1194dae0eb754b4ae964da08acab9a39f092e9f7c28ce551cca7",
+        "source_ordered_rows": "Graduation-Project/Ablation_V2/Reproduced-Code-Based/shared_cache/codet5/legacy_reveal_test/reveal_test_processed.json",
+        "source_ordered_rows_sha256": "425cf920234b12b7158ebc5b111a4bcbe0f31e55f9485621d421fd0b46743e9e",
+        "tokenizer_files_verified": {
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        }
+      },
+      "sha256": "d77626bc49ec8b3f3977e000dc2087f418d7b1003191e05b8c8d78f241daada6",
+      "shape": [
+        2274,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": "legacy_unverified",
+        "legacy_ordered_rows_sha256": "425cf920234b12b7158ebc5b111a4bcbe0f31e55f9485621d421fd0b46743e9e",
+        "legacy_source_npz_sha256": "b93623ec4f5d1194dae0eb754b4ae964da08acab9a39f092e9f7c28ce551cca7",
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+        "seed": 42
+      }
+    },
+    "train": {
+      "device": "cpu",
+      "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+      "sha256": "18221044d3b975bbddc61a42b3db9b875eab4ddb6e4eaa4c7ea8158bd73a3fe0",
+      "shape": [
+        18187,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": {
+          "config.json": "747cddfb84f44944822684ab4c1815f4043345e79f4be70e1bcdbb60b5e5dbd1",
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "pytorch_model.bin": "053fbafd36f4011e13fe10f45d588102ffa7448f338443ff787e85360cd5e13c",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        },
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+        "seed": 42
+      }
+    }
+  }
+}

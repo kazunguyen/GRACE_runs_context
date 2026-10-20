@@ -1,0 +1,1831 @@
+{
+  "audit_date": "2026-10-20",
+  "scope": "36 reported runs (reproduce test and ablation test_v2); excludes older test ablations and newer test_v3",
+  "current_contract_sha256": "97d978fd4ae6108890ae6e732d48ac70c6a0955e81b33636ae012a30b6f8de79",
+  "runs": [
+    {
+      "run_id": "Reproduced-Code-Based/devign/test",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "364a86c9fcd67b7a350a252c48a1b60666eb98d7",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reproduced-Code-Based/reveal/test",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2274
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reproduced-Paper-Based/devign/test",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2719,
+        "empty_response": 13
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reproduced-Paper-Based/reveal/test",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2274
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Full-cai-tien/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Grace-baseline/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2726,
+        "empty_response": 6
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C5-graph-verbalization/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C6-graph-slicing/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C7-security-cot/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2731,
+        "last_line_not_exact_binary": 1
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2732
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C2-stratified-demos/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2728,
+        "last_line_not_exact_binary": 1,
+        "empty_response": 3
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2603,
+        "empty_response": 129
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2267,
+        "empty_response": 465
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C6-graph-slicing/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2730,
+        "empty_response": 2
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C7-security-cot/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2627,
+        "empty_response": 105
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "dataset": "devign",
+      "n": 2732,
+      "class_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1481,
+        "empty_response": 1251
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2732
+      },
+      "context_limits_in_raw": {
+        "8192": 2732
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Full-cai-tien/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2274
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Grace-baseline/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2224,
+        "empty_response": 50
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2128,
+        "empty_response": 146
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1261,
+        "empty_response": 1013
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "empty_response": 930,
+        "exact_last_line_binary": 1344
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1238,
+        "empty_response": 1036
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C6-graph-slicing/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2273,
+        "empty_response": 1
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C7-security-cot/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2272,
+        "empty_response": 2
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1699,
+        "empty_response": 575
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1340,
+        "empty_response": 934
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C2-stratified-demos/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2274
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1905,
+        "empty_response": 369
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "empty_response": 182,
+        "exact_last_line_binary": 2092
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C6-graph-slicing/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 2134,
+        "empty_response": 140
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1116,
+        "empty_response": 1158
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C8-mmr-selection/test_v2",
+      "dataset": "reveal",
+      "n": 2274,
+      "class_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "duplicate_prediction_ids": 0,
+      "same_target_ids_as_code_baseline": true,
+      "parse_method_counts_recomputed": {
+        "exact_last_line_binary": 1479,
+        "empty_response": 795
+      },
+      "stored_prediction_changes_under_current_strict_rule": 0,
+      "changes_by_true_label": {},
+      "raw_prediction_text_mismatches": 0,
+      "same_raw_and_prediction_id_sets": true,
+      "models_in_raw": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 2274
+      },
+      "context_limits_in_raw": {
+        "8192": 2274
+      },
+      "commit": "missing_in_run_manifest",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "contract_revision": "missing_in_run_manifest",
+      "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "frozen_train_files": {},
+      "prediction_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_response_path": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "saved_metric_keys": [
+        "accuracy_valid",
+        "balanced_accuracy",
+        "confusion_matrix",
+        "f1",
+        "invalid_rate",
+        "mcc",
+        "n_invalid",
+        "n_responses",
+        "n_valid",
+        "precision",
+        "predicted_vulnerable_rate_valid",
+        "recall"
+      ],
+      "saved_two_trivial_baselines": false,
+      "saved_prediction_parse_method": false,
+      "note": "Reparse consistency check, not a reconstruction of the historical buggy parser; provider must be traced to frozen configuration."
+    }
+  ]
+}

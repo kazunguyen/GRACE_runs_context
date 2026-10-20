@@ -1,0 +1,741 @@
+{
+  "limits_checked": {
+    "context_utf8_bytes": 8192,
+    "node_declarations": 40,
+    "edge_declarations": 80
+  },
+  "scope": "36 reported historical runs; not test_v3 or selective. Measures saved prompt and metadata; exact historical contract snapshot not recovered.",
+  "summary": {
+    "runs": 36,
+    "prompts": 90108,
+    "issue_records": 0,
+    "legacy_graph_mapping_unavailable": 984,
+    "over_40_unique_edge_endpoint_ids": 382,
+    "max_utf8_bytes": 8192,
+    "max_rendered_nodes": 40,
+    "max_rendered_edges": 80
+  },
+  "runs": [
+    {
+      "run_id": "Reproduced-Code-Based/devign/test",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 3
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "raw_whole_cpg_contract_cap": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Reproduced-Code-Based/reveal/test",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "raw_whole_cpg_contract_cap": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reproduced-Paper-Based/devign/test",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 3
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "raw_whole_cpg_contract_cap": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Reproduced-Paper-Based/reveal/test",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "raw_whole_cpg_contract_cap": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Full-cai-tien/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Grace-baseline/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 3
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 66,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 76,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C5-graph-verbalization/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C6-graph-slicing/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "over_40_unique_edge_endpoint_ids": 1
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 78,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C7-security-cot/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 68,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "stats": {
+        "prompts": 2732
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 3
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C2-stratified-demos/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 1
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 5
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "over_40_unique_edge_endpoint_ids": 1
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_verbalized": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C6-graph-slicing/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "over_40_unique_edge_endpoint_ids": 1
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C7-security-cot/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 6
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "stats": {
+        "prompts": 2732,
+        "legacy_graph_mapping_unavailable": 1,
+        "over_40_unique_edge_endpoint_ids": 3
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2732
+      },
+      "context_limits": {
+        "8192": 2732
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Full-cai-tien/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Grace-baseline/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 75,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C6-graph-slicing/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 79,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C7-security-cot/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 67,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 65,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C2-stratified-demos/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 43
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "over_40_unique_edge_endpoint_ids": 1
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_verbalized": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C6-graph-slicing/test_v2",
+      "stats": {
+        "prompts": 2274
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "cached_pdg_slice_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C8-mmr-selection/test_v2",
+      "stats": {
+        "prompts": 2274,
+        "legacy_graph_mapping_unavailable": 122,
+        "over_40_unique_edge_endpoint_ids": 44
+      },
+      "maxima": {
+        "utf8_bytes": 8192,
+        "rendered_node_declarations": 40,
+        "rendered_edge_declarations": 80,
+        "metadata_nodes": 40,
+        "metadata_edges": 80
+      },
+      "graph_views": {
+        "baseline_graph_raw": 2274
+      },
+      "context_limits": {
+        "8192": 2274
+      }
+    }
+  ],
+  "issues": []
+}

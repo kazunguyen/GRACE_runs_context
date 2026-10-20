@@ -1,0 +1,197 @@
+{
+  "adaptations": [
+    "common top50 before native semantic topK",
+    "CodeT5 encoder pooling: cls; original model weight revision unavailable",
+    "code profile whitening refitted on train; source whitening artifacts absent",
+    "one labeled training demonstration required by contract/paper",
+    "raw whole CPG 40/80 instead of sliced GraphVerb",
+    "shared contract template/model/output/context replace historical prompt/model"
+  ],
+  "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+  "commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+  "config": {
+    "batch_size": 4,
+    "dataset": "reveal",
+    "inference_workers": 10,
+    "joern_shard_count": 1,
+    "joern_shard_index": 0,
+    "lexical_weight": 0.7,
+    "max_targets": null,
+    "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+    "reuse_legacy_reveal_test_embeddings": true,
+    "root": "/mnt/c/MY-FILES/LAB-THAY-THO",
+    "semantic_top_k": 5,
+    "split": "test",
+    "tsne_dim": 2,
+    "tsne_iterations": 1000,
+    "tsne_perplexity": 30.0,
+    "variant": "paper",
+    "whitening_dim": 256,
+    "workers": 4
+  },
+  "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+  "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+  "disabled_improvements": [
+    "C1_native_hybrid_ranker",
+    "C2",
+    "C3",
+    "C5",
+    "C6",
+    "C7",
+    "C8"
+  ],
+  "existing_full_comparison_ready": true,
+  "graph_coverage": 0.9511873350923483,
+  "graph_feature_identity": "ea8fb58a2819e25f7af260efb104a6687e7a8c4a1217501295516ec4e85ecc2f",
+  "paper_sha256": "4e125e13f4a1c6c366856ff26aa0af97c4375a02935794b39c5aacad7d94efea",
+  "paper_underspecified_choices": {
+    "lexical_weight": 0.7,
+    "semantic_top_k": 5,
+    "tsne_dim": 2,
+    "tsne_is_transductive_on_code_only": true,
+    "tsne_iterations": 1000,
+    "tsne_perplexity": 30.0
+  },
+  "pipeline_sha256": "0d847f49433ca0e68651b96b2244fe4d9d568460f60d5427138e30462e14ce07",
+  "profile": "paper",
+  "prompt_context_limit_implementation": "Full prefix fitter plus conservative UTF-8 byte bound for non-ASCII inputs; node/edge caps applied before rendering; not a measured token count",
+  "prompt_template_sha256": "77ecbd4d6f09a2334a56a90baaee0684fc02ef6f101bb1f9189f71f2d7abe2fd",
+  "retained_contract_controls": [
+    "shared_top50_candidate_pool",
+    "C4_metrics",
+    "fixed_model_dataset_context_and_output"
+  ],
+  "reuse_audit": {
+    "all_disabled_is_original": false,
+    "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "dataset": "reveal",
+    "dataset_manifest_sha256": "c1f40056953fa3062867e0e9dfdf1dda2a1f7fcfd9c37ffab9a0f0cba1fc31cc",
+    "existing_full_prompt_audit": {
+      "candidate_sample_pool_verification": "separate per-target check in prepare; smoke alone is not full-cohort verification",
+      "comparison_ready": true,
+      "contract_edge_cap": 80,
+      "contract_node_cap": 40,
+      "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+      "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+      "expected_targets": 2274,
+      "id_hash_mismatches": 0,
+      "path": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Full-cai-tien/test/prompts/prompts.jsonl",
+      "prompts_over_edge_cap": 0,
+      "prompts_over_node_cap": 0,
+      "prompts_seen": 2274,
+      "rendered_graph_edges_max": 80,
+      "rendered_graph_nodes_max": 40,
+      "sha256": "9ed91e8e0c780a2934daa1bca6efcbb0d72ff1c17afa0a780e56ac666d2db1d8"
+    },
+    "graph_reuse": {
+      "action": "Reuse matching binary; export complete graph/AST; never use sliced GraphVerb as original graph.",
+      "approved_target_records": 2274,
+      "approved_unique_code_binaries": 2272,
+      "graph_index": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Code-CPG/reveal_test_full/graphs.jsonl",
+      "graph_index_sha256": "09fdf2241b0f7e0a6e2a899f327c2f5d078001158cc0529c9fb64b705959e863",
+      "recovered_missing_paths": 0,
+      "rejection_reasons": {},
+      "shared_provenance_index": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/shared_cache/cpg_sources/reveal_test.jsonl",
+      "stored_pdg_is_not_whole_cpg": true,
+      "target_count": 2274
+    },
+    "legacy_codet5_cache": "ReVeal test vectors are enabled by user assumption; runtime verifies ordered code hashes, encoder notebook pooling, and tokenizer files. Model weight revision remains unverified.",
+    "legacy_codet5_reuse_enabled": true,
+    "legacy_graphverb": "Sliced/verbalized graph is C5/C6; excluded from original baseline prompt even when source hashes match.",
+    "legacy_simsbt": "Tree-sitter sequences with hashes may match data but are not Joern AST-type SimSBT; not silently substituted.",
+    "reason": "No-C1 uses code Jaccard; No-C5 removes graph; No-C6 still verbalizes it; native GRACE retrieval and raw CPG need explicit replacements.",
+    "same_code_candidates_excluded": true,
+    "schema": "grace_reproduction_v1",
+    "split": "test",
+    "status": "audited_not_inferred",
+    "target_count": 2274,
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "train_count": 18187,
+    "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+    "train_target_exact_code_overlap": 56,
+    "variant": "paper"
+  },
+  "runtime": {
+    "joern_jvm_active_processors": 4,
+    "joern_jvm_heap_max": "2g",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "google-genai": "1.72.0",
+      "numpy": "2.4.3",
+      "pyarrow": "23.0.1",
+      "scikit-learn": "1.8.0",
+      "torch": "2.11.0",
+      "transformers": "5.5.3"
+    },
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "schema": "grace_reproduction_v1",
+  "source_hashes": {
+    "basep.py": "3368830927fe2371e25bebe1b846fe2cdc2e9bf94cc68fd27f26042ad2825d05",
+    "genexample.py": "27c1bc1b128411ab3d0a1e140d308c980dac50c5d17f944ca1800abb573e0383",
+    "llmpre.py": "c8813368626af49a8511fb8d6606b95565750e78b28a772b09ce55e77800822a",
+    "util.py": "9d630ae44dd7fd07fa6fb4e43479137959db1fff6240d1e04a16f58770c2717c"
+  },
+  "status": "prepared_before_inference",
+  "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+  "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+  "vector_manifest": {
+    "pooling": "cls",
+    "targets": {
+      "provenance": {
+        "bundle_manifest_sha256": "13d4f729c6a0b41ea17afeccf5db0fc2af6d6f0d398329c4eef08ff89524edbe",
+        "legacy_encoder_notebook_sha256": "ee49dae41751d49f4fbda28ebeaab2ab5a53fecd2f7d42540b1515c4d694ab7d",
+        "model_equivalence": "assumed by user for this run; not independently verified",
+        "model_revision": "unknown; cache has no model weight revision metadata",
+        "ordered_code_hashes_verified": 2274,
+        "pooling": "CLS (verified in legacy encoder notebook)",
+        "source_npz": "Graduation-Project/Ablation_V2/Reproduced-Code-Based/shared_cache/codet5/legacy_reveal_test/codet5_cache.npz",
+        "source_npz_sha256": "b93623ec4f5d1194dae0eb754b4ae964da08acab9a39f092e9f7c28ce551cca7",
+        "source_ordered_rows": "Graduation-Project/Ablation_V2/Reproduced-Code-Based/shared_cache/codet5/legacy_reveal_test/reveal_test_processed.json",
+        "source_ordered_rows_sha256": "425cf920234b12b7158ebc5b111a4bcbe0f31e55f9485621d421fd0b46743e9e",
+        "tokenizer_files_verified": {
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        }
+      },
+      "sha256": "d77626bc49ec8b3f3977e000dc2087f418d7b1003191e05b8c8d78f241daada6",
+      "shape": [
+        2274,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": "legacy_unverified",
+        "legacy_ordered_rows_sha256": "425cf920234b12b7158ebc5b111a4bcbe0f31e55f9485621d421fd0b46743e9e",
+        "legacy_source_npz_sha256": "b93623ec4f5d1194dae0eb754b4ae964da08acab9a39f092e9f7c28ce551cca7",
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+        "seed": 42
+      }
+    },
+    "train": {
+      "device": "cpu",
+      "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+      "sha256": "18221044d3b975bbddc61a42b3db9b875eab4ddb6e4eaa4c7ea8158bd73a3fe0",
+      "shape": [
+        18187,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": {
+          "config.json": "747cddfb84f44944822684ab4c1815f4043345e79f4be70e1bcdbb60b5e5dbd1",
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "pytorch_model.bin": "053fbafd36f4011e13fe10f45d588102ffa7448f338443ff787e85360cd5e13c",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        },
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+        "seed": 42
+      }
+    }
+  }
+}

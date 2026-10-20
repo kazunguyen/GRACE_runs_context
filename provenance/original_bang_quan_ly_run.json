@@ -1,0 +1,2148 @@
+[
+  {
+    "run_id": "Reproduced-Code-Based/devign/test",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "364a86c9fcd67b7a350a252c48a1b60666eb98d7",
+    "source_baseline_manifest": null,
+    "source_baseline_manifest_sha256": null,
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "raw_whole_cpg_contract_cap",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": null,
+      "C8_policy": null,
+      "paper_underspecified_choices": {
+        "lexical_weight": 0.7,
+        "semantic_top_k": 5,
+        "tsne_dim": 2,
+        "tsne_is_transductive_on_code_only": false,
+        "tsne_iterations": 1000,
+        "tsne_perplexity": 30.0
+      }
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\devign\\test\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reproduced-Code-Based/reveal/test",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2274,
+    "n_invalid": 0,
+    "git_commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+    "source_baseline_manifest": null,
+    "source_baseline_manifest_sha256": null,
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "raw_whole_cpg_contract_cap",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": null,
+      "C8_policy": null,
+      "paper_underspecified_choices": {
+        "lexical_weight": 0.7,
+        "semantic_top_k": 5,
+        "tsne_dim": 2,
+        "tsne_is_transductive_on_code_only": false,
+        "tsne_iterations": 1000,
+        "tsne_perplexity": 30.0
+      }
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Code-Based\\reveal\\test\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reproduced-Paper-Based/devign/test",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2719,
+    "n_invalid": 13,
+    "git_commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+    "source_baseline_manifest": null,
+    "source_baseline_manifest_sha256": null,
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "raw_whole_cpg_contract_cap",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "paper",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": null,
+      "C8_policy": null,
+      "paper_underspecified_choices": {
+        "lexical_weight": 0.7,
+        "semantic_top_k": 5,
+        "tsne_dim": 2,
+        "tsne_is_transductive_on_code_only": true,
+        "tsne_iterations": 1000,
+        "tsne_perplexity": 30.0
+      }
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\devign\\test\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reproduced-Paper-Based/reveal/test",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2274,
+    "n_invalid": 0,
+    "git_commit": "0ce741f7fa6a76d3d8c22352b4a2fef37c32024c",
+    "source_baseline_manifest": null,
+    "source_baseline_manifest_sha256": null,
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "raw_whole_cpg_contract_cap",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "paper",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": null,
+      "C8_policy": null,
+      "paper_underspecified_choices": {
+        "lexical_weight": 0.7,
+        "semantic_top_k": 5,
+        "tsne_dim": 2,
+        "tsne_is_transductive_on_code_only": true,
+        "tsne_iterations": 1000,
+        "tsne_perplexity": 30.0
+      }
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "evaluation_contract_v2_graph40x80_20261013",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reproduced-Paper-Based\\reveal\\test\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Full-cai-tien/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Grace-baseline/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Grace-baseline\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C1-hybrid-retrieval/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C2-stratified-demo-selection/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2726,
+    "n_invalid": 6,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C5-graph-verbalization/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C6-graph-slicing/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "baseline_graph_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C7-security-cot/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2731,
+    "n_invalid": 1,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/No-C8-mmr-demo-selection/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2732,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C2-stratified-demos/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2728,
+    "n_invalid": 4,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C2"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C3-gepa-prompt/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2603,
+    "n_invalid": 129,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C3"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C5-graph-verbalization/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2267,
+    "n_invalid": 465,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C5"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C6-graph-slicing/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2730,
+    "n_invalid": 2,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "cached_pdg_slice_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C6"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C7-security-cot/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 2627,
+    "n_invalid": 105,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base + internal security CoT",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C7"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+    "dataset": "devign",
+    "split": "test",
+    "n_total": 2732,
+    "n_non_vulnerable": 1477,
+    "n_vulnerable": 1255,
+    "n_valid": 1481,
+    "n_invalid": 1251,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2732
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+      "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Full-cai-tien/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2274,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Grace-baseline/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2224,
+    "n_invalid": 50,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Grace-baseline\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C1-hybrid-retrieval/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2128,
+    "n_invalid": 146,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C1-hybrid-retrieval\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1261,
+    "n_invalid": 1013,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C3",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1344,
+    "n_invalid": 930,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1238,
+    "n_invalid": 1036,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C6-graph-slicing/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2273,
+    "n_invalid": 1,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "baseline_graph_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C7",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C7-security-cot/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2272,
+    "n_invalid": 2,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C7-security-cot\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/No-C8-mmr-demo-selection/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1699,
+    "n_invalid": 575,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA + internal security CoT",
+    "graph_mode": "cached_pdg_slice_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C7"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C8-mmr-demo-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1340,
+    "n_invalid": 934,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C1"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C2-stratified-demos/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2274,
+    "n_invalid": 0,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C2"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C3-gepa-prompt/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1905,
+    "n_invalid": 369,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "GEPA",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C3"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C3-gepa-prompt\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C5-graph-verbalization/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2092,
+    "n_invalid": 182,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_verbalized",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C5"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C5-graph-verbalization\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C6-graph-slicing/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 2134,
+    "n_invalid": 140,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "cached_pdg_slice_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C6"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C6-graph-slicing\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1116,
+    "n_invalid": 1158,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base + internal security CoT",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C7"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  },
+  {
+    "run_id": "Reveal/Ablations/Plus-C8-mmr-selection/test_v2",
+    "dataset": "reveal",
+    "split": "test",
+    "n_total": 2274,
+    "n_non_vulnerable": 2044,
+    "n_vulnerable": 230,
+    "n_valid": 1479,
+    "n_invalid": 795,
+    "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
+    "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
+    "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
+    "models_observed_in_raw_previous_audit": [
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "provider": "Vertex AI (declared; not independently recorded in raw response)",
+    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "prompt_mode": "base",
+    "graph_mode": "baseline_graph_raw",
+    "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
+    "prompt_context_limits_previous_audit": {
+      "8192": 2274
+    },
+    "retrieval": {
+      "profile": "code",
+      "enabled_improvements": [
+        "C8"
+      ],
+      "semantic_top_k": 5,
+      "lexical_weight": 0.7,
+      "whitening_dim": 256,
+      "tsne_dim": 2,
+      "candidate_identity": "b9f34577eef39f4e777fc35125db438d5ead1d27e063461697c0b22b0b39276d",
+      "train_identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+      "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+      "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+      "paper_underspecified_choices": null
+    },
+    "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+    "contract_revision": "THIEU in this manifest; contract hash retained",
+    "paths": {
+      "predictions": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "raw_responses": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "prompts": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\prompts\\prompts.jsonl",
+      "retrieval": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\retrieval\\retrievals.jsonl",
+      "manifest": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\run_manifest.json",
+      "freeze": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\freeze.json",
+      "metrics": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\evaluation.json"
+    },
+    "missing_files": [],
+    "limitations": [
+      "Missing execution commit; do not substitute baseline or current commit",
+      "Provider declared, not independently recorded per response",
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
+    ]
+  }
+]

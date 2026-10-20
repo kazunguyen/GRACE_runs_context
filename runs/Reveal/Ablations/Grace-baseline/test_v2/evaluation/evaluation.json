@@ -1,0 +1,19 @@
+{
+  "accuracy_valid": 0.8039568345323741,
+  "balanced_accuracy": 0.5124107142857143,
+  "confusion_matrix": {
+    "fn": 191,
+    "fp": 245,
+    "tn": 1755,
+    "tp": 33
+  },
+  "f1": 0.13147410358565736,
+  "invalid_rate": 0.02198768689533861,
+  "mcc": 0.02258769757263128,
+  "n_invalid": 50,
+  "n_responses": 2274,
+  "n_valid": 2224,
+  "precision": 0.11870503597122302,
+  "predicted_vulnerable_rate_valid": 0.125,
+  "recall": 0.14732142857142858
+}

@@ -1,0 +1,121 @@
+{
+  "C2_policy": "2 per class when available inside semantic top5; fill shortfall from same shortlist; four demos",
+  "C4": "shared evaluator, always enabled",
+  "C6_graph_source_adaptation": null,
+  "C8_policy": "MMR 0.6 relevance - 0.4 token diversity; no diversity effect when C2 is disabled and demo budget is one",
+  "arm": "plus_c1",
+  "baseline_graph_coverage": 0.9560761346998536,
+  "baseline_prompt_equivalence_checked": false,
+  "cache_policy": "read heavy baseline caches in place; new derived artifacts only in _v2/test_v2",
+  "candidate_identity": "57c3944c96b595b51ba10d07aa6c1c140ddb0ebbbcbad32972149077d75861af",
+  "config": {
+    "batch_size": 4,
+    "dataset": "devign",
+    "inference_workers": 10,
+    "joern_shard_count": 1,
+    "joern_shard_index": 0,
+    "lexical_weight": 0.7,
+    "max_targets": null,
+    "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+    "reuse_legacy_reveal_test_embeddings": false,
+    "root": "/mnt/c/MY-FILES/LAB-THAY-THO",
+    "semantic_top_k": 5,
+    "split": "test",
+    "tsne_dim": 2,
+    "tsne_iterations": 1000,
+    "tsne_perplexity": 30.0,
+    "variant": "code",
+    "whitening_dim": 256,
+    "workers": 4
+  },
+  "contract_sha256": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+  "dataset": "devign",
+  "disabled_improvements": [
+    "C2",
+    "C3",
+    "C5",
+    "C6",
+    "C7",
+    "C8"
+  ],
+  "enabled_improvements": [
+    "C1"
+  ],
+  "graph_feature_identity": "b2bc58134175a75a31bc410f68c21155b7f316bcbfb0423589b10eb6a2e08d45",
+  "graph_schema_counts": {
+    "joern_legacy_text_v1": 1,
+    "joern_whole_graph_v3": 2731
+  },
+  "native_stages": [
+    "CodeT5 CLS",
+    "train-only whitening/IP",
+    "common top50",
+    "semantic top5",
+    "native lexical/syntactic reranking unless C1",
+    "single demo unless C2",
+    "raw graph unless C5/C6",
+    "baseline instruction unless C3/C7",
+    "shared model/context/parser/evaluator"
+  ],
+  "pdg_sha256": null,
+  "profile": "code",
+  "prompt_graph_available_count": 2612,
+  "prompt_graph_unavailable_count": 120,
+  "runner_sha256": "f990cc48e972ee5c6d91c62935ac3db5bfe384076a431c3489823c89844fb346",
+  "schema": "code_based_ablation_v2",
+  "slice_status_counts": {},
+  "source_run_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
+  "source_run_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+  "split": "test",
+  "status": "prepared_before_inference",
+  "target_count": 2732,
+  "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+  "train_identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+  "vector_manifest": {
+    "pooling": "cls",
+    "targets": {
+      "device": "cpu",
+      "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+      "sha256": "82e20c04503f1ae0930abde004546beefa8ed944ce431e8b6d3019048a8c52a3",
+      "shape": [
+        2732,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": {
+          "config.json": "747cddfb84f44944822684ab4c1815f4043345e79f4be70e1bcdbb60b5e5dbd1",
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "pytorch_model.bin": "053fbafd36f4011e13fe10f45d588102ffa7448f338443ff787e85360cd5e13c",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        },
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+        "seed": 42
+      }
+    },
+    "train": {
+      "device": "cpu",
+      "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+      "sha256": "3356810a6eca7d7ac1e871a3d8fc0cbd0e553261d8e454440215e117fa9c2791",
+      "shape": [
+        21854,
+        768
+      ],
+      "spec": {
+        "architecture": "T5Encoder",
+        "checkpoint": {
+          "config.json": "747cddfb84f44944822684ab4c1815f4043345e79f4be70e1bcdbb60b5e5dbd1",
+          "merges.txt": "5d346f84939a98df0cde902df7d60154b461cde1b90dc653ab9b81d74e752a4d",
+          "pytorch_model.bin": "053fbafd36f4011e13fe10f45d588102ffa7448f338443ff787e85360cd5e13c",
+          "vocab.json": "43bb485f4de0f2fd49b370bef4efab23ea3ab6d0019e72bdd9cec1436a6eaa2b"
+        },
+        "max_length": 512,
+        "pooling": "cls",
+        "rows": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+        "seed": 42
+      }
+    }
+  }
+}

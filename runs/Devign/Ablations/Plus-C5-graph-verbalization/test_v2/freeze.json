@@ -1,0 +1,40 @@
+{
+  "config": {
+    "batch_size": 4,
+    "dataset": "devign",
+    "inference_workers": 10,
+    "joern_shard_count": 1,
+    "joern_shard_index": 0,
+    "lexical_weight": 0.7,
+    "max_targets": null,
+    "model_dir": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/kaggle_gpu_job/downloads/quangdung1111-grace-kaggle-gpu-ipynb/downloads/model",
+    "reuse_legacy_reveal_test_embeddings": false,
+    "root": "/mnt/c/MY-FILES/LAB-THAY-THO",
+    "semantic_top_k": 5,
+    "split": "test",
+    "tsne_dim": 2,
+    "tsne_iterations": 1000,
+    "tsne_perplexity": 30.0,
+    "variant": "code",
+    "whitening_dim": 256,
+    "workers": 4
+  },
+  "files": {
+    "Graduation-Project/Ablation_V2/Devign/Ablations/Full-cai-tien/full_cai_tien_pipeline.py": "158096fc1d235c5d3fece10d52ed6a0a2553ecf64d75bd2c74da983657e31876",
+    "Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C5-graph-verbalization/test_v2/prompts/prompts.jsonl": "b6b55f66e5e1597d25e7b35e1c896e0fd4c09aac2912f16573a419e12c0dfe6a",
+    "Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C5-graph-verbalization/test_v2/retrieval/common_candidates.jsonl": "d47cf8d621733c781a50ce47e547a4c8b7a07eeafdbec17a5233d609f9a60c74",
+    "Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C5-graph-verbalization/test_v2/retrieval/retrievals.jsonl": "6f783f3249eff86ea6c43bf94765044e9531d3b92964caa50f07123b0218843b",
+    "Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C5-graph-verbalization/test_v2/run_manifest.json": "40539a43934d3a8406496d054317599ce12eb652998e57b7062445d9803fc8eb",
+    "Graduation-Project/Ablation_V2/Devign/Ablations/code_based_runner.py": "f990cc48e972ee5c6d91c62935ac3db5bfe384076a431c3489823c89844fb346",
+    "Graduation-Project/Ablation_V2/Devign/Contract/prompt_template.txt": "7b018e2a1e7388e6118c1f7a7fb6b41fdb7db91684d41c64f49273fd349cb098",
+    "Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/freeze.json": "024926787727605ce9f0696a952062ccfa4481fa5bfed5845af568bfd3842131",
+    "Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
+    "Graduation-Project/Ablation_V2/Reproduced-Code-Based/reproduction_pipeline.py": "0d847f49433ca0e68651b96b2244fe4d9d568460f60d5427138e30462e14ce07",
+    "Graduation-Project/GRACE_V3_EnhancedV1_Contracted/[src]/01_target_manifest/output/v3_devign_test_full/sealed_labels.jsonl": "a92e34181882a812d4b59950be4536efc38a4517aa9c4bae653e5dbb0587d638",
+    "Graduation-Project/GRACE_V3_EnhancedV1_Contracted/[src]/01_target_manifest/output/v3_devign_test_full/targets.jsonl": "676644c19c340505a8e397be93220cf4f8f727d3c8688bc4573e24875a30c134",
+    "Graduation-Project/Grace-with-filters-v2/[CONTRACT]/datasets/dataset_manifest.json": "c1f40056953fa3062867e0e9dfdf1dda2a1f7fcfd9c37ffab9a0f0cba1fc31cc",
+    "Graduation-Project/Grace-with-filters-v2/[src]/_shared/delta_common.py": "78a9dd9e3006aaa93fbcac8f56bebe01d7f708375f7aaf791bb5d39210ecf3ec",
+    "Graduation-Project/STANDARD_FOR_ALL_INFERENCES/evaluation_contract.yaml": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c"
+  },
+  "schema": "grace_reproduction_v1"
+}
