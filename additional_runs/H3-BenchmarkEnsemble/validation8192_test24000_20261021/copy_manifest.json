@@ -1,0 +1,834 @@
+{
+  "schema": "h3_share_snapshot_v1",
+  "source_commit": "ab32b16196a26a61ad37b667c2f0f014d1625b18",
+  "created_at": "2026-10-21T09:18:17.415913+07:00",
+  "scope": "Four expert runs and H3 model comparisons; validation=8192, test=24000 UTF-8 bytes.",
+  "benchmark_comparable": false,
+  "runs": [
+    {
+      "dataset": "devign",
+      "phase": "validation",
+      "queries": 2724,
+      "context_limit_utf8_bytes": [
+        8192
+      ],
+      "run": "runs/devign/validation/baseline_whitening/f79c31718971e534"
+    },
+    {
+      "dataset": "devign",
+      "phase": "test",
+      "queries": 2732,
+      "context_limit_utf8_bytes": [
+        24000
+      ],
+      "run": "runs/devign/test/baseline_whitening/e9285c1120e0e904"
+    },
+    {
+      "dataset": "reveal",
+      "phase": "validation",
+      "queries": 2196,
+      "context_limit_utf8_bytes": [
+        8192
+      ],
+      "run": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93"
+    },
+    {
+      "dataset": "reveal",
+      "phase": "test",
+      "queries": 2274,
+      "context_limit_utf8_bytes": [
+        24000
+      ],
+      "run": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7"
+    }
+  ],
+  "copied_files": [
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\f6d28bb5a30eed5a3201\\folds.json",
+      "path": "artifacts/h3v2/base/devign/42/f6d28bb5a30eed5a3201/folds.json",
+      "bytes": 2936436,
+      "sha256": "715afa32a28eab1389f4d92e35af0b129cbbb029fd4e8d65391e2b9192aed8c8"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\f6d28bb5a30eed5a3201\\freeze.json",
+      "path": "artifacts/h3v2/base/devign/42/f6d28bb5a30eed5a3201/freeze.json",
+      "bytes": 311359,
+      "sha256": "1888ad85ae7bb87f10afc7f0424df70d37f82c7c48b7eaa7e5108af15cde4e2f"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\f6d28bb5a30eed5a3201\\manifest.json",
+      "path": "artifacts/h3v2/base/devign/42/f6d28bb5a30eed5a3201/manifest.json",
+      "bytes": 325576,
+      "sha256": "de601dd59f305e6494a7894ed11c07f7975c617ade4e0491f9951f240cb690e1"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\9e5b6bc3bb5e930e1497\\folds.json",
+      "path": "artifacts/h3v2/base/reveal/42/9e5b6bc3bb5e930e1497/folds.json",
+      "bytes": 2372295,
+      "sha256": "651c3a820a3abbd9f0314b2f9e3dbaf06a477b6d82185cb064c00395dd4666c6"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\9e5b6bc3bb5e930e1497\\freeze.json",
+      "path": "artifacts/h3v2/base/reveal/42/9e5b6bc3bb5e930e1497/freeze.json",
+      "bytes": 253264,
+      "sha256": "95586104f5c1cb1e487eb3813a6d95e9a5797ced084c62a5b8c08f180b20bca5"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\9e5b6bc3bb5e930e1497\\manifest.json",
+      "path": "artifacts/h3v2/base/reveal/42/9e5b6bc3bb5e930e1497/manifest.json",
+      "bytes": 267499,
+      "sha256": "a283047ef402707c81e3d14b602d208b84d25247aaa876ec61849d92b10fc8bd"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\2eb7ab9d8de5956fec4d\\expert_validation.jsonl",
+      "path": "artifacts/h3v2/meta/devign/42/2eb7ab9d8de5956fec4d/expert_validation.jsonl",
+      "bytes": 1402399,
+      "sha256": "2bf7205d1ef20c32c2bd24dfe57280b1aff4ac1b1a24ce2620e31e62d4f2956a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\2eb7ab9d8de5956fec4d\\folds.json",
+      "path": "artifacts/h3v2/meta/devign/42/2eb7ab9d8de5956fec4d/folds.json",
+      "bytes": 94971,
+      "sha256": "0c3d7c2363bfc7fb01e1adc9d150f45f1d0dece9bef49f522083c6bc7fc234cf"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\2eb7ab9d8de5956fec4d\\freeze.json",
+      "path": "artifacts/h3v2/meta/devign/42/2eb7ab9d8de5956fec4d/freeze.json",
+      "bytes": 8178,
+      "sha256": "ffdd2d4dd9ee01771a6e392da65479078b5dfb2dd3e73ce7ef6b5c42fb8d5a52"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\2eb7ab9d8de5956fec4d\\manifest.json",
+      "path": "artifacts/h3v2/meta/devign/42/2eb7ab9d8de5956fec4d/manifest.json",
+      "bytes": 18568,
+      "sha256": "3d67efde092007a34e917f43665fc0884355bb145fa85c95d2970e00a02bdd35"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\7e7591975ceda0730644\\expert_validation.jsonl",
+      "path": "artifacts/h3v2/meta/reveal/42/7e7591975ceda0730644/expert_validation.jsonl",
+      "bytes": 1120641,
+      "sha256": "03499f2cf242c2ea561b4b8e23a27b7ec55f67795f084077875b012581850674"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\7e7591975ceda0730644\\folds.json",
+      "path": "artifacts/h3v2/meta/reveal/42/7e7591975ceda0730644/folds.json",
+      "bytes": 75963,
+      "sha256": "a23d97339e379f8bc92d0db56052d84ff50c04cc66a65fa72a3542d6abacb1ef"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\7e7591975ceda0730644\\freeze.json",
+      "path": "artifacts/h3v2/meta/reveal/42/7e7591975ceda0730644/freeze.json",
+      "bytes": 8178,
+      "sha256": "061da755a6799cb89de1a2ca2d30dece054327b9e5a2eab8b0a8d0aa33f680b5"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\7e7591975ceda0730644\\manifest.json",
+      "path": "artifacts/h3v2/meta/reveal/42/7e7591975ceda0730644/manifest.json",
+      "bytes": 18604,
+      "sha256": "d348e972a024125ecfb69d5866e5ed6a18d9c962d3bf0e7fd1dfd3e2c06654ae"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\benchmark_v2.json",
+      "path": "configs/benchmark_v2.json",
+      "bytes": 2195,
+      "sha256": "fe6967fab35961043438313faec72447d4ba578d8261772d6e71556088562010"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\experiment.json",
+      "path": "configs/experiment.json",
+      "bytes": 720,
+      "sha256": "bec71a5966765fb3f528649e8c4d337f73b1bc8d3d7466f9e1b75f9c93f174ec"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\prompt_template.txt",
+      "path": "configs/prompt_template.txt",
+      "bytes": 661,
+      "sha256": "7b018e2a1e7388e6118c1f7a7fb6b41fdb7db91684d41c64f49273fd349cb098"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\reference_contract.yaml",
+      "path": "configs/reference_contract.yaml",
+      "bytes": 3712,
+      "sha256": "97d978fd4ae6108890ae6e732d48ac70c6a0955e81b33636ae012a30b6f8de79"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\__init__.py",
+      "path": "grace_h1/__init__.py",
+      "bytes": 95,
+      "sha256": "16c7a88f18db7d7c2cf76e6f03d8cf36efadd9b43b609f7ca7d6aee973b5c3ce"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\data.py",
+      "path": "grace_h1/data.py",
+      "bytes": 3197,
+      "sha256": "abb050568e2554c14307f7e6012f32afec1b7dab5d045991a7bbcc542dadf520"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\fpt_provider.py",
+      "path": "grace_h1/fpt_provider.py",
+      "bytes": 4020,
+      "sha256": "1d705f28124df5b813a1e541980ef53138fad199d20b4e3871f41de4c286452f"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\graphs.py",
+      "path": "grace_h1/graphs.py",
+      "bytes": 4029,
+      "sha256": "2cf82290d5f0180f1aae02ce1219bfcedd0adb32e86b5ec27ac0f89c4b78d871"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\inference.py",
+      "path": "grace_h1/inference.py",
+      "bytes": 11154,
+      "sha256": "4ac9c9d0a36fa823cd9a66b3cba9cb238f488906785cd744997cc181858bd80b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\io.py",
+      "path": "grace_h1/io.py",
+      "bytes": 2303,
+      "sha256": "9e2e8cdbccd8521ea6a7034874a55f965715af459a04ecd7ead01d3c7eff8eec"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\metrics.py",
+      "path": "grace_h1/metrics.py",
+      "bytes": 2577,
+      "sha256": "f1d3b3bdcaa55c6120dd6ff11c1fba225d9abff41e2f68c5b5e1beac7038185e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\parser.py",
+      "path": "grace_h1/parser.py",
+      "bytes": 1125,
+      "sha256": "c8f9aa150457bd615e745ef379d79321c68ba550f85933123a76284e9d0ad416"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\pipeline.py",
+      "path": "grace_h1/pipeline.py",
+      "bytes": 13925,
+      "sha256": "6d59456839c029b3b85f54bf99e47abfb3216df861634d21b95afc6e42a4572b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\projection.py",
+      "path": "grace_h1/projection.py",
+      "bytes": 11460,
+      "sha256": "d1f92309ebc34275cf714146b940b5362239e49cef262b713220156e764b8317"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\reference.py",
+      "path": "grace_h1/reference.py",
+      "bytes": 10527,
+      "sha256": "c81abb7376a8c43ba192598b63c3693884ac4eb7e4593cda9f7aaed246abc82e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\retrieval.py",
+      "path": "grace_h1/retrieval.py",
+      "bytes": 4691,
+      "sha256": "bad51d118378290b6a9f34c6e52bbdbdd67ef9017b5d98d472816f01e68f722e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\__init__.py",
+      "path": "grace_h3v2/__init__.py",
+      "bytes": 87,
+      "sha256": "805f748cc8cfd28b352b1cc9eb5a912e1c883c89a4b23783463cb53934507a54"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\base.py",
+      "path": "grace_h3v2/base.py",
+      "bytes": 9575,
+      "sha256": "6c257593906271a78c6f911ce5317f1365e2133a5227ea40bdde8d051a2fd214"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\common.py",
+      "path": "grace_h3v2/common.py",
+      "bytes": 7950,
+      "sha256": "9cee7d207bb8972de35fd2c0ff4aa23ac9f7bc69fe8106b09ce882b0801138b0"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\features.py",
+      "path": "grace_h3v2/features.py",
+      "bytes": 6899,
+      "sha256": "54c64c741495d2e2faa6c40107ef265c201b198ff21b583aa561120767e60f58"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\meta.py",
+      "path": "grace_h3v2/meta.py",
+      "bytes": 12893,
+      "sha256": "4c757da752cf05680482e02255fb6d09a48b11c09ef75b9493f13bf484d950fa"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\portable.py",
+      "path": "grace_h3v2/portable.py",
+      "bytes": 8910,
+      "sha256": "cf300247313dcd1bdde536fae2792f01921c178f771b0e36f771e29ea4cd75de"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\recovery.py",
+      "path": "grace_h3v2/recovery.py",
+      "bytes": 17267,
+      "sha256": "73192b7a1be18540c01c256fcda43a5ff6fac352cf31a3347b7ca9ddc16cda29"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\workflow.py",
+      "path": "grace_h3v2/workflow.py",
+      "bytes": 18406,
+      "sha256": "6b3b7feeddebc09683f8152ff0f11a1529d807563a88119aef25c874878979e1"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\colab_cpu_prepare.ipynb",
+      "path": "notebooks/colab_cpu_prepare.ipynb",
+      "bytes": 24615,
+      "sha256": "708f67d29f50204a8af2670936d08d01a21d0b3253ca07fd4f40a1eef7ebd849"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\full-pipeline.ipynb",
+      "path": "notebooks/full-pipeline.ipynb",
+      "bytes": 47412,
+      "sha256": "3483dd3542ce3f1661ac0441f9e63cd934df25bb07f9841574668fa8bb5c8808"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\retry-blocked-validation.ipynb",
+      "path": "notebooks/retry-blocked-validation.ipynb",
+      "bytes": 19720,
+      "sha256": "10f4a53985eeb875e5e90bd3b784a83381d25e84a5354618dd98bb6d8afac826"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\requirements-cpu.txt",
+      "path": "requirements-cpu.txt",
+      "bytes": 113,
+      "sha256": "34141b0f6df0104912e5992162cf6ef43107302b6168ac7a1d2afe0ac520803a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\requirements-v2.txt",
+      "path": "requirements-v2.txt",
+      "bytes": 214,
+      "sha256": "7ed6b8db18476616291f39168ec298f06ec0ca767c49376d1effa1cfdf85dd93"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\requirements.txt",
+      "path": "requirements.txt",
+      "bytes": 43,
+      "sha256": "6ebdca571ed5065e9f476f39af34876a8dfe29f7b8f9517e518c74c7018f9e0a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\freeze.json",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/freeze.json",
+      "bytes": 910,
+      "sha256": "d7aa5de83f2516d2aa3a209848b4e119d220f9a241007b127774350f8e091f1a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\graph_feature_index.jsonl",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/graph_feature_index.jsonl",
+      "bytes": 2812084,
+      "sha256": "fa1203ead8f1960a44553bd0e89567dfa24c433ca432733a35a1116978749fa5"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\inference_plan.json",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/inference_plan.json",
+      "bytes": 647,
+      "sha256": "c5e44b480884e6769db39179a6ee16d365978cf3489a06e91fb871a55df20942"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\inference_summary.json",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/inference_summary.json",
+      "bytes": 1254,
+      "sha256": "c43946d0fb811fe081b6b43e5ae5efd4f23f7cbf831f3d25500585c3ef7817d6"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\predictions.jsonl",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/predictions.jsonl",
+      "bytes": 1119047,
+      "sha256": "36058b3bd2a1aa21d106ea69bf2faa1f36372f0fcee8b87a9f82096d1d7121cf"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\prompts.jsonl",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/prompts.jsonl",
+      "bytes": 27893417,
+      "sha256": "d3cdcd7e60cc0e1bbf13fc5dea65f53622d2a8736826e6541436b9a782accebe"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\raw_responses.jsonl",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/raw_responses.jsonl",
+      "bytes": 2825643,
+      "sha256": "3022013e114763a5dbd6e70a3f7170e3d327968f478be04b3e6b72022cfce1ea"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\retrieval.jsonl",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/retrieval.jsonl",
+      "bytes": 6587627,
+      "sha256": "569cb9d3c57b353b648849c9d53443e96306b4877fb81ccd58932868b620456b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\run_manifest.json",
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/run_manifest.json",
+      "bytes": 3592,
+      "sha256": "5694822e9b2599019625614d98b2bf59d8c1fb7b95da937005f94c546c92be83"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\freeze.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/freeze.json",
+      "bytes": 934,
+      "sha256": "e437f17a17f83ad608375844a6fa9ec9456e696c3cb23173bc6c69b93e7b3ff7"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\graph_feature_index.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/graph_feature_index.jsonl",
+      "bytes": 2779524,
+      "sha256": "2d992ef681575ecf98da63c8d81aebcac3cf791ffc9aa52ab5de8e0a3d8939d4"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\inference_plan.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/inference_plan.json",
+      "bytes": 640,
+      "sha256": "1b3829686be2bfd5b94bcd90f9adf3bb9baff4ff3f18ddb47dd0d2e0edbc5cbb"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\inference_summary.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/inference_summary.json",
+      "bytes": 2276,
+      "sha256": "335a2b4ea01130feeeecb9823fc211c9b815625c8a668b18668bcfd5d78a7d35"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\predictions.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/predictions.jsonl",
+      "bytes": 1402399,
+      "sha256": "2bf7205d1ef20c32c2bd24dfe57280b1aff4ac1b1a24ce2620e31e62d4f2956a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\prompts.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/prompts.jsonl",
+      "bytes": 17541810,
+      "sha256": "58a0296e7c610f3fe7e3b8ab8e96d74489a437873f72b71956e90dbb6706b743"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\raw_responses.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/raw_responses.jsonl",
+      "bytes": 3226546,
+      "sha256": "aec100c101bac901142da7b62036a265985de3a3614d64faa6c69fbbcb5ad829"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\recovery\\failure_inventory.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/recovery/failure_inventory.jsonl",
+      "bytes": 288449,
+      "sha256": "1eca61cdda1b9e89f283f06f7110d0e70bd9cae2560fa84d5f6ff48025b857cd"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\recovery\\manifest.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/recovery/manifest.json",
+      "bytes": 1440,
+      "sha256": "752126c1f25cec7bd6b337b4fb8f86621998fb7f37318196c24003f2be74e58b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\recovery\\original\\inference_summary.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/recovery/original/inference_summary.json",
+      "bytes": 1283,
+      "sha256": "1b6443cd6a9ce10bf61492134806cdb2f032f7579ca40aabd0371e53d47de4d8"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\recovery\\original\\predictions.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/recovery/original/predictions.jsonl",
+      "bytes": 1138163,
+      "sha256": "a95cfd544ec6bee0ae50d8b4922fa3ec24edfc47e3762aae23627184a466ca80"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\recovery\\original\\raw_responses.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/recovery/original/raw_responses.jsonl",
+      "bytes": 3230750,
+      "sha256": "6363b4cf8fa2901ba11eb3e97ac3ff66c0a7c62b5dcecdc50094d7a90a2b7ff9"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\retrieval.jsonl",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/retrieval.jsonl",
+      "bytes": 6725942,
+      "sha256": "84724394ab166621a9e19553c93c9df1b95403056da6186e57068b1e085934f0"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\run_manifest.json",
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/run_manifest.json",
+      "bytes": 3597,
+      "sha256": "8f6a5a3a4ccb9d56f0f8e688a9edc676bb314104388b5f0c3641cfc05e742b93"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\base_selection.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/base_selection.json",
+      "bytes": 5585,
+      "sha256": "6cfe260416f4533b79b4e603d698e1a431cbaae1eb9434905f8ff4a736bdb4aa"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/benchmark_summary.json",
+      "bytes": 64875,
+      "sha256": "b1a4b634009498d5a9bc6ccd13e7b5ea9335390dff77dc476b519f28347a8892"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\meta_selection.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/meta_selection.json",
+      "bytes": 6134,
+      "sha256": "25e40b62f46cd135de8b1c5a50aca625fc327b118b67598ba18c43698ceba8b4"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_fusion_all.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_fusion_all.jsonl",
+      "bytes": 682592,
+      "sha256": "8b8e38563c34a983e88616355ff2ef78fc3668762400535f6f9d8ad45f41913d"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_fusion_semantic_lexical.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_fusion_semantic_lexical.jsonl",
+      "bytes": 682592,
+      "sha256": "15ed47fa4979a1ab6ce56ed2f44088f054993f28406787b89b4a291c8382d7f2"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_lexical.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_lexical.jsonl",
+      "bytes": 682592,
+      "sha256": "330f39510dbf7db286db000daad66eb3936c9549aa3e269068a70efadada573c"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_semantic_lr.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_semantic_lr.jsonl",
+      "bytes": 682592,
+      "sha256": "aa93b9aae728a29d9e05ace13bd4792714ea862f5ccce01a9d9ae1a06a3c9903"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_semantic_lr_0_5.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_semantic_lr_0_5.jsonl",
+      "bytes": 682592,
+      "sha256": "38e5f37ef41db56f99f9559e5add1d083269de46d7e19e90de73530857ce9e28"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_semantic_lr_balanced.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_semantic_lr_balanced.jsonl",
+      "bytes": 682592,
+      "sha256": "078a78b315bf5b35cbc726a55ffa993e260f911e33513f6b4e0f4779b8ea604f"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\base_semantic_mlp.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/base_semantic_mlp.jsonl",
+      "bytes": 682592,
+      "sha256": "aff4dad1ec0533258dff4d13d15f82688d4a0d0c0ead2ed6f2d18068495dc76a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\benefit_router.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/benefit_router.jsonl",
+      "bytes": 682590,
+      "sha256": "6c1684bfc467afc9fc5538e51e9457b59ef03302aa358823f1a71012d0d30574"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\confidence_router.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/confidence_router.jsonl",
+      "bytes": 682315,
+      "sha256": "cff28ad1f4392931cb26f6d0f9c3414b19e6161b7d87534682419f7ab1a78ffc"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\evaluation.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/evaluation.json",
+      "bytes": 20244,
+      "sha256": "2c77ebfad1b39fbbadaeeeb926364187aa67818e8b274bf39e54777fd3660b0f"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\full_grace.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/full_grace.jsonl",
+      "bytes": 679860,
+      "sha256": "6a91cbc6c8c4fddbcce8615cf8fb02d5eebc39404d6e41e2fc3b6a564b2f333e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\gate_0_5.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/gate_0_5.jsonl",
+      "bytes": 682592,
+      "sha256": "199f71df96bff14fa37a8f93d5799c90474c31cc48867f380f3c42e4c08595bf"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\gate_train_threshold.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/gate_train_threshold.jsonl",
+      "bytes": 682592,
+      "sha256": "8b8e38563c34a983e88616355ff2ef78fc3668762400535f6f9d8ad45f41913d"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\gate_tuned.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/gate_tuned.jsonl",
+      "bytes": 682592,
+      "sha256": "4895adad8ed5a66a4f002140f0b2b2a4004d084055072c8f5111d9fac305afd0"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\manifest.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/manifest.json",
+      "bytes": 2919,
+      "sha256": "580c52b53eba63fdf6942b8b29fc6e488a78a6cdf314d8e1e2cfc6ea02cfbb3b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\post_selector.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/post_selector.jsonl",
+      "bytes": 679860,
+      "sha256": "0ba5140352f43231a788ea6f8a2d7e9d34f4cb7875948e836159ddb3d7ac1b35"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\stack_lr.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/stack_lr.jsonl",
+      "bytes": 679860,
+      "sha256": "950714f1bc9ea8fccdd778e1ead19a2cd7b9ddbb5c6a906d3c0f0a58a07440a2"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\devign\\42\\stack_mlp.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/devign/42/stack_mlp.jsonl",
+      "bytes": 679860,
+      "sha256": "c39d0e621ead4055296e1ab18fb250110c2e8593224f90cd000cf90d5afb67dd"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_fusion_all.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_fusion_all.jsonl",
+      "bytes": 614310,
+      "sha256": "a3233f616de2adc11e66a447d178636fed1d34cdf650b5cc8982d5d96c2bdedb"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_fusion_semantic_lexical.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_fusion_semantic_lexical.jsonl",
+      "bytes": 614310,
+      "sha256": "13b6aa99ade60df605f32014fdcebccb1cfe9c6673e73fc7e72a83d0e21d8515"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_lexical.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_lexical.jsonl",
+      "bytes": 614310,
+      "sha256": "8631d6323b1b897b9f2b0d4b3477900e897bed3c975ffd8e03036163b9561828"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_semantic_lr.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_semantic_lr.jsonl",
+      "bytes": 614310,
+      "sha256": "c2723ef207b1c1b74736c582964615ac9e945bb4bb9d42b6c7de6d4d43a9a7f5"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_semantic_lr_0_5.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_semantic_lr_0_5.jsonl",
+      "bytes": 614310,
+      "sha256": "2bdf5d4cb1bc0cbc7d52ba90c2b9f9adc7dbdf886e937ccba4deb893c0652ecd"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_semantic_lr_balanced.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_semantic_lr_balanced.jsonl",
+      "bytes": 614310,
+      "sha256": "2970bc3f3d937ac673c8ab5618b2da5617def320fb1133bbcee66e6f78402c71"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\base_semantic_mlp.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/base_semantic_mlp.jsonl",
+      "bytes": 614310,
+      "sha256": "686f8445e3533cdd25fc8514f0235fc6706f7727b96bb0a9331ba11d663c9a7d"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\benefit_router.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/benefit_router.jsonl",
+      "bytes": 614309,
+      "sha256": "31c8e857e56a9dbb63778f2e797f40ebc4f3fb18da7b25ae9b75cd663add4726"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\confidence_router.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/confidence_router.jsonl",
+      "bytes": 614304,
+      "sha256": "7c509660a7e5dcf62a275e42f5b85d5381710773d0c8ae74257d5806edc2380b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\evaluation.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/evaluation.json",
+      "bytes": 20145,
+      "sha256": "2b6f24db702c149722a7a5f56657ed1583a22564597972da40156b8121031196"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\full_grace.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/full_grace.jsonl",
+      "bytes": 612036,
+      "sha256": "4e7a07bce43f5fb38971a423dd9f2ec7610bd22ecafbff3513b8affc673c6d86"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\gate_0_5.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/gate_0_5.jsonl",
+      "bytes": 614310,
+      "sha256": "843b3e0c170ce438837bea29e97981e52da4b18422d7629df4034391b3d37906"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\gate_train_threshold.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/gate_train_threshold.jsonl",
+      "bytes": 614310,
+      "sha256": "13b6aa99ade60df605f32014fdcebccb1cfe9c6673e73fc7e72a83d0e21d8515"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\gate_tuned.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/gate_tuned.jsonl",
+      "bytes": 614310,
+      "sha256": "b81de71f2b89a68b6d3d7cdc5b7395d78e1e79e3ea475515f7af3663a3a5f9e5"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\manifest.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/manifest.json",
+      "bytes": 2919,
+      "sha256": "d54e801af615a1305abb3fa4235c83ccb3014ee797393c4c6da775c7102522a0"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\post_selector.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/post_selector.jsonl",
+      "bytes": 612036,
+      "sha256": "0184a450a872253d76aa767f552c7e53f51398f1924610f408ab603cd02e3d12"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\stack_lr.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/stack_lr.jsonl",
+      "bytes": 612036,
+      "sha256": "7a375591a28187edb7e2d167f5d69508c1ec5d7c76086d789faed54ba94f817c"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions\\reveal\\42\\stack_mlp.jsonl",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions/reveal/42/stack_mlp.jsonl",
+      "bytes": 612036,
+      "sha256": "5e706c6f1f6b204933114e516b966252c4f613e5409f35aa64051129527908b9"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\predictions_selection.json",
+      "path": "runs/h3v2/5fc21bd7cafff9846aff/predictions_selection.json",
+      "bytes": 11272,
+      "sha256": "ae184ac4406d9418dc4bd9372fb04911ec19237e50a0bb7c17ebe04c65db734b"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\mixed_model_recovery.json",
+      "path": "runs/h3v2/mixed_model_recovery.json",
+      "bytes": 8607,
+      "sha256": "3ef32d488726654ee5faebe25eac30699034db738bf313ba2114b03209497030"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\freeze.json",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/freeze.json",
+      "bytes": 910,
+      "sha256": "f5d48e16ca5c980ca60fead7395f97b87f5e44af39d0e9520bbac81379624cbf"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\graph_feature_index.jsonl",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/graph_feature_index.jsonl",
+      "bytes": 2244607,
+      "sha256": "724c7b54afdab3dd19f2744e5f6010ba8cc24f978a90c183604654c0dcdc0d83"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\inference_plan.json",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/inference_plan.json",
+      "bytes": 648,
+      "sha256": "baadfb5c3b6f80efa7db8d940e50e482e2cedb8cee527a9088df3ad6698b1e2c"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\inference_summary.json",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/inference_summary.json",
+      "bytes": 1254,
+      "sha256": "d510ee414bf86db24cb70bc416765eb100f0fa0174cab5136c70753ed9e874cd"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\predictions.jsonl",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/predictions.jsonl",
+      "bytes": 975291,
+      "sha256": "e5256369db9229f22da5f7ac1f0ca1265ba755ec1375669f455a8a1dfd373867"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\prompts.jsonl",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/prompts.jsonl",
+      "bytes": 19780163,
+      "sha256": "9b4ce00a1de045447960ae3388c2d4ac45dc579377cb04dd77bc03be0129f32e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\raw_responses.jsonl",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/raw_responses.jsonl",
+      "bytes": 2395495,
+      "sha256": "9862d4a89e0f3e1faf3c1eaa085d995c7cab5bfe3a1cdc35746f3bd5e391ff3c"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\retrieval.jsonl",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/retrieval.jsonl",
+      "bytes": 8425942,
+      "sha256": "43dc691d8c13b262c3155ec8be624b3a5fda88b457c37aa8a7869552330658e3"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\run_manifest.json",
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/run_manifest.json",
+      "bytes": 3593,
+      "sha256": "f789d22b555ae6536f02ce668f0dc36b8f87f8a4ea9625d072c38f8c5eb148a6"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\freeze.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/freeze.json",
+      "bytes": 934,
+      "sha256": "4c98e09f91f0a384c248dbe64cb3e70198e97842c20a607f8622b796498815d6"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\graph_feature_index.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/graph_feature_index.jsonl",
+      "bytes": 2184637,
+      "sha256": "faf301733b8f95ee09d3f287f52db5e55505565052945d5483385163b81af8d9"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\inference_plan.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/inference_plan.json",
+      "bytes": 640,
+      "sha256": "f83d5a7cf24cc8eb35eb022f171ee0f2f3709a3d91b5fb6802716a7e5bd1de45"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\inference_summary.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/inference_summary.json",
+      "bytes": 2266,
+      "sha256": "2907383b4f3b1fb611a65cf3f77808d4db26941e94b2d782257c0052a3a9585e"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\predictions.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/predictions.jsonl",
+      "bytes": 1120641,
+      "sha256": "03499f2cf242c2ea561b4b8e23a27b7ec55f67795f084077875b012581850674"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\prompts.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/prompts.jsonl",
+      "bytes": 16328548,
+      "sha256": "e80d9e19359b65c39979b93bf02260b07658c80ec37ad4ada49d497dab9f2d36"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\raw_responses.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/raw_responses.jsonl",
+      "bytes": 2846032,
+      "sha256": "ba3100b1571e92945cc737f81491172dda50fa2d9d9a7d02fab5ddc24426190a"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\recovery\\failure_inventory.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/recovery/failure_inventory.jsonl",
+      "bytes": 790065,
+      "sha256": "5f2ee345ecd7d58b8b620c63dfbc5193bf3b473290ee5ce8c912264122e926d8"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\recovery\\manifest.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/recovery/manifest.json",
+      "bytes": 1439,
+      "sha256": "7807f692192d73a5dd095123a26903961bf8917df9a8c826f574ef89d6bf14f1"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\recovery\\original\\inference_summary.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/recovery/original/inference_summary.json",
+      "bytes": 1275,
+      "sha256": "f9247da786a0acdaabe380cbb5fc2ea9ed164ec9f10d99cc223c007b87b401cb"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\recovery\\original\\predictions.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/recovery/original/predictions.jsonl",
+      "bytes": 965946,
+      "sha256": "d457d3458d4c00df8d5156cb3132501eb0f306ac6478bdfda9fabdc7b671a968"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\recovery\\original\\raw_responses.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/recovery/original/raw_responses.jsonl",
+      "bytes": 3714442,
+      "sha256": "d3955f9593bc1ed9e45434a556708f9698f09ed486ddf2a13986f97d9428fb57"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\retrieval.jsonl",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/retrieval.jsonl",
+      "bytes": 8148930,
+      "sha256": "bd7ce8c95e5a4af5d47723476fe91c1851a7250e93a8e2a10f7df40cf53325cf"
+    },
+    {
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\run_manifest.json",
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/run_manifest.json",
+      "bytes": 3603,
+      "sha256": "a587f4a8f91fdae5bd8c553fa6bd61d529366cd499d90f6cf6481ebb1fd5a2c8"
+    }
+  ],
+  "excluded_from_git_over_100MiB": []
+}

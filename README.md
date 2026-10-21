@@ -14,3 +14,7 @@ Xem kiem_tra_raw_prompt_limits.md về context/node/edge. Tất cả prompt <=8.
 Các file run được copy nguyên byte; manifest/freeze có thể chứa đường dẫn tuyệt đối của máy nguồn. Không chỉnh chúng để giữ bằng chứng gốc. Bảng Markdown/JSON ở thư mục gốc dùng đường dẫn tương đối; provenance chứa bảng gốc và tài liệu đối soát. Chưa phục hồi snapshot contract lịch sử đúng hash; không đưa contract 24.000 byte hiện tại vào thay thế.
 
 copy_manifest.json ghi nguồn, kích thước và SHA-256 của từng file đã copy. Các file nguồn không được move hoặc sửa. Không kèm API key, .env, model weights hay cache nặng. Đây là bộ artifact để xem và đối soát, không phải môi trường tái chạy toàn pipeline.
+
+## H3 bổ sung — không thuộc bộ 36 run context8192
+
+- [H3: validation 8192 / test 24000](additional_runs/H3-BenchmarkEnsemble/validation8192_test24000_20261021/README.md). Snapshot trộn model, giữ đúng context thực tế; không gộp vào thống kê 36 run lịch sử.
