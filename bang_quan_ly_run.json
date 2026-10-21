@@ -58,7 +58,88 @@
     "limitations": [
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reproduced-Code-Based/devign/test",
+      "prediction_path": "runs/Reproduced-Code-Based/devign/test/evaluation/predictions.jsonl",
+      "prediction_sha256": "852e312e57fef60ebf8f67e921ff3de49f291b2b8bd2fcae057a257dac7119e9",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 344,
+          "tn": 1152,
+          "fp": 325,
+          "fn": 911
+        },
+        "accuracy_valid": 0.5475841874084919,
+        "precision": 0.5142002989536621,
+        "recall": 0.27410358565737053,
+        "f1": 0.3575883575883576,
+        "balanced_accuracy": 0.5270314813865729,
+        "mcc": 0.06265406885667975,
+        "predicted_vulnerable_rate_valid": 0.24487554904831627,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.08821376281112736,
+            "precision": 0.0548298743562976,
+            "recall": -0.7258964143426294,
+            "f1": -0.271957666991527,
+            "mcc": 0.06265406885667975,
+            "balanced_accuracy": 0.027031481386572853
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.006954612005856453,
+            "precision": 0.5142002989536621,
+            "recall": 0.27410358565737053,
+            "f1": 0.3575883575883576,
+            "mcc": 0.06265406885667975,
+            "balanced_accuracy": 0.027031481386572853
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reproduced-Code-Based/reveal/test",
@@ -119,7 +200,88 @@
     "limitations": [
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reproduced-Code-Based/reveal/test",
+      "prediction_path": "runs/Reproduced-Code-Based/reveal/test/evaluation/predictions.jsonl",
+      "prediction_sha256": "7ff0fcb32372de842242eec4d7c31c8021197a1014cde3f9457b328a301e0803",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 32,
+          "tn": 1798,
+          "fp": 246,
+          "fn": 198
+        },
+        "accuracy_valid": 0.8047493403693932,
+        "precision": 0.11510791366906475,
+        "recall": 0.1391304347826087,
+        "f1": 0.12598425196850394,
+        "balanced_accuracy": 0.5093890921466859,
+        "mcc": 0.017284439241879623,
+        "predicted_vulnerable_rate_valid": 0.12225153913808268,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7036059806508356,
+            "precision": 0.01396455395050715,
+            "recall": -0.8608695652173913,
+            "f1": -0.057721818319036,
+            "mcc": 0.017284439241879623,
+            "balanced_accuracy": 0.009389092146685929
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09410729991204925,
+            "precision": 0.11510791366906475,
+            "recall": 0.1391304347826087,
+            "f1": 0.12598425196850394,
+            "mcc": 0.017284439241879623,
+            "balanced_accuracy": 0.009389092146685929
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reproduced-Paper-Based/devign/test",
@@ -180,7 +342,88 @@
     "limitations": [
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reproduced-Paper-Based/devign/test",
+      "prediction_path": "runs/Reproduced-Paper-Based/devign/test/evaluation/predictions.jsonl",
+      "prediction_sha256": "77ffeb65444846fd4108ff7dfc2a6445db47a20251052798667c924c4ffec220",
+      "valid_record_ids_sha256": "2707080b1403cdd0598b4307437b24a560fba652a3876ed31ea9e77fc8656527",
+      "n_non_vulnerable_valid": 1474,
+      "n_vulnerable_valid": 1245,
+      "metrics": {
+        "n": 2719,
+        "confusion_matrix": {
+          "tp": 335,
+          "tn": 1163,
+          "fp": 311,
+          "fn": 910
+        },
+        "accuracy_valid": 0.5509378447958808,
+        "precision": 0.5185758513931888,
+        "recall": 0.26907630522088355,
+        "f1": 0.35430988894764676,
+        "balanced_accuracy": 0.5290429015928027,
+        "mcc": 0.06799664837425894,
+        "predicted_vulnerable_rate_valid": 0.23758734828981243,
+        "n_responses": 2732,
+        "n_valid": 2719,
+        "n_invalid": 13,
+        "invalid_rate": 0.004758418740849195,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9952415812591509,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2719,
+          "confusion_matrix": {
+            "tp": 1245,
+            "tn": 0,
+            "fp": 1474,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45788892975358586,
+          "precision": 0.45788892975358586,
+          "recall": 1.0,
+          "f1": 0.6281533804238143,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2719,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1474,
+            "fp": 0,
+            "fn": 1245
+          },
+          "accuracy_valid": 0.5421110702464141,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09304891504229496,
+            "precision": 0.060686921639602986,
+            "recall": -0.7309236947791165,
+            "f1": -0.27384349147616754,
+            "mcc": 0.06799664837425894,
+            "balanced_accuracy": 0.02904290159280265
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.008826774549466676,
+            "precision": 0.5185758513931888,
+            "recall": 0.26907630522088355,
+            "f1": 0.35430988894764676,
+            "mcc": 0.06799664837425894,
+            "balanced_accuracy": 0.02904290159280265
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reproduced-Paper-Based/reveal/test",
@@ -241,7 +484,88 @@
     "limitations": [
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reproduced-Paper-Based/reveal/test",
+      "prediction_path": "runs/Reproduced-Paper-Based/reveal/test/evaluation/predictions.jsonl",
+      "prediction_sha256": "385795e692e7f880aa7a46db84555a93d44ce9c5f525102ed519f163fa60dd24",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 28,
+          "tn": 1793,
+          "fp": 251,
+          "fn": 202
+        },
+        "accuracy_valid": 0.8007915567282322,
+        "precision": 0.1003584229390681,
+        "recall": 0.12173913043478261,
+        "f1": 0.1100196463654224,
+        "balanced_accuracy": 0.4994703479962563,
+        "mcc": -0.00097353468104962,
+        "predicted_vulnerable_rate_valid": 0.12269129287598944,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.6996481970096746,
+            "precision": -0.0007849367794895007,
+            "recall": -0.8782608695652174,
+            "f1": -0.07368642392211754,
+            "mcc": -0.00097353468104962,
+            "balanced_accuracy": -0.0005296520037437191
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.0980650835532102,
+            "precision": 0.1003584229390681,
+            "recall": 0.12173913043478261,
+            "f1": 0.1100196463654224,
+            "mcc": -0.00097353468104962,
+            "balanced_accuracy": -0.0005296520037437191
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Full-cai-tien/test_v2",
@@ -304,7 +628,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Full-cai-tien/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Full-cai-tien/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "d553428dd2cec575f45500f15465dd64f22b32127dca5c11d95ff23fa8406b43",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 362,
+          "tn": 1144,
+          "fp": 333,
+          "fn": 893
+        },
+        "accuracy_valid": 0.5512445095168375,
+        "precision": 0.520863309352518,
+        "recall": 0.28844621513944224,
+        "f1": 0.3712820512820513,
+        "balanced_accuracy": 0.5314946038459567,
+        "mcc": 0.07207594403499726,
+        "predicted_vulnerable_rate_valid": 0.2543923865300146,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09187408491947291,
+            "precision": 0.061492884755153465,
+            "recall": -0.7115537848605578,
+            "f1": -0.25826397329783335,
+            "mcc": 0.07207594403499726,
+            "balanced_accuracy": 0.031494603845956703
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.010614934114202002,
+            "precision": 0.520863309352518,
+            "recall": 0.28844621513944224,
+            "f1": 0.3712820512820513,
+            "mcc": 0.07207594403499726,
+            "balanced_accuracy": 0.031494603845956703
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Grace-baseline/test_v2",
@@ -359,7 +764,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Grace-baseline/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Grace-baseline/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "fedb9aa377b06dc28f3023ef25793bb4cdf3a5e0a8a6856cdb6b019a63c7cd5b",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 354,
+          "tn": 1149,
+          "fp": 328,
+          "fn": 901
+        },
+        "accuracy_valid": 0.5501464128843339,
+        "precision": 0.5190615835777126,
+        "recall": 0.28207171314741036,
+        "f1": 0.36551368094992254,
+        "balanced_accuracy": 0.5299999730259733,
+        "mcc": 0.06908660518371869,
+        "predicted_vulnerable_rate_valid": 0.24963396778916544,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09077598828696931,
+            "precision": 0.05969115898034805,
+            "recall": -0.7179282868525896,
+            "f1": -0.2640323436299621,
+            "mcc": 0.06908660518371869,
+            "balanced_accuracy": 0.029999973025973348
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.009516837481698404,
+            "precision": 0.5190615835777126,
+            "recall": 0.28207171314741036,
+            "f1": 0.36551368094992254,
+            "mcc": 0.06908660518371869,
+            "balanced_accuracy": 0.029999973025973348
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C1-hybrid-retrieval/test_v2",
@@ -421,7 +907,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C1-hybrid-retrieval/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "cbfbdd41189c1f8b0b5f3c5c5f8d58cea600fe0b0c37f775f4e69c4e8adac4f3",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 359,
+          "tn": 1143,
+          "fp": 334,
+          "fn": 896
+        },
+        "accuracy_valid": 0.5497803806734992,
+        "precision": 0.5180375180375181,
+        "recall": 0.2860557768924303,
+        "f1": 0.36858316221765913,
+        "balanced_accuracy": 0.5299608606872442,
+        "mcc": 0.06863113184986333,
+        "predicted_vulnerable_rate_valid": 0.25366032210834555,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09040995607613467,
+            "precision": 0.05866709344015353,
+            "recall": -0.7139442231075697,
+            "f1": -0.2609628623622255,
+            "mcc": 0.06863113184986333,
+            "balanced_accuracy": 0.02996086068724424
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.00915080527086376,
+            "precision": 0.5180375180375181,
+            "recall": 0.2860557768924303,
+            "f1": 0.36858316221765913,
+            "mcc": 0.06863113184986333,
+            "balanced_accuracy": 0.02996086068724424
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C2-stratified-demo-selection/test_v2",
@@ -483,7 +1050,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "5963e2ded7c8343dbaceca45898ebf85bae654515f5521f5de51b30bac42d669",
+      "valid_record_ids_sha256": "2761a3e082c15f786498f08c63144dc93ecd0266af831953e9c21950ec9c6a1f",
+      "n_non_vulnerable_valid": 1473,
+      "n_vulnerable_valid": 1253,
+      "metrics": {
+        "n": 2726,
+        "confusion_matrix": {
+          "tp": 334,
+          "tn": 1145,
+          "fp": 328,
+          "fn": 919
+        },
+        "accuracy_valid": 0.5425531914893617,
+        "precision": 0.5045317220543807,
+        "recall": 0.266560255387071,
+        "f1": 0.3488250652741514,
+        "balanced_accuracy": 0.5219427210404466,
+        "mcc": 0.05100509318064982,
+        "predicted_vulnerable_rate_valid": 0.24284666177549524,
+        "n_responses": 2732,
+        "n_valid": 2726,
+        "n_invalid": 6,
+        "invalid_rate": 0.0021961932650073207,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9978038067349927,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2726,
+          "confusion_matrix": {
+            "tp": 1253,
+            "tn": 0,
+            "fp": 1473,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45964783565663975,
+          "precision": 0.45964783565663975,
+          "recall": 1.0,
+          "f1": 0.6298064840412164,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2726,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1473,
+            "fp": 0,
+            "fn": 1253
+          },
+          "accuracy_valid": 0.5403521643433602,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.0829053558327219,
+            "precision": 0.044883886397740935,
+            "recall": -0.733439744612929,
+            "f1": -0.280981418767065,
+            "mcc": 0.05100509318064982,
+            "balanced_accuracy": 0.02194272104044659
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.002201027146001455,
+            "precision": 0.5045317220543807,
+            "recall": 0.266560255387071,
+            "f1": 0.3488250652741514,
+            "mcc": 0.05100509318064982,
+            "balanced_accuracy": 0.02194272104044659
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
@@ -545,7 +1193,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "bb560c0324ebb92b7c6abd337d4861034ce4335d15cc0427a09cfb0c251d8656",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 302,
+          "tn": 1209,
+          "fp": 268,
+          "fn": 953
+        },
+        "accuracy_valid": 0.5530746705710102,
+        "precision": 0.5298245614035088,
+        "recall": 0.24063745019920318,
+        "f1": 0.33095890410958906,
+        "balanced_accuracy": 0.5295942836642596,
+        "mcc": 0.07259131534470012,
+        "predicted_vulnerable_rate_valid": 0.20863836017569545,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09370424597364568,
+            "precision": 0.07045413680614421,
+            "recall": -0.7593625498007968,
+            "f1": -0.29858712047029556,
+            "mcc": 0.07259131534470012,
+            "balanced_accuracy": 0.029594283664259646
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.012445095168374776,
+            "precision": 0.5298245614035088,
+            "recall": 0.24063745019920318,
+            "f1": 0.33095890410958906,
+            "mcc": 0.07259131534470012,
+            "balanced_accuracy": 0.029594283664259646
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C5-graph-verbalization/test_v2",
@@ -607,7 +1336,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C5-graph-verbalization/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "15c41dd15c902804f7906a8c652108ea4f7f2e34361f18a151eed157b81336a1",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 363,
+          "tn": 1159,
+          "fp": 318,
+          "fn": 892
+        },
+        "accuracy_valid": 0.5571010248901903,
+        "precision": 0.5330396475770925,
+        "recall": 0.2892430278884462,
+        "f1": 0.375,
+        "balanced_accuracy": 0.5369708707485562,
+        "mcc": 0.08518152273519244,
+        "predicted_vulnerable_rate_valid": 0.2492679355783309,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09773060029282576,
+            "precision": 0.073669222979728,
+            "recall": -0.7107569721115539,
+            "f1": -0.2545460245798846,
+            "mcc": 0.08518152273519244,
+            "balanced_accuracy": 0.036970870748556206
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.016471449487554857,
+            "precision": 0.5330396475770925,
+            "recall": 0.2892430278884462,
+            "f1": 0.375,
+            "mcc": 0.08518152273519244,
+            "balanced_accuracy": 0.036970870748556206
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C6-graph-slicing/test_v2",
@@ -669,7 +1479,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C6-graph-slicing/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C6-graph-slicing/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "f86095c8714e2fc70fe15fd97d37df4560609f8c6533e75e7254acb9554e039c",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 273,
+          "tn": 1232,
+          "fp": 245,
+          "fn": 982
+        },
+        "accuracy_valid": 0.5508784773060029,
+        "precision": 0.527027027027027,
+        "recall": 0.21752988047808766,
+        "f1": 0.3079526226734349,
+        "balanced_accuracy": 0.5258265516134514,
+        "mcc": 0.06566815894633943,
+        "predicted_vulnerable_rate_valid": 0.18960468521229867,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09150805270863838,
+            "precision": 0.06765660242966243,
+            "recall": -0.7824701195219124,
+            "f1": -0.32159340190644975,
+            "mcc": 0.06566815894633943,
+            "balanced_accuracy": 0.025826551613451376
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.010248901903367469,
+            "precision": 0.527027027027027,
+            "recall": 0.21752988047808766,
+            "f1": 0.3079526226734349,
+            "mcc": 0.06566815894633943,
+            "balanced_accuracy": 0.025826551613451376
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C7-security-cot/test_v2",
@@ -731,7 +1622,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C7-security-cot/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C7-security-cot/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "5dd5f99f999e544def80be49fcbfd236d7f8ddb394dec01e01edf3aa1096c977",
+      "valid_record_ids_sha256": "87c9d9c4f8125ede81b4527b44c67a7a342c9bcc2ff79689b35c32eb69dc30b0",
+      "n_non_vulnerable_valid": 1476,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2731,
+        "confusion_matrix": {
+          "tp": 395,
+          "tn": 1114,
+          "fp": 362,
+          "fn": 860
+        },
+        "accuracy_valid": 0.5525448553643354,
+        "precision": 0.5217965653896962,
+        "recall": 0.3147410358565737,
+        "f1": 0.3926441351888668,
+        "balanced_accuracy": 0.534741791641024,
+        "mcc": 0.07736165191681046,
+        "predicted_vulnerable_rate_valid": 0.2771878432808495,
+        "n_responses": 2732,
+        "n_valid": 2731,
+        "n_invalid": 1,
+        "invalid_rate": 0.00036603221083455345,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9996339677891655,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2731,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1476,
+            "fn": 0
+          },
+          "accuracy_valid": 0.4595386305382644,
+          "precision": 0.4595386305382644,
+          "recall": 1.0,
+          "f1": 0.6297039638735574,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2731,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1476,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5404613694617356,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09300622482607102,
+            "precision": 0.06225793485143183,
+            "recall": -0.6852589641434264,
+            "f1": -0.2370598286846906,
+            "mcc": 0.07736165191681046,
+            "balanced_accuracy": 0.03474179164102398
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.012083485902599778,
+            "precision": 0.5217965653896962,
+            "recall": 0.3147410358565737,
+            "f1": 0.3926441351888668,
+            "mcc": 0.07736165191681046,
+            "balanced_accuracy": 0.03474179164102398
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/No-C8-mmr-demo-selection/test_v2",
@@ -793,7 +1765,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "prediction_path": "runs/Devign/Ablations/No-C8-mmr-demo-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "d56b46bd59ba345a5e174b16b5842286c53cfecea8fc85e9e188bd9981ebef05",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 364,
+          "tn": 1136,
+          "fp": 341,
+          "fn": 891
+        },
+        "accuracy_valid": 0.5490483162518301,
+        "precision": 0.5163120567375886,
+        "recall": 0.2900398406374502,
+        "f1": 0.37142857142857144,
+        "balanced_accuracy": 0.5295832243133087,
+        "mcc": 0.06738545729314367,
+        "predicted_vulnerable_rate_valid": 0.25805270863836016,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.0896778916544656,
+            "precision": 0.056941632140224074,
+            "recall": -0.7099601593625497,
+            "f1": -0.2581174531513132,
+            "mcc": 0.06738545729314367,
+            "balanced_accuracy": 0.02958322431330873
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.008418740849194695,
+            "precision": 0.5163120567375886,
+            "recall": 0.2900398406374502,
+            "f1": 0.37142857142857144,
+            "mcc": 0.06738545729314367,
+            "balanced_accuracy": 0.02958322431330873
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
@@ -850,7 +1903,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "0e99e7ea4caa0890f0abd758581031e565fdd7953e11e06226fba81d9731f0f0",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 368,
+          "tn": 1129,
+          "fp": 348,
+          "fn": 887
+        },
+        "accuracy_valid": 0.5479502196193266,
+        "precision": 0.5139664804469274,
+        "recall": 0.2932270916334661,
+        "f1": 0.37341451040081175,
+        "balanced_accuracy": 0.5288071815648712,
+        "mcc": 0.06528916300599857,
+        "predicted_vulnerable_rate_valid": 0.26207906295754024,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.088579795021962,
+            "precision": 0.05459605584956284,
+            "recall": -0.706772908366534,
+            "f1": -0.25613151417907287,
+            "mcc": 0.06528916300599857,
+            "balanced_accuracy": 0.028807181564871165
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.007320644216691097,
+            "precision": 0.5139664804469274,
+            "recall": 0.2932270916334661,
+            "f1": 0.37341451040081175,
+            "mcc": 0.06528916300599857,
+            "balanced_accuracy": 0.028807181564871165
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C2-stratified-demos/test_v2",
@@ -907,7 +2041,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C2-stratified-demos/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C2-stratified-demos/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "6acbf039a9cc69594c2feec6c3da594b91d0e51ada6cfb6768b3b1615dfbd046",
+      "valid_record_ids_sha256": "2d135f0d120bd03a4297283abe1826e0a6c8ea2756ffd54a27978566d46b4585",
+      "n_non_vulnerable_valid": 1476,
+      "n_vulnerable_valid": 1252,
+      "metrics": {
+        "n": 2728,
+        "confusion_matrix": {
+          "tp": 399,
+          "tn": 1147,
+          "fp": 329,
+          "fn": 853
+        },
+        "accuracy_valid": 0.5667155425219942,
+        "precision": 0.5480769230769231,
+        "recall": 0.31869009584664537,
+        "f1": 0.403030303030303,
+        "balanced_accuracy": 0.5478951834246777,
+        "mcc": 0.10791616219062984,
+        "predicted_vulnerable_rate_valid": 0.2668621700879765,
+        "n_responses": 2732,
+        "n_valid": 2728,
+        "n_invalid": 4,
+        "invalid_rate": 0.0014641288433382138,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9985358711566618,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2728,
+          "confusion_matrix": {
+            "tp": 1252,
+            "tn": 0,
+            "fp": 1476,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45894428152492667,
+          "precision": 0.45894428152492667,
+          "recall": 1.0,
+          "f1": 0.629145728643216,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2728,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1476,
+            "fp": 0,
+            "fn": 1252
+          },
+          "accuracy_valid": 0.5410557184750733,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.10777126099706752,
+            "precision": 0.08913264155199646,
+            "recall": -0.6813099041533546,
+            "f1": -0.22611542561291303,
+            "mcc": 0.10791616219062984,
+            "balanced_accuracy": 0.04789518342467769
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.02565982404692091,
+            "precision": 0.5480769230769231,
+            "recall": 0.31869009584664537,
+            "f1": 0.403030303030303,
+            "mcc": 0.10791616219062984,
+            "balanced_accuracy": 0.04789518342467769
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C3-gepa-prompt/test_v2",
@@ -964,7 +2179,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C3-gepa-prompt/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "27a83de8697192bf9fae6116bed8332009d7264e891bf44f3d6246392da79820",
+      "valid_record_ids_sha256": "993936c2fc53cd86e779399c6b41c5f60201976f2fef94f036026a00fc20b73b",
+      "n_non_vulnerable_valid": 1408,
+      "n_vulnerable_valid": 1195,
+      "metrics": {
+        "n": 2603,
+        "confusion_matrix": {
+          "tp": 273,
+          "tn": 1156,
+          "fp": 252,
+          "fn": 922
+        },
+        "accuracy_valid": 0.5489819439108721,
+        "precision": 0.52,
+        "recall": 0.22845188284518828,
+        "f1": 0.3174418604651163,
+        "balanced_accuracy": 0.5247373050589578,
+        "mcc": 0.06144198489112519,
+        "predicted_vulnerable_rate_valid": 0.20169035728006146,
+        "n_responses": 2732,
+        "n_valid": 2603,
+        "n_invalid": 129,
+        "invalid_rate": 0.047218155197657395,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9527818448023426,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2603,
+          "confusion_matrix": {
+            "tp": 1195,
+            "tn": 0,
+            "fp": 1408,
+            "fn": 0
+          },
+          "accuracy_valid": 0.4590856703803304,
+          "precision": 0.4590856703803304,
+          "recall": 1.0,
+          "f1": 0.6292785676671933,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2603,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1408,
+            "fp": 0,
+            "fn": 1195
+          },
+          "accuracy_valid": 0.5409143296196696,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.08989627353054169,
+            "precision": 0.06091432961966964,
+            "recall": -0.7715481171548118,
+            "f1": -0.31183670720207696,
+            "mcc": 0.06144198489112519,
+            "balanced_accuracy": 0.02473730505895777
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.008067614291202507,
+            "precision": 0.52,
+            "recall": 0.22845188284518828,
+            "f1": 0.3174418604651163,
+            "mcc": 0.06144198489112519,
+            "balanced_accuracy": 0.02473730505895777
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C5-graph-verbalization/test_v2",
@@ -1021,7 +2317,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "f6aa5d4474611444530d735993d16d4e1a880cc5fd02e8bfa47303113c2cfefd",
+      "valid_record_ids_sha256": "4269b0bfeb8c19010d88f4d8b2e18daa08ca4096910f7c68c2a2fe8c86e3b5df",
+      "n_non_vulnerable_valid": 1217,
+      "n_vulnerable_valid": 1050,
+      "metrics": {
+        "n": 2267,
+        "confusion_matrix": {
+          "tp": 251,
+          "tn": 978,
+          "fp": 239,
+          "fn": 799
+        },
+        "accuracy_valid": 0.5421261579179533,
+        "precision": 0.5122448979591837,
+        "recall": 0.23904761904761904,
+        "f1": 0.32597402597402597,
+        "balanced_accuracy": 0.5213315334350667,
+        "mcc": 0.051683302479551774,
+        "predicted_vulnerable_rate_valid": 0.2161446846052051,
+        "n_responses": 2732,
+        "n_valid": 2267,
+        "n_invalid": 465,
+        "invalid_rate": 0.17020497803806736,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.8297950219619327,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2267,
+          "confusion_matrix": {
+            "tp": 1050,
+            "tn": 0,
+            "fp": 1217,
+            "fn": 0
+          },
+          "accuracy_valid": 0.4631671812968681,
+          "precision": 0.4631671812968681,
+          "recall": 1.0,
+          "f1": 0.6331022007838408,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2267,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1217,
+            "fp": 0,
+            "fn": 1050
+          },
+          "accuracy_valid": 0.5368328187031319,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.07895897662108514,
+            "precision": 0.049077716662315585,
+            "recall": -0.7609523809523809,
+            "f1": -0.30712817480981486,
+            "mcc": 0.051683302479551774,
+            "balanced_accuracy": 0.021331533435066663
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.005293339214821335,
+            "precision": 0.5122448979591837,
+            "recall": 0.23904761904761904,
+            "f1": 0.32597402597402597,
+            "mcc": 0.051683302479551774,
+            "balanced_accuracy": 0.021331533435066663
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C6-graph-slicing/test_v2",
@@ -1078,7 +2455,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C6-graph-slicing/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C6-graph-slicing/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "16ab5e39de8e4ff73fc4a96d33f2ddbbbc320acf0c2f29c716f72b8cf425c4cd",
+      "valid_record_ids_sha256": "eadaff81a2c6e8c54b322bc5a02a419e02acbf7c35ec8cc37a2f51084353c2d4",
+      "n_non_vulnerable_valid": 1476,
+      "n_vulnerable_valid": 1254,
+      "metrics": {
+        "n": 2730,
+        "confusion_matrix": {
+          "tp": 410,
+          "tn": 1071,
+          "fp": 405,
+          "fn": 844
+        },
+        "accuracy_valid": 0.5424908424908425,
+        "precision": 0.5030674846625767,
+        "recall": 0.3269537480063796,
+        "f1": 0.39632672788786855,
+        "balanced_accuracy": 0.5262817520519703,
+        "mcc": 0.057241771127956906,
+        "predicted_vulnerable_rate_valid": 0.29853479853479853,
+        "n_responses": 2732,
+        "n_valid": 2730,
+        "n_invalid": 2,
+        "invalid_rate": 0.0007320644216691069,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9992679355783309,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2730,
+          "confusion_matrix": {
+            "tp": 1254,
+            "tn": 0,
+            "fp": 1476,
+            "fn": 0
+          },
+          "accuracy_valid": 0.4593406593406593,
+          "precision": 0.4593406593406593,
+          "recall": 1.0,
+          "f1": 0.6295180722891566,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2730,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1476,
+            "fp": 0,
+            "fn": 1254
+          },
+          "accuracy_valid": 0.5406593406593406,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.08315018315018313,
+            "precision": 0.04372682532191735,
+            "recall": -0.6730462519936204,
+            "f1": -0.23319134440128803,
+            "mcc": 0.057241771127956906,
+            "balanced_accuracy": 0.026281752051970253
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.001831501831501825,
+            "precision": 0.5030674846625767,
+            "recall": 0.3269537480063796,
+            "f1": 0.39632672788786855,
+            "mcc": 0.057241771127956906,
+            "balanced_accuracy": 0.026281752051970253
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C7-security-cot/test_v2",
@@ -1135,7 +2593,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C7-security-cot/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C7-security-cot/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "6bd785183331e4150c94b3db77e84781c353c16569556ce3825d38e2d8a33d87",
+      "valid_record_ids_sha256": "d3983767ceeab9aeb716b13365f6b7b50a29fba7ca95a38336593e1db4f5acd7",
+      "n_non_vulnerable_valid": 1412,
+      "n_vulnerable_valid": 1215,
+      "metrics": {
+        "n": 2627,
+        "confusion_matrix": {
+          "tp": 166,
+          "tn": 1268,
+          "fp": 144,
+          "fn": 1049
+        },
+        "accuracy_valid": 0.5458698134754473,
+        "precision": 0.535483870967742,
+        "recall": 0.13662551440329218,
+        "f1": 0.21770491803278688,
+        "balanced_accuracy": 0.5173212557852155,
+        "mcc": 0.05353909110474394,
+        "predicted_vulnerable_rate_valid": 0.1180053292729349,
+        "n_responses": 2732,
+        "n_valid": 2627,
+        "n_invalid": 105,
+        "invalid_rate": 0.03843338213762811,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9615666178623719,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2627,
+          "confusion_matrix": {
+            "tp": 1215,
+            "tn": 0,
+            "fp": 1412,
+            "fn": 0
+          },
+          "accuracy_valid": 0.4625047582794062,
+          "precision": 0.4625047582794062,
+          "recall": 1.0,
+          "f1": 0.6324830817282665,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2627,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1412,
+            "fp": 0,
+            "fn": 1215
+          },
+          "accuracy_valid": 0.5374952417205938,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.0833650551960411,
+            "precision": 0.07297911268833579,
+            "recall": -0.8633744855967078,
+            "f1": -0.4147781636954796,
+            "mcc": 0.05353909110474394,
+            "balanced_accuracy": 0.017321255785215484
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.008374571754853455,
+            "precision": 0.535483870967742,
+            "recall": 0.13662551440329218,
+            "f1": 0.21770491803278688,
+            "mcc": 0.05353909110474394,
+            "balanced_accuracy": 0.017321255785215484
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
@@ -1221,6 +2760,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "prediction_path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "d7dac1b7b495824bc6030f2f0dab985a89fbcc2211c2ce5022e4022056cb967b",
+      "valid_record_ids_sha256": "160b9845cceaed60a9480adb7206e3a5022912397743a70873b82500bb50e8ff",
+      "n_non_vulnerable_valid": 1477,
+      "n_vulnerable_valid": 1255,
+      "metrics": {
+        "n": 2732,
+        "confusion_matrix": {
+          "tp": 213,
+          "tn": 1303,
+          "fp": 174,
+          "fn": 1042
+        },
+        "accuracy_valid": 0.554904831625183,
+        "precision": 0.5503875968992248,
+        "recall": 0.1697211155378486,
+        "f1": 0.25943970767356883,
+        "balanced_accuracy": 0.5259573756429934,
+        "mcc": 0.07419522945481057,
+        "predicted_vulnerable_rate_valid": 0.14165446559297218,
+        "n_responses": 2732,
+        "n_valid": 2732,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 1255,
+            "tn": 0,
+            "fp": 1477,
+            "fn": 0
+          },
+          "accuracy_valid": 0.45937042459736455,
+          "precision": 0.45937042459736455,
+          "recall": 1.0,
+          "f1": 0.6295460245798846,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2732,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1477,
+            "fp": 0,
+            "fn": 1255
+          },
+          "accuracy_valid": 0.5406295754026355,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.09553440702781846,
+            "precision": 0.09101717230186024,
+            "recall": -0.8302788844621514,
+            "f1": -0.3701063169063158,
+            "mcc": 0.07419522945481057,
+            "balanced_accuracy": 0.025957375642993386
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": 0.01427525622254755,
+            "precision": 0.5503875968992248,
+            "recall": 0.1697211155378486,
+            "f1": 0.25943970767356883,
+            "mcc": 0.07419522945481057,
+            "balanced_accuracy": 0.025957375642993386
+          }
+        }
+      }
     }
   },
   {
@@ -1284,7 +2904,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Full-cai-tien/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Full-cai-tien/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "3185a035f83b97bfa582a01a0898722c3ff44fb63f35b766680a21ef4a76e475",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 41,
+          "tn": 1794,
+          "fp": 250,
+          "fn": 189
+        },
+        "accuracy_valid": 0.806948109058927,
+        "precision": 0.140893470790378,
+        "recall": 0.1782608695652174,
+        "f1": 0.15738963531669867,
+        "balanced_accuracy": 0.527975835956777,
+        "mcc": 0.05050211663003475,
+        "predicted_vulnerable_rate_valid": 0.1279683377308707,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7058047493403694,
+            "precision": 0.0397501110718204,
+            "recall": -0.8217391304347826,
+            "f1": -0.026316434970841268,
+            "mcc": 0.05050211663003475,
+            "balanced_accuracy": 0.027975835956776995
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09190853122251541,
+            "precision": 0.140893470790378,
+            "recall": 0.1782608695652174,
+            "f1": 0.15738963531669867,
+            "mcc": 0.05050211663003475,
+            "balanced_accuracy": 0.027975835956776995
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Grace-baseline/test_v2",
@@ -1339,7 +3040,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Grace-baseline/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Grace-baseline/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "9d4b475bb9d39b938cc01fac7d3a28e1697a8fce2e102d078f1fe1e272d1a710",
+      "valid_record_ids_sha256": "7889fa6426141aef1861cad421b2f22c5882bf70e0ea372b0e5f8c8196c73b14",
+      "n_non_vulnerable_valid": 2000,
+      "n_vulnerable_valid": 224,
+      "metrics": {
+        "n": 2224,
+        "confusion_matrix": {
+          "tp": 33,
+          "tn": 1755,
+          "fp": 245,
+          "fn": 191
+        },
+        "accuracy_valid": 0.8039568345323741,
+        "precision": 0.11870503597122302,
+        "recall": 0.14732142857142858,
+        "f1": 0.13147410358565736,
+        "balanced_accuracy": 0.5124107142857143,
+        "mcc": 0.02258769757263128,
+        "predicted_vulnerable_rate_valid": 0.125,
+        "n_responses": 2274,
+        "n_valid": 2224,
+        "n_invalid": 50,
+        "invalid_rate": 0.02198768689533861,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9780123131046614,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2224,
+          "confusion_matrix": {
+            "tp": 224,
+            "tn": 0,
+            "fp": 2000,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10071942446043165,
+          "precision": 0.10071942446043165,
+          "recall": 1.0,
+          "f1": 0.1830065359477124,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2224,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2000,
+            "fp": 0,
+            "fn": 224
+          },
+          "accuracy_valid": 0.8992805755395683,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7032374100719424,
+            "precision": 0.017985611510791366,
+            "recall": -0.8526785714285714,
+            "f1": -0.05153243236205504,
+            "mcc": 0.02258769757263128,
+            "balanced_accuracy": 0.012410714285714275
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09532374100719421,
+            "precision": 0.11870503597122302,
+            "recall": 0.14732142857142858,
+            "f1": 0.13147410358565736,
+            "mcc": 0.02258769757263128,
+            "balanced_accuracy": 0.012410714285714275
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C1-hybrid-retrieval/test_v2",
@@ -1401,7 +3183,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C1-hybrid-retrieval/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C1-hybrid-retrieval/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "1a9319e193b5d41be94a984c2b58bfc74423b7d8cd0eecf038b06ddbde9ca0ce",
+      "valid_record_ids_sha256": "5a022241e99eb03c65dfd033bc2ead95c148444ed1adc944706ebd07242480fb",
+      "n_non_vulnerable_valid": 1917,
+      "n_vulnerable_valid": 211,
+      "metrics": {
+        "n": 2128,
+        "confusion_matrix": {
+          "tp": 34,
+          "tn": 1694,
+          "fp": 223,
+          "fn": 177
+        },
+        "accuracy_valid": 0.8120300751879699,
+        "precision": 0.13229571984435798,
+        "recall": 0.16113744075829384,
+        "f1": 0.1452991452991453,
+        "balanced_accuracy": 0.5224049227787295,
+        "mcc": 0.041098150268610995,
+        "predicted_vulnerable_rate_valid": 0.12077067669172932,
+        "n_responses": 2274,
+        "n_valid": 2128,
+        "n_invalid": 146,
+        "invalid_rate": 0.06420404573438875,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9357959542656112,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2128,
+          "confusion_matrix": {
+            "tp": 211,
+            "tn": 0,
+            "fp": 1917,
+            "fn": 0
+          },
+          "accuracy_valid": 0.09915413533834587,
+          "precision": 0.09915413533834587,
+          "recall": 1.0,
+          "f1": 0.18041898247114152,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2128,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1917,
+            "fp": 0,
+            "fn": 211
+          },
+          "accuracy_valid": 0.9008458646616542,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.712875939849624,
+            "precision": 0.03314158450601211,
+            "recall": -0.8388625592417062,
+            "f1": -0.03511983717199621,
+            "mcc": 0.041098150268610995,
+            "balanced_accuracy": 0.02240492277872952
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.08881578947368429,
+            "precision": 0.13229571984435798,
+            "recall": 0.16113744075829384,
+            "f1": 0.1452991452991453,
+            "mcc": 0.041098150268610995,
+            "balanced_accuracy": 0.02240492277872952
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
@@ -1492,6 +3355,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "f5fc3436be276089c996d6d506b47cf9448a6756f2adba55a87fa0a92de567e7",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 21,
+          "tn": 1849,
+          "fp": 195,
+          "fn": 209
+        },
+        "accuracy_valid": 0.8223394898856641,
+        "precision": 0.09722222222222222,
+        "recall": 0.09130434782608696,
+        "f1": 0.09417040358744394,
+        "balanced_accuracy": 0.4979515868288948,
+        "mcc": -0.004213105731536658,
+        "predicted_vulnerable_rate_valid": 0.09498680738786279,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7211961301671065,
+            "precision": -0.003921137496335381,
+            "recall": -0.908695652173913,
+            "f1": -0.089535666700096,
+            "mcc": -0.004213105731536658,
+            "balanced_accuracy": -0.0020484131711052123
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.07651715039577833,
+            "precision": 0.09722222222222222,
+            "recall": 0.09130434782608696,
+            "f1": 0.09417040358744394,
+            "mcc": -0.004213105731536658,
+            "balanced_accuracy": -0.0020484131711052123
+          }
+        }
+      }
     }
   },
   {
@@ -1583,6 +3527,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "4e9b33d3767a71132f897f40df0413f64a6823b370a34ddf1a254f9ae66b2b91",
+      "valid_record_ids_sha256": "ef8ecf4de1ad525319d61e2f373712d5257cada73814229fb3edb21350c0d2c6",
+      "n_non_vulnerable_valid": 2043,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2273,
+        "confusion_matrix": {
+          "tp": 22,
+          "tn": 1925,
+          "fp": 118,
+          "fn": 208
+        },
+        "accuracy_valid": 0.8565772107347118,
+        "precision": 0.15714285714285714,
+        "recall": 0.09565217391304348,
+        "f1": 0.11891891891891893,
+        "balanced_accuracy": 0.5189469875928409,
+        "mcc": 0.04753448818837279,
+        "predicted_vulnerable_rate_valid": 0.06159260888693357,
+        "n_responses": 2274,
+        "n_valid": 2273,
+        "n_invalid": 1,
+        "invalid_rate": 0.00043975373790677223,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9995602462620933,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2043,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10118785745710515,
+          "precision": 0.10118785745710515,
+          "recall": 1.0,
+          "f1": 0.18377946464242909,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2043,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988121425428949,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7553893532776067,
+            "precision": 0.05595499968575199,
+            "recall": -0.9043478260869565,
+            "f1": -0.06486054572351016,
+            "mcc": 0.04753448818837279,
+            "balanced_accuracy": 0.018946987592840858
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.04223493180818305,
+            "precision": 0.15714285714285714,
+            "recall": 0.09565217391304348,
+            "f1": 0.11891891891891893,
+            "mcc": 0.04753448818837279,
+            "balanced_accuracy": 0.018946987592840858
+          }
+        }
+      }
     }
   },
   {
@@ -1674,6 +3699,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "2b4a3c776f62e850f63d09b687b4f4817acf88f2534b5cad955efc441ff9f80f",
+      "valid_record_ids_sha256": "a0c591e70850394eaae20bc3de9274b1a3fea3f3f97b81bf78d240b31e1ac876",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 229,
+      "metrics": {
+        "n": 2273,
+        "confusion_matrix": {
+          "tp": 23,
+          "tn": 1929,
+          "fp": 115,
+          "fn": 206
+        },
+        "accuracy_valid": 0.858776946766388,
+        "precision": 0.16666666666666666,
+        "recall": 0.10043668122270742,
+        "f1": 0.12534059945504086,
+        "balanced_accuracy": 0.5220872251514711,
+        "mcc": 0.05567892708501498,
+        "predicted_vulnerable_rate_valid": 0.06071271447426309,
+        "n_responses": 2274,
+        "n_valid": 2273,
+        "n_invalid": 1,
+        "invalid_rate": 0.00043975373790677223,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9995602462620933,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 229,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1007479102507699,
+          "precision": 0.1007479102507699,
+          "recall": 1.0,
+          "f1": 0.18305355715427657,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 229
+          },
+          "accuracy_valid": 0.8992520897492301,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7580290365156181,
+            "precision": 0.06591875641589676,
+            "recall": -0.8995633187772926,
+            "f1": -0.057712957699235706,
+            "mcc": 0.05567892708501498,
+            "balanced_accuracy": 0.0220872251514711
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.04047514298284205,
+            "precision": 0.16666666666666666,
+            "recall": 0.10043668122270742,
+            "f1": 0.12534059945504086,
+            "mcc": 0.05567892708501498,
+            "balanced_accuracy": 0.0220872251514711
+          }
+        }
+      }
     }
   },
   {
@@ -1736,7 +3842,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C6-graph-slicing/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C6-graph-slicing/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "3c7cd1cc1ba9d734910c98e1055e36531e8ff46dd87f48eef45275faf7fadb5f",
+      "valid_record_ids_sha256": "ecabf532b8ccfb4e0d7f35fc49398e5222bc432c3d34b1ae7171163d02bb4ae7",
+      "n_non_vulnerable_valid": 2043,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2273,
+        "confusion_matrix": {
+          "tp": 38,
+          "tn": 1850,
+          "fp": 193,
+          "fn": 192
+        },
+        "accuracy_valid": 0.8306203255609327,
+        "precision": 0.1645021645021645,
+        "recall": 0.16521739130434782,
+        "f1": 0.1648590021691974,
+        "balanced_accuracy": 0.5353742365234416,
+        "mcc": 0.07061245540893087,
+        "predicted_vulnerable_rate_valid": 0.10162780466344039,
+        "n_responses": 2274,
+        "n_valid": 2273,
+        "n_invalid": 1,
+        "invalid_rate": 0.00043975373790677223,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9995602462620933,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2043,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10118785745710515,
+          "precision": 0.10118785745710515,
+          "recall": 1.0,
+          "f1": 0.18377946464242909,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2273,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2043,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988121425428949,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7294324681038276,
+            "precision": 0.06331430704505936,
+            "recall": -0.8347826086956522,
+            "f1": -0.018920462473231675,
+            "mcc": 0.07061245540893087,
+            "balanced_accuracy": 0.03537423652344163
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.0681918169819622,
+            "precision": 0.1645021645021645,
+            "recall": 0.16521739130434782,
+            "f1": 0.1648590021691974,
+            "mcc": 0.07061245540893087,
+            "balanced_accuracy": 0.03537423652344163
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C7-security-cot/test_v2",
@@ -1798,7 +3985,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C7-security-cot/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C7-security-cot/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "ad2421c9a65269ea354eeba5313f215532c1c24c04826dea051e08742148fc63",
+      "valid_record_ids_sha256": "4bd8c0ee1a48cae9ec255fd3fe52d99479e92c508d7874d337926930efa28e10",
+      "n_non_vulnerable_valid": 2042,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2272,
+        "confusion_matrix": {
+          "tp": 44,
+          "tn": 1738,
+          "fp": 304,
+          "fn": 186
+        },
+        "accuracy_valid": 0.784330985915493,
+        "precision": 0.12643678160919541,
+        "recall": 0.19130434782608696,
+        "f1": 0.1522491349480969,
+        "balanced_accuracy": 0.521215347272495,
+        "mcc": 0.035536918953229996,
+        "predicted_vulnerable_rate_valid": 0.15316901408450703,
+        "n_responses": 2274,
+        "n_valid": 2272,
+        "n_invalid": 2,
+        "invalid_rate": 0.0008795074758135445,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9991204925241864,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2272,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2042,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10123239436619719,
+          "precision": 0.10123239436619719,
+          "recall": 1.0,
+          "f1": 0.1838529176658673,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2272,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2042,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8987676056338029,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.6830985915492958,
+            "precision": 0.025204387242998227,
+            "recall": -0.808695652173913,
+            "f1": -0.03160378271777042,
+            "mcc": 0.035536918953229996,
+            "balanced_accuracy": 0.021215347272494967
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.11443661971830987,
+            "precision": 0.12643678160919541,
+            "recall": 0.19130434782608696,
+            "f1": 0.1522491349480969,
+            "mcc": 0.035536918953229996,
+            "balanced_accuracy": 0.021215347272494967
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C8-mmr-demo-selection/test_v2",
@@ -1860,7 +4128,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/No-C8-mmr-demo-selection/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/No-C8-mmr-demo-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "e3cc7f287f8bdd90e70fd53fe7d0726b3c329d02b6f571a4be000601ee5fa9c9",
+      "valid_record_ids_sha256": "392edae9a8f7020948476fd4da41c05b4749287441f68d97a072616e64b210cd",
+      "n_non_vulnerable_valid": 1544,
+      "n_vulnerable_valid": 155,
+      "metrics": {
+        "n": 1699,
+        "confusion_matrix": {
+          "tp": 27,
+          "tn": 1350,
+          "fp": 194,
+          "fn": 128
+        },
+        "accuracy_valid": 0.8104767510300177,
+        "precision": 0.12217194570135746,
+        "recall": 0.17419354838709677,
+        "f1": 0.14361702127659576,
+        "balanced_accuracy": 0.5242729399966573,
+        "mcc": 0.04155358720657097,
+        "predicted_vulnerable_rate_valid": 0.13007651559741024,
+        "n_responses": 2274,
+        "n_valid": 1699,
+        "n_invalid": 575,
+        "invalid_rate": 0.25285839929639403,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.747141600703606,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 1699,
+          "confusion_matrix": {
+            "tp": 155,
+            "tn": 0,
+            "fp": 1544,
+            "fn": 0
+          },
+          "accuracy_valid": 0.09123013537374926,
+          "precision": 0.09123013537374926,
+          "recall": 1.0,
+          "f1": 0.16720604099244876,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 1699,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1544,
+            "fp": 0,
+            "fn": 155
+          },
+          "accuracy_valid": 0.9087698646262508,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7192466156562685,
+            "precision": 0.030941810327608205,
+            "recall": -0.8258064516129032,
+            "f1": -0.023589019715853005,
+            "mcc": 0.04155358720657097,
+            "balanced_accuracy": 0.02427293999665725
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09829311359623305,
+            "precision": 0.12217194570135746,
+            "recall": 0.17419354838709677,
+            "f1": 0.14361702127659576,
+            "mcc": 0.04155358720657097,
+            "balanced_accuracy": 0.02427293999665725
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
@@ -1946,6 +4295,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "c76a16b1b3d51a4e447378150ef148f712d8d77cd36608c7650b0dc0f64972eb",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 16,
+          "tn": 1886,
+          "fp": 158,
+          "fn": 214
+        },
+        "accuracy_valid": 0.8364116094986808,
+        "precision": 0.09195402298850575,
+        "recall": 0.06956521739130435,
+        "f1": 0.07920792079207921,
+        "balanced_accuracy": 0.49613290223772655,
+        "mcc": -0.00877273961724861,
+        "predicted_vulnerable_rate_valid": 0.07651715039577836,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7352682497801232,
+            "precision": -0.009189336730051859,
+            "recall": -0.9304347826086956,
+            "f1": -0.10449814949546073,
+            "mcc": -0.00877273961724861,
+            "balanced_accuracy": -0.0038670977622734526
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.062445030782761646,
+            "precision": 0.09195402298850575,
+            "recall": 0.06956521739130435,
+            "f1": 0.07920792079207921,
+            "mcc": -0.00877273961724861,
+            "balanced_accuracy": -0.0038670977622734526
+          }
+        }
+      }
     }
   },
   {
@@ -2003,7 +4433,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C2-stratified-demos/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C2-stratified-demos/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "0b1240f557bb7f5172119a29d87446810e280ff7f9acd3e77b282938d3332ef3",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 31,
+          "tn": 1880,
+          "fp": 164,
+          "fn": 199
+        },
+        "accuracy_valid": 0.8403693931398417,
+        "precision": 0.15897435897435896,
+        "recall": 0.13478260869565217,
+        "f1": 0.14588235294117646,
+        "balanced_accuracy": 0.5272738875180805,
+        "mcc": 0.05874039385211202,
+        "predicted_vulnerable_rate_valid": 0.08575197889182058,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7392260334212841,
+            "precision": 0.05783099925580136,
+            "recall": -0.8652173913043478,
+            "f1": -0.03782371734636347,
+            "mcc": 0.05874039385211202,
+            "balanced_accuracy": 0.027273887518080464
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.058487247141600696,
+            "precision": 0.15897435897435896,
+            "recall": 0.13478260869565217,
+            "f1": 0.14588235294117646,
+            "mcc": 0.05874039385211202,
+            "balanced_accuracy": 0.027273887518080464
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C3-gepa-prompt/test_v2",
@@ -2060,7 +4571,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C3-gepa-prompt/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C3-gepa-prompt/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "735b6b98dfd3eb15f2014b672c90a43be8fa868796e81992abf90e0052d9093c",
+      "valid_record_ids_sha256": "6249e67acb1056437d524de7199686f743d32b6e044eda5c40273efee6405e55",
+      "n_non_vulnerable_valid": 1714,
+      "n_vulnerable_valid": 191,
+      "metrics": {
+        "n": 1905,
+        "confusion_matrix": {
+          "tp": 36,
+          "tn": 1480,
+          "fp": 234,
+          "fn": 155
+        },
+        "accuracy_valid": 0.7958005249343832,
+        "precision": 0.13333333333333333,
+        "recall": 0.18848167539267016,
+        "f1": 0.1561822125813449,
+        "balanced_accuracy": 0.5259794608001858,
+        "mcc": 0.04474468557665549,
+        "predicted_vulnerable_rate_valid": 0.14173228346456693,
+        "n_responses": 2274,
+        "n_valid": 1905,
+        "n_invalid": 369,
+        "invalid_rate": 0.16226912928759896,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.837730870712401,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 1905,
+          "confusion_matrix": {
+            "tp": 191,
+            "tn": 0,
+            "fp": 1714,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10026246719160105,
+          "precision": 0.10026246719160105,
+          "recall": 1.0,
+          "f1": 0.18225190839694658,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 1905,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1714,
+            "fp": 0,
+            "fn": 191
+          },
+          "accuracy_valid": 0.899737532808399,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.6955380577427822,
+            "precision": 0.03307086614173228,
+            "recall": -0.8115183246073299,
+            "f1": -0.026069695815601673,
+            "mcc": 0.04474468557665549,
+            "balanced_accuracy": 0.02597946080018576
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.10393700787401572,
+            "precision": 0.13333333333333333,
+            "recall": 0.18848167539267016,
+            "f1": 0.1561822125813449,
+            "mcc": 0.04474468557665549,
+            "balanced_accuracy": 0.02597946080018576
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C5-graph-verbalization/test_v2",
@@ -2117,7 +4709,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C5-graph-verbalization/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "f11bc5ed4640722d84a8cbeb1eb20f9b605cc29754b92cf91a0cab4f9dd520da",
+      "valid_record_ids_sha256": "cde3c1a14fa8021b5b1d1d8a9e12ff1df6a51de61d9c54ba4d79b17f78a9c4d6",
+      "n_non_vulnerable_valid": 1878,
+      "n_vulnerable_valid": 214,
+      "metrics": {
+        "n": 2092,
+        "confusion_matrix": {
+          "tp": 31,
+          "tn": 1651,
+          "fp": 227,
+          "fn": 183
+        },
+        "accuracy_valid": 0.8040152963671128,
+        "precision": 0.12015503875968993,
+        "recall": 0.14485981308411214,
+        "f1": 0.13135593220338984,
+        "balanced_accuracy": 0.5119932718242712,
+        "mcc": 0.02210613585137969,
+        "predicted_vulnerable_rate_valid": 0.12332695984703633,
+        "n_responses": 2274,
+        "n_valid": 2092,
+        "n_invalid": 182,
+        "invalid_rate": 0.08003518029903255,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9199648197009674,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2092,
+          "confusion_matrix": {
+            "tp": 214,
+            "tn": 0,
+            "fp": 1878,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1022944550669216,
+          "precision": 0.1022944550669216,
+          "recall": 1.0,
+          "f1": 0.18560277536860365,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2092,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1878,
+            "fp": 0,
+            "fn": 214
+          },
+          "accuracy_valid": 0.8977055449330784,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7017208413001912,
+            "precision": 0.017860583692768328,
+            "recall": -0.8551401869158879,
+            "f1": -0.054246843165213804,
+            "mcc": 0.02210613585137969,
+            "balanced_accuracy": 0.011993271824271234
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09369024856596564,
+            "precision": 0.12015503875968993,
+            "recall": 0.14485981308411214,
+            "f1": 0.13135593220338984,
+            "mcc": 0.02210613585137969,
+            "balanced_accuracy": 0.011993271824271234
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C6-graph-slicing/test_v2",
@@ -2174,7 +4847,88 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C6-graph-slicing/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C6-graph-slicing/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "402b6d747912642ac2e95828a51d5c01ea491936cfd97d6d4fca1ed7b3e9c0a9",
+      "valid_record_ids_sha256": "a9607a5ff0859739650a47120d8c8b8cb24de64eb8b72ef6eea94bb9780bb1dd",
+      "n_non_vulnerable_valid": 1916,
+      "n_vulnerable_valid": 218,
+      "metrics": {
+        "n": 2134,
+        "confusion_matrix": {
+          "tp": 37,
+          "tn": 1605,
+          "fp": 311,
+          "fn": 181
+        },
+        "accuracy_valid": 0.7694470477975632,
+        "precision": 0.10632183908045977,
+        "recall": 0.16972477064220184,
+        "f1": 0.13074204946996468,
+        "balanced_accuracy": 0.5037037214380111,
+        "mcc": 0.006072450187216893,
+        "predicted_vulnerable_rate_valid": 0.16307403936269915,
+        "n_responses": 2274,
+        "n_valid": 2134,
+        "n_invalid": 140,
+        "invalid_rate": 0.06156552330694811,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.9384344766930519,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2134,
+          "confusion_matrix": {
+            "tp": 218,
+            "tn": 0,
+            "fp": 1916,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1021555763823805,
+          "precision": 0.1021555763823805,
+          "recall": 1.0,
+          "f1": 0.18537414965986396,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2134,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1916,
+            "fp": 0,
+            "fn": 218
+          },
+          "accuracy_valid": 0.8978444236176195,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.6672914714151827,
+            "precision": 0.004166262698079265,
+            "recall": -0.8302752293577982,
+            "f1": -0.05463210018989928,
+            "mcc": 0.006072450187216893,
+            "balanced_accuracy": 0.0037037214380111205
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.12839737582005628,
+            "precision": 0.10632183908045977,
+            "recall": 0.16972477064220184,
+            "f1": 0.13074204946996468,
+            "mcc": 0.006072450187216893,
+            "balanced_accuracy": 0.0037037214380111205
+          }
+        }
+      }
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
@@ -2260,6 +5014,87 @@
       "seed": 42,
       "temperature": 0,
       "thinking": false
+    },
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "2e5fbf3a9f351f78043a0ba994d1e0274ca275cab819b6ef82ac869b362b80b7",
+      "valid_record_ids_sha256": "9e87392efa2ab488759d67212deecebf2e057b8497fa23021c00a4bc0ee71add",
+      "n_non_vulnerable_valid": 2044,
+      "n_vulnerable_valid": 230,
+      "metrics": {
+        "n": 2274,
+        "confusion_matrix": {
+          "tp": 18,
+          "tn": 1970,
+          "fp": 74,
+          "fn": 212
+        },
+        "accuracy_valid": 0.8742304309586632,
+        "precision": 0.1956521739130435,
+        "recall": 0.0782608695652174,
+        "f1": 0.11180124223602485,
+        "balanced_accuracy": 0.5210286735301626,
+        "mcc": 0.06436132128834553,
+        "predicted_vulnerable_rate_valid": 0.040457343887423045,
+        "n_responses": 2274,
+        "n_valid": 2274,
+        "n_invalid": 0,
+        "invalid_rate": 0.0,
+        "metric_population": "valid_predictions_only",
+        "coverage": 1.0,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 230,
+            "tn": 0,
+            "fp": 2044,
+            "fn": 0
+          },
+          "accuracy_valid": 0.1011433597185576,
+          "precision": 0.1011433597185576,
+          "recall": 1.0,
+          "f1": 0.18370607028753994,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 2274,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 2044,
+            "fp": 0,
+            "fn": 230
+          },
+          "accuracy_valid": 0.8988566402814424,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.7730870712401056,
+            "precision": 0.09450881419448588,
+            "recall": -0.9217391304347826,
+            "f1": -0.07190482805151509,
+            "mcc": 0.06436132128834553,
+            "balanced_accuracy": 0.021028673530162578
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.024626209322779258,
+            "precision": 0.1956521739130435,
+            "recall": 0.0782608695652174,
+            "f1": 0.11180124223602485,
+            "mcc": 0.06436132128834553,
+            "balanced_accuracy": 0.021028673530162578
+          }
+        }
+      }
     }
   },
   {
@@ -2317,6 +5152,87 @@
       "Missing execution commit; do not substitute baseline or current commit",
       "Provider declared, not independently recorded per response",
       "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+    ],
+    "benchmark": {
+      "run_id": "Reveal/Ablations/Plus-C8-mmr-selection/test_v2",
+      "prediction_path": "runs/Reveal/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/predictions.jsonl",
+      "prediction_sha256": "1b8982f7a5eb24c13f9afcdcfce3dcc80a322e708c5196b606dcc5fa0fbc2100",
+      "valid_record_ids_sha256": "2c53ac456a3b965548090a90563f26fb376bd9597ebf979512c59b5fc12c4aac",
+      "n_non_vulnerable_valid": 1331,
+      "n_vulnerable_valid": 148,
+      "metrics": {
+        "n": 1479,
+        "confusion_matrix": {
+          "tp": 22,
+          "tn": 1172,
+          "fp": 159,
+          "fn": 126
+        },
+        "accuracy_valid": 0.8073022312373225,
+        "precision": 0.12154696132596685,
+        "recall": 0.14864864864864866,
+        "f1": 0.1337386018237082,
+        "balanced_accuracy": 0.5145947976526489,
+        "mcc": 0.026728299285102144,
+        "predicted_vulnerable_rate_valid": 0.12237998647734956,
+        "n_responses": 2274,
+        "n_valid": 1479,
+        "n_invalid": 795,
+        "invalid_rate": 0.3496042216358839,
+        "metric_population": "valid_predictions_only",
+        "coverage": 0.6503957783641161,
+        "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null",
+        "always_vulnerable": {
+          "n": 1479,
+          "confusion_matrix": {
+            "tp": 148,
+            "tn": 0,
+            "fp": 1331,
+            "fn": 0
+          },
+          "accuracy_valid": 0.10006761325219743,
+          "precision": 0.10006761325219743,
+          "recall": 1.0,
+          "f1": 0.1819299323909035,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 1.0
+        },
+        "always_non_vulnerable": {
+          "n": 1479,
+          "confusion_matrix": {
+            "tp": 0,
+            "tn": 1331,
+            "fp": 0,
+            "fn": 148
+          },
+          "accuracy_valid": 0.8999323867478025,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "mcc": 0.0,
+          "predicted_vulnerable_rate_valid": 0.0
+        },
+        "delta_vs_trivial_baselines": {
+          "always_vulnerable": {
+            "accuracy_valid": 0.707234617985125,
+            "precision": 0.021479348073769416,
+            "recall": -0.8513513513513513,
+            "f1": -0.048191330567195295,
+            "mcc": 0.026728299285102144,
+            "balanced_accuracy": 0.014594797652648928
+          },
+          "always_non_vulnerable": {
+            "accuracy_valid": -0.09263015551048004,
+            "precision": 0.12154696132596685,
+            "recall": 0.14864864864864866,
+            "f1": 0.1337386018237082,
+            "mcc": 0.026728299285102144,
+            "balanced_accuracy": 0.014594797652648928
+          }
+        }
+      }
+    }
   }
 ]

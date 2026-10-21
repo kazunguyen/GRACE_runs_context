@@ -1608,7 +1608,9 @@
     "provenance/invalid_rerun_context8192_20261021/Rerun_Invalid_Over40_Context8192.ipynb",
     "provenance/invalid_rerun_context8192_20261021/standard_evaluator.py",
     "provenance/invalid_rerun_context8192_20261021/summary.json",
-    "provenance/invalid_rerun_context8192_20261021/sync_verification.json"
+    "provenance/invalid_rerun_context8192_20261021/sync_verification.json",
+    "provenance/benchmark_metrics_20261021.json",
+    "tools/update_run_benchmark_metrics.py"
   ],
   "verification": "Six rerun artifact sets match original C files by SHA256; all fourteen-thousand-one-hundred-two merged records checked for exact IDs, predictions, prompt SHA256/8192-byte bound, and preservation of previously valid rows. Other copied artifacts retain their existing inventory.",
   "updated_on": "2026-10-21",
@@ -1621,5 +1623,11 @@
     "context_bytes": 8192,
     "mixed_backbone": true,
     "summary": "provenance/invalid_rerun_context8192_20261021/summary.json"
+  },
+  "benchmark_update": {
+    "generated_on": "2026-10-21",
+    "summary": "provenance/benchmark_metrics_20261021.json",
+    "script": "tools/update_run_benchmark_metrics.py",
+    "run_artifacts_modified": false
   }
 }
