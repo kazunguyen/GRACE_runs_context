@@ -125,17 +125,17 @@ def main():
                 derived.append({'project':name,'dataset':s['dataset'],'split':'test','arm':arm,'metrics':s[arm],
                                 'report':str(p.relative_to(pub.SHARE)), 'algorithmic_call_saving':s.get('algorithmic_call_saving')})
     obj={'schema':'grace_improvement_run_ledger_v1','updated':'2026-10-21','llm_runs':entries,'derived_arms':derived,
-         'prepared_only':prepared,'missing_raw':missing,'h2':'Running; origin configured only, no working files or artifacts copied/committed.',
+         'prepared_only':prepared,'missing_raw':missing,'h2':read(pub.SHARE/pub.DEST/'publication_manifest.json')['h2']['publication_update_20261021'],
          'scope':'Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement.'}
     pub.dump(pub.SHARE/'bang_quan_ly_run_cai_tien.json',obj)
     md=['# Bảng quản lý run cải tiến H1, H2, H3','',
         'Cập nhật: **21/10/2026**. Bảng riêng cho các cải tiến; không cộng vào 36 run trong `bang_quan_ly_run.md`.', '',
-        'H2 đang chạy: chỉ cấu hình origin; repository hiện chưa có commit, nên chưa có gì để push. Không snapshot/commit file H2 đang chạy.', '',
+        "H2 đã công bố mã nguồn và bốn notebook trên nhánh `main`, commit [`4a23088`](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/commit/4a230882b265b8d86c306f0aacdaa00f497ca6e7). Xem [full pipeline](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb), [bản Ubuntu](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb), [Kaggle accelerator](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb) và [Kaggle CPU](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb). Việc công bố code không đồng nghĩa đã hoàn tất benchmark H2; dữ liệu và runtime đang chạy được giữ nguyên trên máy.", '',
         '## Repository và nhánh','',
         '| Project | Origin | Nhánh lưu kết quả |',
         '|---|---|---|',
         '| H1 | [GRACE-H1-SecurityProjection](https://github.com/kazunguyen/GRACE-H1-SecurityProjection) | `projection-v2-local-metric`; cả `main`, `devign`, `reveal` cũng đã push |',
-        '| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main` chưa có commit; chỉ add origin |',
+        '| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main`; code và notebook đã push (`4a23088`) |',
         '| H3 Cascade | [GRACE-H3-CalibratedCascade](https://github.com/kazunguyen/GRACE-H3-CalibratedCascade) | `main` |',
         '| H3 Ensemble | [GRACE-H3-BenchmarkEnsembled](https://github.com/kazunguyen/GRACE-H3-BenchmarkEnsembled) | `feat/h3-v2-benchmark` |', '',
         '## Quy ước','',
@@ -173,7 +173,7 @@ def main():
            '- H3 ensemble chọn `gate_tuned` cho cả hai tập. Test DeepSeek gần như dự đoán toàn 0; chưa thể dùng baseline này để khẳng định ensemble cải thiện một GRACE hoạt động bình thường.',
            '- Baseline các project là adaptation với masked-mean và syntax atomic-token cost 2; không gọi là baseline Code-Based chuẩn hóa theo tài liệu so sánh.',
            '- Historical 24k được bảo tồn; kết quả chính hiện tại là test8192. Validation meta dùng cohort độc lập đủ điều kiện, không bằng toàn official validation.', '',
-           '## Kiểm kê artifact','',f'- Có **{len(entries)}** bộ run có prediction + inference summary, **{len(derived)}** dòng nhánh H3 và **{len(prepared)}** preparation chưa có inference.',
+           '## Kiểm kê artifact','',f'- Có **{len(entries)}** bộ run có prediction + inference summary, **{len(derived)}** dòng nhánh H3 và **{len(prepared)}** preparation chưa có inference trong snapshot H1/H3; số này không bao gồm H2.',
            f"- Số bộ run còn thiếu raw gốc khớp prediction khi tổng hợp: **{len(missing)}**, tổng **{sum(e['missing_raw_rows'] for e in missing)}** response lịch sử. Cache hiện có vẫn được lưu nguyên; không dùng câu trả lời khác để điền vào. Chi tiết trong JSON.",
            '- Snapshot manifest của từng project ghi đường dẫn nguồn, SHA-256, byte size và commit nguồn.',
            '- [JSON quản lý run](bang_quan_ly_run_cai_tien.json).', '']

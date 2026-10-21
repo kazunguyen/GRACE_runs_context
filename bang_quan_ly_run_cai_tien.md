@@ -2,14 +2,14 @@
 
 Cập nhật: **21/10/2026**. Bảng riêng cho các cải tiến; không cộng vào 36 run trong `bang_quan_ly_run.md`.
 
-H2 đang chạy: chỉ cấu hình origin; repository hiện chưa có commit, nên chưa có gì để push. Không snapshot/commit file H2 đang chạy.
+H2 đã công bố mã nguồn và bốn notebook trên nhánh `main`, commit [`4a23088`](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/commit/4a230882b265b8d86c306f0aacdaa00f497ca6e7). Xem [full pipeline](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb), [bản Ubuntu](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb), [Kaggle accelerator](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb) và [Kaggle CPU](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb). Việc công bố code không đồng nghĩa đã hoàn tất benchmark H2; dữ liệu và runtime đang chạy được giữ nguyên trên máy.
 
 ## Repository và nhánh
 
 | Project | Origin | Nhánh lưu kết quả |
 |---|---|---|
 | H1 | [GRACE-H1-SecurityProjection](https://github.com/kazunguyen/GRACE-H1-SecurityProjection) | `projection-v2-local-metric`; cả `main`, `devign`, `reveal` cũng đã push |
-| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main` chưa có commit; chỉ add origin |
+| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main`; code và notebook đã push (`4a23088`) |
 | H3 Cascade | [GRACE-H3-CalibratedCascade](https://github.com/kazunguyen/GRACE-H3-CalibratedCascade) | `main` |
 | H3 Ensemble | [GRACE-H3-BenchmarkEnsembled](https://github.com/kazunguyen/GRACE-H3-BenchmarkEnsembled) | `feat/h3-v2-benchmark` |
 
@@ -125,7 +125,7 @@ Các nhánh dưới dùng chung raw của expert: không phải mỗi dòng là 
 
 ## Kiểm kê artifact
 
-- Có **14** bộ run có prediction + inference summary, **67** dòng nhánh H3 và **0** preparation chưa có inference.
+- Có **14** bộ run có prediction + inference summary, **67** dòng nhánh H3 và **0** preparation chưa có inference trong snapshot H1/H3; số này không bao gồm H2.
 - Số bộ run còn thiếu raw gốc khớp prediction khi tổng hợp: **2**, tổng **81** response lịch sử. Cache hiện có vẫn được lưu nguyên; không dùng câu trả lời khác để điền vào. Chi tiết trong JSON.
 - Snapshot manifest của từng project ghi đường dẫn nguồn, SHA-256, byte size và commit nguồn.
 - [JSON quản lý run](bang_quan_ly_run_cai_tien.json).

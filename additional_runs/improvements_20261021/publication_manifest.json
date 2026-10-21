@@ -30,12 +30,31 @@
       "snapshot_files": 34004,
       "snapshot_bytes": 373046638,
       "generated_files": 13,
-      "generated_bytes": 17477876
+      "generated_bytes": 17477876,
+      "additional_published_commits": [
+        "4dc310ff6edb5ccda78c8d5123573536fc2fb874",
+        "7bf7e517d4fcda7e8addfc9117e00694b4b35636"
+      ]
     }
   },
   "h2": {
     "origin": "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence.git",
-    "action": "origin only; no existing commits to push; working files untouched"
+    "action": "origin only; no existing commits to push; working files untouched",
+    "publication_update_20261021": {
+      "status": "source_and_notebooks_published_benchmark_not_complete",
+      "origin": "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence.git",
+      "branch": "main",
+      "code_commit": "d80f71f349a30e6f5aa7c0ab753038661bfaa1c2",
+      "published_commit": "4a230882b265b8d86c306f0aacdaa00f497ca6e7",
+      "notebooks": [
+        "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb",
+        "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb",
+        "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb",
+        "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb"
+      ],
+      "runtime_and_results_untouched": true,
+      "credential_policy": "API keys removed from committed notebook blobs; local notebooks retained"
+    }
   },
   "archived_original_plus_generated_files": 48679,
   "archived_original_plus_generated_bytes": 762155565,

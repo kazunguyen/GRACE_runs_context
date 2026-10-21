@@ -35,7 +35,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -87,7 +87,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -139,7 +139,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -191,7 +191,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -243,7 +243,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -295,7 +295,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -347,7 +347,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -399,7 +399,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
         "provider": "Vertex AI"
@@ -431,9 +431,9 @@
         "n": 2732,
         "valid_n": 2732,
         "invalid_n": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
         "accuracy_all": 0.5402635431918009,
         "balanced_accuracy": 0.4996614759647935,
         "mcc": -0.017638870232703798,
@@ -452,7 +452,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "DeepSeek-V4-Flash",
         "provider": "FPT AI Factory"
@@ -505,7 +505,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "DeepSeek-V4-Flash",
         "provider": "FPT AI Factory"
@@ -559,7 +559,7 @@
               "parser_contract": "exact_last_line_binary_v1",
               "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
               "seed": 42,
-              "temperature": 0.0
+              "temperature": 0
             },
             "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
             "provider": "Vertex AI"
@@ -572,7 +572,7 @@
               "parser_contract": "exact_last_line_binary_v1",
               "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
               "seed": 42,
-              "temperature": 0.0
+              "temperature": 0
             },
             "model": "DeepSeek-V4-Flash",
             "provider": "FPT AI Factory"
@@ -608,9 +608,9 @@
         "n": 2274,
         "valid_n": 2274,
         "invalid_n": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
         "accuracy_all": 0.8984168865435356,
         "balanced_accuracy": 0.4997553816046967,
         "mcc": -0.007035966360826184,
@@ -629,7 +629,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "DeepSeek-V4-Flash",
         "provider": "FPT AI Factory"
@@ -661,12 +661,12 @@
         "n": 2274,
         "valid_n": 2274,
         "invalid_n": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
         "accuracy_all": 0.8988566402814424,
         "balanced_accuracy": 0.5,
-        "mcc": 0.0,
+        "mcc": 0,
         "confusion_matrix_valid_only": {
           "tn": 2044,
           "fp": 0,
@@ -682,7 +682,7 @@
           "parser_contract": "exact_last_line_binary_v1",
           "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
           "seed": 42,
-          "temperature": 0.0
+          "temperature": 0
         },
         "model": "DeepSeek-V4-Flash",
         "provider": "FPT AI Factory"
@@ -736,7 +736,7 @@
               "parser_contract": "exact_last_line_binary_v1",
               "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
               "seed": 42,
-              "temperature": 0.0
+              "temperature": 0
             },
             "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
             "provider": "Vertex AI"
@@ -749,7 +749,7 @@
               "parser_contract": "exact_last_line_binary_v1",
               "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
               "seed": 42,
-              "temperature": 0.0
+              "temperature": 0
             },
             "model": "DeepSeek-V4-Flash",
             "provider": "FPT AI Factory"
@@ -795,7 +795,7 @@
         "f1": 0.6682227409136379,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3070477798586426,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -806,7 +806,7 @@
         "specificity": 0.4976303317535545,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -831,7 +831,7 @@
         "f1": 0.6684210526315789,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.30254032640664014,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -842,7 +842,7 @@
         "specificity": 0.47935003385240355,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -867,7 +867,7 @@
         "f1": 0.6646919431279621,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.26030684798869275,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -878,7 +878,7 @@
         "specificity": 0.32362897765741366,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -903,7 +903,7 @@
         "f1": 0.6108757062146892,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.20900812340541922,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -914,7 +914,7 @@
         "specificity": 0.5179417738659445,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -939,7 +939,7 @@
         "f1": 0.5560727888277613,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.22142107788540555,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -950,7 +950,7 @@
         "specificity": 0.6946513202437373,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -975,7 +975,7 @@
         "f1": 0.6042428675932698,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.21608105429659144,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -986,7 +986,7 @@
         "specificity": 0.5578876100203114,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1011,7 +1011,7 @@
         "f1": 0.45698924731182794,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.26017371037592163,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1022,7 +1022,7 @@
         "specificity": 0.8781313473256601,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1047,7 +1047,7 @@
         "f1": 0.6684456304202803,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3076826093057194,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1083,7 +1083,7 @@
         "f1": 0.6385011021307863,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.287391235245045,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1119,7 +1119,7 @@
         "f1": 0.0015885623510722795,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": -0.01608761746281662,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1130,7 +1130,7 @@
         "specificity": 0.997968855788761,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1155,7 +1155,7 @@
         "f1": 0.6031879194630873,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.29887477635551274,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1166,7 +1166,7 @@
         "specificity": 0.7224102911306702,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1191,7 +1191,7 @@
         "f1": 0.6682227409136379,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3070477798586426,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1202,7 +1202,7 @@
         "specificity": 0.4976303317535545,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1227,7 +1227,7 @@
         "f1": 0.5838454784899034,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2960308592635674,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1238,7 +1238,7 @@
         "specificity": 0.7576167907921463,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1263,7 +1263,7 @@
         "f1": 0.5610902255639098,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.30868143938877834,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1274,7 +1274,7 @@
         "specificity": 0.8131347325660122,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1299,7 +1299,7 @@
         "f1": 0.5790172642762285,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.29371023362298754,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1310,7 +1310,7 @@
         "specificity": 0.7630331753554502,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1335,7 +1335,7 @@
         "f1": 0.5408398707891094,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.26019131704064435,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1346,7 +1346,7 @@
         "specificity": 0.7792823290453622,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1371,7 +1371,7 @@
         "f1": 0.42592592592592593,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3555309335306958,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1382,7 +1382,7 @@
         "specificity": 0.9045988258317026,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1407,7 +1407,7 @@
         "f1": 0.42696629213483145,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.356790310204372,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1418,7 +1418,7 @@
         "specificity": 0.9070450097847358,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1443,7 +1443,7 @@
         "f1": 0.4340277777777778,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.365475493874175,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1454,7 +1454,7 @@
         "specificity": 0.8918786692759295,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1479,7 +1479,7 @@
         "f1": 0.3487179487179487,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.265581105210187,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1490,7 +1490,7 @@
         "specificity": 0.8762230919765166,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1515,7 +1515,7 @@
         "f1": 0.2057877813504823,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.18734237375430834,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1526,7 +1526,7 @@
         "specificity": 0.976027397260274,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1551,7 +1551,7 @@
         "f1": 0.3220892274211099,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2485372087057171,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1562,7 +1562,7 @@
         "specificity": 0.7353228962818004,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1587,7 +1587,7 @@
         "f1": 0.36421725239616615,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.28438888426591913,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1598,7 +1598,7 @@
         "specificity": 0.8620352250489237,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1623,7 +1623,7 @@
         "f1": 0.4277673545966229,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3577219864819417,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1659,7 +1659,7 @@
         "f1": 0.42424242424242425,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3537955845844319,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1692,21 +1692,21 @@
           "tn": 2043,
           "tp": 0
         },
-        "f1": 0.0,
+        "f1": 0,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": -0.007035966360826184,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
-        "precision": 0.0,
+        "precision": 0,
         "predicted_positive_rate_all": 0.00043975373790677223,
-        "recall": 0.0,
-        "recall_all_positives": 0.0,
+        "recall": 0,
+        "recall_all_positives": 0,
         "specificity": 0.9995107632093934,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1731,7 +1731,7 @@
         "f1": 0.23367697594501718,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2512162096518602,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1742,7 +1742,7 @@
         "specificity": 0.9867906066536204,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1767,7 +1767,7 @@
         "f1": 0.42696629213483145,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.356790310204372,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1778,7 +1778,7 @@
         "specificity": 0.9070450097847358,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1803,7 +1803,7 @@
         "f1": 0.42226487523992323,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3517523109712845,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1814,7 +1814,7 @@
         "specificity": 0.9114481409001957,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1839,7 +1839,7 @@
         "f1": 0.4282982791586999,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3585524779443584,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1850,7 +1850,7 @@
         "specificity": 0.9114481409001957,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1875,7 +1875,7 @@
         "f1": 0.39366515837104077,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.32884930855228217,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1886,7 +1886,7 @@
         "specificity": 0.9388454011741683,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1911,7 +1911,7 @@
         "f1": 0.34146341463414637,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2797967045253755,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -1922,7 +1922,7 @@
         "specificity": 0.9461839530332681,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1951,7 +1951,7 @@
         "f1": 0.6682227409136379,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3070477798586426,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -1962,7 +1962,7 @@
         "specificity": 0.4976303317535545,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -1991,7 +1991,7 @@
         "f1": 0.6684210526315789,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.30254032640664014,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2002,7 +2002,7 @@
         "specificity": 0.47935003385240355,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2031,7 +2031,7 @@
         "f1": 0.6646919431279621,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.26030684798869275,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2042,7 +2042,7 @@
         "specificity": 0.32362897765741366,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2071,7 +2071,7 @@
         "f1": 0.6108757062146892,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.20900812340541922,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2082,7 +2082,7 @@
         "specificity": 0.5179417738659445,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2111,7 +2111,7 @@
         "f1": 0.5560727888277613,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.22142107788540555,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2122,7 +2122,7 @@
         "specificity": 0.6946513202437373,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2151,7 +2151,7 @@
         "f1": 0.6042428675932698,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.21608105429659144,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2162,7 +2162,7 @@
         "specificity": 0.5578876100203114,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2191,7 +2191,7 @@
         "f1": 0.45698924731182794,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.26017371037592163,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2202,7 +2202,7 @@
         "specificity": 0.8781313473256601,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2231,7 +2231,7 @@
         "f1": 0.6684456304202803,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3076826093057194,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2271,7 +2271,7 @@
         "f1": 0.6385011021307863,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.287391235245045,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2308,21 +2308,21 @@
           "tn": 1476,
           "tp": 0
         },
-        "f1": 0.0,
+        "f1": 0,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": -0.017638870232703798,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
-        "precision": 0.0,
+        "precision": 0,
         "predicted_positive_rate_all": 0.00036603221083455345,
-        "recall": 0.0,
-        "recall_all_positives": 0.0,
+        "recall": 0,
+        "recall_all_positives": 0,
         "specificity": 0.999322951929587,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2351,7 +2351,7 @@
         "f1": 0.6031879194630873,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.29887477635551274,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2362,7 +2362,7 @@
         "specificity": 0.7224102911306702,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2391,7 +2391,7 @@
         "f1": 0.6682227409136379,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3070477798586426,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2402,7 +2402,7 @@
         "specificity": 0.4976303317535545,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2431,7 +2431,7 @@
         "f1": 0.5838454784899034,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2960308592635674,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2442,7 +2442,7 @@
         "specificity": 0.7576167907921463,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2471,7 +2471,7 @@
         "f1": 0.5613540197461213,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.30949914450494864,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2482,7 +2482,7 @@
         "specificity": 0.8138117806364252,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2511,7 +2511,7 @@
         "f1": 0.5790172642762285,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.29371023362298754,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2522,7 +2522,7 @@
         "specificity": 0.7630331753554502,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2551,7 +2551,7 @@
         "f1": 0.5404157043879908,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2602074504727202,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -2562,7 +2562,7 @@
         "specificity": 0.7799593771157752,
         "valid_n": 2732
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2591,7 +2591,7 @@
         "f1": 0.42592592592592593,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3555309335306958,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2602,7 +2602,7 @@
         "specificity": 0.9045988258317026,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2631,7 +2631,7 @@
         "f1": 0.42696629213483145,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.356790310204372,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2642,7 +2642,7 @@
         "specificity": 0.9070450097847358,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2671,7 +2671,7 @@
         "f1": 0.4340277777777778,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.365475493874175,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2682,7 +2682,7 @@
         "specificity": 0.8918786692759295,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2711,7 +2711,7 @@
         "f1": 0.3487179487179487,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.265581105210187,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2722,7 +2722,7 @@
         "specificity": 0.8762230919765166,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2751,7 +2751,7 @@
         "f1": 0.2057877813504823,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.18734237375430834,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2762,7 +2762,7 @@
         "specificity": 0.976027397260274,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2791,7 +2791,7 @@
         "f1": 0.3220892274211099,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2485372087057171,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2802,7 +2802,7 @@
         "specificity": 0.7353228962818004,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2831,7 +2831,7 @@
         "f1": 0.36421725239616615,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.28438888426591913,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2842,7 +2842,7 @@
         "specificity": 0.8620352250489237,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2871,7 +2871,7 @@
         "f1": 0.4277673545966229,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3577219864819417,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2911,7 +2911,7 @@
         "f1": 0.42424242424242425,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3537955845844319,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -2948,21 +2948,21 @@
           "tn": 2044,
           "tp": 0
         },
-        "f1": 0.0,
+        "f1": 0,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
-        "mcc": 0.0,
+        "invalid_rate": 0,
+        "mcc": 0,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
-        "precision": 0.0,
-        "predicted_positive_rate_all": 0.0,
-        "recall": 0.0,
-        "recall_all_positives": 0.0,
-        "specificity": 1.0,
+        "precision": 0,
+        "predicted_positive_rate_all": 0,
+        "recall": 0,
+        "recall_all_positives": 0,
+        "specificity": 1,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -2991,7 +2991,7 @@
         "f1": 0.23367697594501718,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2512162096518602,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3002,7 +3002,7 @@
         "specificity": 0.9867906066536204,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3031,7 +3031,7 @@
         "f1": 0.42696629213483145,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.356790310204372,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3042,7 +3042,7 @@
         "specificity": 0.9070450097847358,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3071,7 +3071,7 @@
         "f1": 0.42226487523992323,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3517523109712845,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3082,7 +3082,7 @@
         "specificity": 0.9114481409001957,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 0.0,
+      "algorithmic_expert_query_ratio": 0,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3111,7 +3111,7 @@
         "f1": 0.4282982791586999,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.3585524779443584,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3122,7 +3122,7 @@
         "specificity": 0.9114481409001957,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3151,7 +3151,7 @@
         "f1": 0.3945578231292517,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.33005618286185245,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3162,7 +3162,7 @@
         "specificity": 0.9393346379647749,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3191,7 +3191,7 @@
         "f1": 0.3422982885085575,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.2810579779794068,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2274,
@@ -3202,7 +3202,7 @@
         "specificity": 0.9466731898238747,
         "valid_n": 2274
       },
-      "algorithmic_expert_query_ratio": 1.0,
+      "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
       "benchmark_comparable": false
     },
@@ -3224,7 +3224,7 @@
         "f1": 0.35220779220779225,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.0533021842162209,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -3255,7 +3255,7 @@
         "f1": 0.35239085239085244,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.054113714006687776,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -3287,7 +3287,7 @@
         "f1": 0.5102611940298507,
         "invalid_n": 0,
         "invalid_positive_n": 0,
-        "invalid_rate": 0.0,
+        "invalid_rate": 0,
         "mcc": 0.217310127980652,
         "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
         "n": 2732,
@@ -3314,6 +3314,20 @@
       "missing_raw_rows": 69
     }
   ],
-  "h2": "Running; origin configured only, no working files or artifacts copied/committed.",
+  "h2": {
+    "status": "source_and_notebooks_published_benchmark_not_complete",
+    "origin": "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence.git",
+    "branch": "main",
+    "code_commit": "d80f71f349a30e6f5aa7c0ab753038661bfaa1c2",
+    "published_commit": "4a230882b265b8d86c306f0aacdaa00f497ca6e7",
+    "notebooks": [
+      "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb",
+      "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb",
+      "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb",
+      "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb"
+    ],
+    "runtime_and_results_untouched": true,
+    "credential_policy": "API keys removed from committed notebook blobs; local notebooks retained"
+  },
   "scope": "Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement."
 }
