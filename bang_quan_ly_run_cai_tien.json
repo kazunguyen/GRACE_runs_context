@@ -470,7 +470,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\1c092d22f44923fc\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\1c092d22f44923fc\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -523,7 +525,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\test\\baseline_whitening\\e9285c1120e0e904\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -594,7 +598,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\devign\\validation\\baseline_whitening\\f79c31718971e534\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: run trộn Qwen/DeepSeek; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -647,7 +653,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\76c6ad89a02deaa7\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -700,7 +708,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\ee956918e7b19785\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\test\\baseline_whitening\\ee956918e7b19785\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -771,7 +781,9 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\reveal\\validation\\baseline_whitening\\27ee63ea9ec23f93\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "KHÔNG DÙNG benchmark: run trộn Qwen/DeepSeek; chỉ lưu đối soát.",
+      "benchmark_use": "excluded"
     }
   ],
   "derived_arms": [
@@ -1061,7 +1073,9 @@
       },
       "algorithmic_expert_query_ratio": 0.0007320644216691069,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1097,7 +1111,9 @@
       },
       "algorithmic_expert_query_ratio": 0.1013909224011713,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1133,7 +1149,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1277,7 +1295,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1313,7 +1333,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1349,7 +1371,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1637,7 +1661,9 @@
       },
       "algorithmic_expert_query_ratio": 0.00043975373790677223,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1673,7 +1699,9 @@
       },
       "algorithmic_expert_query_ratio": 0.002638522427440633,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1709,7 +1737,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1853,7 +1883,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1889,7 +1921,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -1925,7 +1959,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\archive\\before_test_context8192_155a690b7ba95cb4\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2245,7 +2281,9 @@
       },
       "algorithmic_expert_query_ratio": 0.0007320644216691069,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2285,7 +2323,9 @@
       },
       "algorithmic_expert_query_ratio": 0.1013909224011713,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2325,7 +2365,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2485,7 +2527,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2525,7 +2569,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2565,7 +2611,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2885,7 +2933,9 @@
       },
       "algorithmic_expert_query_ratio": 0.00043975373790677223,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2925,7 +2975,9 @@
       },
       "algorithmic_expert_query_ratio": 0.002638522427440633,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -2965,7 +3017,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -3125,7 +3179,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -3165,7 +3221,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-BenchmarkEnsemble",
@@ -3205,7 +3263,9 @@
       },
       "algorithmic_expert_query_ratio": 1,
       "report": "additional_runs\\improvements_20261021\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\5fc21bd7cafff9846aff\\benchmark_summary.json",
-      "benchmark_comparable": false
+      "benchmark_comparable": false,
+      "note": "KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.",
+      "benchmark_use": "excluded"
     },
     {
       "project": "GRACE-H3-CalibratedCascade",
@@ -3330,5 +3390,6 @@
     "runtime_and_results_untouched": true,
     "credential_policy": "API keys removed from committed notebook blobs; local notebooks retained"
   },
-  "scope": "Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement."
+  "scope": "Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement.",
+  "benchmark_exclusion_policy": "Không dùng các run DeepSeek/FPT, run trộn Qwen/DeepSeek và kết quả phụ thuộc expert DeepSeek trong benchmark hoặc kết luận cải tiến GRACE; chỉ giữ để đối soát lịch sử."
 }

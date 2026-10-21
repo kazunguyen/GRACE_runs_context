@@ -35,7 +35,18 @@ def link(p, label):
 def notebook(root):
     return root/'notebooks/full-pipeline.ipynb'
 
+BENCHMARK_EXCLUSION_POLICY = "Không dùng các run DeepSeek/FPT, run trộn Qwen/DeepSeek và kết quả phụ thuộc expert DeepSeek trong benchmark hoặc kết luận cải tiến GRACE; chỉ giữ để đối soát lịch sử."
+
+def derived_note(entry):
+    if entry['project'] == 'GRACE-H3-BenchmarkEnsemble' and (entry.get('algorithmic_expert_query_ratio') or 0) > 0:
+        return 'KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.'
+    return '—'
+
 def run_note(entry):
+    if entry.get('mixed_model_recovery'):
+        return 'KHÔNG DÙNG benchmark: run trộn Qwen/DeepSeek; chỉ lưu đối soát.'
+    if 'deepseek' in str(entry.get('request_spec', {}).get('model', '')).lower():
+        return 'KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.'
     if entry['project'] == 'GRACE-H1-SecurityProjection' and entry['run'].endswith('/2d1845eabf62eb84'):
         return ('Gọi lại baseline `0779c879b6d11431` cho H1 V2: prompt giống hệt; '
                 '`force_fresh=True`; sau retry còn ' + str(entry['metrics']['invalid_n']) + ' invalid.')
@@ -111,6 +122,8 @@ def main():
                    'raw_unavailable_n':unavailable}
             if run_note(entry) != '—':
                 entry['note'] = run_note(entry)
+                if entry['note'].startswith('KHÔNG DÙNG'):
+                    entry['benchmark_use'] = 'excluded'
             entries.append(entry)
             print('RUN',name,ds,split,folder.name,'raw_missing',unavailable,flush=True)
     # Derived H3 arms share expert requests; do not count these as fresh LLM runs.
@@ -132,7 +145,11 @@ def main():
             if arm in s:
                 derived.append({'project':name,'dataset':s['dataset'],'split':'test','arm':arm,'metrics':s[arm],
                                 'report':str(p.relative_to(pub.SHARE)), 'algorithmic_call_saving':s.get('algorithmic_call_saving')})
-    obj={'schema':'grace_improvement_run_ledger_v1','updated':'2026-10-21','llm_runs':entries,'derived_arms':derived,
+    for entry in derived:
+        if derived_note(entry) != '—':
+            entry['note'] = derived_note(entry)
+            entry['benchmark_use'] = 'excluded'
+    obj={'benchmark_exclusion_policy':BENCHMARK_EXCLUSION_POLICY,'schema':'grace_improvement_run_ledger_v1','updated':'2026-10-21','llm_runs':entries,'derived_arms':derived,
          'prepared_only':prepared,'missing_raw':missing,'h2':read(pub.SHARE/pub.DEST/'publication_manifest.json')['h2']['publication_update_20261021'],
          'scope':'Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement.'}
     pub.dump(pub.SHARE/'bang_quan_ly_run_cai_tien.json',obj)
@@ -153,6 +170,7 @@ def main():
         '- P/R/F1/Accuracy/BA dưới đây là phần trăm; MCC từ -1 đến 1. Invalid không vào confusion matrix. JSON lưu đủ metric không làm tròn.',
         '- Raw được tổng hợp theo request key + prompt hash của prediction; thiếu raw sẽ ghi rõ, không thay bằng response của model khác.',
         '- Notebook commit/archive đã che API key điền trực tiếp. Bản gốc vẫn nằm ở project để resume; snapshot không chứa weights, embeddings, graph cache hoặc runtime.', '',
+        '**Quy ước sử dụng:** '+BENCHMARK_EXCLUSION_POLICY, '',
         '## Các run có inference','',
         '| Project / run | Dataset / split | Arm | N0 / N1 | Valid / invalid | Trạng thái | Model / context bytes | P / R / F1 (%) | MCC | Notebook | Prediction | Raw | Prompt | Manifest | Ghi chú |',
         '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
@@ -169,12 +187,12 @@ def main():
                                   *[link(pub.SHARE/p[k],lab)+(f" (thiếu {e['raw_unavailable_n']})" if k=='raw_responses' and e['raw_unavailable_n'] else '') for k,lab in [('notebook','notebook'),('predictions','prediction'),('raw_responses','raw'),('prompts','prompt'),('manifest','manifest')]], run_note(e)])+' |')
     md += ['', '## Kết quả các nhánh H3 trên test','',
            'Các nhánh dưới dùng chung raw của expert: không phải mỗi dòng là một lượt gọi LLM mới. Winner được khóa trên development, không chọn lại theo test. Tỷ lệ gọi của router là yêu cầu thuật toán giả định khi triển khai riêng, không phải tiết kiệm API thực tế của combined benchmark.', '',
-           '| Project / dataset | Profile | Arm | Chọn trước test | Accuracy (%) | P / R / F1 (%) | MCC | Báo cáo |',
-           '|---|---|---|---|---|---|---|---|']
+           '| Project / dataset | Profile | Arm | Chọn trước test | Accuracy (%) | P / R / F1 (%) | MCC | Báo cáo | Ghi chú |',
+           '|---|---|---|---|---|---|---|---|---|']
     for e in derived:
         m=e['metrics'];profile='historical test24k' if e.get('historical') else ('test8192' if 'Benchmark' in e['project'] else 'cascade8192')
         md.append('| '+' | '.join([e['project'].replace('GRACE-','')+' / '+e['dataset'],profile,e['arm'],'Có' if e.get('selected_before_test') else '—',f"{m['accuracy_all']*100:.2f}",
-                                  f"{m['precision']*100:.2f} / {m['recall']*100:.2f} / {m['f1']*100:.2f}",f"{m['mcc']:.4f}",link(pub.SHARE/e['report'],'evaluation')])+' |')
+                                  f"{m['precision']*100:.2f} / {m['recall']*100:.2f} / {m['f1']*100:.2f}",f"{m['mcc']:.4f}",link(pub.SHARE/e['report'],'evaluation'),derived_note(e)])+' |')
     md += ['', '## Diễn giải và phạm vi so sánh','',
            '- H1 có cả Devign lịch sử trong `archives/devign/2026-10-16` và ReVeal. Các run V2 còn request errors được giữ riêng.',
            '- H3 cascade Devign có full reference, cascade và gate-only. Cascade chỉ tiết kiệm thuật toán 6/2.732 query; mức tăng metric rất nhỏ.',
