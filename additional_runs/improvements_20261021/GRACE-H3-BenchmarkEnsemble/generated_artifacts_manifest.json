@@ -1,0 +1,71 @@
+{
+  "schema": "grace_generated_artifacts_v1",
+  "files": [
+    {
+      "path": "runs/devign/test/baseline_whitening/1c092d22f44923fc/ledger_metrics.json",
+      "bytes": 562,
+      "sha256": "de031a3a97ad689bc1a52b6239736820fecbfb7f93c8dc4995d339f87c2c53a2"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/1c092d22f44923fc/raw_responses_archive.jsonl",
+      "bytes": 3146766,
+      "sha256": "de0bf45b6e89e61e1d5f3d0be9fe1ad16997b1662d095e2ec7c22431ec2e7c86"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/ledger_metrics.json",
+      "bytes": 598,
+      "sha256": "554fdea9009dc8ffdb255b957b037bbd8cd90a371ba3d03cb6d5a7762889eaba"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/e9285c1120e0e904/raw_responses_archive.jsonl",
+      "bytes": 3205391,
+      "sha256": "3673d61dea07cc4e82832bb5de39486f3c2e490214f2767220e41bbe965e3c7b"
+    },
+    {
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/ledger_metrics.json",
+      "bytes": 609,
+      "sha256": "aaaeb41894d0e3c236a8a8e10692173af7369a4d5010751165cbc24a0063b92c"
+    },
+    {
+      "path": "runs/devign/validation/baseline_whitening/f79c31718971e534/raw_responses_archive.jsonl",
+      "bytes": 3185778,
+      "sha256": "57026e97033cd9edfdd2822ec9c27655c6e97ce486f65174842744c9aaaa10ed"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/ledger_metrics.json",
+      "bytes": 560,
+      "sha256": "e5c26d715396c220e3d5a6cc6c764707e8aafdc72caefb60a9602754513eded3"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/76c6ad89a02deaa7/raw_responses_archive.jsonl",
+      "bytes": 2711259,
+      "sha256": "53b480094a7680facc74a541cd3178499267b063f61faca01b59b2a4277df399"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/ee956918e7b19785/ledger_metrics.json",
+      "bytes": 527,
+      "sha256": "39935f724a4072f386f7625591b5d2cbdd4de55ef62550e169161f4faa99b83d"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/ee956918e7b19785/raw_responses_archive.jsonl",
+      "bytes": 2647068,
+      "sha256": "452173d2bc107ce6c80a8405cc1bba3d2ca6ddbbc94177263fb796c6e1005a39"
+    },
+    {
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/ledger_metrics.json",
+      "bytes": 591,
+      "sha256": "7307c5bbb686a8a8efe7d359651c1405b37f1a826d12a691ce6145eb984a8257"
+    },
+    {
+      "path": "runs/reveal/validation/baseline_whitening/27ee63ea9ec23f93/raw_responses_archive.jsonl",
+      "bytes": 2569019,
+      "sha256": "e42b5ccb63fbb410e833560fa18a3b60a3a5e8dbfce4329a2e81e996d4813c03"
+    },
+    {
+      "path": "exports/gemini-validation-recovery/manage.py",
+      "bytes": 9148,
+      "sha256": "078173a3e123a4387ce7c4971196019e0cad02ded323c7297605274d9e4e3546"
+    }
+  ],
+  "note": "Supplements original snapshot_manifest.json; raw can contain explicit historical-unavailable rows."
+}

@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "n": 2726,
+    "valid_n": 2726,
+    "invalid_n": 0,
+    "precision": 0.5067264573991032,
+    "recall": 0.2701195219123506,
+    "f1": 0.3523908523908524,
+    "accuracy_all": 0.5429200293470287,
+    "balanced_accuracy": 0.5228911681621576,
+    "mcc": 0.05302686426970639,
+    "confusion_matrix_valid_only": {
+      "tn": 1141,
+      "fp": 330,
+      "fn": 916,
+      "tp": 339
+    }
+  },
+  "source": "Recomputed offline from archived predictions and canonical source labels; invalid retained, excluded from binary confusion matrix.",
+  "n0": 1471,
+  "n1": 1255,
+  "raw_unavailable_n": 0
+}

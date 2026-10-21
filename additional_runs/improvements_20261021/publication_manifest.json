@@ -1,0 +1,46 @@
+{
+  "schema": "grace_improvement_publication_v1",
+  "created_local": "2026-10-21T11:50:43.066849",
+  "projects": {
+    "GRACE-H1-SecurityProjection": {
+      "origin": "https://github.com/kazunguyen/GRACE-H1-SecurityProjection.git",
+      "branch": "projection-v2-local-metric",
+      "published_commit": "b200d54c88c4e003a9a8fcf871b4790f605786fa",
+      "snapshot_source_commit": "2f0caab5b14276843ba52ea60fba0be8d98ddded",
+      "snapshot_files": 10712,
+      "snapshot_bytes": 224329505,
+      "generated_files": 12,
+      "generated_bytes": 16861163
+    },
+    "GRACE-H3-CalibratedCascade": {
+      "origin": "https://github.com/kazunguyen/GRACE-H3-CalibratedCascade.git",
+      "branch": "main",
+      "published_commit": "8618861f681ca0fb882ca157f7f440282b3756e5",
+      "snapshot_source_commit": "f2b5261f5565cd262527124004f21da6a88ee05a",
+      "snapshot_files": 3934,
+      "snapshot_bytes": 124267041,
+      "generated_files": 4,
+      "generated_bytes": 6173342
+    },
+    "GRACE-H3-BenchmarkEnsemble": {
+      "origin": "https://github.com/kazunguyen/GRACE-H3-BenchmarkEnsembled.git",
+      "branch": "feat/h3-v2-benchmark",
+      "published_commit": "3ca110cacd8c95ebe691ca96c4386d774fb0a060",
+      "snapshot_source_commit": "7366f963430daaa38633c40c97347a36fa7d991a",
+      "snapshot_files": 34004,
+      "snapshot_bytes": 373046638,
+      "generated_files": 13,
+      "generated_bytes": 17477876
+    }
+  },
+  "h2": {
+    "origin": "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence.git",
+    "action": "origin only; no existing commits to push; working files untouched"
+  },
+  "archived_original_plus_generated_files": 48679,
+  "archived_original_plus_generated_bytes": 762155565,
+  "run_ledger": "bang_quan_ly_run_cai_tien.md",
+  "raw_historical_unavailable_n": 81,
+  "original_36_run_ledger_changed": false,
+  "credential_policy": "Notebook API values redacted in archive and Git blobs only; local working notebook unchanged."
+}

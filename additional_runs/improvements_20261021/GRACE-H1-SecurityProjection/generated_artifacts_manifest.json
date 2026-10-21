@@ -1,0 +1,66 @@
+{
+  "schema": "grace_generated_artifacts_v1",
+  "files": [
+    {
+      "path": "archives/devign/2026-10-16/runs/devign/test/baseline_whitening/9afe3268729648c6/ledger_metrics.json",
+      "bytes": 608,
+      "sha256": "cb8b4c5fc23e7097d48c066fe848b43f21e48c88b82bb3855e25b62f34d5bb63"
+    },
+    {
+      "path": "archives/devign/2026-10-16/runs/devign/test/baseline_whitening/9afe3268729648c6/raw_responses_archive.jsonl",
+      "bytes": 3118613,
+      "sha256": "9968bfc2ca35b201fca16130a2cd94a848ca537579ff59303e62d97368abe40b"
+    },
+    {
+      "path": "archives/devign/2026-10-16/runs/devign/test/h1_supcon_hard/7c4a52705268af6f/ledger_metrics.json",
+      "bytes": 610,
+      "sha256": "2c3224397668f4abe2b9ddeafc9a6afe8e168328e74a2b90b226457a4c42974b"
+    },
+    {
+      "path": "archives/devign/2026-10-16/runs/devign/test/h1_supcon_hard/7c4a52705268af6f/raw_responses_archive.jsonl",
+      "bytes": 3097352,
+      "sha256": "3210cda8d4005df727fc5520ed893473be564638a267ab04d05b40b7afbee3c7"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/0779c879b6d11431/ledger_metrics.json",
+      "bytes": 608,
+      "sha256": "f315202d1176fa1759db9739e077506a1643aa547f9183797c8d57a42cba8aee"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/0779c879b6d11431/raw_responses_archive.jsonl",
+      "bytes": 2698288,
+      "sha256": "1a678ab36ba8201aae2a44ab201ba57f2ec516d03489e1fa89e88bb972bff64a"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/2d1845eabf62eb84/ledger_metrics.json",
+      "bytes": 609,
+      "sha256": "2618032e77998bee26465dd1c1a86b0184291dfbbc7153cf0798ef486e589556"
+    },
+    {
+      "path": "runs/reveal/test/baseline_whitening/2d1845eabf62eb84/raw_responses_archive.jsonl",
+      "bytes": 2698128,
+      "sha256": "50bce887bad490a366a081e09c8f6fe567c2df6d800f48b3fdc2857d510bcbd8"
+    },
+    {
+      "path": "runs/reveal/test/h1_residual_local/98d7f32cd098d4c0/ledger_metrics.json",
+      "bytes": 608,
+      "sha256": "33dbf0ec17516ffbb33ae5a031ba97951ef257a2b6abd4c02d3d3f96f5f368fe"
+    },
+    {
+      "path": "runs/reveal/test/h1_residual_local/98d7f32cd098d4c0/raw_responses_archive.jsonl",
+      "bytes": 2696993,
+      "sha256": "15814fb31a77c059c1f1a81b14ea18d5b758f0e668d083eef9cc12e1568df3a3"
+    },
+    {
+      "path": "runs/reveal/test/h1_supcon_hard/d318d1344264b913/ledger_metrics.json",
+      "bytes": 608,
+      "sha256": "df5b777eccf17bf64817c335d06d7ce90838a289826abc21bd7c13eb4e59ee8a"
+    },
+    {
+      "path": "runs/reveal/test/h1_supcon_hard/d318d1344264b913/raw_responses_archive.jsonl",
+      "bytes": 2548138,
+      "sha256": "a21351c90238d8fe46dad2c337e54e5f488bc5080a3690b2464aad049f3becc6"
+    }
+  ],
+  "note": "Supplements original snapshot_manifest.json; raw can contain explicit historical-unavailable rows."
+}

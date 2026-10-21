@@ -1,0 +1,79 @@
+{
+  "branch_counts": {
+    "inspect": 2726,
+    "skip_low": 6
+  },
+  "config": {
+    "bootstrap": 1000,
+    "datasets": [
+      "devign"
+    ],
+    "full_reference": true,
+    "gate": {
+      "C": 1,
+      "calibration_fraction": 0.5,
+      "class_weight": null,
+      "enable_direct_high": false,
+      "family_alpha": 0.05,
+      "high_grid": [
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99
+      ],
+      "low_grid": [
+        0.01,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "max_high_false_positive_fraction": 0.01,
+      "max_iter": 1000,
+      "max_lost_positive_fraction": 0.01,
+      "min_high_precision": 0.98,
+      "seed": 42
+    },
+    "graph_workers": 2,
+    "inference_workers": 4,
+    "retrieval_arm": "baseline_whitening",
+    "split": "test"
+  },
+  "contract": "becd38a9afd9677f2cdee47b1669f0442e53dd82c4b001c137d90d83a6710b3c",
+  "data_manifest": "a3f86cbf6b3ac9aff681ac890711e7600e7546d52dc7fc55a73632bab902b0c4",
+  "dataset": "devign",
+  "downstream_head_sha256": null,
+  "fingerprint": "3c90db3984588497cc61dd363cd4425b75fc5499d037b6897608a223a137ea8e",
+  "gate_fingerprint": "7d08a83e590e5d7d78953239f772c4bafc9ee48540452dc4b768e99e1e28cbe1",
+  "gate_route_seconds": 0.5156972670000073,
+  "inspect_path": "runs/devign/test/baseline_whitening/947d2b3a347dce6a",
+  "n": 2732,
+  "reference_is_benchmark_overhead": true,
+  "reference_path": "runs/devign/test/baseline_whitening/2021aa5fef71aee4",
+  "routing_labels_used": false,
+  "source": {
+    "grace_h1/__init__.py": "16c7a88f18db7d7c2cf76e6f03d8cf36efadd9b43b609f7ca7d6aee973b5c3ce",
+    "grace_h1/data.py": "abb050568e2554c14307f7e6012f32afec1b7dab5d045991a7bbcc542dadf520",
+    "grace_h1/graphs.py": "2cf82290d5f0180f1aae02ce1219bfcedd0adb32e86b5ec27ac0f89c4b78d871",
+    "grace_h1/inference.py": "8724439aab5b164a4d20e4a21ad724bcd401b8bcc4a6eee65dde3db7e5c010b6",
+    "grace_h1/io.py": "9e2e8cdbccd8521ea6a7034874a55f965715af459a04ecd7ead01d3c7eff8eec",
+    "grace_h1/metrics.py": "f1d3b3bdcaa55c6120dd6ff11c1fba225d9abff41e2f68c5b5e1beac7038185e",
+    "grace_h1/parser.py": "c8f9aa150457bd615e745ef379d79321c68ba550f85933123a76284e9d0ad416",
+    "grace_h1/pipeline.py": "a3f161fe3ea6dcbbeedcec626be3c2ff77350f666b5f43e4141adb19f8110cc5",
+    "grace_h1/projection.py": "d1f92309ebc34275cf714146b940b5362239e49cef262b713220156e764b8317",
+    "grace_h1/reference.py": "c81abb7376a8c43ba192598b63c3693884ac4eb7e4593cda9f7aaed246abc82e",
+    "grace_h1/retrieval.py": "bad51d118378290b6a9f34c6e52bbdbdd67ef9017b5d98d472816f01e68f722e",
+    "grace_h3/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "grace_h3/gate.py": "dd0b2568eb0403c7759c4d92bcc8cf836a69795a48c82395f009ff2562f8b119",
+    "grace_h3/portable.py": "839b25b412e1871b56630fcccd0539927bc1d3954d54306a950a450385446717",
+    "grace_h3/workflow.py": "f05c6310e51d24512889ff94a631267d6672c59debf201fc2f07edae6d68ecad"
+  },
+  "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+  "template": "7b018e2a1e7388e6118c1f7a7fb6b41fdb7db91684d41c64f49273fd349cb098"
+}

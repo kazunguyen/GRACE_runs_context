@@ -1,0 +1,26 @@
+{
+  "schema": "grace_generated_artifacts_v1",
+  "files": [
+    {
+      "path": "runs/devign/test/baseline_whitening/2021aa5fef71aee4/ledger_metrics.json",
+      "bytes": 607,
+      "sha256": "beccecc9ec6461f761b359f2ae450811d4d9b6311884d776af4f09557bea2c25"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/2021aa5fef71aee4/raw_responses_archive.jsonl",
+      "bytes": 3076463,
+      "sha256": "e4190ccb31a9672c07f8485aa937bcd73d9ec0b4857b7ca93daa4f093bf3953c"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/947d2b3a347dce6a/ledger_metrics.json",
+      "bytes": 608,
+      "sha256": "4831dd4b645e7277af82a6b4c3f2cce40ae86e72a03851b5be7eb20d5b1bfce4"
+    },
+    {
+      "path": "runs/devign/test/baseline_whitening/947d2b3a347dce6a/raw_responses_archive.jsonl",
+      "bytes": 3095664,
+      "sha256": "77d8e7955135030820d8618a3947d40ed636d7d989590448426e1948335a93cc"
+    }
+  ],
+  "note": "Supplements original snapshot_manifest.json; raw can contain explicit historical-unavailable rows."
+}

@@ -1,0 +1,404 @@
+{
+  "config": {
+    "bootstrap": 1000,
+    "datasets": [
+      "devign"
+    ],
+    "full_reference": true,
+    "gate": {
+      "C": 1,
+      "calibration_fraction": 0.5,
+      "class_weight": null,
+      "enable_direct_high": false,
+      "family_alpha": 0.05,
+      "high_grid": [
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99
+      ],
+      "low_grid": [
+        0.01,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "max_high_false_positive_fraction": 0.01,
+      "max_iter": 1000,
+      "max_lost_positive_fraction": 0.01,
+      "min_high_precision": 0.98,
+      "seed": 42
+    },
+    "graph_workers": 2,
+    "inference_workers": 4,
+    "retrieval_arm": "baseline_whitening",
+    "split": "test"
+  },
+  "datasets": [
+    {
+      "algorithmic_call_saving": 0.002196193265007307,
+      "bound_scope": "nominal under iid/stationarity; no domain-shift or project-cluster guarantee",
+      "branches": {
+        "direct_high": {
+          "coverage": 0.0,
+          "high_fp": 0,
+          "metrics": null,
+          "n": 0,
+          "skip_fn": null,
+          "skip_lost_positive_fraction": null
+        },
+        "inspect": {
+          "coverage": 0.9978038067349927,
+          "high_fp": null,
+          "metrics": {
+            "accuracy_all": 0.5429200293470287,
+            "accuracy_valid_only": 0.5429200293470287,
+            "balanced_accuracy": 0.5228911681621576,
+            "confusion_matrix_valid_only": {
+              "fn": 916,
+              "fp": 330,
+              "tn": 1141,
+              "tp": 339
+            },
+            "f1": 0.35239085239085244,
+            "invalid_n": 0,
+            "invalid_positive_n": 0,
+            "invalid_rate": 0.0,
+            "mcc": 0.05302686426970639,
+            "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+            "n": 2726,
+            "precision": 0.5067264573991032,
+            "predicted_positive_rate_all": 0.24541452677916362,
+            "recall": 0.2701195219123506,
+            "recall_all_positives": 0.2701195219123506,
+            "valid_n": 2726
+          },
+          "n": 2726,
+          "skip_fn": null,
+          "skip_lost_positive_fraction": null
+        },
+        "skip_low": {
+          "coverage": 0.0021961932650073207,
+          "high_fp": null,
+          "metrics": {
+            "accuracy_all": 1.0,
+            "accuracy_valid_only": 1.0,
+            "balanced_accuracy": 0.5,
+            "confusion_matrix_valid_only": {
+              "fn": 0,
+              "fp": 0,
+              "tn": 6,
+              "tp": 0
+            },
+            "f1": 0.0,
+            "invalid_n": 0,
+            "invalid_positive_n": 0,
+            "invalid_rate": 0.0,
+            "mcc": 0.0,
+            "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+            "n": 6,
+            "precision": 0.0,
+            "predicted_positive_rate_all": 0.0,
+            "recall": 0.0,
+            "recall_all_positives": 0.0,
+            "valid_n": 6
+          },
+          "n": 6,
+          "skip_fn": 0,
+          "skip_lost_positive_fraction": 0.0
+        }
+      },
+      "cascade": {
+        "accuracy_all": 0.5439238653001464,
+        "accuracy_valid_only": 0.5439238653001464,
+        "balanced_accuracy": 0.5233468293380305,
+        "confusion_matrix_valid_only": {
+          "fn": 916,
+          "fp": 330,
+          "tn": 1147,
+          "tp": 339
+        },
+        "f1": 0.35239085239085244,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.054113714006687776,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5067264573991032,
+        "predicted_positive_rate_all": 0.24487554904831627,
+        "recall": 0.2701195219123506,
+        "recall_all_positives": 0.2701195219123506,
+        "specificity": 0.7765741367637102,
+        "valid_n": 2732
+      },
+      "dataset": "devign",
+      "full_reference": {
+        "accuracy_all": 0.5435578330893118,
+        "accuracy_valid_only": 0.5435578330893118,
+        "balanced_accuracy": 0.5230083053028239,
+        "confusion_matrix_valid_only": {
+          "fn": 916,
+          "fp": 331,
+          "tn": 1146,
+          "tp": 339
+        },
+        "f1": 0.35220779220779225,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.0533021842162209,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5059701492537313,
+        "predicted_positive_rate_all": 0.2452415812591508,
+        "recall": 0.2701195219123506,
+        "recall_all_positives": 0.2701195219123506,
+        "valid_n": 2732
+      },
+      "gate_only": {
+        "accuracy_all": 0.6156661786237189,
+        "accuracy_valid_only": 0.6156661786237189,
+        "balanced_accuracy": 0.6021530668119668,
+        "confusion_matrix_valid_only": {
+          "fn": 708,
+          "fp": 342,
+          "tn": 1135,
+          "tp": 547
+        },
+        "f1": 0.5102611940298507,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.217310127980652,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.6152980877390326,
+        "predicted_positive_rate_all": 0.325402635431918,
+        "recall": 0.4358565737051793,
+        "recall_all_positives": 0.4358565737051793,
+        "valid_n": 2732
+      },
+      "gate_score_auc": {
+        "average_precision": 0.6417312707025478,
+        "roc_auc": 0.6652523285328558,
+        "scope": "calibrated gate score only, not an AUC of the final discrete cascade"
+      },
+      "inference": {
+        "algorithmic_llm_query_ratio": 0.9978038067349927,
+        "branch_counts": {
+          "inspect": 2726,
+          "skip_low": 6
+        },
+        "cascade": {
+          "api_attempts_this_run": 566,
+          "cached_queries": 2159,
+          "imported_prior_responses": 0,
+          "new_request_latency_p50_p95_seconds": [
+            1.8382009385022684,
+            10.864326453000103
+          ],
+          "new_unique_requests": 566,
+          "predictions_sha256": "a78439002cd834a6e418ac4fc8a95f9ac096ed01848aa5bed86cce6af8da7037",
+          "provider_usage_new_requests": {
+            "candidates_token_count": 1132,
+            "prompt_token_count": 1844953,
+            "total_token_count": 1846085
+          },
+          "queries": 2726,
+          "request_error_queries": 0,
+          "request_spec": {
+            "inference": {
+              "max_tokens": 256,
+              "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+              "parser_contract": "exact_last_line_binary_v1",
+              "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+              "seed": 42,
+              "temperature": 0.0
+            },
+            "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+            "provider": "Vertex AI"
+          },
+          "status": "complete",
+          "unique_prompts": 2725,
+          "usage_available_new_requests": 566,
+          "usage_coverage_per_field": {
+            "candidates_token_count": 566,
+            "prompt_token_count": 566,
+            "total_token_count": 566
+          },
+          "wall_seconds": 538.7138641249912,
+          "worst_case_attempts": 2830
+        },
+        "dataset": "devign",
+        "n": 2732,
+        "reference_incremental": {
+          "api_attempts_this_run": 3,
+          "cached_queries": 2729,
+          "imported_prior_responses": 0,
+          "new_request_latency_p50_p95_seconds": [
+            25.587785954994615,
+            27.71032621080376
+          ],
+          "new_unique_requests": 3,
+          "predictions_sha256": "5386bffa26751c7fff6b4ce0e8c992de90ed44f5aa6cfaf3a008beb26a936377",
+          "provider_usage_new_requests": {
+            "candidates_token_count": 6,
+            "prompt_token_count": 8122,
+            "total_token_count": 8128
+          },
+          "queries": 2732,
+          "request_error_queries": 0,
+          "request_spec": {
+            "inference": {
+              "max_tokens": 256,
+              "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+              "parser_contract": "exact_last_line_binary_v1",
+              "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+              "seed": 42,
+              "temperature": 0.0
+            },
+            "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+            "provider": "Vertex AI"
+          },
+          "status": "complete",
+          "unique_prompts": 2731,
+          "usage_available_new_requests": 3,
+          "usage_coverage_per_field": {
+            "candidates_token_count": 3,
+            "prompt_token_count": 3,
+            "total_token_count": 3
+          },
+          "wall_seconds": 50.30410090900841,
+          "worst_case_attempts": 15
+        }
+      },
+      "offline_artifact_timings": {
+        "gate_fit_seconds": 34.78069350200002,
+        "gate_process_peak_rss_bytes": 854110208,
+        "gate_route_seconds": 0.5156972670000073,
+        "inspect_prepare_seconds": 4045.998934163,
+        "note": "Stored artifact creation timings, not fresh-run latency after cache reuse; process peak is lifetime peak.",
+        "reference_prepare_seconds": 168.45203643399964
+      },
+      "paired_reference_to_cascade": {
+        "bootstrap_repetitions": 1000,
+        "ci95_query_bootstrap": {
+          "f1": [
+            0.0,
+            0.000567704958683278
+          ],
+          "mcc": [
+            0.0,
+            0.002470637395656545
+          ],
+          "precision": [
+            0.0,
+            0.0023459790819424396
+          ],
+          "recall": [
+            0.0,
+            0.0
+          ]
+        },
+        "common_valid_n": 2732,
+        "delta_right_minus_left": {
+          "f1": 0.00018306018306019078,
+          "mcc": 0.0008115297904668778,
+          "precision": 0.0007563081453718645,
+          "recall": 0.0
+        },
+        "excluded_invalid_pair_n": 0,
+        "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+      },
+      "paired_reference_to_gate_only": {
+        "bootstrap_repetitions": 1000,
+        "ci95_query_bootstrap": {
+          "f1": [
+            0.1229383074443573,
+            0.1938164725931378
+          ],
+          "mcc": [
+            0.1158942893923728,
+            0.21964799437421725
+          ],
+          "precision": [
+            0.07030088930059544,
+            0.15486199086488459
+          ],
+          "recall": [
+            0.12931467442804925,
+            0.20317555938037865
+          ]
+        },
+        "common_valid_n": 2732,
+        "delta_right_minus_left": {
+          "f1": 0.15805340182205846,
+          "mcc": 0.1640079437644311,
+          "precision": 0.10932793848530131,
+          "recall": 0.16573705179282866
+        },
+        "excluded_invalid_pair_n": 0,
+        "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+      },
+      "status": "complete",
+      "trivial_baselines": {
+        "always_safe": {
+          "accuracy_all": 0.5406295754026355,
+          "accuracy_valid_only": 0.5406295754026355,
+          "balanced_accuracy": 0.5,
+          "confusion_matrix_valid_only": {
+            "fn": 1255,
+            "fp": 0,
+            "tn": 1477,
+            "tp": 0
+          },
+          "f1": 0.0,
+          "invalid_n": 0,
+          "invalid_positive_n": 0,
+          "invalid_rate": 0.0,
+          "mcc": 0.0,
+          "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+          "n": 2732,
+          "precision": 0.0,
+          "predicted_positive_rate_all": 0.0,
+          "recall": 0.0,
+          "recall_all_positives": 0.0,
+          "valid_n": 2732
+        },
+        "always_vulnerable": {
+          "accuracy_all": 0.45937042459736455,
+          "accuracy_valid_only": 0.45937042459736455,
+          "balanced_accuracy": 0.5,
+          "confusion_matrix_valid_only": {
+            "fn": 0,
+            "fp": 1477,
+            "tn": 0,
+            "tp": 1255
+          },
+          "f1": 0.6295460245798845,
+          "invalid_n": 0,
+          "invalid_positive_n": 0,
+          "invalid_rate": 0.0,
+          "mcc": 0.0,
+          "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+          "n": 2732,
+          "precision": 0.45937042459736455,
+          "predicted_positive_rate_all": 1.0,
+          "recall": 1.0,
+          "recall_all_positives": 1.0,
+          "valid_n": 2732
+        }
+      }
+    }
+  ],
+  "note": "Routing saving is separate from cache saving and API retry counts; CP selection bounds do not guarantee test quality.",
+  "status": "complete"
+}

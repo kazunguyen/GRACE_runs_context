@@ -22,3 +22,10 @@ copy_manifest.json ghi nguồn, kích thước và SHA-256 của artifact hiện
 ## Cập nhật rerun invalid ngày 21/10/2026
 
 Sáu nhánh có invalid trên40% đã được retry 6.322 mẫu bằng DeepSeek-V4-Flash/FPT; còn2 invalid. Prompt giữ nguyên8.192 byte, valid cũ giữ nguyên. Kết quả sáu nhánh là mixed backbone Qwen/Vertex + DeepSeek/FPT. [Bảng run cập nhật](bang_quan_ly_run.md) · [Báo cáo rerun](provenance/invalid_rerun_context8192_20261021/README.md). Link prediction/raw/prompt cũ giữ nguyên; mỗi nhánh có thêm repair_manifest.json.
+
+
+## Run cải tiến H1 / H2 / H3
+
+Bảng riêng cho các cải tiến, không cộng vào 36 run gốc: [bảng quản lý run cải tiến](bang_quan_ly_run_cai_tien.md) · [JSON](bang_quan_ly_run_cai_tien.json).
+
+Artifact snapshot H1 và hai bản H3: [improvements_20261021](additional_runs/improvements_20261021/). H2 đang chạy nên chưa snapshot kết quả.
