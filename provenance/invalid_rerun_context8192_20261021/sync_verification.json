@@ -1,0 +1,351 @@
+{
+  "verified_at": "2026-10-21",
+  "source_root": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2",
+  "share_root": "D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918",
+  "runs": [
+    {
+      "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "total": 2732,
+      "valid": 2732,
+      "invalid": 0,
+      "old_valid_preserved": 1481,
+      "models": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1481,
+        "DeepSeek-V4-Flash": 1251
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "total": 2274,
+      "valid": 2274,
+      "invalid": 0,
+      "old_valid_preserved": 1261,
+      "models": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1261,
+        "DeepSeek-V4-Flash": 1013
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "total": 2274,
+      "valid": 2273,
+      "invalid": 1,
+      "old_valid_preserved": 1344,
+      "models": {
+        "DeepSeek-V4-Flash": 930,
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1344
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "total": 2274,
+      "valid": 2273,
+      "invalid": 1,
+      "old_valid_preserved": 1238,
+      "models": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1238,
+        "DeepSeek-V4-Flash": 1036
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "total": 2274,
+      "valid": 2274,
+      "invalid": 0,
+      "old_valid_preserved": 1340,
+      "models": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1340,
+        "DeepSeek-V4-Flash": 934
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    },
+    {
+      "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "total": 2274,
+      "valid": 2274,
+      "invalid": 0,
+      "old_valid_preserved": 1116,
+      "models": {
+        "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1116,
+        "DeepSeek-V4-Flash": 1158
+      },
+      "all_prompts_max8192_and_hash_verified": true
+    }
+  ],
+  "remaining_invalid": [
+    {
+      "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "id": "reveal:test:583170025160259883#866",
+      "reason": "request_error",
+      "request_error": "HTTP 429: {\"code\":429,\"description\":\"Rate limit exceeded for DeepSeek-V4-Flash on RPM. Your maximum thresholds are 100 RPM. Please try again in 60s.\",\"message\":\"Too Many Requests\",\"subcode\":429000}",
+      "finish_reason": null,
+      "attempts": 5
+    },
+    {
+      "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "id": "reveal:test:-4239386405881995323#800",
+      "reason": "request_error",
+      "request_error": "HTTP 429: {\"code\":429,\"description\":\"Rate limit exceeded for DeepSeek-V4-Flash on RPM. Your maximum thresholds are 100 RPM. Please try again in 60s.\",\"subcode\":429000,\"message\":\"Too Many Requests\"}",
+      "finish_reason": null,
+      "attempts": 5
+    }
+  ],
+  "files": [
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "d7dac1b7b495824bc6030f2f0dab985a89fbcc2211c2ce5022e4022056cb967b"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "ea136ac7600e1c26b9a456eccf8207b5aa5e4e3451be62f2e8acb1dd157b9885"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "43f2e7f263666a01da2bba4f83b2cfc8e46658836a2346ff665dc6a5a0c199e6"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "75173e03e13429b4e86add3ac05ef3b145d042cc894a40798451d1ce2dd98e0e"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "a4a3dc9867ab7639e636d34529a1583801d29ed4c6e0b38be47e92b4f98d525f"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "c375f10bb1e542071713efdabb6672106c85dd85ff116d32a576a33637b53856"
+    },
+    {
+      "id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "1c43eb46110ec722bc261ddd9b567270e593c623614bd5073abe819da3d2fe15"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "f5fc3436be276089c996d6d506b47cf9448a6756f2adba55a87fa0a92de567e7"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "031c946c16f6465dcb13f2bf817504509827742c177a24e07e054a14fd2edf8e"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "dda731f64f0d0ed4d1e3d9c12103aa142a44c94671886aad431f33cd9229ffcc"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "39ddd24a7ee3c19bdb506c3ccbcdb986f62eac65469e99e086e1de0cfcee00f4"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "5157d77c68b89cd24ddd7cdaf32aa340e9515d6ec21f8b1c6fdc2d078b54bf45"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "e0ca29a1480aca9b4799177b6c80caa305259d86ed35da59516df3f341be6397"
+    },
+    {
+      "id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "889963e3f6737caf4d2f8ef665a8019fc9ea3b35233a4354ed9f0f48529075a1"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "4e9b33d3767a71132f897f40df0413f64a6823b370a34ddf1a254f9ae66b2b91"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "805acbe9b0ada53009d9194636d2cbf26bf571e66096aeab3dc72be55053928b"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "c47bcf76b703dd2d8c1b78aa84248eb5a65e950967238f80aae072ee6a90f656"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "f9b568768e0857b5394555f888d46e22ca56a3daa5601c7381e73877638fd404"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "82c0d5e9c01940522125cc37ab8371a63629c05b96d14b1245a44ab3d1889324"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "a5b51d7b5d5fed4984379871aae8f9304e8751323d0598ea19bf5f939bc8acbe"
+    },
+    {
+      "id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "2f9dc53f1543730dc9ee4b9033bf647b12c9dd6a5da40477b5255b29893aac64"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "2b4a3c776f62e850f63d09b687b4f4817acf88f2534b5cad955efc441ff9f80f"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "f08b4ebeabf9406d13e585ba6bb26545d744dd788e10d0c414d41c882028d4a9"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "a580f690f8ee4c03f1360183d9c7112e7f83915c621dcdc68acf19a1fc78d38d"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "41fbf4751468ec11a93955cc9d5ee3d482b3ef6498c59db0a67ae40223cef0cc"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "4c5bde96da055899e89fcf068ddc4c638dc93ee4301bd4fd89c4096108f54e55"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "c9b319a4ee91b0cdef0265836713632c3cae443aeceb39852076efeada72aba1"
+    },
+    {
+      "id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "a91bc40f9dc71df052a0c5974b335071f4e4770113ddc21fcb6d11fe880d846c"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "c76a16b1b3d51a4e447378150ef148f712d8d77cd36608c7650b0dc0f64972eb"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "2eaf7e5c27d0f11bd07ac8ab3609f56e4cddd5d45c6baf763313b0cbf5d5d657"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "3a8a28d6b2794053f2b48ca3c8b214f2f18179b425359f7b35ab81bf086ebec2"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "9fefd923e72be5a3750d55b2404cda0bfb9d2d8a778abb4dc337741127475b5f"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "b82598067a5c6c09db59f8acfc697f1204d7e92cc97355f180a929fcfc8f1622"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "cf84239fd6b1c6ad8311007c8a013f2777a2e4631c5934a6b76fb82ca53b56e4"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "0eaf372a3aeca9a619d7b944fd3c8bacff1bdd599fb185e838d155182285e09e"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "evaluation/predictions.jsonl",
+      "match": true,
+      "sha256": "2e5fbf3a9f351f78043a0ba994d1e0274ca275cab819b6ef82ac869b362b80b7"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "evaluation/evaluation.json",
+      "match": true,
+      "sha256": "e8d225b1f7515479a77c75bf325c3bddc827a3db6f7d35c2c2e3d4f5362e3541"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "inference/raw_responses.jsonl",
+      "match": true,
+      "sha256": "4cc5d25322bbc9007a6ba978ce48a7573c8c83199104efd2755e010e368720fb"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "prompts/prompts.jsonl",
+      "match": true,
+      "sha256": "5424c74954a33b76faa46c762bd958bd58626ebd726406aa80dd8d92f9dd3f9e"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "run_manifest.json",
+      "match": true,
+      "sha256": "677dfcdc3cd276170e57bd2ab951d83098c8a0449974eba6f9a6e9b458fa49c2"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "freeze.json",
+      "match": true,
+      "sha256": "cfedc1aa9939702df34b5a2dff7babdcadab41ad3458cad08e446b60ab748d86"
+    },
+    {
+      "id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+      "rel": "repair_manifest.json",
+      "match": true,
+      "sha256": "526acaf0b20cf46dcc0d624fbe78a2a0ba2fbf968868bbc49636713fb07d4770"
+    }
+  ]
+}

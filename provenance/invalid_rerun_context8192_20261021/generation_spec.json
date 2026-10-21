@@ -1,0 +1,13 @@
+{
+  "base_url": "https://token-api.fpt.ai/v1",
+  "context_limit_utf8_bytes": 8192,
+  "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+  "max_attempts_total_per_invalid_target": 5,
+  "max_tokens": 256,
+  "model": "DeepSeek-V4-Flash",
+  "provider": "FPT AI Factory",
+  "retry_request_errors_and_invalid_content": true,
+  "seed": 42,
+  "temperature": 0.0,
+  "thinking": false
+}

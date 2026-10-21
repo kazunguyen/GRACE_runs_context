@@ -801,19 +801,19 @@
       "sha256": "528e7f30d5aabe9c9b499539028732a9c2f5e434a7a5dbb8cd84eae824c27da6"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/predictions.jsonl",
-      "bytes": 318550,
-      "sha256": "aa0d26bc559f106476102496afec963bf95ff2ba037bfd761f34bd3188f84b8b"
+      "bytes": 315838,
+      "sha256": "d7dac1b7b495824bc6030f2f0dab985a89fbcc2211c2ce5022e4022056cb967b"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/inference/raw_responses.jsonl",
-      "bytes": 23501459,
-      "sha256": "44f2244110982f5dff44d930c6fd22faf1d5c5aab6f2c4893aad097be9f496bb"
+      "bytes": 24353861,
+      "sha256": "43f2e7f263666a01da2bba4f83b2cfc8e46658836a2346ff665dc6a5a0c199e6"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/prompts/prompts.jsonl",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/prompts/prompts.jsonl",
       "bytes": 22824112,
       "sha256": "75173e03e13429b4e86add3ac05ef3b145d042cc894a40798451d1ce2dd98e0e"
@@ -825,22 +825,22 @@
       "sha256": "6f783f3249eff86ea6c43bf94765044e9531d3b92964caa50f07123b0218843b"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/run_manifest.json",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/run_manifest.json",
       "bytes": 4857,
       "sha256": "a4a3dc9867ab7639e636d34529a1583801d29ed4c6e0b38be47e92b4f98d525f"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/freeze.json",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/freeze.json",
       "bytes": 3186,
       "sha256": "c375f10bb1e542071713efdabb6672106c85dd85ff116d32a576a33637b53856"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/evaluation.json",
       "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/evaluation.json",
-      "bytes": 459,
-      "sha256": "3b7a885294ba75f070763c306f05628a07a5cf34bbb8da10e06de2bc6dcb1d08"
+      "bytes": 1942,
+      "sha256": "ea136ac7600e1c26b9a456eccf8207b5aa5e4e3451be62f2e8acb1dd157b9885"
     },
     {
       "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Full-cai-tien\\test_v2\\evaluation\\predictions.jsonl",
@@ -969,19 +969,19 @@
       "sha256": "09dd463003d485d7e60cb4c991ca4ca55b6e871d7aa5cc8a8cbe2ab0d38e62b8"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/predictions.jsonl",
-      "bytes": 308757,
-      "sha256": "dad4b81561eb85f437739dcc62189ca1f7b615bb8454781776d83dd180b377ba"
+      "bytes": 306759,
+      "sha256": "f5fc3436be276089c996d6d506b47cf9448a6756f2adba55a87fa0a92de567e7"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/inference/raw_responses.jsonl",
-      "bytes": 18505243,
-      "sha256": "002d3f3046ed80d9223bea3d63cf05758aa719b016c44c078c1f3f4f4934ac2f"
+      "bytes": 19210038,
+      "sha256": "dda731f64f0d0ed4d1e3d9c12103aa142a44c94671886aad431f33cd9229ffcc"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/prompts/prompts.jsonl",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/prompts/prompts.jsonl",
       "bytes": 17944578,
       "sha256": "39ddd24a7ee3c19bdb506c3ccbcdb986f62eac65469e99e086e1de0cfcee00f4"
@@ -993,37 +993,37 @@
       "sha256": "e2e86437bc7eeecb881d252ebd85a0f7f0e98830474740169bd45a80b3c1088f"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/run_manifest.json",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/run_manifest.json",
       "bytes": 6077,
       "sha256": "5157d77c68b89cd24ddd7cdaf32aa340e9515d6ec21f8b1c6fdc2d078b54bf45"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/freeze.json",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/freeze.json",
       "bytes": 3750,
       "sha256": "e0ca29a1480aca9b4799177b6c80caa305259d86ed35da59516df3f341be6397"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C2-stratified-demo-selection\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/evaluation.json",
       "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/evaluation.json",
-      "bytes": 462,
-      "sha256": "601f29dd4242066312ee4edbba2ff4122995f87761c8b8613ae73faaff601286"
+      "bytes": 1952,
+      "sha256": "031c946c16f6465dcb13f2bf817504509827742c177a24e07e054a14fd2edf8e"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/predictions.jsonl",
-      "bytes": 308591,
-      "sha256": "47c76a2fbbb96caab37393eaa04e44fb6d7a0282126985c0e50e0f3a13a0cbd1"
+      "bytes": 306748,
+      "sha256": "4e9b33d3767a71132f897f40df0413f64a6823b370a34ddf1a254f9ae66b2b91"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/inference/raw_responses.jsonl",
-      "bytes": 19532815,
-      "sha256": "073cf9aa73452e51aa7cc9eb33f708f01644a21bf4d02d4c5b5fa8b5bed07f4f"
+      "bytes": 20177191,
+      "sha256": "c47bcf76b703dd2d8c1b78aa84248eb5a65e950967238f80aae072ee6a90f656"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/prompts/prompts.jsonl",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/prompts/prompts.jsonl",
       "bytes": 18972067,
       "sha256": "f9b568768e0857b5394555f888d46e22ca56a3daa5601c7381e73877638fd404"
@@ -1035,37 +1035,37 @@
       "sha256": "edbfbed7d6984581c0b81e243e3d10d4e1f3519ef233854711957db3e4ede5ef"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/run_manifest.json",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/run_manifest.json",
       "bytes": 6076,
       "sha256": "82c0d5e9c01940522125cc37ab8371a63629c05b96d14b1245a44ab3d1889324"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/freeze.json",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/freeze.json",
       "bytes": 3367,
       "sha256": "a5b51d7b5d5fed4984379871aae8f9304e8751323d0598ea19bf5f939bc8acbe"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/evaluation.json",
       "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/evaluation.json",
-      "bytes": 462,
-      "sha256": "525cc02a9b752125d280244a830f5df8748ca3d2a232e2156b938ae6a291b488"
+      "bytes": 1979,
+      "sha256": "805acbe9b0ada53009d9194636d2cbf26bf571e66096aeab3dc72be55053928b"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/predictions.jsonl",
-      "bytes": 308803,
-      "sha256": "a64abd00541f4f1c41339f80f56cf7aa3629cecbd803de29a8a40ca0cd3ea854"
+      "bytes": 306868,
+      "sha256": "2b4a3c776f62e850f63d09b687b4f4817acf88f2534b5cad955efc441ff9f80f"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/inference/raw_responses.jsonl",
-      "bytes": 19934516,
-      "sha256": "12b5f1788b94066010d7bc2f8b4374d92102d427eb256d12652b2a9c960104f5"
+      "bytes": 20649405,
+      "sha256": "a580f690f8ee4c03f1360183d9c7112e7f83915c621dcdc68acf19a1fc78d38d"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/prompts/prompts.jsonl",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/prompts/prompts.jsonl",
       "bytes": 19373874,
       "sha256": "41fbf4751468ec11a93955cc9d5ee3d482b3ef6498c59db0a67ae40223cef0cc"
@@ -1077,22 +1077,22 @@
       "sha256": "edbfbed7d6984581c0b81e243e3d10d4e1f3519ef233854711957db3e4ede5ef"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/run_manifest.json",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/run_manifest.json",
       "bytes": 6071,
       "sha256": "4c5bde96da055899e89fcf068ddc4c638dc93ee4301bd4fd89c4096108f54e55"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/freeze.json",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/freeze.json",
       "bytes": 3726,
       "sha256": "c9b319a4ee91b0cdef0265836713632c3cae443aeceb39852076efeada72aba1"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C5-graph-verbalization\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/evaluation.json",
       "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/evaluation.json",
-      "bytes": 442,
-      "sha256": "b8e78c305896644af3b4f6d98af53d18b90c2ffa0a475a476a0d651f0c8cbc6a"
+      "bytes": 1973,
+      "sha256": "f08b4ebeabf9406d13e585ba6bb26545d744dd788e10d0c414d41c882028d4a9"
     },
     {
       "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\No-C6-graph-slicing\\test_v2\\evaluation\\predictions.jsonl",
@@ -1221,19 +1221,19 @@
       "sha256": "6cba4aa195f38c6d3a07eec69abb057c962fb42113e99d8909f5cccd53e1ca8c"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/predictions.jsonl",
-      "bytes": 309511,
-      "sha256": "4f42ffac7222df523fe839e6fdeb987ca401fa978ded182908e5702579cdf38b"
+      "bytes": 307643,
+      "sha256": "c76a16b1b3d51a4e447378150ef148f712d8d77cd36608c7650b0dc0f64972eb"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/inference/raw_responses.jsonl",
-      "bytes": 18058628,
-      "sha256": "98e031a509ab98d96e3ed5e17c19d6dbeb1610dd75a3216b52e5b49deae8ca77"
+      "bytes": 18703857,
+      "sha256": "3a8a28d6b2794053f2b48ca3c8b214f2f18179b425359f7b35ab81bf086ebec2"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/prompts/prompts.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/prompts/prompts.jsonl",
       "bytes": 17496972,
       "sha256": "9fefd923e72be5a3750d55b2404cda0bfb9d2d8a778abb4dc337741127475b5f"
@@ -1245,22 +1245,22 @@
       "sha256": "e2e86437bc7eeecb881d252ebd85a0f7f0e98830474740169bd45a80b3c1088f"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/run_manifest.json",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/run_manifest.json",
       "bytes": 5741,
       "sha256": "b82598067a5c6c09db59f8acfc697f1204d7e92cc97355f180a929fcfc8f1622"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/freeze.json",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/freeze.json",
       "bytes": 3207,
       "sha256": "cf84239fd6b1c6ad8311007c8a013f2777a2e4631c5934a6b76fb82ca53b56e4"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/evaluation.json",
       "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/evaluation.json",
-      "bytes": 462,
-      "sha256": "69c7daff839b45dc8db9ddade5f6eb1e918ed3b720db8cc0af63e2622719d0ad"
+      "bytes": 1954,
+      "sha256": "2eaf7e5c27d0f11bd07ac8ab3609f56e4cddd5d45c6baf763313b0cbf5d5d657"
     },
     {
       "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C2-stratified-demos\\test_v2\\evaluation\\predictions.jsonl",
@@ -1431,19 +1431,19 @@
       "sha256": "5e5c7210df165dc47c00ba0a6bbf490048356f560b19f261ec8218979945a32e"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\predictions.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/predictions.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/predictions.jsonl",
-      "bytes": 309182,
-      "sha256": "4ad10120a98ba103e632487a948b3e68d4f7896be945318797b5ed4203289568"
+      "bytes": 306731,
+      "sha256": "2e5fbf3a9f351f78043a0ba994d1e0274ca275cab819b6ef82ac869b362b80b7"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\inference\\raw_responses.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/inference/raw_responses.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/inference/raw_responses.jsonl",
-      "bytes": 18305459,
-      "sha256": "33244ed0a748c747a1ba7623b33da9a1291a9ebb88209b7eac557d0cee32a8ed"
+      "bytes": 19093741,
+      "sha256": "4cc5d25322bbc9007a6ba978ce48a7573c8c83199104efd2755e010e368720fb"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\prompts\\prompts.jsonl",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/prompts/prompts.jsonl",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/prompts/prompts.jsonl",
       "bytes": 17742500,
       "sha256": "5424c74954a33b76faa46c762bd958bd58626ebd726406aa80dd8d92f9dd3f9e"
@@ -1455,22 +1455,22 @@
       "sha256": "aa51f99109c73b2e76f419680d03025bd572fba9444142a8d1da1bce4fd604de"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\run_manifest.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/run_manifest.json",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/run_manifest.json",
       "bytes": 5741,
       "sha256": "677dfcdc3cd276170e57bd2ab951d83098c8a0449974eba6f9a6e9b458fa49c2"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\freeze.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/freeze.json",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/freeze.json",
       "bytes": 3175,
       "sha256": "cfedc1aa9939702df34b5a2dff7babdcadab41ad3458cad08e446b60ab748d86"
     },
     {
-      "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\evaluation\\evaluation.json",
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/evaluation.json",
       "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/evaluation.json",
-      "bytes": 454,
-      "sha256": "147c9fd38f6e01d9b2fff29a25181f8839e212147c15da60a8468bba1a23a33b"
+      "bytes": 1940,
+      "sha256": "e8d225b1f7515479a77c75bf325c3bddc827a3db6f7d35c2c2e3d4f5362e3541"
     },
     {
       "source": "C:\\MY-FILES\\LAB-THAY-THO\\Graduation-Project\\Ablation_V2\\Reveal\\Ablations\\Plus-C8-mmr-selection\\test_v2\\evaluation\\predictions.jsonl",
@@ -1561,12 +1561,65 @@
       "path": "provenance/ket-qua-so-sanh.md",
       "bytes": 10063,
       "sha256": "288359eb78d0aa6c34631d4198c5b0fd912de01f818afc8d4b19335345e95130"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Devign/Ablations/Plus-C8-mmr-selection/test_v2/repair_manifest.json",
+      "path": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/repair_manifest.json",
+      "bytes": 4592,
+      "sha256": "1c43eb46110ec722bc261ddd9b567270e593c623614bd5073abe819da3d2fe15"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/repair_manifest.json",
+      "path": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/repair_manifest.json",
+      "bytes": 4635,
+      "sha256": "889963e3f6737caf4d2f8ef665a8019fc9ea3b35233a4354ed9f0f48529075a1"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/repair_manifest.json",
+      "path": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/repair_manifest.json",
+      "bytes": 4657,
+      "sha256": "2f9dc53f1543730dc9ee4b9033bf647b12c9dd6a5da40477b5255b29893aac64"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/No-C5-graph-verbalization/test_v2/repair_manifest.json",
+      "path": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/repair_manifest.json",
+      "bytes": 4618,
+      "sha256": "a91bc40f9dc71df052a0c5974b335071f4e4770113ddc21fcb6d11fe880d846c"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/repair_manifest.json",
+      "path": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/repair_manifest.json",
+      "bytes": 4626,
+      "sha256": "0eaf372a3aeca9a619d7b944fd3c8bacff1bdd599fb185e838d155182285e09e"
+    },
+    {
+      "source": "C:/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reveal/Ablations/Plus-C7-security-cot/test_v2/repair_manifest.json",
+      "path": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/repair_manifest.json",
+      "bytes": 4582,
+      "sha256": "526acaf0b20cf46dcc0d624fbe78a2a0ba2fbf968868bbc49636713fb07d4770"
     }
   ],
   "generated_files": [
     "README.md",
     "bang_quan_ly_run.md",
-    "bang_quan_ly_run.json"
+    "bang_quan_ly_run.json",
+    "provenance/invalid_rerun_context8192_20261021/generation_spec.json",
+    "provenance/invalid_rerun_context8192_20261021/README.md",
+    "provenance/invalid_rerun_context8192_20261021/Rerun_Invalid_Over40_Context8192.ipynb",
+    "provenance/invalid_rerun_context8192_20261021/standard_evaluator.py",
+    "provenance/invalid_rerun_context8192_20261021/summary.json",
+    "provenance/invalid_rerun_context8192_20261021/sync_verification.json"
   ],
-  "verification": "Every copied file SHA256 equals source before and after copy; all portable ledger artifact links resolve."
+  "verification": "Six rerun artifact sets match original C files by SHA256; all fourteen-thousand-one-hundred-two merged records checked for exact IDs, predictions, prompt SHA256/8192-byte bound, and preservation of previously valid rows. Other copied artifacts retain their existing inventory.",
+  "updated_on": "2026-10-21",
+  "rerun_update": {
+    "run_count": 6,
+    "originally_invalid": 6322,
+    "remaining_invalid": 2,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory",
+    "context_bytes": 8192,
+    "mixed_backbone": true,
+    "summary": "provenance/invalid_rerun_context8192_20261021/summary.json"
+  }
 }

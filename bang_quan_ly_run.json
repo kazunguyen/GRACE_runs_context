@@ -39,7 +39,7 @@
         "tsne_dim": 2,
         "tsne_is_transductive_on_code_only": false,
         "tsne_iterations": 1000,
-        "tsne_perplexity": 30.0
+        "tsne_perplexity": 30
       }
     },
     "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
@@ -100,7 +100,7 @@
         "tsne_dim": 2,
         "tsne_is_transductive_on_code_only": false,
         "tsne_iterations": 1000,
-        "tsne_perplexity": 30.0
+        "tsne_perplexity": 30
       }
     },
     "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
@@ -161,7 +161,7 @@
         "tsne_dim": 2,
         "tsne_is_transductive_on_code_only": true,
         "tsne_iterations": 1000,
-        "tsne_perplexity": 30.0
+        "tsne_perplexity": 30
       }
     },
     "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
@@ -222,7 +222,7 @@
         "tsne_dim": 2,
         "tsne_is_transductive_on_code_only": true,
         "tsne_iterations": 1000,
-        "tsne_perplexity": 30.0
+        "tsne_perplexity": 30
       }
     },
     "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
@@ -1144,16 +1144,16 @@
     "n_total": 2732,
     "n_non_vulnerable": 1477,
     "n_vulnerable": 1255,
-    "n_valid": 1481,
-    "n_invalid": 1251,
+    "n_valid": 2732,
+    "n_invalid": 0,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/devign/test/run_manifest.json",
     "source_baseline_manifest_sha256": "f3d45389f44901bd0a6de43143551cc74504ae35ddc34a685256dfe8e30560af",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "base",
     "graph_mode": "baseline_graph_raw",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -1185,14 +1185,43 @@
       "retrieval": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/run_manifest.json",
       "freeze": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/freeze.json",
-      "metrics": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Devign/Ablations/Plus-C8-mmr-selection/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1481,
+      "n_invalid": 1251,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 1251,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1481
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/Full-cai-tien/test_v2",
@@ -1381,16 +1410,16 @@
     "n_total": 2274,
     "n_non_vulnerable": 2044,
     "n_vulnerable": 230,
-    "n_valid": 1261,
-    "n_invalid": 1013,
+    "n_valid": 2274,
+    "n_invalid": 0,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
     "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "GEPA + internal security CoT",
     "graph_mode": "cached_pdg_slice_verbalized",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -1427,14 +1456,43 @@
       "retrieval": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/run_manifest.json",
       "freeze": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/freeze.json",
-      "metrics": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Reveal/Ablations/No-C2-stratified-demo-selection/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1261,
+      "n_invalid": 1013,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 1013,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1261
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
@@ -1443,16 +1501,16 @@
     "n_total": 2274,
     "n_non_vulnerable": 2044,
     "n_vulnerable": 230,
-    "n_valid": 1344,
-    "n_invalid": 930,
+    "n_valid": 2273,
+    "n_invalid": 1,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
     "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "base + internal security CoT",
     "graph_mode": "cached_pdg_slice_verbalized",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -1489,14 +1547,43 @@
       "retrieval": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/run_manifest.json",
       "freeze": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/freeze.json",
-      "metrics": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1344,
+      "n_invalid": 930,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 930,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1344
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
@@ -1505,16 +1592,16 @@
     "n_total": 2274,
     "n_non_vulnerable": 2044,
     "n_vulnerable": 230,
-    "n_valid": 1238,
-    "n_invalid": 1036,
+    "n_valid": 2273,
+    "n_invalid": 1,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
     "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "GEPA + internal security CoT",
     "graph_mode": "cached_pdg_slice_raw",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -1551,14 +1638,43 @@
       "retrieval": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/run_manifest.json",
       "freeze": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/freeze.json",
-      "metrics": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Reveal/Ablations/No-C5-graph-verbalization/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1238,
+      "n_invalid": 1036,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 1036,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1238
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/No-C6-graph-slicing/test_v2",
@@ -1753,16 +1869,16 @@
     "n_total": 2274,
     "n_non_vulnerable": 2044,
     "n_vulnerable": 230,
-    "n_valid": 1340,
-    "n_invalid": 934,
+    "n_valid": 2274,
+    "n_invalid": 0,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
     "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "base",
     "graph_mode": "baseline_graph_raw",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -1794,14 +1910,43 @@
       "retrieval": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/run_manifest.json",
       "freeze": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/freeze.json",
-      "metrics": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1340,
+      "n_invalid": 934,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 934,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1340
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C2-stratified-demos/test_v2",
@@ -2038,16 +2183,16 @@
     "n_total": 2274,
     "n_non_vulnerable": 2044,
     "n_vulnerable": 230,
-    "n_valid": 1116,
-    "n_invalid": 1158,
+    "n_valid": 2274,
+    "n_invalid": 0,
     "git_commit": "THIEU: run_manifest khong ghi commit thuc chay",
     "source_baseline_manifest": "/mnt/c/MY-FILES/LAB-THAY-THO/Graduation-Project/Ablation_V2/Reproduced-Code-Based/reveal/test/run_manifest.json",
     "source_baseline_manifest_sha256": "d49279b4e41f8201c6f7e63d0ea442a4a57cf09b1b52c4b2841b4777bc752128",
     "models_observed_in_raw_previous_audit": [
       "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
     ],
-    "provider": "Vertex AI (declared; not independently recorded in raw response)",
-    "provider_evidence": "Qwen publisher model ID in raw; shared contract/provider declaration. Exact frozen contract bytes not recovered by this ledger.",
+    "provider": "Mixed: historical Vertex AI + FPT AI Factory retry",
+    "provider_evidence": "Historical Qwen model ID preserved; retried rows record provider=FPT AI Factory and model=DeepSeek-V4-Flash. See repair_manifest.json.",
     "prompt_mode": "base + internal security CoT",
     "graph_mode": "baseline_graph_raw",
     "prompt_mode_evidence": "enabled_improvements plus first saved prompt; full prompt audit is a separate artifact",
@@ -2079,14 +2224,43 @@
       "retrieval": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/retrieval/retrievals.jsonl",
       "manifest": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/run_manifest.json",
       "freeze": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/freeze.json",
-      "metrics": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/evaluation.json"
+      "metrics": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/evaluation/evaluation.json",
+      "repair_manifest": "runs/Reveal/Ablations/Plus-C7-security-cot/test_v2/repair_manifest.json"
     },
     "missing_files": [],
     "limitations": [
       "Missing execution commit; do not substitute baseline or current commit",
-      "Provider declared, not independently recorded per response",
-      "Reported run uses 8192 context; do not relabel with current 24000-byte contract"
-    ]
+      "Reported run uses 8192 context; do not relabel with current 24000-byte contract",
+      "Only originally invalid rows retried with FPT/DeepSeek; merged result is not a single-backbone benchmark"
+    ],
+    "before_rerun": {
+      "n_valid": 1116,
+      "n_invalid": 1158,
+      "provider": "Vertex AI (declared; not independently recorded in raw response)"
+    },
+    "models_observed_in_raw": [
+      "DeepSeek-V4-Flash",
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas"
+    ],
+    "model_counts": {
+      "DeepSeek-V4-Flash": 1158,
+      "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1116
+    },
+    "mixed_backbone": true,
+    "benchmark_comparable_single_backbone": false,
+    "rerun_generation_spec": {
+      "base_url": "https://token-api.fpt.ai/v1",
+      "context_limit_utf8_bytes": 8192,
+      "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+      "max_attempts_total_per_invalid_target": 5,
+      "max_tokens": 256,
+      "model": "DeepSeek-V4-Flash",
+      "provider": "FPT AI Factory",
+      "retry_request_errors_and_invalid_content": true,
+      "seed": 42,
+      "temperature": 0,
+      "thinking": false
+    }
   },
   {
     "run_id": "Reveal/Ablations/Plus-C8-mmr-selection/test_v2",

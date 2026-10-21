@@ -1,0 +1,129 @@
+{
+  "after": {
+    "accuracy_valid": 0.554904831625183,
+    "always_non_vulnerable": {
+      "accuracy_valid": 0.5406295754026355,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 1255,
+        "fp": 0,
+        "tn": 1477,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "mcc": 0.0,
+      "n": 2732,
+      "precision": 0.0,
+      "predicted_vulnerable_rate_valid": 0.0,
+      "recall": 0.0
+    },
+    "always_vulnerable": {
+      "accuracy_valid": 0.45937042459736455,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 1477,
+        "tn": 0,
+        "tp": 1255
+      },
+      "f1": 0.6295460245798846,
+      "mcc": 0.0,
+      "n": 2732,
+      "precision": 0.45937042459736455,
+      "predicted_vulnerable_rate_valid": 1.0,
+      "recall": 1.0
+    },
+    "balanced_accuracy": 0.5259573756429934,
+    "confusion_matrix": {
+      "fn": 1042,
+      "fp": 174,
+      "tn": 1303,
+      "tp": 213
+    },
+    "coverage": 1.0,
+    "delta_vs_trivial_baselines": {
+      "always_non_vulnerable": {
+        "accuracy_valid": 0.01427525622254755,
+        "balanced_accuracy": 0.025957375642993386,
+        "f1": 0.25943970767356883,
+        "mcc": 0.07419522945481057,
+        "precision": 0.5503875968992248,
+        "recall": 0.1697211155378486
+      },
+      "always_vulnerable": {
+        "accuracy_valid": 0.09553440702781846,
+        "balanced_accuracy": 0.025957375642993386,
+        "f1": -0.3701063169063158,
+        "mcc": 0.07419522945481057,
+        "precision": 0.09101717230186024,
+        "recall": -0.8302788844621514
+      }
+    },
+    "f1": 0.25943970767356883,
+    "invalid_rate": 0.0,
+    "mcc": 0.07419522945481057,
+    "metric_population": "valid_predictions_only",
+    "n": 2732,
+    "n_invalid": 0,
+    "n_responses": 2732,
+    "n_valid": 2732,
+    "precision": 0.5503875968992248,
+    "predicted_vulnerable_rate_valid": 0.14165446559297218,
+    "recall": 0.1697211155378486,
+    "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null"
+  },
+  "attempts_path": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\repairs\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2\\attempts.jsonl",
+  "before": {
+    "accuracy_valid": 0.5577312626603647,
+    "balanced_accuracy": 0.5429118346033711,
+    "confusion_matrix": {
+      "fn": 481,
+      "fp": 174,
+      "tn": 613,
+      "tp": 213
+    },
+    "f1": 0.39407955596669747,
+    "invalid_rate": 0.45790629575402636,
+    "mcc": 0.09747876893576679,
+    "n_invalid": 1251,
+    "n_responses": 2732,
+    "n_valid": 1481,
+    "precision": 0.5503875968992248,
+    "predicted_vulnerable_rate_valid": 0.2613099257258609,
+    "recall": 0.3069164265129683
+  },
+  "benchmark_comparable_single_backbone": false,
+  "created_at": "2026-10-20T16:11:09.859996+00:00",
+  "generation_spec": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "context_limit_utf8_bytes": 8192,
+    "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+    "max_attempts_total_per_invalid_target": 5,
+    "max_tokens": 256,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory",
+    "retry_request_errors_and_invalid_content": true,
+    "seed": 42,
+    "temperature": 0.0,
+    "thinking": false
+  },
+  "metadata_note": "run_manifest.json/freeze.json describe original preparation; this repair manifest describes replacement inference and mixed model results",
+  "mixed_backbone": true,
+  "model_counts": {
+    "DeepSeek-V4-Flash": 1251,
+    "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1481
+  },
+  "originally_invalid_n": 1251,
+  "retained_previously_valid_n": 1481,
+  "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+  "schema": "invalid_retry_publish_v1",
+  "source_fingerprints": {
+    "evaluation/evaluation.json": "3b7a885294ba75f070763c306f05628a07a5cf34bbb8da10e06de2bc6dcb1d08",
+    "evaluation/predictions.jsonl": "aa0d26bc559f106476102496afec963bf95ff2ba037bfd761f34bd3188f84b8b",
+    "freeze.json": "c375f10bb1e542071713efdabb6672106c85dd85ff116d32a576a33637b53856",
+    "inference/raw_responses.jsonl": "44f2244110982f5dff44d930c6fd22faf1d5c5aab6f2c4893aad097be9f496bb",
+    "prompts/prompts.jsonl": "75173e03e13429b4e86add3ac05ef3b145d042cc894a40798451d1ce2dd98e0e",
+    "run_manifest.json": "a4a3dc9867ab7639e636d34529a1583801d29ed4c6e0b38be47e92b4f98d525f"
+  },
+  "source_snapshot": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\baseline\\Devign\\Ablations\\Plus-C8-mmr-selection\\test_v2"
+}

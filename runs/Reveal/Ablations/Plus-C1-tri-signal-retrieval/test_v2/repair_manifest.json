@@ -1,0 +1,129 @@
+{
+  "after": {
+    "accuracy_valid": 0.8364116094986808,
+    "always_non_vulnerable": {
+      "accuracy_valid": 0.8988566402814424,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 230,
+        "fp": 0,
+        "tn": 2044,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "mcc": 0.0,
+      "n": 2274,
+      "precision": 0.0,
+      "predicted_vulnerable_rate_valid": 0.0,
+      "recall": 0.0
+    },
+    "always_vulnerable": {
+      "accuracy_valid": 0.1011433597185576,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 2044,
+        "tn": 0,
+        "tp": 230
+      },
+      "f1": 0.18370607028753994,
+      "mcc": 0.0,
+      "n": 2274,
+      "precision": 0.1011433597185576,
+      "predicted_vulnerable_rate_valid": 1.0,
+      "recall": 1.0
+    },
+    "balanced_accuracy": 0.49613290223772655,
+    "confusion_matrix": {
+      "fn": 214,
+      "fp": 158,
+      "tn": 1886,
+      "tp": 16
+    },
+    "coverage": 1.0,
+    "delta_vs_trivial_baselines": {
+      "always_non_vulnerable": {
+        "accuracy_valid": -0.062445030782761646,
+        "balanced_accuracy": -0.0038670977622734526,
+        "f1": 0.07920792079207921,
+        "mcc": -0.00877273961724861,
+        "precision": 0.09195402298850575,
+        "recall": 0.06956521739130435
+      },
+      "always_vulnerable": {
+        "accuracy_valid": 0.7352682497801232,
+        "balanced_accuracy": -0.0038670977622734526,
+        "f1": -0.10449814949546073,
+        "mcc": -0.00877273961724861,
+        "precision": -0.009189336730051859,
+        "recall": -0.9304347826086956
+      }
+    },
+    "f1": 0.07920792079207921,
+    "invalid_rate": 0.0,
+    "mcc": -0.00877273961724861,
+    "metric_population": "valid_predictions_only",
+    "n": 2274,
+    "n_invalid": 0,
+    "n_responses": 2274,
+    "n_valid": 2274,
+    "precision": 0.09195402298850575,
+    "predicted_vulnerable_rate_valid": 0.07651715039577836,
+    "recall": 0.06956521739130435,
+    "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null"
+  },
+  "attempts_path": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\repairs\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2\\attempts.jsonl",
+  "before": {
+    "accuracy_valid": 0.7858208955223881,
+    "balanced_accuracy": 0.4890636271822248,
+    "confusion_matrix": {
+      "fn": 129,
+      "fp": 158,
+      "tn": 1037,
+      "tp": 16
+    },
+    "f1": 0.10031347962382445,
+    "invalid_rate": 0.41072999120492526,
+    "mcc": -0.020213771723587636,
+    "n_invalid": 934,
+    "n_responses": 2274,
+    "n_valid": 1340,
+    "precision": 0.09195402298850575,
+    "predicted_vulnerable_rate_valid": 0.12985074626865672,
+    "recall": 0.1103448275862069
+  },
+  "benchmark_comparable_single_backbone": false,
+  "created_at": "2026-10-20T17:13:01.828239+00:00",
+  "generation_spec": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "context_limit_utf8_bytes": 8192,
+    "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+    "max_attempts_total_per_invalid_target": 5,
+    "max_tokens": 256,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory",
+    "retry_request_errors_and_invalid_content": true,
+    "seed": 42,
+    "temperature": 0.0,
+    "thinking": false
+  },
+  "metadata_note": "run_manifest.json/freeze.json describe original preparation; this repair manifest describes replacement inference and mixed model results",
+  "mixed_backbone": true,
+  "model_counts": {
+    "DeepSeek-V4-Flash": 934,
+    "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1340
+  },
+  "originally_invalid_n": 934,
+  "retained_previously_valid_n": 1340,
+  "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+  "schema": "invalid_retry_publish_v1",
+  "source_fingerprints": {
+    "evaluation/evaluation.json": "69c7daff839b45dc8db9ddade5f6eb1e918ed3b720db8cc0af63e2622719d0ad",
+    "evaluation/predictions.jsonl": "4f42ffac7222df523fe839e6fdeb987ca401fa978ded182908e5702579cdf38b",
+    "freeze.json": "cf84239fd6b1c6ad8311007c8a013f2777a2e4631c5934a6b76fb82ca53b56e4",
+    "inference/raw_responses.jsonl": "98e031a509ab98d96e3ed5e17c19d6dbeb1610dd75a3216b52e5b49deae8ca77",
+    "prompts/prompts.jsonl": "9fefd923e72be5a3750d55b2404cda0bfb9d2d8a778abb4dc337741127475b5f",
+    "run_manifest.json": "b82598067a5c6c09db59f8acfc697f1204d7e92cc97355f180a929fcfc8f1622"
+  },
+  "source_snapshot": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\baseline\\Reveal\\Ablations\\Plus-C1-tri-signal-retrieval\\test_v2"
+}

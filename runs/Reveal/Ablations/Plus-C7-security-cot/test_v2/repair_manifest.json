@@ -1,0 +1,129 @@
+{
+  "after": {
+    "accuracy_valid": 0.8742304309586632,
+    "always_non_vulnerable": {
+      "accuracy_valid": 0.8988566402814424,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 230,
+        "fp": 0,
+        "tn": 2044,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "mcc": 0.0,
+      "n": 2274,
+      "precision": 0.0,
+      "predicted_vulnerable_rate_valid": 0.0,
+      "recall": 0.0
+    },
+    "always_vulnerable": {
+      "accuracy_valid": 0.1011433597185576,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 2044,
+        "tn": 0,
+        "tp": 230
+      },
+      "f1": 0.18370607028753994,
+      "mcc": 0.0,
+      "n": 2274,
+      "precision": 0.1011433597185576,
+      "predicted_vulnerable_rate_valid": 1.0,
+      "recall": 1.0
+    },
+    "balanced_accuracy": 0.5210286735301626,
+    "confusion_matrix": {
+      "fn": 212,
+      "fp": 74,
+      "tn": 1970,
+      "tp": 18
+    },
+    "coverage": 1.0,
+    "delta_vs_trivial_baselines": {
+      "always_non_vulnerable": {
+        "accuracy_valid": -0.024626209322779258,
+        "balanced_accuracy": 0.021028673530162578,
+        "f1": 0.11180124223602485,
+        "mcc": 0.06436132128834553,
+        "precision": 0.1956521739130435,
+        "recall": 0.0782608695652174
+      },
+      "always_vulnerable": {
+        "accuracy_valid": 0.7730870712401056,
+        "balanced_accuracy": 0.021028673530162578,
+        "f1": -0.07190482805151509,
+        "mcc": 0.06436132128834553,
+        "precision": 0.09450881419448588,
+        "recall": -0.9217391304347826
+      }
+    },
+    "f1": 0.11180124223602485,
+    "invalid_rate": 0.0,
+    "mcc": 0.06436132128834553,
+    "metric_population": "valid_predictions_only",
+    "n": 2274,
+    "n_invalid": 0,
+    "n_responses": 2274,
+    "n_valid": 2274,
+    "precision": 0.1956521739130435,
+    "predicted_vulnerable_rate_valid": 0.040457343887423045,
+    "recall": 0.0782608695652174,
+    "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null"
+  },
+  "attempts_path": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\repairs\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2\\attempts.jsonl",
+  "before": {
+    "accuracy_valid": 0.8521505376344086,
+    "balanced_accuracy": 0.54582600694223,
+    "confusion_matrix": {
+      "fn": 91,
+      "fp": 74,
+      "tn": 933,
+      "tp": 18
+    },
+    "f1": 0.17910447761194032,
+    "invalid_rate": 0.5092348284960422,
+    "mcc": 0.09892956614369716,
+    "n_invalid": 1158,
+    "n_responses": 2274,
+    "n_valid": 1116,
+    "precision": 0.1956521739130435,
+    "predicted_vulnerable_rate_valid": 0.08243727598566308,
+    "recall": 0.1651376146788991
+  },
+  "benchmark_comparable_single_backbone": false,
+  "created_at": "2026-10-20T17:24:33.399198+00:00",
+  "generation_spec": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "context_limit_utf8_bytes": 8192,
+    "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+    "max_attempts_total_per_invalid_target": 5,
+    "max_tokens": 256,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory",
+    "retry_request_errors_and_invalid_content": true,
+    "seed": 42,
+    "temperature": 0.0,
+    "thinking": false
+  },
+  "metadata_note": "run_manifest.json/freeze.json describe original preparation; this repair manifest describes replacement inference and mixed model results",
+  "mixed_backbone": true,
+  "model_counts": {
+    "DeepSeek-V4-Flash": 1158,
+    "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1116
+  },
+  "originally_invalid_n": 1158,
+  "retained_previously_valid_n": 1116,
+  "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+  "schema": "invalid_retry_publish_v1",
+  "source_fingerprints": {
+    "evaluation/evaluation.json": "147c9fd38f6e01d9b2fff29a25181f8839e212147c15da60a8468bba1a23a33b",
+    "evaluation/predictions.jsonl": "4ad10120a98ba103e632487a948b3e68d4f7896be945318797b5ed4203289568",
+    "freeze.json": "cfedc1aa9939702df34b5a2dff7babdcadab41ad3458cad08e446b60ab748d86",
+    "inference/raw_responses.jsonl": "33244ed0a748c747a1ba7623b33da9a1291a9ebb88209b7eac557d0cee32a8ed",
+    "prompts/prompts.jsonl": "5424c74954a33b76faa46c762bd958bd58626ebd726406aa80dd8d92f9dd3f9e",
+    "run_manifest.json": "677dfcdc3cd276170e57bd2ab951d83098c8a0449974eba6f9a6e9b458fa49c2"
+  },
+  "source_snapshot": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\baseline\\Reveal\\Ablations\\Plus-C7-security-cot\\test_v2"
+}

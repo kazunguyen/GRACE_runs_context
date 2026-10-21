@@ -1,0 +1,74 @@
+[
+  {
+    "accuracy": 0.554904831625183,
+    "after_invalid": 0,
+    "balanced_accuracy": 0.5259573756429934,
+    "before_invalid": 1251,
+    "coverage": 1.0,
+    "f1": 0.25943970767356883,
+    "mcc": 0.07419522945481057,
+    "mixed_backbone": true,
+    "run_id": "Devign/Ablations/Plus-C8-mmr-selection/test_v2",
+    "total": 2732
+  },
+  {
+    "accuracy": 0.8223394898856641,
+    "after_invalid": 0,
+    "balanced_accuracy": 0.4979515868288948,
+    "before_invalid": 1013,
+    "coverage": 1.0,
+    "f1": 0.09417040358744394,
+    "mcc": -0.004213105731536658,
+    "mixed_backbone": true,
+    "run_id": "Reveal/Ablations/No-C2-stratified-demo-selection/test_v2",
+    "total": 2274
+  },
+  {
+    "accuracy": 0.8565772107347118,
+    "after_invalid": 1,
+    "balanced_accuracy": 0.5189469875928409,
+    "before_invalid": 930,
+    "coverage": 0.9995602462620933,
+    "f1": 0.11891891891891893,
+    "mcc": 0.04753448818837279,
+    "mixed_backbone": true,
+    "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+    "total": 2274
+  },
+  {
+    "accuracy": 0.858776946766388,
+    "after_invalid": 1,
+    "balanced_accuracy": 0.5220872251514711,
+    "before_invalid": 1036,
+    "coverage": 0.9995602462620933,
+    "f1": 0.12534059945504086,
+    "mcc": 0.05567892708501498,
+    "mixed_backbone": true,
+    "run_id": "Reveal/Ablations/No-C5-graph-verbalization/test_v2",
+    "total": 2274
+  },
+  {
+    "accuracy": 0.8364116094986808,
+    "after_invalid": 0,
+    "balanced_accuracy": 0.49613290223772655,
+    "before_invalid": 934,
+    "coverage": 1.0,
+    "f1": 0.07920792079207921,
+    "mcc": -0.00877273961724861,
+    "mixed_backbone": true,
+    "run_id": "Reveal/Ablations/Plus-C1-tri-signal-retrieval/test_v2",
+    "total": 2274
+  },
+  {
+    "accuracy": 0.8742304309586632,
+    "after_invalid": 0,
+    "balanced_accuracy": 0.5210286735301626,
+    "before_invalid": 1158,
+    "coverage": 1.0,
+    "f1": 0.11180124223602485,
+    "mcc": 0.06436132128834553,
+    "mixed_backbone": true,
+    "run_id": "Reveal/Ablations/Plus-C7-security-cot/test_v2",
+    "total": 2274
+  }
+]

@@ -1,19 +1,73 @@
 {
-  "accuracy_valid": 0.5577312626603647,
-  "balanced_accuracy": 0.5429118346033711,
+  "accuracy_valid": 0.554904831625183,
+  "always_non_vulnerable": {
+    "accuracy_valid": 0.5406295754026355,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": {
+      "fn": 1255,
+      "fp": 0,
+      "tn": 1477,
+      "tp": 0
+    },
+    "f1": 0.0,
+    "mcc": 0.0,
+    "n": 2732,
+    "precision": 0.0,
+    "predicted_vulnerable_rate_valid": 0.0,
+    "recall": 0.0
+  },
+  "always_vulnerable": {
+    "accuracy_valid": 0.45937042459736455,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": {
+      "fn": 0,
+      "fp": 1477,
+      "tn": 0,
+      "tp": 1255
+    },
+    "f1": 0.6295460245798846,
+    "mcc": 0.0,
+    "n": 2732,
+    "precision": 0.45937042459736455,
+    "predicted_vulnerable_rate_valid": 1.0,
+    "recall": 1.0
+  },
+  "balanced_accuracy": 0.5259573756429934,
   "confusion_matrix": {
-    "fn": 481,
+    "fn": 1042,
     "fp": 174,
-    "tn": 613,
+    "tn": 1303,
     "tp": 213
   },
-  "f1": 0.39407955596669747,
-  "invalid_rate": 0.45790629575402636,
-  "mcc": 0.09747876893576679,
-  "n_invalid": 1251,
+  "coverage": 1.0,
+  "delta_vs_trivial_baselines": {
+    "always_non_vulnerable": {
+      "accuracy_valid": 0.01427525622254755,
+      "balanced_accuracy": 0.025957375642993386,
+      "f1": 0.25943970767356883,
+      "mcc": 0.07419522945481057,
+      "precision": 0.5503875968992248,
+      "recall": 0.1697211155378486
+    },
+    "always_vulnerable": {
+      "accuracy_valid": 0.09553440702781846,
+      "balanced_accuracy": 0.025957375642993386,
+      "f1": -0.3701063169063158,
+      "mcc": 0.07419522945481057,
+      "precision": 0.09101717230186024,
+      "recall": -0.8302788844621514
+    }
+  },
+  "f1": 0.25943970767356883,
+  "invalid_rate": 0.0,
+  "mcc": 0.07419522945481057,
+  "metric_population": "valid_predictions_only",
+  "n": 2732,
+  "n_invalid": 0,
   "n_responses": 2732,
-  "n_valid": 1481,
+  "n_valid": 2732,
   "precision": 0.5503875968992248,
-  "predicted_vulnerable_rate_valid": 0.2613099257258609,
-  "recall": 0.3069164265129683
+  "predicted_vulnerable_rate_valid": 0.14165446559297218,
+  "recall": 0.1697211155378486,
+  "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null"
 }

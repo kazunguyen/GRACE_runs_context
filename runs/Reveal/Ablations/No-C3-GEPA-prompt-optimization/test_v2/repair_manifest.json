@@ -1,0 +1,129 @@
+{
+  "after": {
+    "accuracy_valid": 0.8565772107347118,
+    "always_non_vulnerable": {
+      "accuracy_valid": 0.8988121425428949,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 230,
+        "fp": 0,
+        "tn": 2043,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "mcc": 0.0,
+      "n": 2273,
+      "precision": 0.0,
+      "predicted_vulnerable_rate_valid": 0.0,
+      "recall": 0.0
+    },
+    "always_vulnerable": {
+      "accuracy_valid": 0.10118785745710515,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": {
+        "fn": 0,
+        "fp": 2043,
+        "tn": 0,
+        "tp": 230
+      },
+      "f1": 0.18377946464242909,
+      "mcc": 0.0,
+      "n": 2273,
+      "precision": 0.10118785745710515,
+      "predicted_vulnerable_rate_valid": 1.0,
+      "recall": 1.0
+    },
+    "balanced_accuracy": 0.5189469875928409,
+    "confusion_matrix": {
+      "fn": 208,
+      "fp": 118,
+      "tn": 1925,
+      "tp": 22
+    },
+    "coverage": 0.9995602462620933,
+    "delta_vs_trivial_baselines": {
+      "always_non_vulnerable": {
+        "accuracy_valid": -0.04223493180818305,
+        "balanced_accuracy": 0.018946987592840858,
+        "f1": 0.11891891891891893,
+        "mcc": 0.04753448818837279,
+        "precision": 0.15714285714285714,
+        "recall": 0.09565217391304348
+      },
+      "always_vulnerable": {
+        "accuracy_valid": 0.7553893532776067,
+        "balanced_accuracy": 0.018946987592840858,
+        "f1": -0.06486054572351016,
+        "mcc": 0.04753448818837279,
+        "precision": 0.05595499968575199,
+        "recall": -0.9043478260869565
+      }
+    },
+    "f1": 0.11891891891891893,
+    "invalid_rate": 0.00043975373790677223,
+    "mcc": 0.04753448818837279,
+    "metric_population": "valid_predictions_only",
+    "n": 2273,
+    "n_invalid": 1,
+    "n_responses": 2274,
+    "n_valid": 2273,
+    "precision": 0.15714285714285714,
+    "predicted_vulnerable_rate_valid": 0.06159260888693357,
+    "recall": 0.09565217391304348,
+    "undefined_metric_policy": "nonempty: undefined precision/F1/MCC=0; missing-class recall/balanced_accuracy=null; empty: all metrics=null"
+  },
+  "attempts_path": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\repairs\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2\\attempts.jsonl",
+  "before": {
+    "accuracy_valid": 0.8266369047619048,
+    "balanced_accuracy": 0.5314104463621575,
+    "confusion_matrix": {
+      "fn": 115,
+      "fp": 118,
+      "tn": 1089,
+      "tp": 22
+    },
+    "f1": 0.15884476534296027,
+    "invalid_rate": 0.40897097625329815,
+    "mcc": 0.062221540747639074,
+    "n_invalid": 930,
+    "n_responses": 2274,
+    "n_valid": 1344,
+    "precision": 0.15714285714285714,
+    "predicted_vulnerable_rate_valid": 0.10416666666666667,
+    "recall": 0.16058394160583941
+  },
+  "benchmark_comparable_single_backbone": false,
+  "created_at": "2026-10-20T16:46:55.073285+00:00",
+  "generation_spec": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "context_limit_utf8_bytes": 8192,
+    "evaluator_sha256": "230cad2d0a13088bdf70439db7a7965fd3a62f8509924bbffa189da723bc2016",
+    "max_attempts_total_per_invalid_target": 5,
+    "max_tokens": 256,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory",
+    "retry_request_errors_and_invalid_content": true,
+    "seed": 42,
+    "temperature": 0.0,
+    "thinking": false
+  },
+  "metadata_note": "run_manifest.json/freeze.json describe original preparation; this repair manifest describes replacement inference and mixed model results",
+  "mixed_backbone": true,
+  "model_counts": {
+    "DeepSeek-V4-Flash": 930,
+    "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas": 1344
+  },
+  "originally_invalid_n": 930,
+  "retained_previously_valid_n": 1344,
+  "run_id": "Reveal/Ablations/No-C3-GEPA-prompt-optimization/test_v2",
+  "schema": "invalid_retry_publish_v1",
+  "source_fingerprints": {
+    "evaluation/evaluation.json": "525cc02a9b752125d280244a830f5df8748ca3d2a232e2156b938ae6a291b488",
+    "evaluation/predictions.jsonl": "47c76a2fbbb96caab37393eaa04e44fb6d7a0282126985c0e50e0f3a13a0cbd1",
+    "freeze.json": "a5b51d7b5d5fed4984379871aae8f9304e8751323d0598ea19bf5f939bc8acbe",
+    "inference/raw_responses.jsonl": "073cf9aa73452e51aa7cc9eb33f708f01644a21bf4d02d4c5b5fa8b5bed07f4f",
+    "prompts/prompts.jsonl": "f9b568768e0857b5394555f888d46e22ca56a3daa5601c7381e73877638fd404",
+    "run_manifest.json": "82c0d5e9c01940522125cc37ab8371a63629c05b96d14b1245a44ab3d1889324"
+  },
+  "source_snapshot": "D:\\JUNIOR\\LabThayTho\\_rerun_invalid_over40_context8192_20261020\\baseline\\Reveal\\Ablations\\No-C3-GEPA-prompt-optimization\\test_v2"
+}

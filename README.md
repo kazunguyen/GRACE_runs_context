@@ -1,4 +1,4 @@
-# Dữ liệu 36 run lịch sử GRACE — context 8.192 byte
+# Dữ liệu 36 run GRACE — context 8.192 byte (có cập nhật rerun)
 
 Mở **bang_quan_ly_run.md** để xem bảng và liên kết tương đối tới từng artifact.
 Giữ nguyên cấu trúc thư mục khi tải từ Google Drive; nếu Drive preview không mở được link JSONL, tải folder về máy và mở bằng trình soạn thảo.
@@ -11,10 +11,14 @@ Giữ nguyên cấu trúc thư mục khi tải từ Google Drive; nếu Drive pr
 
 Xem kiem_tra_raw_prompt_limits.md về context/node/edge. Tất cả prompt <=8.192 byte, <=40 khai báo node và <=80 khai báo cạnh; 382 prompt nhắc tới hơn 40 ID đầu mút cạnh. Không đồng nhất giới hạn khai báo node với số đỉnh duy nhất của graph.
 
-Các file run được copy nguyên byte; manifest/freeze có thể chứa đường dẫn tuyệt đối của máy nguồn. Không chỉnh chúng để giữ bằng chứng gốc. Bảng Markdown/JSON ở thư mục gốc dùng đường dẫn tương đối; provenance chứa bảng gốc và tài liệu đối soát. Chưa phục hồi snapshot contract lịch sử đúng hash; không đưa contract 24.000 byte hiện tại vào thay thế.
+Artifact gốc được copy nguyên byte; sáu nhánh sau rerun đã thay raw/prediction/evaluation và bổ sung repair manifest. manifest/freeze có thể chứa đường dẫn tuyệt đối của máy nguồn. Không chỉnh chúng để giữ bằng chứng gốc. Bảng Markdown/JSON ở thư mục gốc dùng đường dẫn tương đối; provenance chứa bảng gốc và tài liệu đối soát. Chưa phục hồi snapshot contract lịch sử đúng hash; không đưa contract 24.000 byte hiện tại vào thay thế.
 
-copy_manifest.json ghi nguồn, kích thước và SHA-256 của từng file đã copy. Các file nguồn không được move hoặc sửa. Không kèm API key, .env, model weights hay cache nặng. Đây là bộ artifact để xem và đối soát, không phải môi trường tái chạy toàn pipeline.
+copy_manifest.json ghi nguồn, kích thước và SHA-256 của artifact hiện tại. Sáu nhánh đã được notebook cập nhật đồng thời ở nguồn C và SHARE; lịch sử trước rerun vẫn nằm trong Git. Không kèm API key, .env, model weights hay cache nặng. Đây là bộ artifact để xem và đối soát, không phải môi trường tái chạy toàn pipeline.
 
 ## H3 bổ sung — không thuộc bộ 36 run context8192
 
 - [H3: validation 8192 / test 24000](additional_runs/H3-BenchmarkEnsemble/validation8192_test24000_20261021/README.md). Snapshot trộn model, giữ đúng context thực tế; không gộp vào thống kê 36 run lịch sử.
+
+## Cập nhật rerun invalid ngày 21/10/2026
+
+Sáu nhánh có invalid trên40% đã được retry 6.322 mẫu bằng DeepSeek-V4-Flash/FPT; còn2 invalid. Prompt giữ nguyên8.192 byte, valid cũ giữ nguyên. Kết quả sáu nhánh là mixed backbone Qwen/Vertex + DeepSeek/FPT. [Bảng run cập nhật](bang_quan_ly_run.md) · [Báo cáo rerun](provenance/invalid_rerun_context8192_20261021/README.md). Link prediction/raw/prompt cũ giữ nguyên; mỗi nhánh có thêm repair_manifest.json.
