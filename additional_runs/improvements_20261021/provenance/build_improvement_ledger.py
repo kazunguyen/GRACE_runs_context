@@ -35,6 +35,12 @@ def link(p, label):
 def notebook(root):
     return root/'notebooks/full-pipeline.ipynb'
 
+def run_note(entry):
+    if entry['project'] == 'GRACE-H1-SecurityProjection' and entry['run'].endswith('/2d1845eabf62eb84'):
+        return ('Gọi lại baseline `0779c879b6d11431` cho H1 V2: prompt giống hệt; '
+                '`force_fresh=True`; sau retry còn ' + str(entry['metrics']['invalid_n']) + ' invalid.')
+    return '—'
+
 def main():
     entries=[];prepared=[];missing=[]
     for name in pub.NAMES:
@@ -103,6 +109,8 @@ def main():
                                      'predictions':str(pp.relative_to(pub.SHARE)),'raw_responses':str(rp.relative_to(pub.SHARE)),
                                      'manifest':str(mp.relative_to(pub.SHARE)),'metrics':str(ep.relative_to(pub.SHARE))},
                    'raw_unavailable_n':unavailable}
+            if run_note(entry) != '—':
+                entry['note'] = run_note(entry)
             entries.append(entry)
             print('RUN',name,ds,split,folder.name,'raw_missing',unavailable,flush=True)
     # Derived H3 arms share expert requests; do not count these as fresh LLM runs.
@@ -146,8 +154,8 @@ def main():
         '- Raw được tổng hợp theo request key + prompt hash của prediction; thiếu raw sẽ ghi rõ, không thay bằng response của model khác.',
         '- Notebook commit/archive đã che API key điền trực tiếp. Bản gốc vẫn nằm ở project để resume; snapshot không chứa weights, embeddings, graph cache hoặc runtime.', '',
         '## Các run có inference','',
-        '| Project / run | Dataset / split | Arm | N0 / N1 | Valid / invalid | Trạng thái | Model / context bytes | P / R / F1 (%) | MCC | Notebook | Prediction | Raw | Prompt | Manifest |',
-        '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
+        '| Project / run | Dataset / split | Arm | N0 / N1 | Valid / invalid | Trạng thái | Model / context bytes | P / R / F1 (%) | MCC | Notebook | Prediction | Raw | Prompt | Manifest | Ghi chú |',
+        '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
     for e in entries:
         m=e['metrics'];spec=e['request_spec'];model=spec.get('model','mixed')
         if 'qwen3-coder' in model:model='Qwen3-Coder-480B / Vertex'
@@ -158,7 +166,7 @@ def main():
         if e['run'].startswith('archives/'):short+=' (historical)'
         md.append('| '+' | '.join([short,e['dataset']+' / '+e['split'],e['arm'],f"{e['n0']} / {e['n1']}",f"{m['valid_n']} / {m['invalid_n']}",e['status'],model+' / '+cap,
                                   f"{m['precision']*100:.2f} / {m['recall']*100:.2f} / {m['f1']*100:.2f}",f"{m['mcc']:.4f}",
-                                  *[link(pub.SHARE/p[k],lab)+(f" (thiếu {e['raw_unavailable_n']})" if k=='raw_responses' and e['raw_unavailable_n'] else '') for k,lab in [('notebook','notebook'),('predictions','prediction'),('raw_responses','raw'),('prompts','prompt'),('manifest','manifest')]]])+' |')
+                                  *[link(pub.SHARE/p[k],lab)+(f" (thiếu {e['raw_unavailable_n']})" if k=='raw_responses' and e['raw_unavailable_n'] else '') for k,lab in [('notebook','notebook'),('predictions','prediction'),('raw_responses','raw'),('prompts','prompt'),('manifest','manifest')]], run_note(e)])+' |')
     md += ['', '## Kết quả các nhánh H3 trên test','',
            'Các nhánh dưới dùng chung raw của expert: không phải mỗi dòng là một lượt gọi LLM mới. Winner được khóa trên development, không chọn lại theo test. Tỷ lệ gọi của router là yêu cầu thuật toán giả định khi triển khai riêng, không phải tiết kiệm API thực tế của combined benchmark.', '',
            '| Project / dataset | Profile | Arm | Chọn trước test | Accuracy (%) | P / R / F1 (%) | MCC | Báo cáo |',

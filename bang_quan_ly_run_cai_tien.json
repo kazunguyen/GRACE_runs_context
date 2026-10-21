@@ -208,7 +208,8 @@
         "manifest": "additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\2d1845eabf62eb84\\run_manifest.json",
         "metrics": "additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\2d1845eabf62eb84\\ledger_metrics.json"
       },
-      "raw_unavailable_n": 0
+      "raw_unavailable_n": 0,
+      "note": "Gọi lại baseline `0779c879b6d11431` cho H1 V2: prompt giống hệt; `force_fresh=True`; sau retry còn 12 invalid."
     },
     {
       "project": "GRACE-H1-SecurityProjection",
