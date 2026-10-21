@@ -35,18 +35,19 @@ def link(p, label):
 def notebook(root):
     return root/'notebooks/full-pipeline.ipynb'
 
-BENCHMARK_EXCLUSION_POLICY = "Không dùng các run DeepSeek/FPT, run trộn Qwen/DeepSeek và kết quả phụ thuộc expert DeepSeek trong benchmark hoặc kết luận cải tiến GRACE; chỉ giữ để đối soát lịch sử."
+BENCHMARK_EXCLUSION_POLICY = "Không dùng riêng run `1c092d22f44923fc`. Tạm thời không dùng các run/profile context 24.000 byte. Các run khác không bị loại chỉ vì dùng DeepSeek hoặc trộn model/provider."
 
 def derived_note(entry):
-    if entry['project'] == 'GRACE-H3-BenchmarkEnsemble' and (entry.get('algorithmic_expert_query_ratio') or 0) > 0:
-        return 'KHÔNG DÙNG benchmark: kết quả phụ thuộc expert DeepSeek/FPT.'
+    limits = entry.get('context_limits') or {}
+    if entry['project'] == 'GRACE-H3-BenchmarkEnsemble' and (entry.get('historical') or limits.get('test_utf8_bytes') == 24000):
+        return "TẠM THỜI KHÔNG DÙNG: context limit 24.000 byte."
     return '—'
 
 def run_note(entry):
-    if entry.get('mixed_model_recovery'):
-        return 'KHÔNG DÙNG benchmark: run trộn Qwen/DeepSeek; chỉ lưu đối soát.'
-    if 'deepseek' in str(entry.get('request_spec', {}).get('model', '')).lower():
-        return 'KHÔNG DÙNG benchmark: DeepSeek/FPT gần như luôn đoán 0; chỉ lưu đối soát.'
+    if entry['project'] == 'GRACE-H3-BenchmarkEnsemble' and entry['run'].endswith('/1c092d22f44923fc'):
+        return "KHÔNG DÙNG riêng run này: `1c092d22f44923fc` gần như luôn đoán 0."
+    if (entry.get('context_limits') or {}).get('24000', 0):
+        return "TẠM THỜI KHÔNG DÙNG: context limit 24.000 byte."
     if entry['project'] == 'GRACE-H1-SecurityProjection' and entry['run'].endswith('/2d1845eabf62eb84'):
         return ('Gọi lại baseline `0779c879b6d11431` cho H1 V2: prompt giống hệt; '
                 '`force_fresh=True`; sau retry còn ' + str(entry['metrics']['invalid_n']) + ' invalid.')
@@ -122,7 +123,9 @@ def main():
                    'raw_unavailable_n':unavailable}
             if run_note(entry) != '—':
                 entry['note'] = run_note(entry)
-                if entry['note'].startswith('KHÔNG DÙNG'):
+                if entry['note'].startswith('TẠM THỜI'):
+                    entry['benchmark_use'] = 'temporarily_excluded'
+                elif entry['note'].startswith('KHÔNG DÙNG'):
                     entry['benchmark_use'] = 'excluded'
             entries.append(entry)
             print('RUN',name,ds,split,folder.name,'raw_missing',unavailable,flush=True)
@@ -148,7 +151,7 @@ def main():
     for entry in derived:
         if derived_note(entry) != '—':
             entry['note'] = derived_note(entry)
-            entry['benchmark_use'] = 'excluded'
+            entry['benchmark_use'] = 'temporarily_excluded'
     obj={'benchmark_exclusion_policy':BENCHMARK_EXCLUSION_POLICY,'schema':'grace_improvement_run_ledger_v1','updated':'2026-10-21','llm_runs':entries,'derived_arms':derived,
          'prepared_only':prepared,'missing_raw':missing,'h2':read(pub.SHARE/pub.DEST/'publication_manifest.json')['h2']['publication_update_20261021'],
          'scope':'Separate from original 36-run ledger. Includes historical/partial runs with explicit status; metrics are descriptive, not proof of improvement.'}
