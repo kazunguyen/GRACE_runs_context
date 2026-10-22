@@ -1,0 +1,29 @@
+{
+  "attempts": 1,
+  "elapsed_seconds": 0.5291317449991766,
+  "prompt_sha256": "3417d150c8552678be7d3a568561abd4aa7595b691e44289633e339383e2f539",
+  "raw_response": "0",
+  "raw_response_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+  "request_error": null,
+  "request_key": "bcaa7a4966aac6edb4aab1c9a11a3b93086b7a0becc2dd5ea728c06394c2f2e7",
+  "request_spec": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "inference": {
+      "max_tokens": 256,
+      "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+      "parser_contract": "exact_last_line_binary_v1",
+      "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+      "seed": 42,
+      "temperature": 0.0
+    },
+    "model": "DeepSeek-V4-Flash",
+    "provider": "FPT AI Factory"
+  },
+  "request_status": "ok",
+  "source": "new_api",
+  "usage": {
+    "candidates_token_count": 2,
+    "prompt_token_count": 3064,
+    "total_token_count": 3066
+  }
+}

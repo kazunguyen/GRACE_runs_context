@@ -1,0 +1,97 @@
+{
+  "branches": {
+    "inspect": 2274
+  },
+  "cascade": {
+    "accuracy_all": 0.906140350877193,
+    "accuracy_valid_only": 0.906140350877193,
+    "balanced_accuracy": 0.4995164410058027,
+    "confusion_matrix_valid_only": {
+      "fn": 106,
+      "fp": 1,
+      "tn": 1033,
+      "tp": 0
+    },
+    "evaluation_scope": "successful_inference_subset",
+    "f1": 0.0,
+    "invalid_n": 0,
+    "invalid_positive_n": 0,
+    "invalid_rate": 0.0,
+    "mcc": -0.009487041518709745,
+    "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+    "n": 1140,
+    "precision": 0.0,
+    "predicted_positive_rate_all": 0.0008771929824561404,
+    "recall": 0.0,
+    "recall_all_positives": 0.0,
+    "valid_n": 1140
+  },
+  "cohort_n": 2274,
+  "coverage": {
+    "cascade": {
+      "inference_complete": false,
+      "inferred_n": 1140,
+      "inferred_percent": 50.13192612137203,
+      "pending_n": 1134,
+      "total_prompts": 2274
+    },
+    "full_reference": {
+      "inference_complete": false,
+      "inferred_n": 1140,
+      "inferred_percent": 50.13192612137203,
+      "pending_n": 1134,
+      "total_prompts": 2274
+    }
+  },
+  "dataset": "reveal",
+  "full_reference": {
+    "accuracy_all": 0.906140350877193,
+    "accuracy_valid_only": 0.906140350877193,
+    "balanced_accuracy": 0.4995164410058027,
+    "confusion_matrix_valid_only": {
+      "fn": 106,
+      "fp": 1,
+      "tn": 1033,
+      "tp": 0
+    },
+    "evaluation_scope": "successful_inference_subset",
+    "f1": 0.0,
+    "invalid_n": 0,
+    "invalid_positive_n": 0,
+    "invalid_rate": 0.0,
+    "mcc": -0.009487041518709745,
+    "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+    "n": 1140,
+    "precision": 0.0,
+    "predicted_positive_rate_all": 0.0008771929824561404,
+    "recall": 0.0,
+    "recall_all_positives": 0.0,
+    "valid_n": 1140
+  },
+  "gate_only": {
+    "accuracy_all": 0.9078947368421053,
+    "accuracy_valid_only": 0.9078947368421053,
+    "balanced_accuracy": 0.5047169811320755,
+    "confusion_matrix_valid_only": {
+      "fn": 105,
+      "fp": 0,
+      "tn": 1034,
+      "tp": 1
+    },
+    "evaluation_scope": "same_inferred_subset_as_cascade",
+    "f1": 0.018691588785046728,
+    "invalid_n": 0,
+    "invalid_positive_n": 0,
+    "invalid_rate": 0.0,
+    "mcc": 0.09254340500326298,
+    "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+    "n": 1140,
+    "precision": 1.0,
+    "predicted_positive_rate_all": 0.0008771929824561404,
+    "recall": 0.009433962264150943,
+    "recall_all_positives": 0.009433962264150943,
+    "valid_n": 1140
+  },
+  "note": "Metrics use only successful cached API responses for the current prompt/model settings. Uncalled/failed requests are excluded; successful but unparseable answers remain in invalid_rate. A prefix is not necessarily representative of the full test set.",
+  "status": "partial"
+}

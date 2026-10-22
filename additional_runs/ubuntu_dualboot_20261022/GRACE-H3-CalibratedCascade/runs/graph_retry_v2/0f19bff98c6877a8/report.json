@@ -1,0 +1,2133 @@
+{
+  "profile": {
+    "version": 2,
+    "annotation_macros": {
+      "_U_": "",
+      "ATTRIBUTE_UNUSED": "",
+      "HB_UNUSED": "",
+      "ATTR_UNUSED": "",
+      "U_CALLCONV": "",
+      "U_EXPORT2": "",
+      "__user": "",
+      "__always_inline": "inline",
+      "magick_restrict": "",
+      "PNGAPI": "",
+      "av_unused": ""
+    },
+    "interpretation": "parser annotation abstraction; not full project preprocessing",
+    "language_extension": ".cpp",
+    "heap": "2g",
+    "processors": 4,
+    "joern_home": "/home/quang-dung/.cache/grace-h2/joern-cli",
+    "parse_launcher_sha256": "93e88d1b810383e3b1bccc1350501129a28f1ae80a44c0a34179673fd76fd4cd"
+  },
+  "profile_id": "0f19bff98c6877a8",
+  "total": 215,
+  "counts": {
+    "recovered": 87,
+    "needs_macro_context": 59,
+    "needs_project_context": 69
+  },
+  "elapsed_seconds": 244.3388268869985,
+  "results": [
+    {
+      "code_sha256": "003529ac4796e6edf4f9f4aa131dce976e59c80deb68c89f0d8edc127fccfe01",
+      "record_id": "reveal:train:1891617106617090004#12325",
+      "parser_input_sha256": "8ee969e9eb3d88cccd39198a98ab7c7adabfba7a887f8886c60875ee76aa6ce4",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 331,
+      "edges": 2878,
+      "elapsed_seconds": 11.834682077000252
+    },
+    {
+      "code_sha256": "055b78a808a8320866204be46f15e9eb9ba9603826adc6e1669e949687855d10",
+      "record_id": "reveal:train:594127775011357110#1214",
+      "parser_input_sha256": "7cc340137f581bd30664429bdc305503c98b4155a959c3040c8adbe9262251cf",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "magick_restrict"
+      ],
+      "status": "recovered",
+      "nodes": 1093,
+      "edges": 10546,
+      "elapsed_seconds": 14.323451632000797
+    },
+    {
+      "code_sha256": "088453a9e9431fa4a0f8c43f80a38bb20fdd8f05e13b6f75c33ef68b9e7e7e6f",
+      "record_id": "reveal:train:7549435794356072684#11834",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "097522ac8e63f88a65e7a2a0d912079e638a52132861a32fe40a1fafeba0a8c3",
+      "record_id": "reveal:train:4959950795017352813#12913",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "0e7df638d95e28280e38e6cab1d572ec258de2d2bb5cac1889f2b0e78ae13425",
+      "record_id": "reveal:train:8445816931248660591#13926",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "0f150138cf2e1fe95852ade4a0f0ba549475d6b1cac90fc4a025413239e7d55d",
+      "record_id": "reveal:train:594127775011357110#17747",
+      "parser_input_sha256": "05985509f77d4d126ccbb4de1384b4bd779f6a51d75618b3698d1032e6664dd1",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "magick_restrict"
+      ],
+      "status": "recovered",
+      "nodes": 1093,
+      "edges": 10546,
+      "elapsed_seconds": 14.314318581999032
+    },
+    {
+      "code_sha256": "0f17c9eb38507a11c88ef23d9db2c7c3aab6a22e7297cbae9223645261f59ded",
+      "record_id": "reveal:train:7424930167238097621#15794",
+      "parser_input_sha256": "637819e2321d8f98375000f65c42eea9e65947e864a2a899002b94e76f0556e1",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 27,
+      "edges": 170,
+      "elapsed_seconds": 11.221388464000484
+    },
+    {
+      "code_sha256": "0f7a290703fc0055d7284184902caa686fe027cd3016721d9181fff16a6f0d5b",
+      "record_id": "reveal:train:8445816931248660591#5697",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "0fde0f4d27c0417ec5ad39d8aa90ad6a16da1b3dd87c5cf8ff66180ab7704cf8",
+      "record_id": "reveal:train:-704025756752474526#6558",
+      "parser_input_sha256": "bc692e889cb269d6af54b492ad79d21510dcf00fb06667da793f9d43c60f0938",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "PNGAPI"
+      ],
+      "status": "recovered",
+      "nodes": 39,
+      "edges": 274,
+      "elapsed_seconds": 7.701798025000244
+    },
+    {
+      "code_sha256": "13416510efc463d2f7ea7f9b356d4442b5f3c9d4ff4bf6cce8cd43eecb951238",
+      "record_id": "reveal:train:-755883256379441954#1467",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "139f25a2e8932b814da824ca762ed7e0fc871713cf9197718062ca7bc3e74b1f",
+      "record_id": "reveal:test:-331579171381918893#402",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "14b6b90c6d124f7289927048c0316869994cba1b74a56189bc49d8d0c234d868",
+      "record_id": "reveal:train:7424930167238097621#5006",
+      "parser_input_sha256": "d9143a4b113bafa26d3ec3677bb4500abc30bb87f4ace9247c4c478155246cd4",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 149,
+      "edges": 1276,
+      "elapsed_seconds": 8.077816495999286
+    },
+    {
+      "code_sha256": "14e94d7fdef20998a17eafcf1236ecb2ebc894731f44293bb0b00257d75aac22",
+      "record_id": "reveal:train:-7434385833116714871#9964",
+      "parser_input_sha256": "df3d5af0086d16dedd9101f2561f33f3c15fcb620dfa2d4639558c94d1be451e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 29,
+      "edges": 214,
+      "elapsed_seconds": 7.811190024000098
+    },
+    {
+      "code_sha256": "1750d2ec00009872ebf1909b4d5fda7f3a09ca96ddf699ca6b47272c9f492595",
+      "record_id": "reveal:train:1223258652239369123#5188",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "175fbba7a95b8b78968f0bbca3a9e801c8c56239e6963db67e9f981e76755365",
+      "record_id": "reveal:test:1366214969540455677#2179",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "1a7853e34d91b1a91b59cf583186584c3209a35d0da34d2acc4a85b81e3f3ac4",
+      "record_id": "reveal:train:-755883256379441954#2582",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "1c89fbebd0bd1ebadc4fec7b6df3b7d7560e8922cf51d8c8d68a1ba4039e189c",
+      "record_id": "reveal:train:7399683071036018868#9040",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "1c9ec02ca2f79c28b5362dc374d7668e816b104a9a408ddd0b9e9911c9ce2b65",
+      "record_id": "reveal:train:-7434385833116714871#13233",
+      "parser_input_sha256": "dd844a5332b19e99652357200bc7f46f7e18afa1321ee45fd5cfe76b7b49d927",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 21,
+      "edges": 132,
+      "elapsed_seconds": 8.044233515000087
+    },
+    {
+      "code_sha256": "1f1ffc328a7b14ea2203640f01c51bc15cf3703f357f62e9322d96041cf202c7",
+      "record_id": "reveal:train:3557739556029059195#7131",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "203ac1fa88fdb75a64bb01b838e86f68c4a447ad5280fdb1de9d621852e5c1f7",
+      "record_id": "reveal:train:7549435794356072684#9940",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "234d8ca14a3383e55a41d6ba99dc672639b664719d3e151df426ad502ff34a68",
+      "record_id": "reveal:train:8445816931248660591#11755",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "23b7d56767d59f7ec1d8952784e68806f63fe931fd56ade852ae4867c1659741",
+      "record_id": "reveal:train:7399683071036018868#13606",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "24b13fcb8d65ad6dcf9d045e373b5bd0954e5ddec870b7a0b8da88017200bc69",
+      "record_id": "reveal:test:-1487877838474751244#2070",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "24ec092f28400eadd5bf2c51de658b82323f59b8299cccfb030cdf4178eda228",
+      "record_id": "reveal:train:-755883256379441954#11284",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "250034f8ff0623a1fb6defdb5d3e1094c380578f0447e427fae10a534b194483",
+      "record_id": "reveal:train:8280197130498466782#4322",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "2584a24a79cf61c7d33e251689e36868adb9c23466f0c662be25d5f3ad0eb66b",
+      "record_id": "reveal:train:3557739556029059195#5702",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "25c6ec78ed8f4d981985747a409936826ac5a4bc2adb152275fc71e216be0c5f",
+      "record_id": "reveal:train:3728341105073176576#8993",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "25d1433e2fc38f3c2637cfb6597e51f5934f422ea7e55bad860a75b2e72fff6d",
+      "record_id": "reveal:train:6595989226414083189#13015",
+      "parser_input_sha256": "a105e1b2cf9765f81656d7126a57168cf725d5700de9e94d70f586dbe2fc56cc",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 54,
+      "elapsed_seconds": 9.465251494999393
+    },
+    {
+      "code_sha256": "261dcd152b987520937eeb174a913dd13afb92171b6fd2f31e4796c2bbc34ea8",
+      "record_id": "reveal:train:7725608904711859657#7242",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "263aa4cfc69dfb17fa18f36effcaead77bc38fddb3aa2aa278c6fe6b03c4228f",
+      "record_id": "reveal:train:7424930167238097621#4273",
+      "parser_input_sha256": "47764c484f77d34cafe7c4e99a7f5cae2e89ed0f74922f068a407a58d6acb54e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 26,
+      "edges": 157,
+      "elapsed_seconds": 10.42832037900007
+    },
+    {
+      "code_sha256": "271eccefb1a60ffdb05afa80b0b817eb2b2067ad9f46680d37e688d45f98c509",
+      "record_id": "reveal:train:-942846491258578486#7979",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "2906e0d860b276ded0f687b018915aa3e09592529772aa9f928fd06bc1ce48ec",
+      "record_id": "reveal:train:7424930167238097621#5155",
+      "parser_input_sha256": "91bdeed7ebd422ba3d2d46b1d281894ace8b00c9829401e0db1809c8238d7ed2",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 60,
+      "edges": 440,
+      "elapsed_seconds": 9.721186160999423
+    },
+    {
+      "code_sha256": "2a064cbd3b6068e88c5558dc775d0168044d54b4345e56e26385afe2d4954383",
+      "record_id": "reveal:train:-3805791263064294216#9259",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "2b051a699294d26ffae4588aa10a2cd719da48748cc66dcbc5ee23d43bb4c51d",
+      "record_id": "reveal:train:7424930167238097621#14613",
+      "parser_input_sha256": "0a500ed868b3e3ecd128abfa06d08706bd24392be143de5f69e6cda53e91a607",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 85,
+      "edges": 642,
+      "elapsed_seconds": 9.585594214000594
+    },
+    {
+      "code_sha256": "2b4983346b6b90a673fd9362006cead3ae79d56185e850eeeb5e6ae636e8940f",
+      "record_id": "reveal:train:3557739556029059195#6024",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "2c479c19d6c39a8fcc1ae68c2cc22ea4b68ca0a00afe23be61db1e1a43eaa478",
+      "record_id": "reveal:train:-6032494406888257778#8130",
+      "parser_input_sha256": "ec9642adf9cad2ecbcdf665290657093c4ed1ea44f2da1ca1403ed0fc37b6280",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 12,
+      "edges": 62,
+      "elapsed_seconds": 9.364794004000942
+    },
+    {
+      "code_sha256": "2ca5f9ca09a67fbba37915657a320d1f62e0ba8351d7f5910ea53be48dfd7351",
+      "record_id": "reveal:train:-4032982860280343776#17059",
+      "parser_input_sha256": "be9e2eea1c548897212855b9548b7491180536bb8f8fb316b9cc3df0a6deef88",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 998,
+      "edges": 9278,
+      "elapsed_seconds": 14.097350059000746
+    },
+    {
+      "code_sha256": "2f1546d1dbac563da03f207c94fa4adbbeabbb4fdd7fdba4cab815af565aa1ba",
+      "record_id": "reveal:train:4187524518637656726#4275",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "2f83d1b4be87c3aec2a0625e04fe4e4f9cfa3cff3aa4caa080686142add7b609",
+      "record_id": "reveal:test:8280197130498466782#1109",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "306e6a31771e2bccf6ace79f053055e35c053f320e4f4f7bf71321a30d9b9970",
+      "record_id": "reveal:train:-4527380754569407959#3299",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "31e02aa18c5b36ac6fb6ac16c6bd08b6934a1e9ddd4ed4b240cb766e82c81e66",
+      "record_id": "reveal:train:3557739556029059195#3601",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "362151e5590c1e6f56ff06a297edd8157574d60bceddd939bf09f24cece594b5",
+      "record_id": "reveal:train:7424930167238097621#2674",
+      "parser_input_sha256": "49fe233caa716c667415c876d893bad92960b57f980cc5d7c81cc876e84e0bb2",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 159,
+      "edges": 1227,
+      "elapsed_seconds": 12.429916622000746
+    },
+    {
+      "code_sha256": "3746e5f49439aa1df1ca14a759dc68ce5ed26db2a6c87cd27d34aab064b282e3",
+      "record_id": "reveal:train:8280197130498466782#15438",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "3870a1d62d034964e28bc6f3c217517379be41d411aaf2704ef153fe47c9e99c",
+      "record_id": "reveal:train:453207616518947865#17812",
+      "parser_input_sha256": "ff3e3e3bd410f46871e9550cd9fbceb0d78dba38c41b023b575f1902007c438d",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_EXPORT2"
+      ],
+      "status": "recovered",
+      "nodes": 42,
+      "edges": 276,
+      "elapsed_seconds": 11.998743776999618
+    },
+    {
+      "code_sha256": "3c3042d9e2904fd049461b4c3f8e46302b8848179cea07fb51990782d9fa0e30",
+      "record_id": "reveal:train:-3528294111382233554#15415",
+      "parser_input_sha256": "5b2583f5743e24eaff4c40a086e37b342dcab4cb11158e97925d7a552eda79c3",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 269,
+      "edges": 2167,
+      "elapsed_seconds": 11.967621574000077
+    },
+    {
+      "code_sha256": "3c7a0c1eb772efe4e34e91500c46a44b7de96ba42e85d5b67a86283a98c3554a",
+      "record_id": "reveal:train:-6032494406888257778#15445",
+      "parser_input_sha256": "cbb28d7d64aebaff6bf73b3bf610fa06566a8e3b0c8bd072533af1f077b94ac6",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 20,
+      "edges": 142,
+      "elapsed_seconds": 11.131902780000019
+    },
+    {
+      "code_sha256": "3c8748d9a6a4978fde2bf4600cf0ddba05a653c9077d9b3f59db822824a9e2cb",
+      "record_id": "reveal:train:7549435794356072684#12704",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3da167ac4ccd5c449e05d18cb1ac4487b5bbd86cb42ae69c81c8cae4d36af748",
+      "record_id": "reveal:train:7549435794356072684#4578",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3e9219dc33756a317f92770f0cc3ce1c2eadbf07082fb45142303778f7bb6223",
+      "record_id": "reveal:test:7399683071036018868#1231",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "3eef70bcc83b370c8e9d5c8ae78257d3b37951bb3eedf9353393d2459ab13ae9",
+      "record_id": "reveal:train:3599206110384554647#5980",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3f0c8dd3b0c4bbe11437dade01040b77e6f452f0285e9588f580f6d5ec519d4d",
+      "record_id": "reveal:train:1891617106617090004#4671",
+      "parser_input_sha256": "d6fdba3bfc13d4a5e6e76fff5c2852856db9a47551700c5886ac1884b3f9da34",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 362,
+      "edges": 3169,
+      "elapsed_seconds": 12.305296850998275
+    },
+    {
+      "code_sha256": "428144046a0f8c74f3e7aba185813cd5ff4dcd109cee0dd396f056cb8c5c9d0b",
+      "record_id": "reveal:train:7549435794356072684#10830",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "44180283f5ccf79b9961cb2b24b7c5313da88462ea44dbb466c929cff8414411",
+      "record_id": "reveal:train:237530479040685467#128",
+      "parser_input_sha256": "870a0732841abe64628b37f8ac56d317c42ddae07c8117e4e8bed085f34f3408",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 568,
+      "edges": 5267,
+      "elapsed_seconds": 12.521836141999302
+    },
+    {
+      "code_sha256": "4503a4e44b2880ef9a5d56ac2808643f139e8845acc722135d649ef6f99e95df",
+      "record_id": "reveal:train:155037296040076635#9703",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "4625c10331aee95a074b4e8e9ae00f7e645fd92b486591fa727ac9f18bd121b1",
+      "record_id": "reveal:train:2425510047894460779#6320",
+      "parser_input_sha256": "77d104593ea60c5a244b30c109802d5bd1577ce94c40ac04e07b0ae5c239d0b8",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 79,
+      "edges": 582,
+      "elapsed_seconds": 9.343162750999909
+    },
+    {
+      "code_sha256": "463cfac28368ebbadcba8176dd99a46bfde350497c46aaf5417aa78d65ad96f7",
+      "record_id": "reveal:train:-942846491258578486#1613",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "482ede0c73b0aa02c3f0fc4e16768b1e725dcd20a21e816acc3c40319907ff45",
+      "record_id": "reveal:train:-4136373206107992781#17004",
+      "parser_input_sha256": "e276c2b0e8e823f8db0816a42090fe993c40eb09257bb225ac34c3586dfae5f7",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 198,
+      "edges": 1581,
+      "elapsed_seconds": 10.752645507000125
+    },
+    {
+      "code_sha256": "48582a97c373bca778bde6042de867d0b7567008aad3ae6028442ec502931bd2",
+      "record_id": "reveal:train:5610242550647094255#8269",
+      "parser_input_sha256": "2fd2db50866e2a9ee5992e31aa95463499faf6e6d57735e7376b4fe45c1353f3",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "av_unused"
+      ],
+      "status": "recovered",
+      "nodes": 530,
+      "edges": 4876,
+      "elapsed_seconds": 12.079117336999843
+    },
+    {
+      "code_sha256": "49e6d3a784ada3470d5c4f05a9acd349a1a1fa34a673acec13263bee8e72e544",
+      "record_id": "reveal:train:8445816931248660591#7939",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "4a861d84df95b2bd84c818d166f42859c844a3600e1bf288de2080dbce850cd1",
+      "record_id": "reveal:train:4187524518637656726#6776",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "4d748f9604441749d29c3a61fb319a601fa457b84fddbe4369a579431e885c29",
+      "record_id": "reveal:train:7424930167238097621#560",
+      "parser_input_sha256": "74b44152a8803709d54c3416b52c845a2fb4be632138d3c96c40ac73c4fe1f47",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 57,
+      "edges": 450,
+      "elapsed_seconds": 10.341918169000564
+    },
+    {
+      "code_sha256": "4e26a01d3b731c5c19589a4125eec0a735e81fa8a95bacce05b18944ce917535",
+      "record_id": "reveal:train:3728341105073176576#298",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "4f6927f5e1e6d0f9ba7873a02009d634a59f0db5734b42b64a2c150903838984",
+      "record_id": "reveal:train:-4032982860280343776#7899",
+      "parser_input_sha256": "a12d95e7201fab74a271ac6d7611a80f001b431d21c5bacbe42ef90a0e21c0f5",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 1584,
+      "edges": 15900,
+      "elapsed_seconds": 15.722505965000892
+    },
+    {
+      "code_sha256": "5037a83ef6b97eb39e8f421c8646df028d63ea2b37791c04dbfc45212ebd67eb",
+      "record_id": "reveal:train:594127775011357110#17121",
+      "parser_input_sha256": "e4bfe48657be67ea9c0adf974b52edbecbd3e461b47ba88fbb9a8c3941f5e3f2",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "magick_restrict"
+      ],
+      "status": "recovered",
+      "nodes": 714,
+      "edges": 6958,
+      "elapsed_seconds": 9.917442271000255
+    },
+    {
+      "code_sha256": "53306bc4aaec7e421a3fa950d712cf688f4e5235852463b0d0ca0d895e8668e1",
+      "record_id": "reveal:train:7399683071036018868#609",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "56334e9e934520d2bff0dfa80a5b5d314e8b479e65466bfad30007db3a302c50",
+      "record_id": "reveal:train:-755883256379441954#1049",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "5648862b7abe6c4c47e99129ce2970b144a0c8b4a2eda884fddaa91630a7e34a",
+      "record_id": "reveal:train:-4527380754569407959#734",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "56c89bc0ff9dc04c110aed19520b9b0390d5b4107502c3974c724099e2ac8887",
+      "record_id": "reveal:train:3557739556029059195#4525",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "5810b0b0be06f6b88538f07a1521f86f9da8990c676abac37112863ce8c72ac4",
+      "record_id": "reveal:train:-3805791263064294216#5248",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "588de5bfca655bfda03b6414f39e670a0a30973ed5652fd8194fe034c9a3eefb",
+      "record_id": "reveal:train:-3528294111382233554#11880",
+      "parser_input_sha256": "77145589c0dd3049c70604ef57e648729d79b60b0c0bf878f03e3d699bd134f0",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 44,
+      "edges": 307,
+      "elapsed_seconds": 8.48080664400004
+    },
+    {
+      "code_sha256": "58d15d03e3fea07d771af3ce0ad9c0cf431d9fe55e81d2324f5304eef7bd5a70",
+      "record_id": "reveal:train:-331579171381918893#10112",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "59acb21ed68b416a5d0f9858b733523756879e9c20225c59cb466fb3f946d6c6",
+      "record_id": "reveal:train:1223258652239369123#5225",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "5b6dadc339bb068982766320f6a4376d611c28972faad8cf692dd87e5429ecd8",
+      "record_id": "reveal:train:8445816931248660591#17167",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "5e5e8d27134aa0a84e8177d5c3d76166c9acb8c740b6d753197c667965f96f25",
+      "record_id": "reveal:train:2930500905204315787#2642",
+      "parser_input_sha256": "eb2d5e5826975a0774d2ef4f068cf18c4863ecf720d2df09192c337512e5e972",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 51,
+      "elapsed_seconds": 7.855593508000311
+    },
+    {
+      "code_sha256": "5f20415f4d4c7b733056c77a1f26f545338db25994150171dee63d9643272a7f",
+      "record_id": "reveal:train:-4552633429382740307#2176",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "609542ab9a6950a8e2f6bf6e4ba3d8edaf1a16d3a1d3eb162f0b64a218c78fcb",
+      "record_id": "reveal:train:-4136373206107992781#7810",
+      "parser_input_sha256": "97e38028d11d974873e70611fcc44c4fb55e3f698df499767579f14f572b6733",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 99,
+      "edges": 827,
+      "elapsed_seconds": 7.930488824000349
+    },
+    {
+      "code_sha256": "63fa4be87f89f68b28213b1fc8c013cc6efbe52f3e5475c9c9f95ae8a92c71b1",
+      "record_id": "reveal:train:7399683071036018868#17497",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "64727e2d044fb5a701f75dc86dfc66f084c785e23aad3b008467890316835959",
+      "record_id": "reveal:train:6595989226414083189#2958",
+      "parser_input_sha256": "a3cb3df1fbf9030e0f4ab0b6827f14a08ac288faef21fb51ce5bc2ba74cae23d",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 6,
+      "edges": 13,
+      "elapsed_seconds": 8.564029672001197
+    },
+    {
+      "code_sha256": "64b0e9364630effb78ddf00119a98b96c56be96cef791bfa7972f1aa562ecbb7",
+      "record_id": "reveal:train:-942846491258578486#14506",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "650c790c68114fdbed9ac527e0215592ab700bfb05666e63a45d7d4875d0ae69",
+      "record_id": "reveal:train:594127775011357110#4233",
+      "parser_input_sha256": "0d41fa4cd2594046d29dbc2cb8bc2645567cdf84c4adab69a355dff0b4216cbd",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "magick_restrict"
+      ],
+      "status": "recovered",
+      "nodes": 614,
+      "edges": 5888,
+      "elapsed_seconds": 12.320958616999633
+    },
+    {
+      "code_sha256": "662a416730843ffc91ebbed84d173f20919367bd155ae259e333059bcf251de1",
+      "record_id": "reveal:train:3599206110384554647#5750",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "665900b96ae32b557d7e46eafd1b1ca3a7c3d7d30d8467fcbc2c193a5aeeb596",
+      "record_id": "reveal:train:3557739556029059195#11943",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "675e16837778d6df248c1924f71c4490037ce67bfcdb559b0a9e0e72b4f17836",
+      "record_id": "reveal:train:7549435794356072684#2276",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "68a335ed07896c770c6759dcafa02a49775ed0b772779561e487d9305a946b96",
+      "record_id": "reveal:train:7549435794356072684#16880",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "6b7502b6d76ac3f44007223f9477cecc1f0a961dde9f1543efefa740a9b7fc38",
+      "record_id": "reveal:train:-331579171381918893#12463",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "6c7f50dcc63aa89188c045253cf8cea3e9b4233fac2ba6d7a6b33d8805464802",
+      "record_id": "reveal:train:-5361762812461354840#17559",
+      "parser_input_sha256": "495c4c4123bb8ad2983f693c1a7b88773a7e4ce865956db4b4f98456097d5809",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 53,
+      "elapsed_seconds": 9.365255556998818
+    },
+    {
+      "code_sha256": "6d8ae0675f1d0f64bf9973d7d75dccd49cde8a607416effb163f3a0b3d423df2",
+      "record_id": "reveal:train:155037296040076635#6595",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "6ddbca71ddec9487caf70b62d85bf83f613eec788fc0cd1ce0314c115efa7732",
+      "record_id": "reveal:train:4511225370772574632#15775",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "7031120001624479440faa2ef8632ff644055a5829959364d00daf8678e4cf24",
+      "record_id": "reveal:train:-7434385833116714871#11244",
+      "parser_input_sha256": "b4cd5ed5eb138dc19e193ae61725ef8f948ab66726d13118e70c421b2f192d5d",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 17,
+      "edges": 106,
+      "elapsed_seconds": 11.57193112799905
+    },
+    {
+      "code_sha256": "7077eccc1b07cdbd02a048b4e2205f66037dda4ab0299a1e8d04821309452807",
+      "record_id": "reveal:train:7424930167238097621#10110",
+      "parser_input_sha256": "5ca1ee01932f91eed1c284dc5d745b9a90dba70b9db8487fa3c990b24d3fcfdb",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 78,
+      "edges": 567,
+      "elapsed_seconds": 12.770825319999858
+    },
+    {
+      "code_sha256": "711710e128548df7d3c0dd4ec8589f4e0a8a50edd4981ab53a68f08fba0e1d8a",
+      "record_id": "reveal:train:4959950795017352813#16788",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "72c6a941324cfbf0e88ebe207751e869588f6aede003414a6625642a6a81661f",
+      "record_id": "reveal:train:-3805791263064294216#16554",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "73e31b25568adbc94dbf64ccbda494d9e75bc165252a8fb5c64cb659c51c78cc",
+      "record_id": "reveal:train:594127775011357110#4914",
+      "parser_input_sha256": "cc9efd207ed8624a4741eaf330036feea8bc028e6d5064594ffd54c6e025cf7a",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "magick_restrict"
+      ],
+      "status": "recovered",
+      "nodes": 853,
+      "edges": 8096,
+      "elapsed_seconds": 17.183390357999087
+    },
+    {
+      "code_sha256": "74d5d63b045572576e1a5af90b1b5159cf8b0e575cfbb5d5587989952a38f05f",
+      "record_id": "reveal:train:-704025756752474526#5123",
+      "parser_input_sha256": "37bb58d616c874f009b075d3b6d58db84eebe485329f7e7ad60eedaebc95437e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "PNGAPI"
+      ],
+      "status": "recovered",
+      "nodes": 81,
+      "edges": 639,
+      "elapsed_seconds": 14.612484177001534
+    },
+    {
+      "code_sha256": "76195620dfe11cb63fb0ae3729fd3cc6d09d8338fd189cb68b0221614c060f18",
+      "record_id": "reveal:train:7549435794356072684#4264",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "78782eece56fe19e23c8ea032b4188af28a83550432c911d2b486d74f690a9ed",
+      "record_id": "reveal:train:1223258652239369123#10890",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "78ac4104d833d7c2c788c87da5b210b2f2b166fe45e373defebe36cb379c8a31",
+      "record_id": "reveal:train:7399683071036018868#12370",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "79dff2732ad07ec5f94048bee7bc9ac0d2c80c2a82263945ebaa6eef76c65806",
+      "record_id": "reveal:train:1223258652239369123#1657",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "7a8a900349be188bd44237b5deeffb65b6e29fbb4b806b73511a7d721c66d531",
+      "record_id": "reveal:train:-6063487367164326236#7063",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "7aaf3d6149e7d0460ac8363cd7c9798c549094f53e23d7daea93b5117f8201bf",
+      "record_id": "reveal:train:-4032982860280343776#10212",
+      "parser_input_sha256": "2949f25013f8e6f7c9a52bb3ecb057d161d252309efb389e78fe1235b633cad4",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 111,
+      "edges": 827,
+      "elapsed_seconds": 13.682339077999131
+    },
+    {
+      "code_sha256": "7b964229e58264bf6b6fdf86bd0a8d9821dc4fb8db89fd1b36b18e7df17b50c1",
+      "record_id": "reveal:train:8445816931248660591#8325",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "7c2b2c778657d2f6e90f88efcd4b27598dd46620f7181faf17f8cefe83ea7a25",
+      "record_id": "reveal:train:1223258652239369123#7296",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "7c6017b34562ee63e1f05539988b43e17a288ba02fef0925ac4cbbe30fb93ca7",
+      "record_id": "reveal:train:8445816931248660591#15225",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "7d2b51569cee9f48f95a4fe72a9af98ffdc08ec31d179ad794dbeadd1ba3f67b",
+      "record_id": "reveal:train:-942846491258578486#4129",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "7e669f8179573929200cd01d399c579cd0bc62d3995849afb4366372150ca194",
+      "record_id": "reveal:train:-7434385833116714871#4340",
+      "parser_input_sha256": "2c776be057950591a9df95fda0fe3b1b4c3e8d59066368c773b5d4a3addb8160",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 139,
+      "edges": 1140,
+      "elapsed_seconds": 12.895229200999893
+    },
+    {
+      "code_sha256": "7fc7010be79738179c9ae9ad1b4495bb87262ab863a43e0d303c73f73a27f7ae",
+      "record_id": "reveal:train:3557739556029059195#11298",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "80b77f6f16f38548af65eb1e942c29d49be7bdf801d7a920144d73b4e4ec1808",
+      "record_id": "reveal:train:4959950795017352813#7294",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "81ede4c2f26eb59b524016bb77bad6eeaefa0fb763254f6ede1ec4c52282e946",
+      "record_id": "reveal:train:-3528294111382233554#733",
+      "parser_input_sha256": "e87883a6f1e2103b5b4b624986fb37e6e0ba28dc7d96ea62b42001a98e71b5a0",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 273,
+      "edges": 2692,
+      "elapsed_seconds": 12.62067258299976
+    },
+    {
+      "code_sha256": "83b68d81806557d5a2859e107c454d3ed58db5a02045bf8890c0fa3e54195b5b",
+      "record_id": "reveal:train:-704025756752474526#6706",
+      "parser_input_sha256": "89071428b1c135ed5b3a51450c58da50169172f16a7e4a5134ee84c0253a8cc3",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "PNGAPI"
+      ],
+      "status": "recovered",
+      "nodes": 51,
+      "edges": 363,
+      "elapsed_seconds": 10.719568213000457
+    },
+    {
+      "code_sha256": "87753827d20812c13af698c6b1344cb2a41b285586a9d62aa608f872b459beef",
+      "record_id": "reveal:test:3599206110384554647#1515",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "87ddc69dc08ffe1e65ab37943571dd1b32711e2c789dcf0ac5ae0d4e645be282",
+      "record_id": "reveal:train:-7899851216763489956#741",
+      "parser_input_sha256": "cca67f419e8a22f198774040d9981223e1a8deb915b79d1268fed0ea1d6572df",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 347,
+      "edges": 2989,
+      "elapsed_seconds": 12.527108274998682
+    },
+    {
+      "code_sha256": "89498b7a21b73e7194a264de9024a2c14a860c95380e86093bd784d4895d7e1e",
+      "record_id": "reveal:train:-7899851216763489956#17902",
+      "parser_input_sha256": "8fd499fc282978d997581902a8747cf2589dd740f37e1d08d9592e078936fa45",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 385,
+      "edges": 3375,
+      "elapsed_seconds": 11.589883953998651
+    },
+    {
+      "code_sha256": "8d5ac13dbc70317c40d9fece24ab28e2a6a6e61ec27a6ba723cf74b94d7a7860",
+      "record_id": "reveal:train:6595989226414083189#2272",
+      "parser_input_sha256": "99c179266805704bf6c3f75c9e52d28533b1da36ecf4f1003bed8e2550a57cdc",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 6,
+      "edges": 13,
+      "elapsed_seconds": 8.666463614001259
+    },
+    {
+      "code_sha256": "8dd1aa9067cb5a71d36192317e2d9b261e088766bc7aa828042fe499c7ab7f4f",
+      "record_id": "reveal:train:-704025756752474526#5027",
+      "parser_input_sha256": "c108da91bb6b23ad004e0da40d3813245126e1941f005e91600ab9e71cde85ca",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "PNGAPI"
+      ],
+      "status": "recovered",
+      "nodes": 63,
+      "edges": 441,
+      "elapsed_seconds": 9.7136890820002
+    },
+    {
+      "code_sha256": "8f7a3965d10a0fd0c3a1b75d816b19e973a3a1ebcb43260e14157a080c378831",
+      "record_id": "reveal:train:1182028467273264883#12618",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "9130c29261e3be59b7b77b98bf41df1c738ed725493ba63de8c3ab3eedf1b133",
+      "record_id": "reveal:train:8280197130498466782#1289",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "91474f252df0b446b799dc2ccfe726c5e0e37ee418397646896bce4cd7b9883d",
+      "record_id": "reveal:train:3599206110384554647#1739",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "929a10564592adddc94d5ef48d2bd98ae7e2de6cf5b603d68ff4fba80195de46",
+      "record_id": "reveal:train:6632536031698733342#13545",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "9445c79005821f34b5f3e5490bb6da41d305f34f6cfa5bfb3ab86bfc435e8e94",
+      "record_id": "reveal:train:-5361762812461354840#10350",
+      "parser_input_sha256": "d8695c5072c56bba956f0e48ff66ccd6252dd3cce216e6cbcb12f2d56b376ef8",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 437,
+      "edges": 3793,
+      "elapsed_seconds": 10.335908352999468
+    },
+    {
+      "code_sha256": "9484582cdff65cdca19dc5b08b1119a7cc0896e424a084562881aba84e7843af",
+      "record_id": "reveal:train:4180964683905830761#6153",
+      "parser_input_sha256": "d2b844509f85b5f64ef289afb95da92915793a367e10cfcc83ac7458bc9a153e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 112,
+      "edges": 785,
+      "elapsed_seconds": 10.982459049000681
+    },
+    {
+      "code_sha256": "9bbaa1b43495326be584623525a1f166dc235379d306aa25897fece4d70a2aa7",
+      "record_id": "reveal:train:2930500905204315787#892",
+      "parser_input_sha256": "7130b928576b89b7b5e3db4fd0f0926aef91a247feb0f2726126b574eac32c8d",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 54,
+      "elapsed_seconds": 9.388602814000478
+    },
+    {
+      "code_sha256": "9bd364dbc9ebb542a8c108ec21ca8ad34ab4a6e3d82df656c219f7fbc81ece91",
+      "record_id": "reveal:train:7399683071036018868#9760",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "a107232442f6a559ac5848059fd6f8f50a879f827b677921060d83c1fde60023",
+      "record_id": "reveal:train:6453796474132805955#569",
+      "parser_input_sha256": "d150958419ee338549fe7b1c263737dd73f6c84df2f7b2e78f94d9c8b7379149",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 636,
+      "edges": 5634,
+      "elapsed_seconds": 12.057362129000467
+    },
+    {
+      "code_sha256": "a196f2b5d83e0317b63490ea4b57ced167d8caef395c252f64a45bf28df7f6e9",
+      "record_id": "reveal:train:-6032494406888257778#429",
+      "parser_input_sha256": "c0d3fa6ff47103a6239e30881aa8a915dfc075490198c4ed255c8fcb2d45e689",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 73,
+      "edges": 527,
+      "elapsed_seconds": 9.279484295999282
+    },
+    {
+      "code_sha256": "a321ae7807258e1ec9f0215deedb6a2447e101ff687742945d7819abaa1613d3",
+      "record_id": "reveal:train:1891617106617090004#4331",
+      "parser_input_sha256": "fc9695e6536e18a1ad346300dd9dd7b4333d45095a6a02cebd65b4b54c09d481",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 362,
+      "edges": 3169,
+      "elapsed_seconds": 11.116226096999526
+    },
+    {
+      "code_sha256": "a37d3568b054dc428ace952eecb76211036c91960da074fd77d331dd6e627069",
+      "record_id": "reveal:train:1891617106617090004#6840",
+      "parser_input_sha256": "be767a3f6601e3aa2f0033b4e4bda983e831a4139ea2d495cca160bb6a993404",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 309,
+      "edges": 2677,
+      "elapsed_seconds": 10.40699139500066
+    },
+    {
+      "code_sha256": "a42333b27b482eaf0019289a61b8e1cb42ea82b4327b97b2040bdca9bfdb9b75",
+      "record_id": "reveal:train:1223258652239369123#8271",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "a5fa6394e8b01fccba289b8136085c2ba778c18d013b0fbefd239a44dfbf5a1a",
+      "record_id": "reveal:train:6595989226414083189#9354",
+      "parser_input_sha256": "db55d38db754ab4a9bd7f0f2028a38b4ceab03cb56184daed02621509dce5584",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 6,
+      "edges": 13,
+      "elapsed_seconds": 9.103510224000274
+    },
+    {
+      "code_sha256": "a76073aaa7ddc8c0cf4d0bb4f8a8d5f2360f4e931c854ee6fe7f9a425b3f98f7",
+      "record_id": "reveal:train:-331579171381918893#17869",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "a86086d0f47e6bf2fa26664e7bdc6a0f91ca542371914953ccccbbb6354b8d23",
+      "record_id": "reveal:train:-755883256379441954#15252",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "a9004219fe37a22b915701a761e17cc124be19d1db447b7ffdb3a3a6615ec361",
+      "record_id": "reveal:train:4959950795017352813#12298",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "aa0f221314dd0feae52d6d2dfc645390497ab56b46ae846a506063102b8db278",
+      "record_id": "reveal:train:1891617106617090004#1951",
+      "parser_input_sha256": "2e5ac4014b8a0745e612f380a812e9d8f0a1086b1c505c42782d5294f9a23773",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 378,
+      "edges": 3628,
+      "elapsed_seconds": 14.768707592000283
+    },
+    {
+      "code_sha256": "aa153bf6f87146ad2ed95ec867a518bd2dc1a01770ea82300cc24a0e8127933f",
+      "record_id": "reveal:test:3599206110384554647#727",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "aacdda1537ffa99cf2343521df05468a7d45c63251d647a8438322a7ebd2df4c",
+      "record_id": "reveal:train:-4032982860280343776#8282",
+      "parser_input_sha256": "f131ef57f62887c6faebcef5912071cc266d3409a1c02780e130a477550a8458",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 1196,
+      "edges": 11635,
+      "elapsed_seconds": 17.858831610999914
+    },
+    {
+      "code_sha256": "ab37788cc5d082c455e843a8e69799260f4cf44cd2b23769accdee68ac47c60a",
+      "record_id": "reveal:train:-7888349587538303571#8887",
+      "parser_input_sha256": "b177f7a860008459ed21a78b9507df55cfafc87a6dab946772343f8482d28f74",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 96,
+      "edges": 631,
+      "elapsed_seconds": 14.815686947000358
+    },
+    {
+      "code_sha256": "ab68f7cdb795279045e3b472eaae44d5a5fe7dd6d860aef1e1a2a4376a53d814",
+      "record_id": "reveal:train:-331579171381918893#6958",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "ad5eb395a8a8574432cb65f4d7fb565b05eef068062512fece0a117428d067c6",
+      "record_id": "reveal:train:7424930167238097621#17179",
+      "parser_input_sha256": "029685f62102665e9678666ba84be785afddef17782c7b4103e78a3002d14957",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 50,
+      "edges": 334,
+      "elapsed_seconds": 12.704370071000085
+    },
+    {
+      "code_sha256": "af1b86da68daab0c83aa878df9f75ee0e5acbe29fbca0dd6f2e1458ca8a97194",
+      "record_id": "reveal:train:-958337900320425129#5571",
+      "parser_input_sha256": "d324dad351a952f9cc0a481057e47450f8d38bb2f87fab4a1303a13430f7ba8e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 54,
+      "elapsed_seconds": 9.250962938000157
+    },
+    {
+      "code_sha256": "b03f9df90117ef1378ef07b60ca3b8967cd79e4ef59759fa48c8342d1ae019e1",
+      "record_id": "reveal:train:3557739556029059195#12869",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "b1e685745522c34bbec07f790cbde42c947bcf7b917d816444db16cc55d0cfcb",
+      "record_id": "reveal:train:1891617106617090004#12724",
+      "parser_input_sha256": "98193d2d33c4fcf6ec6eb7c814cfa14895699d1898560f50efdc8a91c882daf4",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 276,
+      "edges": 2354,
+      "elapsed_seconds": 9.093484642000476
+    },
+    {
+      "code_sha256": "b211b3e552ddce003fd6dad0d362c00694ebe3aabdf699a2dca162ed9c5c504d",
+      "record_id": "reveal:train:-4552633429382740307#2448",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "b37e0c14f3cacc9c08357dd3fdcb761dfdec082135522d5d7916a7571eceb97b",
+      "record_id": "reveal:train:1223258652239369123#5290",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "b3a042be6c5bc51bed2d0cfab16918298faf0c794c7d692300178d1826a85be1",
+      "record_id": "reveal:train:4491846291755990729#2983",
+      "parser_input_sha256": "17a6a7fd6cbc1ab73ba46186cb7c412f67056923655e75d1ba4e757f85e89749",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 34,
+      "edges": 198,
+      "elapsed_seconds": 8.347909595999226
+    },
+    {
+      "code_sha256": "b519f68f0cc3d236f4c83b0957df5bbfcdb0f3529abed7ed939dff84d563fe8d",
+      "record_id": "reveal:train:6595989226414083189#7021",
+      "parser_input_sha256": "1d6dae2c46a53647deca19d45d1829ffbae944ce37aa39a8debc98791e465d81",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 51,
+      "elapsed_seconds": 8.495865521999804
+    },
+    {
+      "code_sha256": "b611681d832892f8fd7ce5cfa43ff7d94026f745633d966396e198d0b867f2aa",
+      "record_id": "reveal:train:1223258652239369123#6424",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "b8189b35f7be6e595253e06d2c2e3788a458fbfa5f01a4cacf9dae81f40d56da",
+      "record_id": "reveal:train:-7049333455584635197#6082",
+      "parser_input_sha256": "6c085a34fabd61dd1421d26e60259adc8cffcc2f43556d58c62e93890b413e33",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 29,
+      "edges": 163,
+      "elapsed_seconds": 10.254556498999591
+    },
+    {
+      "code_sha256": "b866f2cbe78d847879e947ef11be3b6796ff67798e6d14f6ea41a15ccd1f9170",
+      "record_id": "reveal:train:453207616518947865#14944",
+      "parser_input_sha256": "d325413baeaa9ce599fe504ed00abb1f29819cbd969984b04484ff04cdd87cf5",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_EXPORT2"
+      ],
+      "status": "recovered",
+      "nodes": 10,
+      "edges": 46,
+      "elapsed_seconds": 9.909026028999506
+    },
+    {
+      "code_sha256": "b87da7599bb37806d4b63d6271c72f2cba35cb42c96a56d6524242e9c13b1248",
+      "record_id": "reveal:train:-6032494406888257778#163",
+      "parser_input_sha256": "496f8113740f922908b667cbf25251027f91c7365c095b57544e723b55feb84e",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 248,
+      "edges": 2001,
+      "elapsed_seconds": 11.342853935999301
+    },
+    {
+      "code_sha256": "b8a5e7d9123c45d3eec4d1693b1b522651b8c933c661afaedf432f321941566b",
+      "record_id": "reveal:train:6595989226414083189#10094",
+      "parser_input_sha256": "5ae74621f5472cf36adf330c72f3c2534b09f678d0631403d3b51ca3749f64df",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__always_inline"
+      ],
+      "status": "recovered",
+      "nodes": 11,
+      "edges": 51,
+      "elapsed_seconds": 9.723963972999627
+    },
+    {
+      "code_sha256": "b8de6c04ff17a56b0cfd4486dedffdc1767f0932d145f413394d18fafc277d34",
+      "record_id": "reveal:train:7399683071036018868#7765",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "b907a82736b0fe6ac3e382be5a2b2cd7c3caf93f4495b88e9377c4955e501c0b",
+      "record_id": "reveal:train:8445816931248660591#18130",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "b91e829719b55ccde0113f6a8c1bc66cc0e1a07c893204fbfb00015ec4ea8dff",
+      "record_id": "reveal:train:-755883256379441954#12904",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "b9f3e1c27bf3b354dfc84864060fc143e40606b8e36ede1c5ef998691779bbfd",
+      "record_id": "reveal:train:7424930167238097621#1119",
+      "parser_input_sha256": "a13c1168f830571e0b0c4197f09f5e74e30518dde90164af692c286d2acd5b95",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 24,
+      "edges": 140,
+      "elapsed_seconds": 8.892905045999214
+    },
+    {
+      "code_sha256": "ba55d9ef223a12b3bfbf8d22114b7e234431d4f941b536c32f83de0f7fbd882e",
+      "record_id": "reveal:train:-755883256379441954#10474",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "bd5d0ed3e177326a24c75b4f4f4a43af61817d3dbf5b66c5ae10f4cdfbba225b",
+      "record_id": "reveal:train:1223258652239369123#11152",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "c23a833ac35966255c350739f0c9b97a53fc5b00d0c9dab9a3f8eb0832a8b278",
+      "record_id": "reveal:train:-3805791263064294216#4203",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "c288b08c1b3ee0a509d341c2a08186a0e1137a5a050c9ebce4666cde51576f4e",
+      "record_id": "reveal:train:-7434385833116714871#7260",
+      "parser_input_sha256": "ac30ffd8bd3855e068eab2cc48e94d6b8d92bfe4647b4e081790d6182564ddef",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 115,
+      "edges": 907,
+      "elapsed_seconds": 11.103312806000758
+    },
+    {
+      "code_sha256": "c2ad13de4262f4c55bc5a3428e900fddf722eb54d3a0d149b1bb7cc77602de9b",
+      "record_id": "reveal:train:-7434385833116714871#13773",
+      "parser_input_sha256": "c4783d788ac7495e971aac01f0a2d813e13e0d4c67b7e7383c835de2704345b4",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 71,
+      "edges": 561,
+      "elapsed_seconds": 11.91615784500027
+    },
+    {
+      "code_sha256": "c2f021f24b14e8efd956489f79666294f5e05c86660ce5520c1621d7151cd8a8",
+      "record_id": "reveal:train:2335116444795821310#1527",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "c3175b835628ad3da859fd398521c62ff363d979af67ec11053b57fbf0cd82bb",
+      "record_id": "reveal:train:8280197130498466782#17917",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "c320794f2e1d60270805d5164d8141a731413e7526cbacdbc59626f362db83d3",
+      "record_id": "reveal:train:3557739556029059195#13022",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "c4050917bbb1cb0fe4595b6ca550560ebc4cab9ea18772fd9b65a22fad5bf7df",
+      "record_id": "reveal:train:7424930167238097621#7042",
+      "parser_input_sha256": "1f7a1adc94fb621acfff01a340c1ecbca32a6cd44405651ad234c4ef27cd22bc",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 38,
+      "edges": 249,
+      "elapsed_seconds": 12.202368440999635
+    },
+    {
+      "code_sha256": "c4f1e95cf9181ab6ef16b2550d6b37d7883a9338828cc772732f214db2b2bca5",
+      "record_id": "reveal:train:-331579171381918893#9396",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "c5d06a9872ae624a85f0f2e64fe68f880df14589069e171c97b67a26aae8fa34",
+      "record_id": "reveal:train:7399683071036018868#3760",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "c9c277182be2ca2feff63c4c995c1085aff7daf514c2bf763a85e1b459e10769",
+      "record_id": "reveal:train:7549435794356072684#11986",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "cadbb30f58f9c1062938696c1cc7e7b2c27c86bdd0ef4901733f92c80dfcc052",
+      "record_id": "reveal:train:-3847447574854829409#16868",
+      "parser_input_sha256": "09e4a7ddf6cfc0c0308073069dfd450c6050dcaebb8dcbcf97576f724645b08c",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 31,
+      "edges": 195,
+      "elapsed_seconds": 12.379756959000588
+    },
+    {
+      "code_sha256": "cbf14f118e91f842a12aebb2b4391267b8724b7bc6dce4ebec06eb71f6146435",
+      "record_id": "reveal:train:-7888349587538303571#5614",
+      "parser_input_sha256": "c06459f48475969815760b45ea9e67881611ecdba106d06e642f3e95d2ba1015",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 69,
+      "edges": 536,
+      "elapsed_seconds": 10.468958985000427
+    },
+    {
+      "code_sha256": "cc9c618d14b838b3a30db7edc5a79857b96890c73fc9bd1450c77bd14f692d56",
+      "record_id": "reveal:train:7889142355347191490#2775",
+      "parser_input_sha256": "a49bc22a4a52dcdbe0faaf828c8060443eaed13cc2ffaff54ab1d3d98af7cda5",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 40,
+      "edges": 327,
+      "elapsed_seconds": 10.749694009999075
+    },
+    {
+      "code_sha256": "cd6b535f0cc78d4bbe9ca73e32006640f69e232f71836bef5785438039122ab7",
+      "record_id": "reveal:test:-755883256379441954#589",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "cedc45a46033c2211d72fefbcd0c0c26343022e7a2063e57ba63c7da79f077b3",
+      "record_id": "reveal:train:3557739556029059195#1191",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d0fcd844f02256ff906d5ded47395abc83148d4b72dfb44f27e131b8328f146a",
+      "record_id": "reveal:train:-4527380754569407959#10425",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d13c38a841a12868560988e5d78aaa2ad2175aeeffe12bcb8a34312eea67a242",
+      "record_id": "reveal:train:3728341105073176576#7280",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d223e23cda8f4995abfed1db13a48bbaf2af6400c5faa3c815b83557d73e3c55",
+      "record_id": "reveal:test:-755883256379441954#689",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d240ba84104a48864a31ab3d823374bb90b35483c476166f8aa9665b07afed33",
+      "record_id": "reveal:test:-331579171381918893#1083",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d3122a37672c53e88a0f04f4cfc07a74af210e780410ff8b325b6a1daacfce4b",
+      "record_id": "reveal:train:7549435794356072684#10735",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d4cbff3910410cc660432f675b8b0d5354fe53bb018f1c97f56c98760bd8eda2",
+      "record_id": "reveal:train:-4552633429382740307#10052",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "d538516366c66259c15900de28ba27c0f6d118ec45805ac17252ae61d01de8ee",
+      "record_id": "reveal:train:-7434385833116714871#7005",
+      "parser_input_sha256": "12522261a3dae68128a7c08f32be330284274595cb3668bb563d873c09a93806",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 71,
+      "edges": 561,
+      "elapsed_seconds": 10.181603687000461
+    },
+    {
+      "code_sha256": "d6f28dd6b6239bd4122b6c03a493eb4a08eaf66cdc1934caed8b371b4c2dd6cf",
+      "record_id": "reveal:train:-755883256379441954#12122",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d94b82af9326414a3fb67d082f2b6f2f92fa60f7d2dea8b362c775655ef625b5",
+      "record_id": "reveal:train:3599206110384554647#12909",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "dab75f51c7453ca6c54a304d5df378bb28a315d123ddc2d258becd5cc3bf62cf",
+      "record_id": "reveal:train:7424930167238097621#14370",
+      "parser_input_sha256": "9861b776ab21d3865026c03602912ac4b8ce35ed802c40260f4a98df1cdf9787",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 55,
+      "edges": 422,
+      "elapsed_seconds": 10.174800679000327
+    },
+    {
+      "code_sha256": "dc350bb2df4b2c49e79e70d74d3d9bdc1431633881395cca9df19a1a1c58c032",
+      "record_id": "reveal:train:7399683071036018868#10972",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "dc4942784a97ad38ad0a37fb733970f8f1cfa085b436f5f9123b8e4713590f25",
+      "record_id": "reveal:train:-755883256379441954#14686",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "dc51d3319ab9ae78da4bfd32efa0cf778478828367c0dafa6c2d5964f81c9c16",
+      "record_id": "reveal:train:-7888349587538303571#1525",
+      "parser_input_sha256": "86ee1070098ca6c88e2815c902d29d6a27e928916eb42b2e85051014a2edee8c",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 54,
+      "edges": 318,
+      "elapsed_seconds": 13.02545103400007
+    },
+    {
+      "code_sha256": "dcde51f0dcc745f26b57432440add0cb4812c6be2161c7831264a641adf5666b",
+      "record_id": "reveal:train:7399683071036018868#17790",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "de22f47251580195a262c341b75a2875fa1c7c45f726afbf760212516598caba",
+      "record_id": "reveal:train:-4527380754569407959#2884",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "df46bce629077dbe40c449de5eac526f1c0b89dad968b7270b718c975194bad9",
+      "record_id": "reveal:train:7889142355347191490#7446",
+      "parser_input_sha256": "f5f8b84daae72fd752887464345903f2f31eb0895518b3c656c9cc099cfc6ba3",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "__user"
+      ],
+      "status": "recovered",
+      "nodes": 38,
+      "edges": 305,
+      "elapsed_seconds": 12.10172453999985
+    },
+    {
+      "code_sha256": "df4aa6148e888a9eb9ed636417564174abe7bb74fb46367cf3590fa8f7506600",
+      "record_id": "reveal:test:3728341105073176576#355",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e22b73c0976ada34bb1dc2424fd0c34c73b72903be9a405e00116ebe888b67ad",
+      "record_id": "reveal:train:-7434385833116714871#10832",
+      "parser_input_sha256": "26189fddbf453fa542c4094b3a09678e09b324d8d5319cc141cf8ac2cdb233ba",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 71,
+      "edges": 561,
+      "elapsed_seconds": 12.788146036000398
+    },
+    {
+      "code_sha256": "e22c0ee9e0d73208f22744193e481ecc6f424ca00e1ab2bd3eecac6a9fbfb3eb",
+      "record_id": "reveal:train:1891617106617090004#3210",
+      "parser_input_sha256": "b6b206a29a0ea44da9301c07f6daa58ac972022cbf4e60f89de8b4cee3197643",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 309,
+      "edges": 2674,
+      "elapsed_seconds": 12.405518813000526
+    },
+    {
+      "code_sha256": "e2c34d1f46471f073c8a7cd5a313a863c83586774b3611b70c6ac685213ff5a1",
+      "record_id": "reveal:train:9118387177353441960#16711",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "e3f20c78c6a784a514dfddb7f772781867f4243ef45bd0264475c11c3b69bbd4",
+      "record_id": "reveal:train:-3528294111382233554#12793",
+      "parser_input_sha256": "d2cc82e6d3ea34ec3f7c0dcf9406b09cd475d7042af78658f6f485e20565dbb2",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 78,
+      "edges": 564,
+      "elapsed_seconds": 8.384136478000073
+    },
+    {
+      "code_sha256": "e3ff9c4e5702ddcacac8bacc7a5a6e49d995a471b423b22e688e28fbc1c99792",
+      "record_id": "reveal:train:8445816931248660591#9977",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "e75554fd76ec212cb83c7410323d3f9939bbd467ad420e986ba7bb6431edda65",
+      "record_id": "reveal:train:6453796474132805955#918",
+      "parser_input_sha256": "5facc7b9c3223234bf45bab4c8f807bd352805a7259fadea2ee7d010adbd4b08",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 687,
+      "edges": 6098,
+      "elapsed_seconds": 12.47849009499987
+    },
+    {
+      "code_sha256": "e77515a4b32f56dfa7dedde6db57eaf5b1c8af3b25caaf96ddf67e71491527d9",
+      "record_id": "reveal:train:3728341105073176576#5216",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e7a52926ba40b7bd9356b388ad62ac4fee85dbd753e13a2deb215b255c999984",
+      "record_id": "reveal:train:-6063487367164326236#1434",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "e8ccd1b9f66f01ce9b2c26fbeb2caad260e53e5a71aed5db1d4d16bb23347b24",
+      "record_id": "reveal:train:-755883256379441954#15245",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e8ee29361c7b7210e5f8361d8228c531bbb295f3f010a2e8e1e34512c53beb88",
+      "record_id": "reveal:train:-7049333455584635197#12748",
+      "parser_input_sha256": "33429e4fade54c65a35f829e9254e0acca37c5c421736d7a2578068495ef4dd5",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 31,
+      "edges": 192,
+      "elapsed_seconds": 9.024205629999415
+    },
+    {
+      "code_sha256": "e9106a94140173c9ff7d32fe69227dbef7480cba0d4494e60f005d1d45188473",
+      "record_id": "reveal:train:8280197130498466782#10254",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "ea83fb65bbfd46be3e2d2d9479ec8aaf67f5d0fec1c3ce0212fff3649f64bdce",
+      "record_id": "reveal:test:-2323311514228246061#1249",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "ecfa76265ea83be1458d4b11640dc7583f2255e60c5dc9827b62282c364c0b8c",
+      "record_id": "reveal:train:1891617106617090004#10012",
+      "parser_input_sha256": "fc42a4143988c633c3a85d1fa1968224dd8c2b7677adcc773b5e8cda7dcfdd60",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 331,
+      "edges": 2878,
+      "elapsed_seconds": 13.443152005000229
+    },
+    {
+      "code_sha256": "edc4fc42afb77cb29ca25f7860cafa8d57e38f930850a983f3e0bdc154fbfc34",
+      "record_id": "reveal:train:7549435794356072684#6929",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "ef114b9df090b75772ec3fc82f7d746c3a534e4a4f1fba06502c89a1c2576cd4",
+      "record_id": "reveal:train:-8704283573519790151#7255",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "ef8baa0c67c461b9ac2cdc8902436103aef39a784cdfd19bf6da6f5eee4c48da",
+      "record_id": "reveal:test:3599206110384554647#1244",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "f1b845bc9ee0a0b64426875eb92fe3fdca7b4dc4a095d54687877c294a4e4edc",
+      "record_id": "reveal:train:4959950795017352813#6627",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "no additional supported annotation; requires individual source/build investigation"
+    },
+    {
+      "code_sha256": "f26d833cc30d711116e2236aba5487784acf229f2781a77a171aa0785d5c2cc1",
+      "record_id": "reveal:train:4511225370772574632#76",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "f9e1bb19b6a702ec1f09e36843c3ea221a125dcf8b762bdb23d3eeb69551d822",
+      "record_id": "reveal:test:-755883256379441954#139",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "fb1c6377910068d1c3e345b154f0ad3b08f98ffc13fd1dac60069783b02cfd29",
+      "record_id": "reveal:train:7549435794356072684#18132",
+      "status": "needs_macro_context",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "fbdd6f877506f5f427e36f86164f8b0aa0a7d0a80f7e8bb74bc3c21f2e0c6863",
+      "record_id": "reveal:train:-7248963932691286231#8047",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "fc5e13378ca120fbf4fc38825bbe3c29467c5b0ee9e7eca61c7ab14972bae3e8",
+      "record_id": "reveal:train:7399683071036018868#9535",
+      "status": "needs_project_context",
+      "nodes": 0,
+      "edges": 0,
+      "reason": "thread/event context macro requires original build definitions"
+    },
+    {
+      "code_sha256": "fd277e380dcf04d50d985d235f3803bc82e3442d9deeff49d05a8778fd5337e0",
+      "record_id": "reveal:train:-6032494406888257778#16451",
+      "parser_input_sha256": "d60ddf005331c13b2bdbc5ec86186e281229d8e7b1111ffe14a37b9832729511",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 133,
+      "edges": 1001,
+      "elapsed_seconds": 12.480687851999392
+    },
+    {
+      "code_sha256": "fd31a391e6c5a31ab391e5741f8f6411adafeb5c006f2757b816948798869900",
+      "record_id": "reveal:train:-704025756752474526#4787",
+      "parser_input_sha256": "3f65f54059b382de171ecc588975b9d532de450167ddb9852e7699b57e1d0d3c",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "PNGAPI"
+      ],
+      "status": "recovered",
+      "nodes": 37,
+      "edges": 256,
+      "elapsed_seconds": 11.500642789000267
+    },
+    {
+      "code_sha256": "fd4bffaf2b31f6991d073c77adeb64826e582cc56c66642abd2e2aff67462467",
+      "record_id": "reveal:train:-7049333455584635197#6129",
+      "parser_input_sha256": "a326838447046e3873a11bc579d343db8e7e5b41c799d502613d3c452aa3ff25",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 29,
+      "edges": 163,
+      "elapsed_seconds": 10.353333670000211
+    },
+    {
+      "code_sha256": "fe92d6db0a677fa99a95ec6ed3736e568dbe2511e8f0fdfa4c947b3126f0093b",
+      "record_id": "reveal:train:-3528294111382233554#15301",
+      "parser_input_sha256": "215ab0edf1d428d8a079274f5370ce5cbeb23e79c945d9ef1e2fd4df9d7611c3",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 332,
+      "edges": 2917,
+      "elapsed_seconds": 10.45437255700017
+    },
+    {
+      "code_sha256": "fea876c48f4fe820accd33a18f9fa135dc4231fb2c4997c4038e50b83162f008",
+      "record_id": "reveal:train:6871081691104220210#8177",
+      "parser_input_sha256": "e6d02b736be72d861a5b51fe3470da901aa07bf8162299d10b151f4e84541f4a",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "av_unused"
+      ],
+      "status": "recovered",
+      "nodes": 84,
+      "edges": 648,
+      "elapsed_seconds": 10.260103731001436
+    },
+    {
+      "code_sha256": "feb8fc09ed49c0ba4b2458813fc4ab619b2ddcd370e8ccd755741107a52f5852",
+      "record_id": "reveal:train:-7049333455584635197#17670",
+      "parser_input_sha256": "913990e9e5d130a32593c32b44b0e45a8fce3899506769d4d722892db316a788",
+      "profile_id": "0f19bff98c6877a8",
+      "applied_annotations": [
+        "U_CALLCONV"
+      ],
+      "status": "recovered",
+      "nodes": 26,
+      "edges": 153,
+      "elapsed_seconds": 9.41901918000076
+    }
+  ],
+  "production_cache_updated": false,
+  "prompts_regenerated": false,
+  "v1_recovered_preserved": 590
+}

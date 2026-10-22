@@ -1,0 +1,1468 @@
+{
+  "profile": {
+    "version": 3,
+    "annotation_macros": {
+      "_U_": "",
+      "ATTRIBUTE_UNUSED": "",
+      "HB_UNUSED": "",
+      "ATTR_UNUSED": "",
+      "U_CALLCONV": "",
+      "U_EXPORT2": "",
+      "__user": "",
+      "__always_inline": "inline",
+      "magick_restrict": "",
+      "PNGAPI": "",
+      "av_unused": ""
+    },
+    "interpretation": "parser annotation abstraction; not full project preprocessing",
+    "language_extension": ".cpp",
+    "heap": "2g",
+    "processors": 4,
+    "joern_home": "/home/quang-dung/.cache/grace-h2/joern-cli",
+    "php_configuration": "NTS hypothesis; original build configuration unknown",
+    "additional_profiles": [
+      "PHP_NTS",
+      "OpenSSL_STACK_OF",
+      "reg1_OUT_LDAP_CONST"
+    ],
+    "parse_launcher_sha256": "93e88d1b810383e3b1bccc1350501129a28f1ae80a44c0a34179673fd76fd4cd"
+  },
+  "profile_id": "2fb2ab9ea6f09b2f",
+  "total": 128,
+  "counts": {
+    "requires_original_context": 83,
+    "recovered_under_assumption": 43,
+    "recovered": 2
+  },
+  "elapsed_seconds": 132.9126008580006,
+  "results": [
+    {
+      "code_sha256": "088453a9e9431fa4a0f8c43f80a38bb20fdd8f05e13b6f75c33ef68b9e7e7e6f",
+      "record_id": "reveal:train:7549435794356072684#11834",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "097522ac8e63f88a65e7a2a0d912079e638a52132861a32fe40a1fafeba0a8c3",
+      "record_id": "reveal:train:4959950795017352813#12913",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "0e7df638d95e28280e38e6cab1d572ec258de2d2bb5cac1889f2b0e78ae13425",
+      "record_id": "reveal:train:8445816931248660591#13926",
+      "parser_input_sha256": "c84990af73d30cd7318ac9c4bd074cd9097b2d409ef8a707be886f00d44bc78d",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 18,
+      "edges": 104,
+      "elapsed_seconds": 8.02123047600071
+    },
+    {
+      "code_sha256": "0f7a290703fc0055d7284184902caa686fe027cd3016721d9181fff16a6f0d5b",
+      "record_id": "reveal:train:8445816931248660591#5697",
+      "parser_input_sha256": "874fde13b3166cfc1936892f204985a60c22af479b639e72d335842258113405",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 31,
+      "edges": 199,
+      "elapsed_seconds": 7.954498982999212
+    },
+    {
+      "code_sha256": "13416510efc463d2f7ea7f9b356d4442b5f3c9d4ff4bf6cce8cd43eecb951238",
+      "record_id": "reveal:train:-755883256379441954#1467",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "139f25a2e8932b814da824ca762ed7e0fc871713cf9197718062ca7bc3e74b1f",
+      "record_id": "reveal:test:-331579171381918893#402",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "1750d2ec00009872ebf1909b4d5fda7f3a09ca96ddf699ca6b47272c9f492595",
+      "record_id": "reveal:train:1223258652239369123#5188",
+      "parser_input_sha256": "e1e710caecb16f8aa684bc68494aaa638b9b240671608d6bc1a461a336a1590c",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 24,
+      "edges": 138,
+      "elapsed_seconds": 7.985161943999628
+    },
+    {
+      "code_sha256": "175fbba7a95b8b78968f0bbca3a9e801c8c56239e6963db67e9f981e76755365",
+      "record_id": "reveal:test:1366214969540455677#2179",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "1a7853e34d91b1a91b59cf583186584c3209a35d0da34d2acc4a85b81e3f3ac4",
+      "record_id": "reveal:train:-755883256379441954#2582",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "1c89fbebd0bd1ebadc4fec7b6df3b7d7560e8922cf51d8c8d68a1ba4039e189c",
+      "record_id": "reveal:train:7399683071036018868#9040",
+      "parser_input_sha256": "1d9fddab0f5517b7aa5a0658e476aeab7ac7e86e2762a2b33d309974d50c969b",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 25,
+      "edges": 172,
+      "elapsed_seconds": 7.966707118999693
+    },
+    {
+      "code_sha256": "1f1ffc328a7b14ea2203640f01c51bc15cf3703f357f62e9322d96041cf202c7",
+      "record_id": "reveal:train:3557739556029059195#7131",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "203ac1fa88fdb75a64bb01b838e86f68c4a447ad5280fdb1de9d621852e5c1f7",
+      "record_id": "reveal:train:7549435794356072684#9940",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "234d8ca14a3383e55a41d6ba99dc672639b664719d3e151df426ad502ff34a68",
+      "record_id": "reveal:train:8445816931248660591#11755",
+      "parser_input_sha256": "72d9d037b80a3447c8ce11f71e96db74db6014c71f29ea42922fc6afe3259740",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 49,
+      "edges": 347,
+      "elapsed_seconds": 11.896278042999256
+    },
+    {
+      "code_sha256": "23b7d56767d59f7ec1d8952784e68806f63fe931fd56ade852ae4867c1659741",
+      "record_id": "reveal:train:7399683071036018868#13606",
+      "parser_input_sha256": "733211cf87b326224658969780efb98cc4b0ada6f53eb5d6542e23b8b3651b62",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 63,
+      "edges": 462,
+      "elapsed_seconds": 12.608116833000167
+    },
+    {
+      "code_sha256": "24b13fcb8d65ad6dcf9d045e373b5bd0954e5ddec870b7a0b8da88017200bc69",
+      "record_id": "reveal:test:-1487877838474751244#2070",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "24ec092f28400eadd5bf2c51de658b82323f59b8299cccfb030cdf4178eda228",
+      "record_id": "reveal:train:-755883256379441954#11284",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "250034f8ff0623a1fb6defdb5d3e1094c380578f0447e427fae10a534b194483",
+      "record_id": "reveal:train:8280197130498466782#4322",
+      "parser_input_sha256": "4df3d10d5a24459a2d1ebac66525825e223f680486bce4cb7f67720b3066ba00",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 20,
+      "edges": 89,
+      "elapsed_seconds": 11.545538239999587
+    },
+    {
+      "code_sha256": "2584a24a79cf61c7d33e251689e36868adb9c23466f0c662be25d5f3ad0eb66b",
+      "record_id": "reveal:train:3557739556029059195#5702",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "25c6ec78ed8f4d981985747a409936826ac5a4bc2adb152275fc71e216be0c5f",
+      "record_id": "reveal:train:3728341105073176576#8993",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "261dcd152b987520937eeb174a913dd13afb92171b6fd2f31e4796c2bbc34ea8",
+      "record_id": "reveal:train:7725608904711859657#7242",
+      "parser_input_sha256": "fe9f1c284243b19aedb197d99ff188bcb5c72a0334dadfd6a703926fd3b7610c",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "OpenSSL_STACK_OF"
+      ],
+      "assumptions": [],
+      "status": "recovered",
+      "nodes": 74,
+      "edges": 600,
+      "elapsed_seconds": 12.68918799200037
+    },
+    {
+      "code_sha256": "271eccefb1a60ffdb05afa80b0b817eb2b2067ad9f46680d37e688d45f98c509",
+      "record_id": "reveal:train:-942846491258578486#7979",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "2a064cbd3b6068e88c5558dc775d0168044d54b4345e56e26385afe2d4954383",
+      "record_id": "reveal:train:-3805791263064294216#9259",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "2b4983346b6b90a673fd9362006cead3ae79d56185e850eeeb5e6ae636e8940f",
+      "record_id": "reveal:train:3557739556029059195#6024",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "2f1546d1dbac563da03f207c94fa4adbbeabbb4fdd7fdba4cab815af565aa1ba",
+      "record_id": "reveal:train:4187524518637656726#4275",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "2f83d1b4be87c3aec2a0625e04fe4e4f9cfa3cff3aa4caa080686142add7b609",
+      "record_id": "reveal:test:8280197130498466782#1109",
+      "parser_input_sha256": "3ef6bd2f58016217fa543ca9610ef2e75c2c16471ef476a206155c9c71dbfea1",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 19,
+      "edges": 91,
+      "elapsed_seconds": 11.808781944999282
+    },
+    {
+      "code_sha256": "306e6a31771e2bccf6ace79f053055e35c053f320e4f4f7bf71321a30d9b9970",
+      "record_id": "reveal:train:-4527380754569407959#3299",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "31e02aa18c5b36ac6fb6ac16c6bd08b6934a1e9ddd4ed4b240cb766e82c81e66",
+      "record_id": "reveal:train:3557739556029059195#3601",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3746e5f49439aa1df1ca14a759dc68ce5ed26db2a6c87cd27d34aab064b282e3",
+      "record_id": "reveal:train:8280197130498466782#15438",
+      "parser_input_sha256": "8919005982249bb2a8c30e90589e076daab8ad93a04e46e826347c9b73330227",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 14,
+      "edges": 57,
+      "elapsed_seconds": 12.267038087000401
+    },
+    {
+      "code_sha256": "3c8748d9a6a4978fde2bf4600cf0ddba05a653c9077d9b3f59db822824a9e2cb",
+      "record_id": "reveal:train:7549435794356072684#12704",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3da167ac4ccd5c449e05d18cb1ac4487b5bbd86cb42ae69c81c8cae4d36af748",
+      "record_id": "reveal:train:7549435794356072684#4578",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "3e9219dc33756a317f92770f0cc3ce1c2eadbf07082fb45142303778f7bb6223",
+      "record_id": "reveal:test:7399683071036018868#1231",
+      "parser_input_sha256": "4930d37ae56141ed7daa73254873d85cb4295f44a58631e759149da35c5487ba",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 7,
+      "edges": 29,
+      "elapsed_seconds": 11.56355792300019
+    },
+    {
+      "code_sha256": "3eef70bcc83b370c8e9d5c8ae78257d3b37951bb3eedf9353393d2459ab13ae9",
+      "record_id": "reveal:train:3599206110384554647#5980",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "428144046a0f8c74f3e7aba185813cd5ff4dcd109cee0dd396f056cb8c5c9d0b",
+      "record_id": "reveal:train:7549435794356072684#10830",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "4503a4e44b2880ef9a5d56ac2808643f139e8845acc722135d649ef6f99e95df",
+      "record_id": "reveal:train:155037296040076635#9703",
+      "status": "requires_original_context",
+      "reason": "No supported project profile; snippet may be incomplete or not a standalone function",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "463cfac28368ebbadcba8176dd99a46bfde350497c46aaf5417aa78d65ad96f7",
+      "record_id": "reveal:train:-942846491258578486#1613",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "49e6d3a784ada3470d5c4f05a9acd349a1a1fa34a673acec13263bee8e72e544",
+      "record_id": "reveal:train:8445816931248660591#7939",
+      "parser_input_sha256": "be2158e7873d80b18a9f6ac1347bd66530504077ee8109924e9761a55e4ecf0b",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 72,
+      "edges": 538,
+      "elapsed_seconds": 12.729433458998756
+    },
+    {
+      "code_sha256": "4a861d84df95b2bd84c818d166f42859c844a3600e1bf288de2080dbce850cd1",
+      "record_id": "reveal:train:4187524518637656726#6776",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "4e26a01d3b731c5c19589a4125eec0a735e81fa8a95bacce05b18944ce917535",
+      "record_id": "reveal:train:3728341105073176576#298",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "53306bc4aaec7e421a3fa950d712cf688f4e5235852463b0d0ca0d895e8668e1",
+      "record_id": "reveal:train:7399683071036018868#609",
+      "parser_input_sha256": "37577e9e929ea143e0fb00c9ca6daf3e6e075750e98dfc83009ba31dea3f23bb",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 40,
+      "edges": 264,
+      "elapsed_seconds": 13.848482159000923
+    },
+    {
+      "code_sha256": "56334e9e934520d2bff0dfa80a5b5d314e8b479e65466bfad30007db3a302c50",
+      "record_id": "reveal:train:-755883256379441954#1049",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "5648862b7abe6c4c47e99129ce2970b144a0c8b4a2eda884fddaa91630a7e34a",
+      "record_id": "reveal:train:-4527380754569407959#734",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "56c89bc0ff9dc04c110aed19520b9b0390d5b4107502c3974c724099e2ac8887",
+      "record_id": "reveal:train:3557739556029059195#4525",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "5810b0b0be06f6b88538f07a1521f86f9da8990c676abac37112863ce8c72ac4",
+      "record_id": "reveal:train:-3805791263064294216#5248",
+      "parser_input_sha256": "c1249a1a3e91892fa4c692a77549299e098c261078b2c623e2bcf743f4e6a199",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 97,
+      "edges": 744,
+      "elapsed_seconds": 15.051281885998833
+    },
+    {
+      "code_sha256": "58d15d03e3fea07d771af3ce0ad9c0cf431d9fe55e81d2324f5304eef7bd5a70",
+      "record_id": "reveal:train:-331579171381918893#10112",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "59acb21ed68b416a5d0f9858b733523756879e9c20225c59cb466fb3f946d6c6",
+      "record_id": "reveal:train:1223258652239369123#5225",
+      "parser_input_sha256": "4178c67907a980668b9231a4f5cea2b2afcae56121a9581b3fb6673f6f3751bc",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 73,
+      "edges": 487,
+      "elapsed_seconds": 15.025444805000006
+    },
+    {
+      "code_sha256": "5b6dadc339bb068982766320f6a4376d611c28972faad8cf692dd87e5429ecd8",
+      "record_id": "reveal:train:8445816931248660591#17167",
+      "parser_input_sha256": "84150415a36fe9774637104678f838533b51bac3637da28452d00644bb930dfd",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 35,
+      "edges": 249,
+      "elapsed_seconds": 14.115277263999815
+    },
+    {
+      "code_sha256": "5f20415f4d4c7b733056c77a1f26f545338db25994150171dee63d9643272a7f",
+      "record_id": "reveal:train:-4552633429382740307#2176",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "63fa4be87f89f68b28213b1fc8c013cc6efbe52f3e5475c9c9f95ae8a92c71b1",
+      "record_id": "reveal:train:7399683071036018868#17497",
+      "parser_input_sha256": "ff4e75a8681ccc9b56e3a81bff5ca34c57f62f52b2e8f5130e11f33a53513bbd",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 17,
+      "edges": 95,
+      "elapsed_seconds": 11.118814311001188
+    },
+    {
+      "code_sha256": "64b0e9364630effb78ddf00119a98b96c56be96cef791bfa7972f1aa562ecbb7",
+      "record_id": "reveal:train:-942846491258578486#14506",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "662a416730843ffc91ebbed84d173f20919367bd155ae259e333059bcf251de1",
+      "record_id": "reveal:train:3599206110384554647#5750",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "665900b96ae32b557d7e46eafd1b1ca3a7c3d7d30d8467fcbc2c193a5aeeb596",
+      "record_id": "reveal:train:3557739556029059195#11943",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "675e16837778d6df248c1924f71c4490037ce67bfcdb559b0a9e0e72b4f17836",
+      "record_id": "reveal:train:7549435794356072684#2276",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "68a335ed07896c770c6759dcafa02a49775ed0b772779561e487d9305a946b96",
+      "record_id": "reveal:train:7549435794356072684#16880",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "6b7502b6d76ac3f44007223f9477cecc1f0a961dde9f1543efefa740a9b7fc38",
+      "record_id": "reveal:train:-331579171381918893#12463",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "6d8ae0675f1d0f64bf9973d7d75dccd49cde8a607416effb163f3a0b3d423df2",
+      "record_id": "reveal:train:155037296040076635#6595",
+      "status": "requires_original_context",
+      "reason": "No supported project profile; snippet may be incomplete or not a standalone function",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "6ddbca71ddec9487caf70b62d85bf83f613eec788fc0cd1ce0314c115efa7732",
+      "record_id": "reveal:train:4511225370772574632#15775",
+      "parser_input_sha256": "5ec8c14490f4aa09e0e2f4beb7448949a887f0ed0a433af0008572cf6794f4e8",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 125,
+      "edges": 962,
+      "elapsed_seconds": 11.673968840999805
+    },
+    {
+      "code_sha256": "711710e128548df7d3c0dd4ec8589f4e0a8a50edd4981ab53a68f08fba0e1d8a",
+      "record_id": "reveal:train:4959950795017352813#16788",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "72c6a941324cfbf0e88ebe207751e869588f6aede003414a6625642a6a81661f",
+      "record_id": "reveal:train:-3805791263064294216#16554",
+      "parser_input_sha256": "da7fbbe48346e3f13d7c2d5da3325b99fa1772398d2e18dca26b5fd45cc4ff14",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 165,
+      "edges": 1432,
+      "elapsed_seconds": 11.76421092000055
+    },
+    {
+      "code_sha256": "76195620dfe11cb63fb0ae3729fd3cc6d09d8338fd189cb68b0221614c060f18",
+      "record_id": "reveal:train:7549435794356072684#4264",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "78782eece56fe19e23c8ea032b4188af28a83550432c911d2b486d74f690a9ed",
+      "record_id": "reveal:train:1223258652239369123#10890",
+      "parser_input_sha256": "0508de7a0e3d7b0f731195b58da7c5d01d4d0c07a3043fea3b3ac624503b6739",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 208,
+      "edges": 1610,
+      "elapsed_seconds": 13.023395149999487
+    },
+    {
+      "code_sha256": "78ac4104d833d7c2c788c87da5b210b2f2b166fe45e373defebe36cb379c8a31",
+      "record_id": "reveal:train:7399683071036018868#12370",
+      "parser_input_sha256": "6c51041edff7bd5773ac5009a21a6881f67a750acad2bbb725821a7c71beafee",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 105,
+      "edges": 787,
+      "elapsed_seconds": 9.889691329000925
+    },
+    {
+      "code_sha256": "79dff2732ad07ec5f94048bee7bc9ac0d2c80c2a82263945ebaa6eef76c65806",
+      "record_id": "reveal:train:1223258652239369123#1657",
+      "parser_input_sha256": "056edd48fb760edfb39cc7fa8bc959820c554f2f676e0ee4287d3d0e7d43dca4",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 60,
+      "edges": 404,
+      "elapsed_seconds": 10.216810624999198
+    },
+    {
+      "code_sha256": "7a8a900349be188bd44237b5deeffb65b6e29fbb4b806b73511a7d721c66d531",
+      "record_id": "reveal:train:-6063487367164326236#7063",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "7b964229e58264bf6b6fdf86bd0a8d9821dc4fb8db89fd1b36b18e7df17b50c1",
+      "record_id": "reveal:train:8445816931248660591#8325",
+      "parser_input_sha256": "c581c38699aaa3d22a7350277d736e6b4fd6165083a54f8339f49e02f1c2e4dd",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 72,
+      "edges": 538,
+      "elapsed_seconds": 10.847885420000239
+    },
+    {
+      "code_sha256": "7c2b2c778657d2f6e90f88efcd4b27598dd46620f7181faf17f8cefe83ea7a25",
+      "record_id": "reveal:train:1223258652239369123#7296",
+      "parser_input_sha256": "0c43168662cecfb8297539c95101f657462cc0f5c3c67945b7562d3d68ac2f81",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 69,
+      "edges": 469,
+      "elapsed_seconds": 10.03522109000005
+    },
+    {
+      "code_sha256": "7c6017b34562ee63e1f05539988b43e17a288ba02fef0925ac4cbbe30fb93ca7",
+      "record_id": "reveal:train:8445816931248660591#15225",
+      "parser_input_sha256": "1d37eafb6a75a92a7fe0d5ec61fbd13e4be992c72557f24efffc6fb4d87b19c9",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 28,
+      "edges": 166,
+      "elapsed_seconds": 12.04814443000032
+    },
+    {
+      "code_sha256": "7d2b51569cee9f48f95a4fe72a9af98ffdc08ec31d179ad794dbeadd1ba3f67b",
+      "record_id": "reveal:train:-942846491258578486#4129",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "7fc7010be79738179c9ae9ad1b4495bb87262ab863a43e0d303c73f73a27f7ae",
+      "record_id": "reveal:train:3557739556029059195#11298",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "80b77f6f16f38548af65eb1e942c29d49be7bdf801d7a920144d73b4e4ec1808",
+      "record_id": "reveal:train:4959950795017352813#7294",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "87753827d20812c13af698c6b1344cb2a41b285586a9d62aa608f872b459beef",
+      "record_id": "reveal:test:3599206110384554647#1515",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "8f7a3965d10a0fd0c3a1b75d816b19e973a3a1ebcb43260e14157a080c378831",
+      "record_id": "reveal:train:1182028467273264883#12618",
+      "parser_input_sha256": "6d48c94241b0b82fac1671e8315c424a89623730e8e475aca8ad33e448dec0a2",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "reg1"
+      ],
+      "assumptions": [
+        "Assumed reg1 expansion is 'register'; original header not supplied"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 414,
+      "edges": 3755,
+      "elapsed_seconds": 14.20833539999876
+    },
+    {
+      "code_sha256": "9130c29261e3be59b7b77b98bf41df1c738ed725493ba63de8c3ab3eedf1b133",
+      "record_id": "reveal:train:8280197130498466782#1289",
+      "parser_input_sha256": "b42d79a238b0563b45b3fe4a2c3fecb9f7e778e008465f83863f5484ab4e8f68",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 18,
+      "edges": 79,
+      "elapsed_seconds": 11.65145087000019
+    },
+    {
+      "code_sha256": "91474f252df0b446b799dc2ccfe726c5e0e37ee418397646896bce4cd7b9883d",
+      "record_id": "reveal:train:3599206110384554647#1739",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "929a10564592adddc94d5ef48d2bd98ae7e2de6cf5b603d68ff4fba80195de46",
+      "record_id": "reveal:train:6632536031698733342#13545",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "9bd364dbc9ebb542a8c108ec21ca8ad34ab4a6e3d82df656c219f7fbc81ece91",
+      "record_id": "reveal:train:7399683071036018868#9760",
+      "parser_input_sha256": "db3b2480ea91f40c690c1f7d4e85b49ca488dfed4dc52dbec8631c5199785519",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 190,
+      "edges": 1652,
+      "elapsed_seconds": 13.012245313000676
+    },
+    {
+      "code_sha256": "a42333b27b482eaf0019289a61b8e1cb42ea82b4327b97b2040bdca9bfdb9b75",
+      "record_id": "reveal:train:1223258652239369123#8271",
+      "parser_input_sha256": "1bd5d6b211f2febac352bec605fa453e358ef87a9136761233096d56354a9f66",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 32,
+      "edges": 192,
+      "elapsed_seconds": 11.036357580000185
+    },
+    {
+      "code_sha256": "a76073aaa7ddc8c0cf4d0bb4f8a8d5f2360f4e931c854ee6fe7f9a425b3f98f7",
+      "record_id": "reveal:train:-331579171381918893#17869",
+      "parser_input_sha256": "a722a16c60c8d8ae18ca18c5bf6a14fdd0fdda6203869cd482a6e4ee64a9da20",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "OpenSSL_STACK_OF"
+      ],
+      "assumptions": [],
+      "status": "recovered",
+      "nodes": 74,
+      "edges": 541,
+      "elapsed_seconds": 10.275365382000018
+    },
+    {
+      "code_sha256": "a86086d0f47e6bf2fa26664e7bdc6a0f91ca542371914953ccccbbb6354b8d23",
+      "record_id": "reveal:train:-755883256379441954#15252",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "a9004219fe37a22b915701a761e17cc124be19d1db447b7ffdb3a3a6615ec361",
+      "record_id": "reveal:train:4959950795017352813#12298",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "aa153bf6f87146ad2ed95ec867a518bd2dc1a01770ea82300cc24a0e8127933f",
+      "record_id": "reveal:test:3599206110384554647#727",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "ab68f7cdb795279045e3b472eaae44d5a5fe7dd6d860aef1e1a2a4376a53d814",
+      "record_id": "reveal:train:-331579171381918893#6958",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "b03f9df90117ef1378ef07b60ca3b8967cd79e4ef59759fa48c8342d1ae019e1",
+      "record_id": "reveal:train:3557739556029059195#12869",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "b211b3e552ddce003fd6dad0d362c00694ebe3aabdf699a2dca162ed9c5c504d",
+      "record_id": "reveal:train:-4552633429382740307#2448",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "b37e0c14f3cacc9c08357dd3fdcb761dfdec082135522d5d7916a7571eceb97b",
+      "record_id": "reveal:train:1223258652239369123#5290",
+      "parser_input_sha256": "079ed183c6d343210486eac4b7c9a0fec94e4738b054e8259699a1f99cc7c4fb",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 147,
+      "edges": 1183,
+      "elapsed_seconds": 10.692099230000167
+    },
+    {
+      "code_sha256": "b611681d832892f8fd7ce5cfa43ff7d94026f745633d966396e198d0b867f2aa",
+      "record_id": "reveal:train:1223258652239369123#6424",
+      "parser_input_sha256": "20c11dbc93cf30e3950437c0a497875c723fa6fd1b9b951480a0972c768dd9d5",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 63,
+      "edges": 427,
+      "elapsed_seconds": 10.396351437000703
+    },
+    {
+      "code_sha256": "b8de6c04ff17a56b0cfd4486dedffdc1767f0932d145f413394d18fafc277d34",
+      "record_id": "reveal:train:7399683071036018868#7765",
+      "parser_input_sha256": "153b90f17206b6b20a88ca5dd44e9f3acc2a12c3c0e2a7c652679b2487b328f6",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 9,
+      "edges": 31,
+      "elapsed_seconds": 8.418191953000132
+    },
+    {
+      "code_sha256": "b907a82736b0fe6ac3e382be5a2b2cd7c3caf93f4495b88e9377c4955e501c0b",
+      "record_id": "reveal:train:8445816931248660591#18130",
+      "parser_input_sha256": "ec704eff3acc84595788a19ead5132638a776ab3ddf6804fb0eb1463719d5f5e",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 73,
+      "edges": 536,
+      "elapsed_seconds": 10.978077316000054
+    },
+    {
+      "code_sha256": "b91e829719b55ccde0113f6a8c1bc66cc0e1a07c893204fbfb00015ec4ea8dff",
+      "record_id": "reveal:train:-755883256379441954#12904",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "ba55d9ef223a12b3bfbf8d22114b7e234431d4f941b536c32f83de0f7fbd882e",
+      "record_id": "reveal:train:-755883256379441954#10474",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "bd5d0ed3e177326a24c75b4f4f4a43af61817d3dbf5b66c5ae10f4cdfbba225b",
+      "record_id": "reveal:train:1223258652239369123#11152",
+      "parser_input_sha256": "d45f02eb7d7a28b26c2a9637497ecf163769eee28697738d368a77b54f7c105b",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 41,
+      "edges": 258,
+      "elapsed_seconds": 10.972236298999633
+    },
+    {
+      "code_sha256": "c23a833ac35966255c350739f0c9b97a53fc5b00d0c9dab9a3f8eb0832a8b278",
+      "record_id": "reveal:train:-3805791263064294216#4203",
+      "parser_input_sha256": "b052687e093e81c7a3161c9e987f941ad0c6bbd84fecd0a1fd914da32d9a3f58",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 179,
+      "edges": 1484,
+      "elapsed_seconds": 11.430152670998723
+    },
+    {
+      "code_sha256": "c2f021f24b14e8efd956489f79666294f5e05c86660ce5520c1621d7151cd8a8",
+      "record_id": "reveal:train:2335116444795821310#1527",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "c3175b835628ad3da859fd398521c62ff363d979af67ec11053b57fbf0cd82bb",
+      "record_id": "reveal:train:8280197130498466782#17917",
+      "parser_input_sha256": "63c1bb77134988d284f699c21894287c36ee5d460785926a91138d447f565a3a",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 16,
+      "edges": 64,
+      "elapsed_seconds": 12.300813891999496
+    },
+    {
+      "code_sha256": "c320794f2e1d60270805d5164d8141a731413e7526cbacdbc59626f362db83d3",
+      "record_id": "reveal:train:3557739556029059195#13022",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "c4f1e95cf9181ab6ef16b2550d6b37d7883a9338828cc772732f214db2b2bca5",
+      "record_id": "reveal:train:-331579171381918893#9396",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "c5d06a9872ae624a85f0f2e64fe68f880df14589069e171c97b67a26aae8fa34",
+      "record_id": "reveal:train:7399683071036018868#3760",
+      "parser_input_sha256": "2ab03d6736f0333dde727d61ed0db9309ab5d4f6cbbb397f97630c2d184df0be",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 16,
+      "edges": 68,
+      "elapsed_seconds": 12.129441236000275
+    },
+    {
+      "code_sha256": "c9c277182be2ca2feff63c4c995c1085aff7daf514c2bf763a85e1b459e10769",
+      "record_id": "reveal:train:7549435794356072684#11986",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "cd6b535f0cc78d4bbe9ca73e32006640f69e232f71836bef5785438039122ab7",
+      "record_id": "reveal:test:-755883256379441954#589",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "cedc45a46033c2211d72fefbcd0c0c26343022e7a2063e57ba63c7da79f077b3",
+      "record_id": "reveal:train:3557739556029059195#1191",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d0fcd844f02256ff906d5ded47395abc83148d4b72dfb44f27e131b8328f146a",
+      "record_id": "reveal:train:-4527380754569407959#10425",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d13c38a841a12868560988e5d78aaa2ad2175aeeffe12bcb8a34312eea67a242",
+      "record_id": "reveal:train:3728341105073176576#7280",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d223e23cda8f4995abfed1db13a48bbaf2af6400c5faa3c815b83557d73e3c55",
+      "record_id": "reveal:test:-755883256379441954#689",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d240ba84104a48864a31ab3d823374bb90b35483c476166f8aa9665b07afed33",
+      "record_id": "reveal:test:-331579171381918893#1083",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d3122a37672c53e88a0f04f4cfc07a74af210e780410ff8b325b6a1daacfce4b",
+      "record_id": "reveal:train:7549435794356072684#10735",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d4cbff3910410cc660432f675b8b0d5354fe53bb018f1c97f56c98760bd8eda2",
+      "record_id": "reveal:train:-4552633429382740307#10052",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d6f28dd6b6239bd4122b6c03a493eb4a08eaf66cdc1934caed8b371b4c2dd6cf",
+      "record_id": "reveal:train:-755883256379441954#12122",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "d94b82af9326414a3fb67d082f2b6f2f92fa60f7d2dea8b362c775655ef625b5",
+      "record_id": "reveal:train:3599206110384554647#12909",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "dc350bb2df4b2c49e79e70d74d3d9bdc1431633881395cca9df19a1a1c58c032",
+      "record_id": "reveal:train:7399683071036018868#10972",
+      "parser_input_sha256": "942bba7c3b999807691611ba6d1a87d9ec7af482b62349e9d9c5b5f64bc1d161",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 92,
+      "edges": 711,
+      "elapsed_seconds": 14.227411138999742
+    },
+    {
+      "code_sha256": "dc4942784a97ad38ad0a37fb733970f8f1cfa085b436f5f9123b8e4713590f25",
+      "record_id": "reveal:train:-755883256379441954#14686",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "dcde51f0dcc745f26b57432440add0cb4812c6be2161c7831264a641adf5666b",
+      "record_id": "reveal:train:7399683071036018868#17790",
+      "parser_input_sha256": "1636b5ff8e10952a9264069f5f265cf2d4c8311b881becc5e63dabe99eb25bbe",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 35,
+      "edges": 227,
+      "elapsed_seconds": 14.410499801000697
+    },
+    {
+      "code_sha256": "de22f47251580195a262c341b75a2875fa1c7c45f726afbf760212516598caba",
+      "record_id": "reveal:train:-4527380754569407959#2884",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "df4aa6148e888a9eb9ed636417564174abe7bb74fb46367cf3590fa8f7506600",
+      "record_id": "reveal:test:3728341105073176576#355",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e2c34d1f46471f073c8a7cd5a313a863c83586774b3611b70c6ac685213ff5a1",
+      "record_id": "reveal:train:9118387177353441960#16711",
+      "parser_input_sha256": "89deea84b0e45c40fbb9229bed6b404fc455f1b796e1c6033e304775271e1169",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "OUT"
+      ],
+      "assumptions": [
+        "Assumed OUT expansion is ''; original header not supplied"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 132,
+      "edges": 1091,
+      "elapsed_seconds": 13.587227459998758
+    },
+    {
+      "code_sha256": "e3ff9c4e5702ddcacac8bacc7a5a6e49d995a471b423b22e688e28fbc1c99792",
+      "record_id": "reveal:train:8445816931248660591#9977",
+      "parser_input_sha256": "eae19105e416a44c83cabb0b58d323db3e823820a7be8ef2034a2c33cc830bc7",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 19,
+      "edges": 106,
+      "elapsed_seconds": 12.191718055999445
+    },
+    {
+      "code_sha256": "e77515a4b32f56dfa7dedde6db57eaf5b1c8af3b25caaf96ddf67e71491527d9",
+      "record_id": "reveal:train:3728341105073176576#5216",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e7a52926ba40b7bd9356b388ad62ac4fee85dbd753e13a2deb215b255c999984",
+      "record_id": "reveal:train:-6063487367164326236#1434",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e8ccd1b9f66f01ce9b2c26fbeb2caad260e53e5a71aed5db1d4d16bb23347b24",
+      "record_id": "reveal:train:-755883256379441954#15245",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "e9106a94140173c9ff7d32fe69227dbef7480cba0d4494e60f005d1d45188473",
+      "record_id": "reveal:train:8280197130498466782#10254",
+      "parser_input_sha256": "69e6f0d6bebba49174b3519176822c29f9d52951393a1e2104a8d4a424f1f0e6",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 36,
+      "edges": 204,
+      "elapsed_seconds": 9.128292236000561
+    },
+    {
+      "code_sha256": "ea83fb65bbfd46be3e2d2d9479ec8aaf67f5d0fec1c3ce0212fff3649f64bdce",
+      "record_id": "reveal:test:-2323311514228246061#1249",
+      "status": "requires_original_context",
+      "reason": "No supported project profile; snippet may be incomplete or not a standalone function",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "edc4fc42afb77cb29ca25f7860cafa8d57e38f930850a983f3e0bdc154fbfc34",
+      "record_id": "reveal:train:7549435794356072684#6929",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "ef114b9df090b75772ec3fc82f7d746c3a534e4a4f1fba06502c89a1c2576cd4",
+      "record_id": "reveal:train:-8704283573519790151#7255",
+      "parser_input_sha256": "8d3472ade6e97893b21ee18b853b8a64a4ebac2e6f8a95c6a9990c398aeb533e",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "LDAP_CONST"
+      ],
+      "assumptions": [
+        "Assumed LDAP_CONST expansion is 'const'; original header not supplied"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 92,
+      "edges": 733,
+      "elapsed_seconds": 10.181639792999704
+    },
+    {
+      "code_sha256": "ef8baa0c67c461b9ac2cdc8902436103aef39a784cdfd19bf6da6f5eee4c48da",
+      "record_id": "reveal:test:3599206110384554647#1244",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "f1b845bc9ee0a0b64426875eb92fe3fdca7b4dc4a095d54687877c294a4e4edc",
+      "record_id": "reveal:train:4959950795017352813#6627",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "f26d833cc30d711116e2236aba5487784acf229f2781a77a171aa0785d5c2cc1",
+      "record_id": "reveal:train:4511225370772574632#76",
+      "status": "requires_original_context",
+      "reason": "Preprocessor directives embedded in extracted snippet; need original line structure/build configuration",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "f9e1bb19b6a702ec1f09e36843c3ea221a125dcf8b762bdb23d3eeb69551d822",
+      "record_id": "reveal:test:-755883256379441954#139",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "fb1c6377910068d1c3e345b154f0ad3b08f98ffc13fd1dac60069783b02cfd29",
+      "record_id": "reveal:train:7549435794356072684#18132",
+      "status": "requires_original_context",
+      "reason": "Orphaned token-pasting macro: need original definitions and invocation arguments",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "fbdd6f877506f5f427e36f86164f8b0aa0a7d0a80f7e8bb74bc3c21f2e0c6863",
+      "record_id": "reveal:train:-7248963932691286231#8047",
+      "status": "requires_original_context",
+      "reason": "Semantic/code-generating macro needs original project definitions",
+      "nodes": 0,
+      "edges": 0
+    },
+    {
+      "code_sha256": "fc5e13378ca120fbf4fc38825bbe3c29467c5b0ee9e7eca61c7ab14972bae3e8",
+      "record_id": "reveal:train:7399683071036018868#9535",
+      "parser_input_sha256": "208ab5396d40daf861a6b2e20b7bb46446a22a925328dcbbad4f3869c3456b2c",
+      "profile_id": "2fb2ab9ea6f09b2f",
+      "applied_annotations": [],
+      "project_profile": [
+        "PHP_NTS"
+      ],
+      "assumptions": [
+        "Assumed PHP non-thread-safe build; validate against original build before production use"
+      ],
+      "status": "recovered_under_assumption",
+      "nodes": 18,
+      "edges": 75,
+      "elapsed_seconds": 9.246309109001231
+    }
+  ],
+  "production_cache_updated": false,
+  "prompts_regenerated": false,
+  "v1_v2_recovered_preserved": 677
+}

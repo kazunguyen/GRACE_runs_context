@@ -1,0 +1,66 @@
+{
+  "assumed_count": 43,
+  "config": {
+    "bootstrap": 1000,
+    "datasets": [
+      "reveal"
+    ],
+    "full_reference": true,
+    "gate": {
+      "C": 1,
+      "calibration_fraction": 0.5,
+      "class_weight": null,
+      "enable_direct_high": false,
+      "family_alpha": 0.05,
+      "high_grid": [
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99
+      ],
+      "low_grid": [
+        0.01,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "max_high_false_positive_fraction": 0.01,
+      "max_iter": 1000,
+      "max_lost_positive_fraction": 0.01,
+      "min_high_precision": 0.98,
+      "seed": 42
+    },
+    "graph_workers": 4,
+    "inference_workers": 4,
+    "retrieval_arm": "baseline_whitening",
+    "split": "test"
+  },
+  "integrated_count": 722,
+  "jobs": [
+    {
+      "dataset": "reveal",
+      "path": "runs/h3/reveal/97611fc84bb4474c"
+    }
+  ],
+  "llm_called": false,
+  "root": "/home/quang-dung/.local/share/grace-h3/GRACE-H3-CalibratedCascade-recovered-r1",
+  "validation": [
+    {
+      "changed_prompts": 118,
+      "cohort_unchanged": true,
+      "empty_required_graphs": 83,
+      "frozen_verified": true,
+      "graph_coverage": 0.9947229551451188,
+      "path": "runs/reveal/test/baseline_whitening/5a64cba3ab7edefb",
+      "required_graphs": 9819,
+      "target_count": 2274
+    }
+  ]
+}
