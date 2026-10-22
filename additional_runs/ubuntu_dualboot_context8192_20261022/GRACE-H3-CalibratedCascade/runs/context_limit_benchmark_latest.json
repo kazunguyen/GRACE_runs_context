@@ -1,0 +1,172 @@
+{
+  "limit_bytes": 8192,
+  "percent": 50,
+  "reports": [
+    {
+      "dataset": "reveal",
+      "inference": {
+        "api_attempts_this_run": 446,
+        "cached_queries": 691,
+        "imported_prior_responses": 0,
+        "new_request_latency_p50_p95_seconds": [
+          1.6408188639998116,
+          11.057632132498838
+        ],
+        "new_unique_requests": 446,
+        "predictions_sha256": "eca49842e94d925e0b9f4718d575bbd246d9863282acbf07c72ef1e6b4784a8a",
+        "provider_usage_new_requests": {
+          "candidates_token_count": 892,
+          "prompt_token_count": 1247461,
+          "total_token_count": 1248353
+        },
+        "queries": 1137,
+        "request_error_queries": 0,
+        "request_spec": {
+          "base_url": "https://token-api.fpt.ai/v1",
+          "inference": {
+            "max_tokens": 256,
+            "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+            "parser_contract": "exact_last_line_binary_v1",
+            "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+            "seed": 42,
+            "temperature": 0.0
+          },
+          "model": "DeepSeek-V4-Flash",
+          "provider": "FPT AI Factory"
+        },
+        "status": "complete",
+        "unique_prompts": 1137,
+        "usage_available_new_requests": 446,
+        "usage_coverage_per_field": {
+          "candidates_token_count": 446,
+          "prompt_token_count": 446,
+          "total_token_count": 446
+        },
+        "wall_seconds": 368.874406971001,
+        "worst_case_attempts": 2230
+      },
+      "inferred_selected": 1137,
+      "limit_bytes": 8192,
+      "metrics": {
+        "accuracy_all": 0.9085312225153914,
+        "accuracy_valid_only": 0.9085312225153914,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 0,
+          "tn": 1033,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.0,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "note": "Metrics on successful responses within the selected dataset prefix only; unparseable successful responses retained in invalid_rate. Old oversized prompt responses are never used for changed prompt hashes. This normalizes context size, not other historical model/graph/retrieval differences.",
+      "old_context_same_selected_prefix_metrics": {
+        "accuracy_all": 0.9076517150395779,
+        "accuracy_valid_only": 0.9076517150395779,
+        "balanced_accuracy": 0.4995159728944821,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 1,
+          "tn": 1032,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": -0.009414068264677684,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0008795074758135445,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "output": "runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137",
+      "oversized_full_dataset": 872,
+      "oversized_selected": 446,
+      "paired_common_record_metrics": {
+        "limited_context": {
+          "accuracy_all": 0.9085312225153914,
+          "accuracy_valid_only": 0.9085312225153914,
+          "balanced_accuracy": 0.5,
+          "confusion_matrix_valid_only": {
+            "fn": 104,
+            "fp": 0,
+            "tn": 1033,
+            "tp": 0
+          },
+          "f1": 0.0,
+          "invalid_n": 0,
+          "invalid_positive_n": 0,
+          "invalid_rate": 0.0,
+          "mcc": 0.0,
+          "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+          "n": 1137,
+          "precision": 0.0,
+          "predicted_positive_rate_all": 0.0,
+          "recall": 0.0,
+          "recall_all_positives": 0.0,
+          "valid_n": 1137
+        },
+        "old_context": {
+          "accuracy_all": 0.9076517150395779,
+          "accuracy_valid_only": 0.9076517150395779,
+          "balanced_accuracy": 0.4995159728944821,
+          "confusion_matrix_valid_only": {
+            "fn": 104,
+            "fp": 1,
+            "tn": 1032,
+            "tp": 0
+          },
+          "f1": 0.0,
+          "invalid_n": 0,
+          "invalid_positive_n": 0,
+          "invalid_rate": 0.0,
+          "mcc": -0.009414068264677684,
+          "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+          "n": 1137,
+          "precision": 0.0,
+          "predicted_positive_rate_all": 0.0008795074758135445,
+          "recall": 0.0,
+          "recall_all_positives": 0.0,
+          "valid_n": 1137
+        }
+      },
+      "paired_common_record_n": 1137,
+      "pending_full_dataset": 1137,
+      "pending_selected": 0,
+      "prompt_percent": 50,
+      "request_spec": {
+        "base_url": "https://token-api.fpt.ai/v1",
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "DeepSeek-V4-Flash",
+        "provider": "FPT AI Factory"
+      },
+      "selected_prefix_complete": true,
+      "selected_prompts": 1137,
+      "split": "test",
+      "status": "partial",
+      "total_prompts": 2274
+    }
+  ]
+}

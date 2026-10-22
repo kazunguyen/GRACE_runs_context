@@ -868,6 +868,110 @@
       "note": "Partial inference; metrics only on successful cached responses. TẠM THỜI KHÔNG DÙNG: context limit 24.000 byte. 722 recovered graphs integrated, 43 under explicit assumptions.",
       "source_commit": "8a4ecf763b092926b06072feccce73dbeafb1dbb",
       "source_repository": "https://github.com/kazunguyen/GRACE-H3-CalibratedCascade"
+    },
+    {
+      "project": "GRACE-H3-CalibratedCascade",
+      "run": "runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137",
+      "dataset": "reveal",
+      "split": "test",
+      "arm": "baseline_whitening_context8192",
+      "status": "partial",
+      "environment": "Ubuntu dualboot",
+      "n0": 1033,
+      "n1": 104,
+      "metrics": {
+        "accuracy_all": 0.9085312225153914,
+        "accuracy_valid_only": 0.9085312225153914,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 0,
+          "tn": 1033,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.0,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "request_spec": {
+        "base_url": "https://token-api.fpt.ai/v1",
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "DeepSeek-V4-Flash",
+        "provider": "FPT AI Factory"
+      },
+      "context_limits": {
+        "8192": 1137
+      },
+      "mixed_model_recovery": false,
+      "artifact_paths": {
+        "notebook": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/notebooks/full-pipeline-ubuntu-recovered.ipynb",
+        "prompts": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/prompts.jsonl",
+        "all_prompts": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/prompts.jsonl",
+        "predictions": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/evaluated_predictions.jsonl",
+        "raw_responses": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/raw_responses.jsonl",
+        "manifest": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/run_manifest.json",
+        "metrics": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/context_benchmark.json",
+        "inference_summary": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/inference_summary.json"
+      },
+      "raw_unavailable_n": 0,
+      "coverage": {
+        "inferred_n": 1137,
+        "total_prompts": 2274,
+        "pending_n": 1137,
+        "inferred_percent": 50.0,
+        "inference_complete": false,
+        "selected_prefix_complete": true
+      },
+      "full_cohort_n": 2274,
+      "requested_prompt_percent": 50,
+      "benchmark_use": "partial_descriptive_only",
+      "benchmark_comparable": false,
+      "selected_prefix_complete": true,
+      "source_run": "runs/reveal/test/baseline_whitening/5a64cba3ab7edefb",
+      "new_unique_requests": 446,
+      "cached_queries": 691,
+      "paired_old_context_metrics": {
+        "accuracy_all": 0.9076517150395779,
+        "accuracy_valid_only": 0.9076517150395779,
+        "balanced_accuracy": 0.4995159728944821,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 1,
+          "tn": 1032,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": -0.009414068264677684,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0008795074758135445,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "note": "8192 UTF-8 bytes. Complete selected first 50% (1137/2274); full dataset incomplete. 446 oversized prompts re-fit/recalled, 691 cached; zero request errors/invalids. All predictions are 0. Comparison with 24k uses the same 1137 IDs; descriptive partial result, not a full-test benchmark.",
+      "source_commit": "7d3516d627118b9eb52c157d5f6d20dd53994ccb",
+      "source_repository": "https://github.com/kazunguyen/GRACE-H3-CalibratedCascade"
     }
   ],
   "derived_arms": [
@@ -3665,6 +3769,106 @@
       "benchmark_comparable": false,
       "benchmark_use": "temporarily_excluded",
       "note": "Partial inference; metrics only on successful cached responses. TẠM THỜI KHÔNG DÙNG: context limit 24.000 byte. 722 recovered graphs integrated, 43 under explicit assumptions."
+    },
+    {
+      "project": "GRACE-H3-CalibratedCascade",
+      "dataset": "reveal",
+      "split": "test",
+      "run": "runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137",
+      "arm": "context8192",
+      "profile": "ubuntu-dualboot-first50pct",
+      "selected_before_test": false,
+      "status": "partial",
+      "environment": "Ubuntu dualboot",
+      "metrics": {
+        "accuracy_all": 0.9085312225153914,
+        "accuracy_valid_only": 0.9085312225153914,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 0,
+          "tn": 1033,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.0,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "coverage": {
+        "inferred_n": 1137,
+        "total_prompts": 2274,
+        "pending_n": 1137,
+        "inferred_percent": 50.0,
+        "inference_complete": false,
+        "selected_prefix_complete": true
+      },
+      "context_limits": {
+        "8192": 1137
+      },
+      "report": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/context_benchmark.json",
+      "benchmark_comparable": false,
+      "benchmark_use": "partial_descriptive_only",
+      "note": "8192 UTF-8 bytes. Complete selected first 50% (1137/2274); full dataset incomplete. 446 oversized prompts re-fit/recalled, 691 cached; zero request errors/invalids. All predictions are 0. Comparison with 24k uses the same 1137 IDs; descriptive partial result, not a full-test benchmark.",
+      "source_commit": "7d3516d627118b9eb52c157d5f6d20dd53994ccb"
+    },
+    {
+      "project": "GRACE-H3-CalibratedCascade",
+      "dataset": "reveal",
+      "split": "test",
+      "run": "runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137",
+      "arm": "context24000_same_prefix",
+      "profile": "ubuntu-dualboot-first50pct",
+      "selected_before_test": false,
+      "status": "partial",
+      "environment": "Ubuntu dualboot",
+      "metrics": {
+        "accuracy_all": 0.9076517150395779,
+        "accuracy_valid_only": 0.9076517150395779,
+        "balanced_accuracy": 0.4995159728944821,
+        "confusion_matrix_valid_only": {
+          "fn": 104,
+          "fp": 1,
+          "tn": 1032,
+          "tp": 0
+        },
+        "f1": 0.0,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": -0.009414068264677684,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 1137,
+        "precision": 0.0,
+        "predicted_positive_rate_all": 0.0008795074758135445,
+        "recall": 0.0,
+        "recall_all_positives": 0.0,
+        "valid_n": 1137
+      },
+      "coverage": {
+        "inferred_n": 1137,
+        "total_prompts": 2274,
+        "pending_n": 1137,
+        "inferred_percent": 50.0,
+        "inference_complete": false,
+        "selected_prefix_complete": true
+      },
+      "context_limits": {
+        "24000": 1137
+      },
+      "report": "additional_runs/ubuntu_dualboot_context8192_20261022/GRACE-H3-CalibratedCascade/runs/context_limit_rerun/reveal/test/f65b0c326b9337c4/inference_prefix/first_001137/context_benchmark.json",
+      "benchmark_comparable": false,
+      "benchmark_use": "temporarily_excluded",
+      "note": "Matched old 24000-byte profile on the same 1137 record IDs. TẠM THỜI KHÔNG DÙNG: context 24000 byte.",
+      "source_commit": "7d3516d627118b9eb52c157d5f6d20dd53994ccb"
     }
   ],
   "prepared_only": [],

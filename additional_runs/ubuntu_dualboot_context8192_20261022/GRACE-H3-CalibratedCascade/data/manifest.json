@@ -1,0 +1,57 @@
+{
+  "datasets": {
+    "devign": {
+      "test": {
+        "count": 2732,
+        "identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+        "parquet": "data/devign/test.parquet",
+        "rows_path": "data/devign/test.jsonl",
+        "rows_sha256": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c",
+        "source_sha256": "9876907e09abb3ed119e1c3990cea7c0a2d288bbccb2d2c0030e805d5328e5cd"
+      },
+      "train": {
+        "count": 21854,
+        "identity": "8ad43a0588fc996e88d3a5a806c032db5b0f4d16eaff3e547f3f9e30089f3baa",
+        "parquet": "data/devign/train.parquet",
+        "rows_path": "data/devign/train.jsonl",
+        "rows_sha256": "ba67d93da442badbd9f59ba6ecd91bb87d55fab69da924d8f40199d1881530cc",
+        "source_sha256": "43912a273065766782e41f3e1be38e23984589483a0bc8900f9153c67a9ef107"
+      },
+      "validation": {
+        "count": 2732,
+        "identity": "040fe1b91b740402485a2a81fd737fe27aa0e37eadd2681f9b5f82e3586f2acb",
+        "parquet": "data/devign/validation.parquet",
+        "rows_path": "data/devign/validation.jsonl",
+        "rows_sha256": "09366950380d5f77ecd64829029595f238a1e5779765a6fc8902e2396196e93c",
+        "source_sha256": "59e89ba4827419e0c2ba2a7d916a97107f833f84cb2660d6b8ce77514e86477f"
+      }
+    },
+    "reveal": {
+      "test": {
+        "count": 2274,
+        "identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+        "parquet": "data/reveal/test.parquet",
+        "rows_path": "data/reveal/test.jsonl",
+        "rows_sha256": "2be86b5a9047459b0d4342800851e1769ba0a591b423ae094c1111e8f914a5b9",
+        "source_sha256": "bb68bc895a99bb99fe489f3a28dd8d531230579939bd9c4c6d6020277254a222"
+      },
+      "train": {
+        "count": 18187,
+        "identity": "c4c3e80a79615dc7c2bd4195d953cc821632d3642fa66f4be1926d5ea0a36035",
+        "parquet": "data/reveal/train.parquet",
+        "rows_path": "data/reveal/train.jsonl",
+        "rows_sha256": "bdf1b98d45d105a504574951c03fb130dc2c350fd8de8c00cb419d78e901f0c7",
+        "source_sha256": "465eec48676a005ad0a3129f6ac4bdb464988c1712b1c9931ddaa297ac57ad91"
+      },
+      "validation": {
+        "count": 2273,
+        "identity": "e4accc3e2125d8bac7291c7dd2a231c3f9db3c39a480fe05feca7e887f8aa1d4",
+        "parquet": "data/reveal/validation.parquet",
+        "rows_path": "data/reveal/validation.jsonl",
+        "rows_sha256": "51cfecddbac3473037273c7b776284e6d57eeb7c7292802694786ec1e3088252",
+        "source_sha256": "626c0ac2241e07ffdb91b269c83d9c42e5978b4ebcf325b9cae2b682cb757f2e"
+      }
+    }
+  },
+  "schema": "grace_h1_data_v1"
+}
