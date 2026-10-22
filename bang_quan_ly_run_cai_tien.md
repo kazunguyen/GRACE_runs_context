@@ -2,14 +2,14 @@
 
 Cập nhật: **22/10/2026**. Bảng riêng cho các cải tiến; không cộng vào 36 run trong `bang_quan_ly_run.md`.
 
-H2 đã công bố mã nguồn và bốn notebook trên nhánh `main`, commit [`4a23088`](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/commit/4a230882b265b8d86c306f0aacdaa00f497ca6e7). Xem [full pipeline](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb), [bản Ubuntu](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb), [Kaggle accelerator](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb) và [Kaggle CPU](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb). Việc công bố code không đồng nghĩa đã hoàn tất benchmark H2; dữ liệu và runtime đang chạy được giữ nguyên trên máy.
+H2 đã công bố mã nguồn và các notebook trên nhánh `main`, commit [`4a23088`](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/commit/4a230882b265b8d86c306f0aacdaa00f497ca6e7). Bản H2 Guarded v3 và notebook inference đã được cập nhật local; snapshot inference dừng ở 50% được lưu dưới `additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/` (xem các dòng H2 bên dưới). Xem [full pipeline](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline.ipynb), [bản Ubuntu](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/full-pipeline-ubuntu.ipynb), [Kaggle accelerator](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_accelerator.ipynb) và [Kaggle CPU](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence/blob/4a230882b265b8d86c306f0aacdaa00f497ca6e7/notebooks/kaggle_cpu_pipeline.ipynb). Việc công bố code không đồng nghĩa đã hoàn tất benchmark H2; dữ liệu và runtime đang chạy được giữ nguyên trên máy.
 
 ## Repository và nhánh
 
 | Project | Origin | Nhánh lưu kết quả |
 |---|---|---|
 | H1 | [GRACE-H1-SecurityProjection](https://github.com/kazunguyen/GRACE-H1-SecurityProjection) | `projection-v2-local-metric`; cả `main`, `devign`, `reveal` cũng đã push |
-| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main`; code và notebook đã push (`4a23088`) |
+| H2 | [GRACE-H2-GuardedEvidence](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence) | `main`; bản đã push `4a23088`; cập nhật local `ab3e17a` (chưa push) |
 | H3 Cascade | [GRACE-H3-CalibratedCascade](https://github.com/kazunguyen/GRACE-H3-CalibratedCascade) | `main` |
 | H3 Ensemble | [GRACE-H3-BenchmarkEnsembled](https://github.com/kazunguyen/GRACE-H3-BenchmarkEnsembled) | `feat/h3-v2-benchmark` |
 
@@ -23,6 +23,15 @@ H2 đã công bố mã nguồn và bốn notebook trên nhánh `main`, commit [`
 - Notebook commit/archive đã che API key điền trực tiếp. Bản gốc vẫn nằm ở project để resume; snapshot không chứa weights, embeddings, graph cache hoặc runtime.
 
 **Quy ước sử dụng:** Không dùng riêng run `1c092d22f44923fc`. Tạm thời không dùng các run/profile context 24.000 byte. Các run khác không bị loại chỉ vì dùng DeepSeek hoặc trộn model/provider.
+
+## GRACE H2 GuardedEvidence: inference đã dừng
+
+Các hàng dưới ghi đúng trạng thái đã lưu khi thầy dừng notebook. Chỉ có dự đoán `0` trong các response hoàn tất; ReVeal còn một request `dispatched` không có raw response nên trạng thái không xác định. Chưa đánh giá và không dùng các kết quả một phần làm benchmark. Snapshot gồm prompt, raw response, prediction, manifest và notebook trong [thư mục H2 GuardedEvidence](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/>); [snapshot manifest](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/snapshot_manifest.json>) ghi commit code local `ab3e17a` chưa push.
+
+| Project / run | Dataset / split | Arm | Valid / invalid response | Trạng thái | Model / context bytes | Prediction đã lưu | Notebook | Raw | Prompt | Manifest | Ghi chú |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| H2-GuardedEvidence / `a6dae6c1d9533d815bd7` | devign / test | H2-guarded-v3, prefix 50% | 1366 / 0 | partial; 1366/1366 prefix xong, 1366/2732 toàn tập | DeepSeek-V4-Flash / FPT / 8192 | 1366 × `0` | [notebook](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/notebooks/infer_guarded_prompts.ipynb>) | [raw](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/devign/test/H2-guarded/a6dae6c1d9533d815bd7/raw_responses.jsonl>) | [prompts](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/devign/test/H2-guarded/a6dae6c1d9533d815bd7/prompts.jsonl.gz>) | [manifest](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/devign/test/H2-guarded/a6dae6c1d9533d815bd7/run_manifest.json>) | Chưa đánh giá; không phải kết quả benchmark hoàn chỉnh. |
+| H2-GuardedEvidence / `24867fce07a449ee99a0` | reveal / test | H2-guarded-v3, prefix 50% | 63 / 0 | partial; 63/1137 hoàn tất, 1 dispatched chưa rõ kết quả | DeepSeek-V4-Flash / FPT / 8192 | 63 × `0`; 1 request chưa rõ | [notebook](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/notebooks/infer_guarded_prompts.ipynb>) | [raw](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/reveal/test/H2-guarded/24867fce07a449ee99a0/raw_responses.jsonl>) | [prompts](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/reveal/test/H2-guarded/24867fce07a449ee99a0/prompts.jsonl.gz>) | [manifest](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/reveal/test/H2-guarded/24867fce07a449ee99a0/run_manifest.json>) | Request `dispatched` не tự gửi lại; chưa đánh giá. |
 
 ## Các run có inference
 

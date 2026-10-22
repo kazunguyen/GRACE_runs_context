@@ -1,0 +1,19 @@
+{
+  "dataset": "reveal",
+  "run_id": "24867fce07a449ee99a0",
+  "selected_prefix_percent": 50,
+  "cohort_size": 2274,
+  "selected_prefix_size": 1137,
+  "recorded_response_rows": 64,
+  "response_counts": {
+    "complete": 63,
+    "dispatched": 1,
+    "prediction_0": 63,
+    "prediction_1": 0,
+    "invalid_prediction": 0,
+    "errors": 0
+  },
+  "fully_completed": false,
+  "evaluation_performed": false,
+  "note": "Inference was stopped by the user. A dispatched row without a response is uncertain and must not be automatically resent; no test labels or metrics included."
+}

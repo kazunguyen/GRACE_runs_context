@@ -1,0 +1,37 @@
+{
+  "schema": "grace_h2_guarded_snapshot_index_v1",
+  "created_utc": "2026-10-22",
+  "source_repository": "https://github.com/kazunguyen/GRACE-H2-GuardedEvidence",
+  "source_commit": "ab3e17a6cf0981fccfdd15b82fe5e30915e33bf1",
+  "source_commit_pushed": false,
+  "notebook": "notebooks/infer_guarded_prompts.ipynb",
+  "notebook_sha256": "3c8966e1288463a5084baf8990bdd2f63bac1f2380d3cd5a4200d5b8adbc0a72",
+  "runs": [
+    {
+      "dataset": "devign",
+      "run_id": "a6dae6c1d9533d815bd7",
+      "manifest": "runs/devign/test/H2-guarded/a6dae6c1d9533d815bd7/run_manifest.json",
+      "response_counts": {
+        "complete": 1366,
+        "dispatched": 0,
+        "prediction_0": 1366,
+        "prediction_1": 0,
+        "invalid_prediction": 0,
+        "errors": 0
+      }
+    },
+    {
+      "dataset": "reveal",
+      "run_id": "24867fce07a449ee99a0",
+      "manifest": "runs/reveal/test/H2-guarded/24867fce07a449ee99a0/run_manifest.json",
+      "response_counts": {
+        "complete": 63,
+        "dispatched": 1,
+        "prediction_0": 63,
+        "prediction_1": 0,
+        "invalid_prediction": 0,
+        "errors": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "grace_h2_guarded_inference_snapshot_v1",
+  "project": "GRACE-H2-GuardedEvidence",
+  "dataset": "devign",
+  "run_id": "a6dae6c1d9533d815bd7",
+  "split": "test",
+  "method": "H2-guarded-v3",
+  "context_limit_utf8_bytes": 8192,
+  "prompts_per_query": 1,
+  "selected_prefix_percent": 50,
+  "selected_queries": 1366,
+  "provider": "fpt",
+  "model": "DeepSeek-V4-Flash",
+  "inference_settings": {
+    "base_url": "https://token-api.fpt.ai/v1",
+    "comparison_note": "Provider/model differs from Vertex contract; do not claim a matched comparison automatically.",
+    "max_attempts": 1,
+    "max_output_tokens": 256,
+    "model": "DeepSeek-V4-Flash",
+    "provider": "fpt",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "test_labels_loaded_for_inference": false,
+  "evaluation_performed": false,
+  "response_counts": {
+    "complete": 1366,
+    "dispatched": 0,
+    "prediction_0": 1366,
+    "prediction_1": 0,
+    "invalid_prediction": 0,
+    "errors": 0
+  },
+  "files": {
+    "prompts.jsonl.gz": "393ded6d760ab1de2eb6e4c855a680f3c4e8e1cd56dd86d0d0ee11e6513458fa",
+    "raw_responses.jsonl": "c88c7fb23301f690f9f5c3b8cf34ed28a3aa32eb2559e74021959fd368cfa147",
+    "predictions.jsonl": "3a68773288831aa441c4ddeceeffdfb6a26898de9fb2525c681338014ec157ff"
+  },
+  "created_utc": "2026-10-22",
+  "source_run_report": {
+    "arm": "H2-guarded",
+    "cfg_conflicting_controls_rejected": 64,
+    "context_limit_utf8_bytes": 8192,
+    "dataset": "devign",
+    "demonstrations_restored_from_train": 1521,
+    "elapsed_seconds": 0.48,
+    "evidence_status": {
+      "no_operation_nodes": 231,
+      "partial_graph": 479,
+      "rich": 2022
+    },
+    "full_test_queries": 2732,
+    "inference_calls_made": 0,
+    "maximum_prompt_bytes": 8173,
+    "mean_evidence_bytes": 1624.3,
+    "mean_prompt_bytes": 4606.0,
+    "newly_prepared": 0,
+    "preview_only": false,
+    "prompts_per_query": 1,
+    "quality_note": "Offline coverage, not predictive quality. No samples filtered; missing/partial evidence is explicit. No graph-prefix fallback.",
+    "queries": 2732,
+    "queries_with_observed_controls": 1561,
+    "run_directory": "/media/quang-dung/Data/JUNIOR/LabThayTho/GRACE-H2-GuardedEvidence/runs/v3/devign/a6dae6c1d9533d815bd7",
+    "run_id": "a6dae6c1d9533d815bd7",
+    "schema": "h2_guarded_offline_report_v3",
+    "storage_bytes": 11063296
+  },
+  "source_commit": "ab3e17a6cf0981fccfdd15b82fe5e30915e33bf1",
+  "notebook_sha256": "3c8966e1288463a5084baf8990bdd2f63bac1f2380d3cd5a4200d5b8adbc0a72"
+}
