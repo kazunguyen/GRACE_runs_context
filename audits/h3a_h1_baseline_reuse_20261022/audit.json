@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-22",
+  "checks": {
+    "reveal8192_full": {
+      "path": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\context_limit_rerun\\reveal\\test\\f65b0c326b9337c4\\prompts.jsonl",
+      "n": 2274,
+      "code_matches": 2274,
+      "exact_prompt_matches": 1426,
+      "prompt_mismatches": 848
+    },
+    "reveal8192_prefix1137": {
+      "path": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\ubuntu_dualboot_context8192_20261022\\GRACE-H3-CalibratedCascade\\runs\\context_limit_rerun\\reveal\\test\\f65b0c326b9337c4\\inference_prefix\\first_001137\\prompts.jsonl",
+      "n": 1137,
+      "code_matches": 1137,
+      "exact_prompt_matches": 977,
+      "prompt_mismatches": 160
+    },
+    "reveal24000_full": {
+      "path": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\reveal\\test\\baseline_whitening\\5a64cba3ab7edefb\\prompts.jsonl",
+      "n": 2274,
+      "code_matches": 2274,
+      "exact_prompt_matches": 772,
+      "prompt_mismatches": 1502
+    },
+    "reveal24000_partial1140": {
+      "path": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\ubuntu_dualboot_20261022\\GRACE-H3-CalibratedCascade\\runs\\reveal\\test\\baseline_whitening\\5a64cba3ab7edefb\\partial_prompts_archive.jsonl",
+      "n": 1140,
+      "code_matches": 1140,
+      "exact_prompt_matches": 573,
+      "prompt_mismatches": 567
+    },
+    "devign8192_full": {
+      "path": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\devign\\test\\baseline_whitening\\2021aa5fef71aee4\\prompts.jsonl",
+      "n": 2732,
+      "code_matches": 2732,
+      "exact_prompt_matches": 2732,
+      "prompt_mismatches": 0
+    }
+  },
+  "h1_sources": {
+    "reveal": {
+      "path": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431",
+      "n": 2274,
+      "request_spec": {
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+        "provider": "Vertex AI"
+      },
+      "raw_verified": 2274
+    },
+    "devign": {
+      "path": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6",
+      "n": 2732,
+      "request_spec": {
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+        "provider": "Vertex AI"
+      },
+      "raw_verified": 2732
+    }
+  },
+  "derived_evaluations": {
+    "reveal": {
+      "dataset": "reveal",
+      "split": "test",
+      "status": "complete_derived_offline",
+      "kind": "frozen_H3A_gate_plus_H1_baseline_expert",
+      "h1_source_run": "0779c879b6d11431",
+      "model": {
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+        "provider": "Vertex AI"
+      },
+      "context_bytes": 8192,
+      "n": 2274,
+      "inspect_n": 2274,
+      "cascade": {
+        "n": 2274,
+        "valid_n": 2274,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 74,
+          "tn": 1483,
+          "fp": 561,
+          "fn": 156
+        },
+        "precision": 0.11653543307086614,
+        "recall": 0.3217391304347826,
+        "f1": 0.17109826589595373,
+        "mcc": 0.03177463766254381,
+        "balanced_accuracy": 0.5236386454522249,
+        "accuracy": 0.6846965699208444,
+        "predicted_positive_rate": 0.27924362357080035
+      },
+      "full_H1_reference": {
+        "n": 2274,
+        "valid_n": 2274,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 74,
+          "tn": 1483,
+          "fp": 561,
+          "fn": 156
+        },
+        "precision": 0.11653543307086614,
+        "recall": 0.3217391304347826,
+        "f1": 0.17109826589595373,
+        "mcc": 0.03177463766254381,
+        "balanced_accuracy": 0.5236386454522249,
+        "accuracy": 0.6846965699208444,
+        "predicted_positive_rate": 0.27924362357080035
+      },
+      "gate_only": {
+        "n": 2274,
+        "valid_n": 2274,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 1,
+          "tn": 2044,
+          "fp": 0,
+          "fn": 229
+        },
+        "precision": 1.0,
+        "recall": 0.004347826086956522,
+        "f1": 0.008658008658008658,
+        "mcc": 0.0625283271370814,
+        "balanced_accuracy": 0.5021739130434782,
+        "accuracy": 0.8992963940193491,
+        "predicted_positive_rate": 0.00043975373790677223
+      },
+      "new_api_calls": 0,
+      "note": "Separate derived evaluation, not replacement/resumption of old FPT runs. Expert prompts deliberately defined by H1 reference; no test-label threshold fitting. Full H1 raw responses verified."
+    },
+    "devign": {
+      "dataset": "devign",
+      "split": "test",
+      "status": "complete_derived_offline",
+      "kind": "frozen_H3A_gate_plus_H1_baseline_expert",
+      "h1_source_run": "9afe3268729648c6",
+      "model": {
+        "inference": {
+          "max_tokens": 256,
+          "parser": "../Grace-with-filters-v2/[CONTRACT]/parser/parse_prediction.py::parse_prediction",
+          "parser_contract": "exact_last_line_binary_v1",
+          "retry_policy": "max_attempts=5; exponential_backoff=5s..120s; exhausted_request=invalid",
+          "seed": 42,
+          "temperature": 0.0
+        },
+        "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+        "provider": "Vertex AI"
+      },
+      "context_bytes": 8192,
+      "n": 2732,
+      "inspect_n": 2726,
+      "cascade": {
+        "n": 2732,
+        "valid_n": 2732,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 345,
+          "tn": 1147,
+          "fp": 330,
+          "fn": 910
+        },
+        "precision": 0.5111111111111111,
+        "recall": 0.2749003984063745,
+        "f1": 0.3575129533678756,
+        "mcc": 0.059475145313229845,
+        "balanced_accuracy": 0.5257372675850424,
+        "accuracy": 0.5461200585651538,
+        "predicted_positive_rate": 0.24707174231332357
+      },
+      "full_H1_reference": {
+        "n": 2732,
+        "valid_n": 2732,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 345,
+          "tn": 1146,
+          "fp": 331,
+          "fn": 910
+        },
+        "precision": 0.5103550295857988,
+        "recall": 0.2749003984063745,
+        "f1": 0.35732780942516834,
+        "mcc": 0.05866369798484581,
+        "balanced_accuracy": 0.5253987435498358,
+        "accuracy": 0.5457540263543191,
+        "predicted_positive_rate": 0.24743777452415813
+      },
+      "gate_only": {
+        "n": 2732,
+        "valid_n": 2732,
+        "invalid_n": 0,
+        "confusion_matrix": {
+          "tp": 547,
+          "tn": 1135,
+          "fp": 342,
+          "fn": 708
+        },
+        "precision": 0.6152980877390326,
+        "recall": 0.4358565737051793,
+        "f1": 0.5102611940298507,
+        "mcc": 0.217310127980652,
+        "balanced_accuracy": 0.6021530668119668,
+        "accuracy": 0.6156661786237189,
+        "predicted_positive_rate": 0.325402635431918
+      },
+      "new_api_calls": 0,
+      "note": "Separate derived evaluation, not replacement/resumption of old FPT runs. Expert prompts deliberately defined by H1 reference; no test-label threshold fitting. Full H1 raw responses verified."
+    }
+  },
+  "input_sha256": {
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\prompts.jsonl": "5a99ac80272335b47ccf84cf6b9986e0ccc88bb6e72967389e7ced4b57fd3b6d",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\predictions.jsonl": "b12c3033ccce8de169622252a0eab9628013ef70fe624667cdd4d47c765677e4",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\raw_responses_archive.jsonl": "1a678ab36ba8201aae2a44ab201ba57f2ec516d03489e1fa89e88bb972bff64a",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\inference_summary.json": "e8fa6bce608ea99ab42dc9b27dd60e149ed21c739870e3a30c4bcbfcb55a3166",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\run_manifest.json": "9393b13127b21df9428665891c42a94a8bd19837f55b37e67665c86479d4ebb5",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\prompts.jsonl": "4ca9ed585dd538c94eed7cef489a1c980148bba42f76699ba6107f131fd9d9b5",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\predictions.jsonl": "a21ea167785bae93acfa9cbf986470445e89c60a94ef78cdf08cd21a1d6ae43f",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\raw_responses_archive.jsonl": "9968bfc2ca35b201fca16130a2cd94a848ca537579ff59303e62d97368abe40b",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\inference_summary.json": "c56c3e3ba4103eda0e937f0cc8d9cfcd1813984aa8cc914090365c5f8e4c541d",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\run_manifest.json": "d6f39c5a5ec894e3387a5f338a1da5697ba3dccad3e332e0a82f14d5152fb1e9",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\context_limit_rerun\\reveal\\test\\f65b0c326b9337c4\\prompts.jsonl": "1cf4de680aefe5a425b7efdcc53b9ae4d6d9fd3aafc685881bb50f9a386813ab",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\ubuntu_dualboot_context8192_20261022\\GRACE-H3-CalibratedCascade\\runs\\context_limit_rerun\\reveal\\test\\f65b0c326b9337c4\\inference_prefix\\first_001137\\prompts.jsonl": "27905e3e7280c20dbce7daea1177f91288105b7b9731b6c8d5ee546912cf564d",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\reveal\\test\\baseline_whitening\\5a64cba3ab7edefb\\prompts.jsonl": "3a0550dd57b2221e17875dcdadcb72ddcc1f0610cdf83f29ea95e52d9ae2ecd2",
+    "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\ubuntu_dualboot_20261022\\GRACE-H3-CalibratedCascade\\runs\\reveal\\test\\baseline_whitening\\5a64cba3ab7edefb\\partial_prompts_archive.jsonl": "8dc01b3362f0736265c5b02a1c0eb323f033857439198b414fe7fec182d03086",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\devign\\test\\baseline_whitening\\2021aa5fef71aee4\\prompts.jsonl": "4ca9ed585dd538c94eed7cef489a1c980148bba42f76699ba6107f131fd9d9b5",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\reveal\\9cde2154591aff7f\\routing.jsonl": "fa1d4362815318b4a86d818f5b234d70f0053193117fe11b76c39655d85bf14a",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\reveal\\9cde2154591aff7f\\job.json": "2ad6887da8122c807137fa508eb181ffa32a2dfc24aa38c8d39176a8a2dd0adb",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\reveal\\9cde2154591aff7f\\gate_manifest.json": "db725ac38accdc873131445c7e47f1864e3f2eee2eb0781890bf559a6e98576e",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\data\\reveal\\test.jsonl": "2be86b5a9047459b0d4342800851e1769ba0a591b423ae094c1111e8f914a5b9",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\devign\\3c90db3984588497\\routing.jsonl": "2b2b1a65a4d436aaa07d39e41abafdafbed6c5935f45ecf88e070b4c173ebdae",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\devign\\3c90db3984588497\\job.json": "7561d7f56cb4964f3cbe409029e1547dff9019b10d4ac4969a55b95310150e0d",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\devign\\3c90db3984588497\\gate_manifest.json": "94a7319c05d262c6c8672e5e36237f7477448e58e811d6de04b9809feb13d8d4",
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\data\\devign\\test.jsonl": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c"
+  }
+}

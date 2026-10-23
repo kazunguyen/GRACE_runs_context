@@ -1,0 +1,175 @@
+{
+  "devign": {
+    "dataset": "devign",
+    "split": "test",
+    "kind": "frozen_H3A_gate_plus_H1_baseline_expert",
+    "status": "complete_derived_offline",
+    "h1_source_run": "9afe3268729648c6",
+    "routing_source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\devign\\3c90db3984588497\\routing.jsonl",
+    "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+    "provider": "Vertex AI",
+    "context_limit_bytes": 8192,
+    "n": 2732,
+    "n0": 1477,
+    "n1": 1255,
+    "branch_counts": {
+      "inspect": 2726,
+      "skip_low": 6
+    },
+    "gate_assigned_n": 6,
+    "expert_prediction_n": 2726,
+    "algorithmic_call_saving": 0.002196193265007307,
+    "new_api_calls": 0,
+    "cascade": {
+      "n": 2732,
+      "valid_n": 2732,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 1147,
+        "fp": 330,
+        "fn": 910,
+        "tp": 345
+      },
+      "accuracy": 0.5461200585651538,
+      "precision": 0.5111111111111111,
+      "recall": 0.2749003984063745,
+      "f1": 0.3575129533678756,
+      "mcc": 0.059475145313229845,
+      "balanced_accuracy": 0.5257372675850424,
+      "predicted_positive_rate": 0.24707174231332357
+    },
+    "full_H1_reference": {
+      "n": 2732,
+      "valid_n": 2732,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 1146,
+        "fp": 331,
+        "fn": 910,
+        "tp": 345
+      },
+      "accuracy": 0.5457540263543191,
+      "precision": 0.5103550295857988,
+      "recall": 0.2749003984063745,
+      "f1": 0.35732780942516834,
+      "mcc": 0.05866369798484581,
+      "balanced_accuracy": 0.5253987435498358,
+      "predicted_positive_rate": 0.24743777452415813
+    },
+    "gate_only": {
+      "n": 2732,
+      "valid_n": 2732,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 1135,
+        "fp": 342,
+        "fn": 708,
+        "tp": 547
+      },
+      "accuracy": 0.6156661786237189,
+      "precision": 0.6152980877390326,
+      "recall": 0.4358565737051793,
+      "f1": 0.5102611940298507,
+      "mcc": 0.217310127980652,
+      "balanced_accuracy": 0.6021530668119668,
+      "predicted_positive_rate": 0.325402635431918
+    },
+    "fixed_false_positives": 1,
+    "lost_true_positives": 0,
+    "accepted_protocol": "User approved same demo-selection and truncation algorithm despite graph/prompt artifact differences; predictions from selected complete H1 run only. No mixing with FPT or repeat-run aggregation.",
+    "input_sha256": {
+      "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\devign\\3c90db3984588497\\routing.jsonl": "2b2b1a65a4d436aaa07d39e41abafdafbed6c5935f45ecf88e070b4c173ebdae",
+      "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\archives\\devign\\2026-10-16\\runs\\devign\\test\\baseline_whitening\\9afe3268729648c6\\predictions.jsonl": "a21ea167785bae93acfa9cbf986470445e89c60a94ef78cdf08cd21a1d6ae43f",
+      "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\data\\devign\\test.jsonl": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c"
+    }
+  },
+  "reveal": {
+    "dataset": "reveal",
+    "split": "test",
+    "kind": "frozen_H3A_gate_plus_H1_baseline_expert",
+    "status": "complete_derived_offline",
+    "h1_source_run": "0779c879b6d11431",
+    "routing_source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\reveal\\9cde2154591aff7f\\routing.jsonl",
+    "model": "publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas",
+    "provider": "Vertex AI",
+    "context_limit_bytes": 8192,
+    "n": 2274,
+    "n0": 2044,
+    "n1": 230,
+    "branch_counts": {
+      "inspect": 2274
+    },
+    "gate_assigned_n": 0,
+    "expert_prediction_n": 2274,
+    "algorithmic_call_saving": 0.0,
+    "new_api_calls": 0,
+    "cascade": {
+      "n": 2274,
+      "valid_n": 2274,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 1483,
+        "fp": 561,
+        "fn": 156,
+        "tp": 74
+      },
+      "accuracy": 0.6846965699208444,
+      "precision": 0.11653543307086614,
+      "recall": 0.3217391304347826,
+      "f1": 0.17109826589595373,
+      "mcc": 0.03177463766254381,
+      "balanced_accuracy": 0.5236386454522249,
+      "predicted_positive_rate": 0.27924362357080035
+    },
+    "full_H1_reference": {
+      "n": 2274,
+      "valid_n": 2274,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 1483,
+        "fp": 561,
+        "fn": 156,
+        "tp": 74
+      },
+      "accuracy": 0.6846965699208444,
+      "precision": 0.11653543307086614,
+      "recall": 0.3217391304347826,
+      "f1": 0.17109826589595373,
+      "mcc": 0.03177463766254381,
+      "balanced_accuracy": 0.5236386454522249,
+      "predicted_positive_rate": 0.27924362357080035
+    },
+    "gate_only": {
+      "n": 2274,
+      "valid_n": 2274,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix": {
+        "tn": 2044,
+        "fp": 0,
+        "fn": 229,
+        "tp": 1
+      },
+      "accuracy": 0.8992963940193491,
+      "precision": 1.0,
+      "recall": 0.004347826086956522,
+      "f1": 0.008658008658008658,
+      "mcc": 0.0625283271370814,
+      "balanced_accuracy": 0.5021739130434782,
+      "predicted_positive_rate": 0.00043975373790677223
+    },
+    "fixed_false_positives": 0,
+    "lost_true_positives": 0,
+    "accepted_protocol": "User approved same demo-selection and truncation algorithm despite graph/prompt artifact differences; predictions from selected complete H1 run only. No mixing with FPT or repeat-run aggregation.",
+    "input_sha256": {
+      "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\runs\\h3\\reveal\\9cde2154591aff7f\\routing.jsonl": "fa1d4362815318b4a86d818f5b234d70f0053193117fe11b76c39655d85bf14a",
+      "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\additional_runs\\improvements_20261021\\GRACE-H1-SecurityProjection\\runs\\reveal\\test\\baseline_whitening\\0779c879b6d11431\\predictions.jsonl": "b12c3033ccce8de169622252a0eab9628013ef70fe624667cdd4d47c765677e4",
+      "D:\\JUNIOR\\LabThayTho\\GRACE-H3-CalibratedCascade\\data\\reveal\\test.jsonl": "2be86b5a9047459b0d4342800851e1769ba0a591b423ae094c1111e8f914a5b9"
+    }
+  }
+}
