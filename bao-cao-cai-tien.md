@@ -32,7 +32,7 @@ Mã nguồn và hồ sơ đối chiếu trên máy: [genexample.py](D:/JUNIOR/La
 
 **Điều kiện đánh giá:** giữ nguyên tập mẫu (cohort) và kho retrieval đã chốt cho từng lượt. Khi retrieval và tạo prompt, chỉ được dùng nhãn của demo thuộc train; nhãn target chỉ được mở lúc đánh giá. Parser chỉ nhận dòng cuối chính xác là `0` hoặc `1`; trường hợp lỗi được giữ là invalid. Báo cáo gồm metric, coverage và hai đối chứng luôn đoán vulnerable/non-vulnerable. Khi xác nhận một so sánh, dùng cùng tập ID hợp lệ và khoảng tin cậy (CI) ghép cặp. Không mặc định các tệp kết quả lịch sử đều theo contract hiện tại 24.000 byte; điều kiện thực chạy phải lấy từ manifest/freeze của từng run.
 
-## 1. H1 — hai phiên bản cải tiến SecurityProjection
+## 1. H1 — hai phiên bản cải tiến SecurityProjection — [mã nguồn](https://github.com/kazunguyen/GRACE-H1-SecurityProjection)
 
 ### 1.1. H1-V1 — bản cải tiến lần đầu
 
@@ -159,7 +159,7 @@ Nguồn metric: bảng H1 và phần đánh giá H3-A trong [bảng metric tổn
 
 H1 V2 đã thay đổi cơ chế biểu diễn, có đối chứng về kiến trúc và dùng tiêu chí chọn mô hình sát với mục tiêu retrieval hơn bản cũ. Chỉ số đánh giá gián tiếp (proxy) có tăng, nhưng **chưa chứng minh tăng MCC/F1 của full GRACE**. Hai điểm cần xác nhận là tác dụng thực tế của demo và biến động của LLM khi prompt giống nhau. Bằng chứng hiện tại hỗ trợ thiết kế này, chưa đủ để kết luận V2 vượt H1 cũ hoặc baseline trên cả hai dataset.
 
-## 2. H2 — Guarded Evidence: giữ bằng chứng và điều kiện liên quan trong graph context
+## 2. H2 — Guarded Evidence: giữ bằng chứng và điều kiện liên quan trong graph context — [mã nguồn](https://github.com/kazunguyen/GRACE-H2-GuardedEvidence)
 
 ### 2.1. Vấn đề của cách hiện tại
 
@@ -266,7 +266,7 @@ Hiện chưa có baseline chạy bằng DeepSeek-V4.1-Flash để đối chứng
 
 Kết quả hiện tại xác nhận nhánh H2 đã hoàn tất full test trên Devign và ReVeal, nhưng chưa trả lời được câu hỏi H2 có tốt hơn baseline hay không. Cần chạy lại baseline bằng DeepSeek-V4.1-Flash, giữ cùng provider, test ID, prompt/config và quy trình đánh giá; sau đó mới so sánh paired các metric H2 với baseline để kết luận hiệu quả cải tiến.
 
-## 3. H3-A — Calibrated Cascade: routing có ràng buộc trước GRACE
+## 3. H3-A — Calibrated Cascade: routing có ràng buộc trước GRACE — [mã nguồn](https://github.com/kazunguyen/GRACE-H3-CalibratedCascade)
 
 ### 3.1. Vấn đề của cách hiện tại
 
@@ -355,7 +355,7 @@ Ràng buộc 1% làm vùng tự quyết định rất nhỏ trong snapshot này.
 
 **H3-A đã triển khai và đo được sự đánh đổi giữa lỗi bỏ sót và số lần gọi LLM, nhưng mức tiết kiệm còn nhỏ.** Kết quả tốt hơn của gate-only không thể được tính là thành công của cascade. Điều này dẫn đến hướng H3-B: học khi nào GRACE bổ sung giá trị, thay vì chỉ defer theo confidence.
 
-## 4. H3-B — Benchmark Ensemble
+## 4. H3-B — Benchmark Ensemble — [mã nguồn](https://github.com/kazunguyen/GRACE-H3-BenchmarkEnsembled)
 
 H3-B hướng tới phối hợp classifier nhiều view với GRACE để chọn cách dự đoán phù hợp.
 
