@@ -1,0 +1,85 @@
+{
+  "dataset": "reveal",
+  "split": "test",
+  "arm": "H2-guarded-v3",
+  "model": "deepseek-ai/deepseek-v4.1-flash-maas",
+  "provider": "Vertex AI",
+  "context_limit_utf8_bytes": 8192,
+  "status": "complete",
+  "request_states": {
+    "valid": 2274
+  },
+  "all_responses_valid": true,
+  "metrics": {
+    "n": 2274,
+    "valid_n": 2274,
+    "invalid_n": 0,
+    "invalid_rate": 0.0,
+    "confusion_matrix_valid_only": {
+      "tp": 27,
+      "tn": 1917,
+      "fp": 127,
+      "fn": 203
+    },
+    "precision": 0.17532467532467533,
+    "recall": 0.11739130434782609,
+    "f1": 0.140625,
+    "mcc": 0.06630908846957408,
+    "balanced_accuracy": 0.5276291159703905,
+    "accuracy_valid_only": 0.8548812664907651,
+    "accuracy_all": 0.8548812664907651,
+    "recall_all_positives": 0.11739130434782609,
+    "predicted_positive_rate_all": 0.06772207563764292,
+    "invalid_positive_n": 0,
+    "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately"
+  },
+  "trivial_baselines": {
+    "always_safe": {
+      "n": 2274,
+      "valid_n": 2274,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix_valid_only": {
+        "tp": 0,
+        "tn": 2044,
+        "fp": 0,
+        "fn": 230
+      },
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "mcc": 0.0,
+      "balanced_accuracy": 0.5,
+      "accuracy_valid_only": 0.8988566402814424,
+      "accuracy_all": 0.8988566402814424,
+      "recall_all_positives": 0.0,
+      "predicted_positive_rate_all": 0.0,
+      "invalid_positive_n": 0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately"
+    },
+    "always_vulnerable": {
+      "n": 2274,
+      "valid_n": 2274,
+      "invalid_n": 0,
+      "invalid_rate": 0.0,
+      "confusion_matrix_valid_only": {
+        "tp": 230,
+        "tn": 0,
+        "fp": 2044,
+        "fn": 0
+      },
+      "precision": 0.1011433597185576,
+      "recall": 1.0,
+      "f1": 0.18370607028753994,
+      "mcc": 0.0,
+      "balanced_accuracy": 0.5,
+      "accuracy_valid_only": 0.1011433597185576,
+      "accuracy_all": 0.1011433597185576,
+      "recall_all_positives": 1.0,
+      "predicted_positive_rate_all": 1.0,
+      "invalid_positive_n": 0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately"
+    }
+  },
+  "new_backbone_note": "Frozen H2 v3 prompts; no H1/H3 response reuse. Model differs from historical Qwen baseline; do not attribute cross-model differences solely to H2."
+}

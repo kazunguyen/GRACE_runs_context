@@ -31,6 +31,15 @@ Hai run H2 hiện có không có request Vertex Qwen đủ điều kiện contex
 | H2-GuardedEvidence | reveal / test | H2-guarded-v3, prefix 50% | [24867fce07a449ee99a0] | 0 / 0 | N/A | — | — | N/A | N/A | N/A | N/A | N/A | N/A | N/A | No confirmed Vertex Qwen request with context 8192; metrics N/A; 64 non-Qwen request row(s) excluded | [raw](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/reveal/test/H2-guarded/24867fce07a449ee99a0/raw_responses.jsonl>) · [prompt](<additional_runs/improvements_20261022/GRACE-H2-GuardedEvidence/runs/reveal/test/H2-guarded/24867fce07a449ee99a0/prompts.jsonl.gz>) |
 
 
+#### Run DeepSeek riêng — không thuộc metric Vertex Qwen
+
+Nhờ Hiếu chạy full test trên Kaggle với Vertex DeepSeek-V4.1-Flash. Đây là báo cáo riêng, không được cộng vào các metric Qwen ở trên. Toàn bộ 5.006 request hợp lệ; raw prompt và code hash khớp prompt bundle v3.
+
+| Dataset | Valid / invalid | Prediction 0 / 1 | Accuracy (%) | Precision / Recall / F1 (%) | MCC | Evaluation | Raw requests | Manifest |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| devign / test | 2732 / 0 | 1702 / 1030 | 53.62 | 49.42 / 40.56 / 44.55 | 0.0543 | [evaluation](<additional_runs/kaggle_deepseek_v41_20261023/devign/evaluation.json>) | [raw + sent prompts](<additional_runs/kaggle_deepseek_v41_20261023/devign/raw_responses.jsonl>) | [manifest](<additional_runs/kaggle_deepseek_v41_20261023/devign/run_manifest.json>) |
+| reveal / test | 2274 / 0 | 2120 / 154 | 85.49 | 17.53 / 11.74 / 14.06 | 0.0663 | [evaluation](<additional_runs/kaggle_deepseek_v41_20261023/reveal/evaluation.json>) | [raw + sent prompts](<additional_runs/kaggle_deepseek_v41_20261023/reveal/raw_responses.jsonl>) | [manifest](<additional_runs/kaggle_deepseek_v41_20261023/reveal/run_manifest.json>) |
+
 ### H3-A — CalibratedCascade
 
 Phần đầu dưới đây ghi metric cascade cuối cùng dùng expert H1 đã được chấp nhận. Bảng request lịch sử phía sau vẫn giữ các nhánh inference và summary gốc; N/A tại bảng lịch sử không phủ nhận metric toàn cohort đã tính ở phần đầu.

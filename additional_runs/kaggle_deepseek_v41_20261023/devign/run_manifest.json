@@ -1,0 +1,23 @@
+{
+  "provider": "Vertex AI",
+  "url": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions",
+  "parameters": {
+    "model": "deepseek-ai/deepseek-v4.1-flash-maas",
+    "temperature": 0.0,
+    "seed": 42,
+    "max_tokens": 256,
+    "stream": false
+  },
+  "context_limit_utf8_bytes": 8192,
+  "parser": "exact_last_line_binary_v1",
+  "contract_sha256": "63ffa2fd4e537aa41042048b6b347a6d34666f8bb33c1d05640ece29da59484e",
+  "bundle_manifest_sha256": "14635700a9a1da19201e710f0d4aed8029722b8508380bb83c2857edf6a0664f",
+  "dataset": "devign",
+  "plan": {
+    "dataset": "devign",
+    "arm": "H2-guarded-v3",
+    "n": 2732,
+    "max_prompt_bytes": 8173,
+    "source_run_id": "a6dae6c1d9533d815bd7"
+  }
+}
