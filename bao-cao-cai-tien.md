@@ -731,6 +731,10 @@ Các giới hạn phương pháp còn lại gồm lựa chọn nhiều candidate
 
 Các số liệu trong báo cáo được lấy từ những tệp đã lưu tại thời điểm đối chiếu, không chạy lại huấn luyện hoặc LLM. Những README còn ghi “chưa chạy” phản ánh trạng thái khi tài liệu đó được viết; báo cáo căn cứ vào các tệp kết quả cụ thể đã dẫn. Không gộp baseline khác thiết lập hoặc khác thời điểm để xếp hạng bốn hướng.
 
+## 6. Đối soát và đối chứng bốn hướng H theo yêu cầu của thầy — cập nhật 24/10/2026
+
+Bản đối soát chi tiết cho bốn hướng H: [đối soát và thiết kế đối chứng ngày 24/10/2026](https://github.com/kazunguyen/GRACE_runs_context/blob/2fca43f765ba14e235352a6c8438154b48d6b04d/bao_cao_doi_soat_4_huong_H_20261024.md).
+
 ## Tài liệu tham khảo và hồ sơ phương pháp
 
 Các trích dẫn được gắn ngay ở phần cơ chế tương ứng. Những nguồn chính gồm:
