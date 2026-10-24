@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "dataset": "devign",
+      "manifest_sha256": "25524884317a42dabe51fadffb20dc81c6fb214b77223444218d490b0cb21a78",
+      "prediction_folder": "runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/test/devign/42",
+      "seed": 42
+    },
+    {
+      "dataset": "reveal",
+      "manifest_sha256": "4ed0f8820f90be4443fe3e7147ab1834df652d17b311859db5079c28e795939a",
+      "prediction_folder": "runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/test/reveal/42",
+      "seed": 42
+    }
+  ],
+  "scope": "test",
+  "status": "predicted",
+  "test_gold_opened": false,
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f"
+}

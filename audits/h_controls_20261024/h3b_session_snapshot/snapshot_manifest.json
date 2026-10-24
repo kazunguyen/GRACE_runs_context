@@ -1,0 +1,77 @@
+{
+  "schema": "h_controls_h3b_session_snapshot_v1",
+  "snapshot_on": "2026-10-24",
+  "files": [
+    {
+      "path": "winner_lock.json",
+      "sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\winner_lock.json"
+    },
+    {
+      "path": "winner_lock_checksum.json",
+      "sha256": "3bb986601b711a9b9e38d500c737858134a2453b2913e3ad008eb25678204f2d",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\winner_lock_checksum.json"
+    },
+    {
+      "path": "benchmark_summary.json",
+      "sha256": "567657cf4520fe05102a026c97373ce411558416cb9be4fb332ffcbd8402a592",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\benchmark_summary.json"
+    },
+    {
+      "path": "test_prediction_index.json",
+      "sha256": "b8e794e227447081275cff02aae5de83ea0219fa93ff619a7719e6582d4ccfd7",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test_prediction_index.json"
+    },
+    {
+      "path": "test/devign/42/manifest.json",
+      "sha256": "25524884317a42dabe51fadffb20dc81c6fb214b77223444218d490b0cb21a78",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\manifest.json"
+    },
+    {
+      "path": "test/devign/42/evaluation.json",
+      "sha256": "4fa6a403175bf529900cec1951936f385dfe554ddfb10addc400773fcc3c124f",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\evaluation.json"
+    },
+    {
+      "path": "test/devign/42/gate_tuned.jsonl",
+      "sha256": "63909594fb3b74ed929c14c25dc709a3e9be2cb13aa96c7f1ed04f06b6fe998e",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\gate_tuned.jsonl"
+    },
+    {
+      "path": "test/devign/42/full_grace.jsonl",
+      "sha256": "619de24b7f1b3588c902a00dc6e1f3b084d65f6ed6c5bb298aabf31795491a95",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\full_grace.jsonl"
+    },
+    {
+      "path": "test/devign/42/gate_0_5.jsonl",
+      "sha256": "dd3f8cc259034461699c75b034b3c5b3b8c65b9a4063753b52c129030bf48aad",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\gate_0_5.jsonl"
+    },
+    {
+      "path": "test/reveal/42/manifest.json",
+      "sha256": "4ed0f8820f90be4443fe3e7147ab1834df652d17b311859db5079c28e795939a",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\manifest.json"
+    },
+    {
+      "path": "test/reveal/42/evaluation.json",
+      "sha256": "e490995444f071fffde1bb66d743da66d55abe33f75ba5098b28bb40e39ecd9c",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\evaluation.json"
+    },
+    {
+      "path": "test/reveal/42/gate_tuned.jsonl",
+      "sha256": "cfc2d018933a0c264b71715f3a8df9e505512367be537502199adcbf88e9a282",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\gate_tuned.jsonl"
+    },
+    {
+      "path": "test/reveal/42/full_grace.jsonl",
+      "sha256": "597deb454887caacb7cd0eb8390b5a02e89ae82af76d0c8e56039183f2f0a7e3",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\full_grace.jsonl"
+    },
+    {
+      "path": "test/reveal/42/gate_0_5.jsonl",
+      "sha256": "49124fddf4fe47360b10fb918578ca5a6855f92cd79ebb99fd859f0a71f76852",
+      "source": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\gate_0_5.jsonl"
+    }
+  ],
+  "note": "Copy of existing output; no training or inference performed. Other arms are summarized in the benchmark and source audit."
+}

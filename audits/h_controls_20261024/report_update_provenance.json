@@ -1,0 +1,14 @@
+{
+  "teacher": {
+    "before_sha256": "20a705dc501e7f791b9c645670620b0fe6dcc3e1bf1f7e9540ca4681706951fd",
+    "after_sha256": "17844b7e6f1cdb5ded8854ca5c0a1339cc12f0b7f0bd030d9ffb05957287dc4a",
+    "backup": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\audits\\h_controls_20261024\\before_reports\\teacher.md",
+    "mermaid_blocks": 10
+  },
+  "share": {
+    "before_sha256": "85af43455dd2e88905526057c91214d37e753574a484ec2951878f552cf2e76d",
+    "after_sha256": "6963d4a81dbf5f0c60310f0b1bbcd25ddfa4de9212ff1afd791f8242bb942c91",
+    "backup": "D:\\JUNIOR\\LabThayTho\\SHARE_36_RUNS_CONTEXT8192_20261020_205918\\audits\\h_controls_20261024\\before_reports\\share.md",
+    "mermaid_blocks": 10
+  }
+}

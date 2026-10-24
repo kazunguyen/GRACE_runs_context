@@ -1,0 +1,632 @@
+{
+  "arms": {
+    "base_fusion_all": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.86103781882146,
+        "accuracy_valid_only": 0.86103781882146,
+        "balanced_accuracy": 0.7027609971922062,
+        "confusion_matrix_valid_only": {
+          "fn": 114,
+          "fp": 202,
+          "tn": 1842,
+          "tp": 116
+        },
+        "f1": 0.4233576642335766,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.3525500597622526,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.36477987421383645,
+        "predicted_positive_rate_all": 0.13984168865435356,
+        "recall": 0.5043478260869565,
+        "recall_all_positives": 0.5043478260869565,
+        "specificity": 0.901174168297456,
+        "valid_n": 2274
+      }
+    },
+    "base_fusion_semantic_lexical": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8614775725593667,
+        "accuracy_valid_only": 0.8614775725593667,
+        "balanced_accuracy": 0.7049349102356846,
+        "confusion_matrix_valid_only": {
+          "fn": 113,
+          "fp": 202,
+          "tn": 1842,
+          "tp": 117
+        },
+        "f1": 0.4262295081967213,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.35586197349050125,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3667711598746082,
+        "predicted_positive_rate_all": 0.14028144239226034,
+        "recall": 0.508695652173913,
+        "recall_all_positives": 0.508695652173913,
+        "specificity": 0.901174168297456,
+        "valid_n": 2274
+      }
+    },
+    "base_lexical": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8491644678979772,
+        "accuracy_valid_only": 0.8491644678979772,
+        "balanced_accuracy": 0.7250957202416404,
+        "confusion_matrix_valid_only": {
+          "fn": 99,
+          "fp": 244,
+          "tn": 1800,
+          "tp": 131
+        },
+        "f1": 0.4330578512396695,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.36578296924924497,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.34933333333333333,
+        "predicted_positive_rate_all": 0.16490765171503957,
+        "recall": 0.5695652173913044,
+        "recall_all_positives": 0.5695652173913044,
+        "specificity": 0.8806262230919765,
+        "valid_n": 2274
+      }
+    },
+    "base_semantic_lr": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8131046613896218,
+        "accuracy_valid_only": 0.8131046613896218,
+        "balanced_accuracy": 0.6645218242150941,
+        "confusion_matrix_valid_only": {
+          "fn": 120,
+          "fp": 305,
+          "tn": 1739,
+          "tp": 110
+        },
+        "f1": 0.34108527131782945,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.25685861263314197,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.26506024096385544,
+        "predicted_positive_rate_all": 0.18249780123131046,
+        "recall": 0.4782608695652174,
+        "recall_all_positives": 0.4782608695652174,
+        "specificity": 0.8507827788649707,
+        "valid_n": 2274
+      }
+    },
+    "base_semantic_lr_0_5": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8913808267370272,
+        "accuracy_valid_only": 0.8913808267370272,
+        "balanced_accuracy": 0.5575789160214414,
+        "confusion_matrix_valid_only": {
+          "fn": 198,
+          "fp": 49,
+          "tn": 1995,
+          "tp": 32
+        },
+        "f1": 0.2057877813504823,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.18734237375430834,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3950617283950617,
+        "predicted_positive_rate_all": 0.03562005277044855,
+        "recall": 0.1391304347826087,
+        "recall_all_positives": 0.1391304347826087,
+        "specificity": 0.976027397260274,
+        "valid_n": 2274
+      }
+    },
+    "base_semantic_lr_balanced": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.7893579595426561,
+        "accuracy_valid_only": 0.7893579595426561,
+        "balanced_accuracy": 0.662888198757764,
+        "confusion_matrix_valid_only": {
+          "fn": 114,
+          "fp": 365,
+          "tn": 1679,
+          "tp": 116
+        },
+        "f1": 0.32630098452883266,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.24052559478553123,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.24116424116424118,
+        "predicted_positive_rate_all": 0.21152154793315744,
+        "recall": 0.5043478260869565,
+        "recall_all_positives": 0.5043478260869565,
+        "specificity": 0.8214285714285714,
+        "valid_n": 2274
+      }
+    },
+    "base_semantic_mlp": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8403693931398417,
+        "accuracy_valid_only": 0.8403693931398417,
+        "balanced_accuracy": 0.6391729771122266,
+        "confusion_matrix_valid_only": {
+          "fn": 141,
+          "fp": 222,
+          "tn": 1822,
+          "tp": 89
+        },
+        "f1": 0.3290203327171904,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.24425807641764957,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.2861736334405145,
+        "predicted_positive_rate_all": 0.13676341248900617,
+        "recall": 0.3869565217391304,
+        "recall_all_positives": 0.3869565217391304,
+        "specificity": 0.8913894324853229,
+        "valid_n": 2274
+      }
+    },
+    "benefit_router": {
+      "algorithmic_expert_query_ratio": 0.001759014951627089,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8614775725593667,
+        "accuracy_valid_only": 0.8614775725593667,
+        "balanced_accuracy": 0.7030056155875095,
+        "confusion_matrix_valid_only": {
+          "fn": 114,
+          "fp": 201,
+          "tn": 1843,
+          "tp": 116
+        },
+        "f1": 0.4241316270566728,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.35344135792852077,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3659305993690852,
+        "predicted_positive_rate_all": 0.13940193491644678,
+        "recall": 0.5043478260869565,
+        "recall_all_positives": 0.5043478260869565,
+        "specificity": 0.9016634050880626,
+        "valid_n": 2274
+      }
+    },
+    "confidence_router": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8614775725593667,
+        "accuracy_valid_only": 0.8614775725593667,
+        "balanced_accuracy": 0.7049349102356846,
+        "confusion_matrix_valid_only": {
+          "fn": 113,
+          "fp": 202,
+          "tn": 1842,
+          "tp": 117
+        },
+        "f1": 0.4262295081967213,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.35586197349050125,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3667711598746082,
+        "predicted_positive_rate_all": 0.14028144239226034,
+        "recall": 0.508695652173913,
+        "recall_all_positives": 0.508695652173913,
+        "specificity": 0.901174168297456,
+        "valid_n": 2274
+      }
+    },
+    "full_grace": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8540017590149517,
+        "accuracy_valid_only": 0.8540017590149517,
+        "balanced_accuracy": 0.5425742363651833,
+        "confusion_matrix_valid_only": {
+          "fn": 195,
+          "fp": 137,
+          "tn": 1907,
+          "tp": 35
+        },
+        "f1": 0.17412935323383086,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.09709584531805139,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.20348837209302326,
+        "predicted_positive_rate_all": 0.07563764291996482,
+        "recall": 0.15217391304347827,
+        "recall_all_positives": 0.15217391304347827,
+        "specificity": 0.9329745596868885,
+        "valid_n": 2274
+      }
+    },
+    "gate_0_5": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.9023746701846965,
+        "accuracy_valid_only": 0.9023746701846965,
+        "balanced_accuracy": 0.5598357866076746,
+        "confusion_matrix_valid_only": {
+          "fn": 200,
+          "fp": 22,
+          "tn": 2022,
+          "tp": 30
+        },
+        "f1": 0.21276595744680848,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.24139132854841538,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.5769230769230769,
+        "predicted_positive_rate_all": 0.022867194371152155,
+        "recall": 0.13043478260869565,
+        "recall_all_positives": 0.13043478260869565,
+        "specificity": 0.9892367906066536,
+        "valid_n": 2274
+      }
+    },
+    "gate_train_threshold": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8614775725593667,
+        "accuracy_valid_only": 0.8614775725593667,
+        "balanced_accuracy": 0.7049349102356846,
+        "confusion_matrix_valid_only": {
+          "fn": 113,
+          "fp": 202,
+          "tn": 1842,
+          "tp": 117
+        },
+        "f1": 0.4262295081967213,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.35586197349050125,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3667711598746082,
+        "predicted_positive_rate_all": 0.14028144239226034,
+        "recall": 0.508695652173913,
+        "recall_all_positives": 0.508695652173913,
+        "specificity": 0.901174168297456,
+        "valid_n": 2274
+      }
+    },
+    "gate_tuned": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8465259454705365,
+        "accuracy_valid_only": 0.8465259454705365,
+        "balanced_accuracy": 0.7313451884625202,
+        "confusion_matrix_valid_only": {
+          "fn": 95,
+          "fp": 254,
+          "tn": 1790,
+          "tp": 135
+        },
+        "f1": 0.43618739903069464,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.3704796459110635,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.34704370179948585,
+        "predicted_positive_rate_all": 0.17106420404573439,
+        "recall": 0.5869565217391305,
+        "recall_all_positives": 0.5869565217391305,
+        "specificity": 0.87573385518591,
+        "valid_n": 2274
+      }
+    },
+    "post_selector": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8636763412489006,
+        "accuracy_valid_only": 0.8636763412489006,
+        "balanced_accuracy": 0.7022994129158513,
+        "confusion_matrix_valid_only": {
+          "fn": 115,
+          "fp": 195,
+          "tn": 1849,
+          "tp": 115
+        },
+        "f1": 0.42592592592592593,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.3555309335306958,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3709677419354839,
+        "predicted_positive_rate_all": 0.1363236587510994,
+        "recall": 0.5,
+        "recall_all_positives": 0.5,
+        "specificity": 0.9045988258317026,
+        "valid_n": 2274
+      }
+    },
+    "stack_lr": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8759894459102903,
+        "accuracy_valid_only": 0.8759894459102903,
+        "balanced_accuracy": 0.6782800136135455,
+        "confusion_matrix_valid_only": {
+          "fn": 131,
+          "fp": 151,
+          "tn": 1893,
+          "tp": 99
+        },
+        "f1": 0.4125,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.34368593509791345,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.396,
+        "predicted_positive_rate_all": 0.10993843447669305,
+        "recall": 0.43043478260869567,
+        "recall_all_positives": 0.43043478260869567,
+        "specificity": 0.9261252446183953,
+        "valid_n": 2274
+      }
+    },
+    "stack_mlp": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.8685136323658751,
+        "accuracy_valid_only": 0.8685136323658751,
+        "balanced_accuracy": 0.6644750276525143,
+        "confusion_matrix_valid_only": {
+          "fn": 136,
+          "fp": 163,
+          "tn": 1881,
+          "tp": 94
+        },
+        "f1": 0.38603696098562634,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.31326712164172255,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2274,
+        "precision": 0.3657587548638132,
+        "predicted_positive_rate_all": 0.11301671064204045,
+        "recall": 0.40869565217391307,
+        "recall_all_positives": 0.40869565217391307,
+        "specificity": 0.9202544031311155,
+        "valid_n": 2274
+      }
+    }
+  },
+  "benchmark_comparable": false,
+  "cost_note": "A shared all-query expert reference does not measure deployed router API savings.",
+  "dataset": "reveal",
+  "expert_identity": {
+    "cohort_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+    "expert_spec": {
+      "context_limit_utf8_bytes": 8192,
+      "endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+      "max_tokens": 256,
+      "model": "DeepSeek-V4.1-Flash",
+      "parser": "exact_last_line_binary",
+      "provider": "OpenAI-compatible API",
+      "seed": 42,
+      "stream": false,
+      "temperature": 0.0,
+      "thinking": false
+    },
+    "manifest_sha256": "28c870746db27ee400f2e3658a4105bbee3fceae58b3a11c8060a37140f33934",
+    "ordered_prompt_hash": "19ef41a65544553d679c58e175309e374154263244442bfd8fb72aa8276a1dfb",
+    "predictions_sha256": "7a1cd209aad587993adc88e5ee33af956d73f11719ad066b94ba4c75416e5152",
+    "source_manifest": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\reveal\\abbf356612344183\\run_manifest.json",
+    "source_predictions": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\reveal\\abbf356612344183\\predictions.jsonl"
+  },
+  "expert_shift": {
+    "endpoint": {
+      "test": "https://token-api.fpt.ai/v1/chat/completions",
+      "validation": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions"
+    },
+    "model": {
+      "test": "DeepSeek-V4.1-Flash",
+      "validation": "deepseek-ai/deepseek-v4.1-flash-maas"
+    },
+    "provider": {
+      "test": "OpenAI-compatible API",
+      "validation": "Vertex AI"
+    },
+    "thinking": {
+      "test": false,
+      "validation": null
+    }
+  },
+  "files": {
+    "base_fusion_all": "d94c32aa184240697aaefa83e05ed142eacf92093fde52fcb17d858fe8120af1",
+    "base_fusion_semantic_lexical": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+    "base_lexical": "d294f74d475404db9743447d46b153d492fe6851ed44bf6c7526a5bc2433f207",
+    "base_semantic_lr": "37930541d217aad66c92e8a30301196a30ab5c61ec41faefe96eb1f956b38d9c",
+    "base_semantic_lr_0_5": "fb378fd0418fc88b7930f497aaa669ebaaae67f0a2f78fb0a1ffa1847b633883",
+    "base_semantic_lr_balanced": "3fd9abfe85fceee0d042f7c0b82c8eaa028ce521f7d69f0e0e2c7a686104858f",
+    "base_semantic_mlp": "8ef2df1598359b2e390b7d7eca964dc3851b35d88640a170ce0cb53df19bb602",
+    "benefit_router": "be1adae978764728aa1fa5d829377262e1b31c0ee52a14e641448c4fe79b8907",
+    "confidence_router": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+    "full_grace": "597deb454887caacb7cd0eb8390b5a02e89ae82af76d0c8e56039183f2f0a7e3",
+    "gate_0_5": "49124fddf4fe47360b10fb918578ca5a6855f92cd79ebb99fd859f0a71f76852",
+    "gate_train_threshold": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+    "gate_tuned": "cfc2d018933a0c264b71715f3a8df9e505512367be537502199adcbf88e9a282",
+    "post_selector": "3e8407af8555a6ff21f89e2655f1936e0f5c8a69ce18d4ea215d69f7bfc61945",
+    "stack_lr": "93632d5aaf96f55a7bbbfbb95ffabc9de572e2f97a3a5301bbf3f7249d5ca756",
+    "stack_mlp": "a465f5ec3b40464ff569c163d6661a1261d623ab26d219ff4dadf133f1f1c910"
+  },
+  "limitations": "Iterative benchmark; validation used for model selection. Demo is illustrative, not a cohort benchmark.",
+  "locked_development_winner": "gate_tuned",
+  "locked_winner": "gate_tuned",
+  "n": 2274,
+  "paired_comparison": {
+    "full_grace": {
+      "bootstrap_repetitions": 1000,
+      "ci95_query_bootstrap": {
+        "f1": [
+          0.18609023656920184,
+          0.3322909395367661
+        ],
+        "mcc": [
+          0.18959777782087983,
+          0.3501291593627295
+        ],
+        "precision": [
+          0.06988124566639013,
+          0.21077004885779385
+        ],
+        "recall": [
+          0.3519982832618026,
+          0.5150280188166501
+        ]
+      },
+      "common_valid_n": 2274,
+      "delta_right_minus_left": {
+        "f1": 0.26205804579686376,
+        "mcc": 0.27338380059301215,
+        "precision": 0.1435553297064626,
+        "recall": 0.4347826086956522
+      },
+      "excluded_invalid_pair_n": 0,
+      "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+    },
+    "gate_tuned": {
+      "bootstrap_repetitions": 1000,
+      "ci95_query_bootstrap": {
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "mcc": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          0.0,
+          0.0
+        ],
+        "recall": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_valid_n": 2274,
+      "delta_right_minus_left": {
+        "f1": 0.0,
+        "mcc": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "excluded_invalid_pair_n": 0,
+      "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+    }
+  },
+  "scope": "test",
+  "seed": 42,
+  "status": "complete",
+  "target_identity": "b52d9c9a20cd77c4b62b1cd6a7436f6a557f6791e5fea3d3f1d3690042de4d32",
+  "trivial": {
+    "always_safe": {
+      "accuracy_all": 0.8988566402814424,
+      "accuracy_valid_only": 0.8988566402814424,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix_valid_only": {
+        "fn": 230,
+        "fp": 0,
+        "tn": 2044,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "invalid_n": 0,
+      "invalid_positive_n": 0,
+      "invalid_rate": 0.0,
+      "mcc": 0.0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+      "n": 2274,
+      "precision": 0.0,
+      "predicted_positive_rate_all": 0.0,
+      "recall": 0.0,
+      "recall_all_positives": 0.0,
+      "specificity": 1.0,
+      "valid_n": 2274
+    },
+    "always_vulnerable": {
+      "accuracy_all": 0.1011433597185576,
+      "accuracy_valid_only": 0.1011433597185576,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix_valid_only": {
+        "fn": 0,
+        "fp": 2044,
+        "tn": 0,
+        "tp": 230
+      },
+      "f1": 0.18370607028753994,
+      "invalid_n": 0,
+      "invalid_positive_n": 0,
+      "invalid_rate": 0.0,
+      "mcc": 0.0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+      "n": 2274,
+      "precision": 0.1011433597185576,
+      "predicted_positive_rate_all": 1.0,
+      "recall": 1.0,
+      "recall_all_positives": 1.0,
+      "specificity": 0.0,
+      "valid_n": 2274
+    }
+  },
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f"
+}
