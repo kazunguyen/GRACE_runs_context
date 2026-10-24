@@ -1,0 +1,1179 @@
+{
+  "schema": "h3b_protocol_document_review_v1",
+  "created_utc": "2026-10-24T15:40:56.579522+00:00",
+  "scope": "Read-only audit of code identity, frozen model files, saved fold indices, test predictions, and exact code overlap; no fitting or API requests. Does not certify unseen-test independence or model-serving equivalence.",
+  "session": "deepseek_v41_hieu_8192_seed42",
+  "report_before_sha256": "dce44572a1eb35dd7f17f5e720cc9de2ab99c92cbd9cb2f8924f08e2bfd0bf10",
+  "source_code_matches_winner_lock": true,
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f",
+  "test_labels_used_in_selection_declared": false,
+  "test_predictions_used_in_selection_declared": false,
+  "datasets": {
+    "devign": {
+      "official_train_n": 21854,
+      "eligible_train_n": 21762,
+      "official_validation_n": 2732,
+      "eligible_development_n": 2724,
+      "test_n": 2732,
+      "eligible_train_development_exact_code_overlap_n": 0,
+      "train_outer_inner_and_meta_folds_partitioned_without_code_overlap": true,
+      "frozen_base_meta_and_prediction_files_hash_match": true,
+      "test_arm_n": 16,
+      "base_selection_candidate_n": 6,
+      "meta_selection_candidate_n": 9,
+      "base_winner": "fusion_all",
+      "base_threshold": 0.36,
+      "policy_winner": "gate_tuned",
+      "policy_threshold": 0.53,
+      "test_code_overlap_counts": {
+        "eligible_train": 4,
+        "eligible_development": 1
+      },
+      "test_overlapping_record_n": 5,
+      "test_nonoverlap_record_n": 2727,
+      "overlap_cases": [
+        {
+          "test_record_id": "devign:test:11553",
+          "code_sha256": "0f7277abb377e5b2eb091810e0421fcdaa50ef4793189aec837b22e7b076b004",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "devign:train:4852"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "devign:test:12940",
+          "code_sha256": "3b29430d257f9442e10e4d4d02b466b94983fbe7629a0cd6e7efdd7762d9d9e9",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "devign:validation:16856"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "devign:test:16256",
+          "code_sha256": "eef7f146c8dc732978222ce6592e21efd86d705ba0e16b7df93f2d7afad7dcde",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "devign:train:21509"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "devign:test:18624",
+          "code_sha256": "258db039268337efbfdb6d66c9ca3e00cc9ed51032326b58df14a30f934abe37",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "devign:train:26622"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "devign:test:23159",
+          "code_sha256": "05434835d6d027fedd748e5c2cf5f6ce4b56fa76b32708f09846cc7571c8f740",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "devign:train:9606"
+          ],
+          "labels_agree": false
+        }
+      ],
+      "expert_shift": {
+        "endpoint": {
+          "test": "https://token-api.fpt.ai/v1/chat/completions",
+          "validation": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions"
+        },
+        "model": {
+          "test": "DeepSeek-V4.1-Flash",
+          "validation": "deepseek-ai/deepseek-v4.1-flash-maas"
+        },
+        "provider": {
+          "test": "OpenAI-compatible API",
+          "validation": "Vertex AI"
+        },
+        "thinking": {
+          "test": false,
+          "validation": null
+        }
+      },
+      "benchmark_comparable": false
+    },
+    "reveal": {
+      "official_train_n": 18187,
+      "eligible_train_n": 17761,
+      "official_validation_n": 2273,
+      "eligible_development_n": 2196,
+      "test_n": 2274,
+      "eligible_train_development_exact_code_overlap_n": 0,
+      "train_outer_inner_and_meta_folds_partitioned_without_code_overlap": true,
+      "frozen_base_meta_and_prediction_files_hash_match": true,
+      "test_arm_n": 16,
+      "base_selection_candidate_n": 6,
+      "meta_selection_candidate_n": 9,
+      "base_winner": "fusion_semantic_lexical",
+      "base_threshold": 0.17,
+      "policy_winner": "gate_tuned",
+      "policy_threshold": 0.14,
+      "test_code_overlap_counts": {
+        "eligible_train": 56,
+        "eligible_development": 7
+      },
+      "test_overlapping_record_n": 63,
+      "test_nonoverlap_record_n": 2211,
+      "overlap_cases": [
+        {
+          "test_record_id": "reveal:test:3599206110384554647#27",
+          "code_sha256": "9ad71fed0c5db39b99cfd0fcfe1313bb5add7675503ba7934834e19a8b96531f",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1366214969540455677#15072"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-7262742957929857695#74",
+          "code_sha256": "e0edbec96ecf843fc9c87216b0671c140c098fff56567f9f5885563c6e1706a1",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-7262742957929857695#4395"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#110",
+          "code_sha256": "854b0895763ebb98b820745d25b0087d380649c60ab25c603b0a02467a768a8d",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#9584"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-4239386405881995323#153",
+          "code_sha256": "ba3324a5cc528384892da6f1c207cf53a0814c15be7d2cf9945a44cf87896582",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-4239386405881995323#4208"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#155",
+          "code_sha256": "801ec6b33d10c21fdded47f6aed771dfd385d22d9b813564a7148b8e9fae8d61",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#4206"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:7749168290238234888#207",
+          "code_sha256": "0a75bdc122060de4e46f6d340f2bb84de2dc7f82045507ccd29e9617f9e763af",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:7749168290238234888#15052"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#328",
+          "code_sha256": "639050edbcbb3699cc08d145f0b5852c2aada7879e86611e9c0fdd4872e3acca",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#6276"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#343",
+          "code_sha256": "31e041201e013d6717ba99a2175a32fb8b19f69c73a95ebeb923bea2165d2eb3",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#8196"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#351",
+          "code_sha256": "c8dfde45759a22ff3402bce146913c0a81c2b503423b5abc48335961bf392b61",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#17456"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3728341105073176576#355",
+          "code_sha256": "df4aa6148e888a9eb9ed636417564174abe7bb74fb46367cf3590fa8f7506600",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#17318"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-331579171381918893#402",
+          "code_sha256": "139f25a2e8932b814da824ca762ed7e0fc871713cf9197718062ca7bc3e74b1f",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#1807"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-4558261210024070448#503",
+          "code_sha256": "88ea164610481199bb8a2e933123967fb28f655b1369ab85989e5361a8a3599d",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-4558261210024070448#8220"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#554",
+          "code_sha256": "a70b5e0706a130ccabad96695afdad11917ffe195dd3b346f74fb9cb340891c8",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#5789"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-7076754245473579218#630",
+          "code_sha256": "72307db7e4bed88b4a225c22a2252fece5518b6ffd745dd7a0674921196534cb",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-7076754245473579218#1501"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-6579823731174944595#718",
+          "code_sha256": "5edaec77341ccc32b88835b055136ecc0d32737f22dbde87ca1b2b5328891167",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-6579823731174944595#15580"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#727",
+          "code_sha256": "aa153bf6f87146ad2ed95ec867a518bd2dc1a01770ea82300cc24a0e8127933f",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-331579171381918893#7492"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-2864619463801931351#734",
+          "code_sha256": "73580aca787e1216139955038623f58532f6212d4673709f86d04cbb99cc0611",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-2864619463801931351#16040"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#760",
+          "code_sha256": "8d1b389e356215d3c7512b6dd3a0fa635d4808bb003f048cb9020fb5d1c1408e",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1366214969540455677#7258"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-3062453801436404700#834",
+          "code_sha256": "fcfdf02202dbb1df31a3933d6400a1f11ed262b16e3efaab3da81dce89c4b754",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#7155"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3246343243711264189#859",
+          "code_sha256": "a2059fc5025452c8dfdbc057a52c363faf19f91a2b4afcdb3f1c75a422f4cdf4",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3246343243711264189#8072"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:5825340398912191389#892",
+          "code_sha256": "24787382a6a120930a76a7aee1a7af6da3f446cae29f12ba3b93935f6409da96",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:355220887711506893#409"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:355220887711506893#940",
+          "code_sha256": "14abc61e5a4df0a881cfe4276ddaed6ac36d7e86e1f5579e15160ec92c888478",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:5825340398912191389#1346"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#957",
+          "code_sha256": "281fac4799a47dc1a032d57de0235ec7711255e290e7881332eb386449631de0",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#14362"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#987",
+          "code_sha256": "9120e7f4b97e75ea713c012747718602a7e7b5f013850e5acd6262679d0c9f61",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#56"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-4558261210024070448#1011",
+          "code_sha256": "1a43cdb6aec00a9b69b8bef1cf0c7a593b62662286f3719e9d38dc454d99cd85",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:-4558261210024070448#807"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:7749168290238234888#1078",
+          "code_sha256": "461642df0c120b34f7e58d20910098034a7b9266dcde79cb1dc6cceba1f1e301",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:7749168290238234888#9958"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-331579171381918893#1083",
+          "code_sha256": "d240ba84104a48864a31ab3d823374bb90b35483c476166f8aa9665b07afed33",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#6448"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#1084",
+          "code_sha256": "14333b037553965baaa9fd193cf378ec07b381c602764d4437f1007d0d0968d8",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:1223258652239369123#527"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#1167",
+          "code_sha256": "845054a17d19036dae7fd9f7319a2e5f961addd60682be2ac1a121c23e8a3f69",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#8905"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#1204",
+          "code_sha256": "4f4f95414bba9204b7397ac827ee7e77fece12be1135e35c68a99c9ef79685f4",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1366214969540455677#15423"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#1240",
+          "code_sha256": "008bf4bed0bf99c0af7960e891dbf8ebc7e7b99a6ef54a8da3837d8e13b2015f",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#16066"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#1244",
+          "code_sha256": "ef8baa0c67c461b9ac2cdc8902436103aef39a784cdfd19bf6da6f5eee4c48da",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3728341105073176576#11932"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-2443338381883395438#1291",
+          "code_sha256": "a31597722180664b77b50404eb7d911fbb674402c5e6497eb90052be9cba19e8",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-2443338381883395438#199"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-4239386405881995323#1349",
+          "code_sha256": "f94bc0001f86e829a1b4c293bf7e1327cf028b56aecf23e5347b7da4158a9ce8",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:-4239386405881995323#1390"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:2930500905204315787#1369",
+          "code_sha256": "d9b06f2505f6bdaa728955b1ae4dab1c42f4421029d0c69f3fb552f0fcbf2fe1",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:6595989226414083189#13854"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:6250095321513210169#1427",
+          "code_sha256": "e122c3c66c9f8a317b7510bfb7a1b61d0fc1bab411fb07ada893d25ab7901540",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:6250095321513210169#16882"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#1515",
+          "code_sha256": "87753827d20812c13af698c6b1344cb2a41b285586a9d62aa608f872b459beef",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3728341105073176576#14365"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#1521",
+          "code_sha256": "2798929972cd797e18ebc739b32b8ad4964f4932f35af204ea8d279250e13728",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#7892"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:4107780562321324682#1534",
+          "code_sha256": "c8b1398299ac7425390c055f0e4c474628caac280ff778cd682e987798eacf6d",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:4107780562321324682#1257"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3035587999006680483#1575",
+          "code_sha256": "72f01cc0d236200cef0588bdef0faa5df20322bfe6a9903074376b0a72be01d4",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:5575425611513297119#8399"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:455172021572601154#1579",
+          "code_sha256": "367f55d0c2798a47b8cfb4647915d9d9cb8f5faa9033f3a23d907c3edbcc9a04",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:5825340398912191389#17785"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:7749168290238234888#1595",
+          "code_sha256": "bc147bc500dc5beeb92c4aa22cc15910aee8ec65dd520e68a8e3812e637f9886",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:7749168290238234888#9327"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:6667142528452941476#1731",
+          "code_sha256": "a299b707884c22f4a13ece154facf65304af8d06c75fb0ab35f82785128f1cc0",
+          "overlap_with": "eligible_development",
+          "learning_record_ids": [
+            "reveal:validation:6667142528452941476#546"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-8721757784652752372#1762",
+          "code_sha256": "48db45e6f398f7f5aa03b2b6c5609e789ec6642dc95969ba73b726eae28018a8",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-8721757784652752372#6666"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:2930500905204315787#1817",
+          "code_sha256": "28f7b02799b05743c1d56c62e5c7aacf2016c20ad27ba5f79e5d906979a8a2b6",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:6595989226414083189#4089"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-7587206010331533317#1832",
+          "code_sha256": "71af4eb22b68bdb11255b78ba2236709630160823339e4533158e77c32d26dd8",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:7275725035785508796#12490"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-7262742957929857695#1839",
+          "code_sha256": "17a35318d64caadfa4edaa8c762347ac7b71f01ed7aa92eb9ed5fe436cca750d",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-7262742957929857695#7554"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:-4558261210024070448#1849",
+          "code_sha256": "f7ff422ebe497f8f74bb43aae78511576e1edc8f3dac6d2c2ec9105ec082701a",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:-4558261210024070448#15785"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:8085056330506804135#1926",
+          "code_sha256": "012e544856dd8e04b87a36614cf172778626388f3636190c3e7d04ad8291b80e",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:8085056330506804135#8826"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#1933",
+          "code_sha256": "cb82a7d6c1fe542fe0932923ddbdc14d0f14fedbb0144578c6f3643b19192d1f",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1366214969540455677#12344"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#1966",
+          "code_sha256": "480fae11207adf828a091b4db7fa64d6d3ea8d4b95c1cb5f35ae3ecc57048c7e",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#3655"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:5991533509192663951#1984",
+          "code_sha256": "a758287659e4d162606811cccbca23b4a6c0eb4fefc8a62aeed15f818c4be5b3",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:5991533509192663951#9491"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#2064",
+          "code_sha256": "f1364349c61aeee123c4c90e5229ef2551820eafe1d22e57173ab6c197cac562",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#8653"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1366214969540455677#2099",
+          "code_sha256": "3f1ef02e1135d677df2917e50f8d39464ba8e8c6eb93035890cb16fbd075d871",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#269"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:6595989226414083189#2102",
+          "code_sha256": "39eceff09a518ea99d30d2db38be16ed24efbbedba0a1b64da6a4393fd3e94e1",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:2930500905204315787#14254"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#2110",
+          "code_sha256": "7393a89c848f6f1ac84a219ebd7a1cbe448adef85e0ce5a3b16798b2c84663ff",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1366214969540455677#11622"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#2139",
+          "code_sha256": "ab0cd6016648f696ccf31a03763e9d3ea2718aff6603457bc843579ac084a57b",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#9495"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:3599206110384554647#2152",
+          "code_sha256": "b4143b119ad9c878f9fc8a229e09c2af467333bf90ba2d944672da2d37a7eb7a",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#13381"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1366214969540455677#2179",
+          "code_sha256": "175fbba7a95b8b78968f0bbca3a9e801c8c56239e6963db67e9f981e76755365",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:3599206110384554647#2949"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#2199",
+          "code_sha256": "bfdfb469333d8037b8b8db0e597971820410bd1eb4a1ce4f87d2f8096771e8e7",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#9551"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1750726979859153417#2221",
+          "code_sha256": "d3cf02fec72c5ae50b18bd98c4d352c90ba22d208b691320e93ed006b4242e82",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1750726979859153417#11998"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1223258652239369123#2225",
+          "code_sha256": "22354dfd0de86e10791f56bfa15d51319550246e6060b6f649b210e05d44dea3",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:1223258652239369123#3399"
+          ],
+          "labels_agree": false
+        },
+        {
+          "test_record_id": "reveal:test:1353431100313404503#2249",
+          "code_sha256": "57f35c4bc707277470fac14b02785ed163a04c2fec0c87319481ee2579d19a8b",
+          "overlap_with": "eligible_train",
+          "learning_record_ids": [
+            "reveal:train:252275190935145023#3023"
+          ],
+          "labels_agree": false
+        }
+      ],
+      "expert_shift": {
+        "endpoint": {
+          "test": "https://token-api.fpt.ai/v1/chat/completions",
+          "validation": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions"
+        },
+        "model": {
+          "test": "DeepSeek-V4.1-Flash",
+          "validation": "deepseek-ai/deepseek-v4.1-flash-maas"
+        },
+        "provider": {
+          "test": "OpenAI-compatible API",
+          "validation": "Vertex AI"
+        },
+        "thinking": {
+          "test": false,
+          "validation": null
+        }
+      },
+      "benchmark_comparable": false
+    }
+  },
+  "source_files": {
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\winner_lock.json": {
+      "sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f",
+      "bytes": 14824
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\winner_lock_checksum.json": {
+      "sha256": "3bb986601b711a9b9e38d500c737858134a2453b2913e3ad008eb25678204f2d",
+      "bytes": 83
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\manifest.json": {
+      "sha256": "a3f86cbf6b3ac9aff681ac890711e7600e7546d52dc7fc55a73632bab902b0c4",
+      "bytes": 2621
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test_prediction_index.json": {
+      "sha256": "b8e794e227447081275cff02aae5de83ea0219fa93ff619a7719e6582d4ccfd7",
+      "bytes": 690
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\__init__.py": {
+      "sha256": "16c7a88f18db7d7c2cf76e6f03d8cf36efadd9b43b609f7ca7d6aee973b5c3ce",
+      "bytes": 95
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\data.py": {
+      "sha256": "abb050568e2554c14307f7e6012f32afec1b7dab5d045991a7bbcc542dadf520",
+      "bytes": 3197
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\fpt_provider.py": {
+      "sha256": "1d705f28124df5b813a1e541980ef53138fad199d20b4e3871f41de4c286452f",
+      "bytes": 4020
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\graphs.py": {
+      "sha256": "2cf82290d5f0180f1aae02ce1219bfcedd0adb32e86b5ec27ac0f89c4b78d871",
+      "bytes": 4029
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\inference.py": {
+      "sha256": "4ac9c9d0a36fa823cd9a66b3cba9cb238f488906785cd744997cc181858bd80b",
+      "bytes": 11154
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\io.py": {
+      "sha256": "9e2e8cdbccd8521ea6a7034874a55f965715af459a04ecd7ead01d3c7eff8eec",
+      "bytes": 2303
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\metrics.py": {
+      "sha256": "f1d3b3bdcaa55c6120dd6ff11c1fba225d9abff41e2f68c5b5e1beac7038185e",
+      "bytes": 2577
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\parser.py": {
+      "sha256": "c8f9aa150457bd615e745ef379d79321c68ba550f85933123a76284e9d0ad416",
+      "bytes": 1125
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\pipeline.py": {
+      "sha256": "6d59456839c029b3b85f54bf99e47abfb3216df861634d21b95afc6e42a4572b",
+      "bytes": 13925
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\projection.py": {
+      "sha256": "d1f92309ebc34275cf714146b940b5362239e49cef262b713220156e764b8317",
+      "bytes": 11460
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\reference.py": {
+      "sha256": "c81abb7376a8c43ba192598b63c3693884ac4eb7e4593cda9f7aaed246abc82e",
+      "bytes": 10527
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h1\\retrieval.py": {
+      "sha256": "bad51d118378290b6a9f34c6e52bbdbdd67ef9017b5d98d472816f01e68f722e",
+      "bytes": 4691
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\__init__.py": {
+      "sha256": "805f748cc8cfd28b352b1cc9eb5a912e1c883c89a4b23783463cb53934507a54",
+      "bytes": 87
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\base.py": {
+      "sha256": "6c257593906271a78c6f911ce5317f1365e2133a5227ea40bdde8d051a2fd214",
+      "bytes": 9575
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\common.py": {
+      "sha256": "9cee7d207bb8972de35fd2c0ff4aa23ac9f7bc69fe8106b09ce882b0801138b0",
+      "bytes": 7950
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\features.py": {
+      "sha256": "54c64c741495d2e2faa6c40107ef265c201b198ff21b583aa561120767e60f58",
+      "bytes": 6899
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\meta.py": {
+      "sha256": "4c757da752cf05680482e02255fb6d09a48b11c09ef75b9493f13bf484d950fa",
+      "bytes": 12893
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\portable.py": {
+      "sha256": "cf300247313dcd1bdde536fae2792f01921c178f771b0e36f771e29ea4cd75de",
+      "bytes": 8910
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\recovery.py": {
+      "sha256": "73192b7a1be18540c01c256fcda43a5ff6fac352cf31a3347b7ca9ddc16cda29",
+      "bytes": 17267
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\grace_h3v2\\workflow.py": {
+      "sha256": "6b3b7feeddebc09683f8152ff0f11a1529d807563a88119aef25c874878979e1",
+      "bytes": 18406
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\tools\\h3b_notebooks.py": {
+      "sha256": "a900ba605cdf9a1a605466ba38616383b8b7a6aa229b0ad610b1334aa84621ee",
+      "bytes": 41480
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\reference_contract.yaml": {
+      "sha256": "97d978fd4ae6108890ae6e732d48ac70c6a0955e81b33636ae012a30b6f8de79",
+      "bytes": 3712
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\prompt_template.txt": {
+      "sha256": "7b018e2a1e7388e6118c1f7a7fb6b41fdb7db91684d41c64f49273fd349cb098",
+      "bytes": 661
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\01_train_lock_and_benchmark.ipynb": {
+      "sha256": "b6372c10c3ec66536b024b7e777f1a6d4d3f871096f7afd6627926abd58d5d67",
+      "bytes": 67680
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\02_test_pipeline_and_demo.ipynb": {
+      "sha256": "f7e49ec2496a78b13dbfb1ff14738f853a163f8ef9b9e120182a9adceac4e8a6",
+      "bytes": 93944
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\notebooks\\03_evaluate_five_branches_on_test.ipynb": {
+      "sha256": "6e525c5affb0597c9cbb3069c3eda8ee355acfa5333c3ad912f8485201c33966",
+      "bytes": 40107
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\tools\\h3b_notebook_display.py": {
+      "sha256": "325518c545035bfe6ea3123103c3c75679aa09aad716fab76998f39f12a3c47a",
+      "bytes": 3653
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\configs\\benchmark_v2.json": {
+      "sha256": "fe6967fab35961043438313faec72447d4ba578d8261772d6e71556088562010",
+      "bytes": 2195
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\devign\\train.jsonl": {
+      "sha256": "ba67d93da442badbd9f59ba6ecd91bb87d55fab69da924d8f40199d1881530cc",
+      "bytes": 53243626
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\devign\\validation.jsonl": {
+      "sha256": "09366950380d5f77ecd64829029595f238a1e5779765a6fc8902e2396196e93c",
+      "bytes": 6543861
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\devign\\test.jsonl": {
+      "sha256": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c",
+      "bytes": 6580314
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\manifest.json": {
+      "sha256": "5aa78d6445a41a39c214f6c2fb48d820112347191517bfe76231f00b8938015f",
+      "bytes": 325741
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\freeze.json": {
+      "sha256": "dd9a1bbdc5d7543d92e24b7ac0374fc65e192207b0a14d28f7f4866a1e6f3112",
+      "bytes": 311562
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\folds.json": {
+      "sha256": "e0414d6dffd0b92935ea3501a87a0a9ebd2463cae59c00d1e360039a419cd8aa",
+      "bytes": 2936436
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\fusion_all.joblib": {
+      "sha256": "5a7c49d2e76238b55d1dfdcc8266cc80e9f508d566747385fc6f975de4fbb6ee",
+      "bytes": 927
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\fusion_semantic_lexical.joblib": {
+      "sha256": "361ac8f39ebb9684d06ca06a446b5a62c434a4d86f93b4a75ce10394080dea01",
+      "bytes": 846
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\lexical.joblib": {
+      "sha256": "dc5af09a6fb706bd375f5ddf534204b0597c7a8d2c0b826a962b93c55269ffb0",
+      "bytes": 814823
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\numeric.joblib": {
+      "sha256": "4060863e99ff3dd51388a27567f0739b5e4992453ef8cad80e6caba4cd9bdb21",
+      "bytes": 2608
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\semantic_lr.joblib": {
+      "sha256": "deb2857d37a6142c797f5c0aadad6c78933dc84d9e79d5b3cba4f542551301c5",
+      "bytes": 25500
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\semantic_lr_balanced.joblib": {
+      "sha256": "a3956b706bd64c566b7db39e9fb02d318efa539a9e06f9776787ff031d32de23",
+      "bytes": 25504
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\semantic_mlp.joblib": {
+      "sha256": "1c0b6e6ac752a2acb914beef36f1bd67d2255d095e790d22b8a30d9c09a64918",
+      "bytes": 1120763
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\train_nested_oof.npy": {
+      "sha256": "33490d8e253fc9e1bae9ac557e6d8e576c5eee0e191b40929137fd541cfaf33d",
+      "bytes": 1044704
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\devign\\42\\a93a831ac8416426a1d4\\validation_views.npy": {
+      "sha256": "b271f1a51cd28aed0e395513f689cea31a6c01079982f12991157db5f45a86b3",
+      "bytes": 109408
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\manifest.json": {
+      "sha256": "defc2d17798d5577d40ed67d47387dcdc9d8fa417a1f4f4cb8977e8192122c87",
+      "bytes": 18211
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\freeze.json": {
+      "sha256": "05841fe1b4d67b8bb88df40d6236434167cddd5a871334a289bca303e34afc81",
+      "bytes": 7863
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\benefit_router.joblib": {
+      "sha256": "f9391257fed3a8f735684f1068675d9bb42bebe2c71c1b0280d6bbeac798e647",
+      "bytes": 2736
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\development_oof.npz": {
+      "sha256": "44d3b52146417720c338d62391b731521d80644329251bad4aac6b46b85f289d",
+      "bytes": 86075
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\expert_validation.jsonl": {
+      "sha256": "ec64f1502baea9b38dde3aeec5029adc8d2ba3f912841c4defb01864ac09bab4",
+      "bytes": 748005
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\folds.json": {
+      "sha256": "3d0cd93e9366af011de9a4c7aae31ccac047a12775a3cc8d637f3584908ddc18",
+      "bytes": 94971
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\post_selector.joblib": {
+      "sha256": "678a813503425ff057a78d9d108f63f375b14d90ac5d3b0024b276c0cc9aed25",
+      "bytes": 2982
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\stack_lr.joblib": {
+      "sha256": "c34da8ebe9643488ff397820df034ffae3694c49a63fde154f8f6f19e523d2b1",
+      "bytes": 2993
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\devign\\42\\1ce2600cb8780671c428\\stack_mlp.joblib": {
+      "sha256": "ac2a2152ba80f3ab0f524f0c45a0efabfd3e1786484f62749413ead1007bae9f",
+      "bytes": 37154
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\manifest.json": {
+      "sha256": "25524884317a42dabe51fadffb20dc81c6fb214b77223444218d490b0cb21a78",
+      "bytes": 3486
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_fusion_all.jsonl": {
+      "sha256": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_fusion_semantic_lexical.jsonl": {
+      "sha256": "b9ed04877720352d9815061b2475e13ecf457059c6e957350f381576855c29cd",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_lexical.jsonl": {
+      "sha256": "00f6a45bc2ffefcd8ad39dda717d9297325e9eb0f4392520c0ac7c957758aa5d",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_semantic_lr.jsonl": {
+      "sha256": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_semantic_lr_0_5.jsonl": {
+      "sha256": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_semantic_lr_balanced.jsonl": {
+      "sha256": "c18aa7546c35256602e066e55669f0a744360e9c1557dfbd61f35a9b91e032a4",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\base_semantic_mlp.jsonl": {
+      "sha256": "96e1c3a1ee8f73a753d8b11d4e2ca37b2ef8c5a0a05aed67a67628bc71c01da5",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\benefit_router.jsonl": {
+      "sha256": "f497b7f14f5ff36f9a6377f04b18d8305ec5610e4c1a6f9786da8080ae27bf9f",
+      "bytes": 682428
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\confidence_router.jsonl": {
+      "sha256": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\full_grace.jsonl": {
+      "sha256": "619de24b7f1b3588c902a00dc6e1f3b084d65f6ed6c5bb298aabf31795491a95",
+      "bytes": 679747
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\gate_0_5.jsonl": {
+      "sha256": "dd3f8cc259034461699c75b034b3c5b3b8c65b9a4063753b52c129030bf48aad",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\gate_train_threshold.jsonl": {
+      "sha256": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\gate_tuned.jsonl": {
+      "sha256": "63909594fb3b74ed929c14c25dc709a3e9be2cb13aa96c7f1ed04f06b6fe998e",
+      "bytes": 682479
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\post_selector.jsonl": {
+      "sha256": "55db5ec638d5ddcc20abd2ba598e7610e436df2c153f520e2b2bb5a6e14e423d",
+      "bytes": 679747
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\stack_lr.jsonl": {
+      "sha256": "fdf566ad6f9626806b12e94a94bbc8c81bca90086cbc96a1833e79fcc11d403c",
+      "bytes": 679747
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\devign\\42\\stack_mlp.jsonl": {
+      "sha256": "ccb8444970eb8a095bcee65ad3412bbacdc6eb98c95c02a3beb7e3a6e2e3b0f6",
+      "bytes": 679747
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\reveal\\train.jsonl": {
+      "sha256": "bdf1b98d45d105a504574951c03fb130dc2c350fd8de8c00cb419d78e901f0c7",
+      "bytes": 30863265
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\reveal\\validation.jsonl": {
+      "sha256": "51cfecddbac3473037273c7b776284e6d57eeb7c7292802694786ec1e3088252",
+      "bytes": 3642536
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\data\\reveal\\test.jsonl": {
+      "sha256": "2be86b5a9047459b0d4342800851e1769ba0a591b423ae094c1111e8f914a5b9",
+      "bytes": 4142184
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\manifest.json": {
+      "sha256": "72700147375d38dc7a4b86fd453cf937b907c5c5a6486c5d69df16f599ac4307",
+      "bytes": 267666
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\freeze.json": {
+      "sha256": "9b8cbbf92d9171ea3dc0a351bd25d590aa1c1b95f7fee7a17a926a7040915a4b",
+      "bytes": 253467
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\folds.json": {
+      "sha256": "551e4829f50c7f8cd2d6936abf6ee12629298b6600daead7e9384a552439e26c",
+      "bytes": 2372295
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\fusion_all.joblib": {
+      "sha256": "404e0bedb1ba3e2589a3ccc14614d1d75b2946672fb63b0314bb6c8c64b262cc",
+      "bytes": 925
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\fusion_semantic_lexical.joblib": {
+      "sha256": "3f50a127392090f9c406f74b2b179da94fd2da7ad67594b30e28f7f4da8aaa15",
+      "bytes": 841
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\lexical.joblib": {
+      "sha256": "2db018cd45473ee06d9d3664aebfcb51a192aa918f3252d80d4ebd707e8b41d2",
+      "bytes": 796602
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\numeric.joblib": {
+      "sha256": "ef0edffb14277b8aec9787fbf84cb5cc22ed7a9a8d3af3048de0ae5d9160e294",
+      "bytes": 2599
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\semantic_lr.joblib": {
+      "sha256": "69b5e2ac5cc1eea9bb74735ec0628758098d0ae8f0531707e1309aeb155dc893",
+      "bytes": 25532
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\semantic_lr_balanced.joblib": {
+      "sha256": "8595228165cf499906fe8163913cd5a4c70f8b3f23ee069c3fe8fed8eedb3d50",
+      "bytes": 25548
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\semantic_mlp.joblib": {
+      "sha256": "4ee84aaee857faac3d3dfb75f1666e0d95953ca5e5d1573d146e13f056e85dc3",
+      "bytes": 1114813
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\train_nested_oof.npy": {
+      "sha256": "8cf63b8e308573437c5ce6724c408ba1d0ba270e94a7f866ec9ac353ec405921",
+      "bytes": 852656
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\base\\reveal\\42\\b4564696e647259a09b9\\validation_views.npy": {
+      "sha256": "f204fb5849916ed4c69aa50a2d13bf575f6dbe4344bf887dd489dd174b41654c",
+      "bytes": 91048
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\manifest.json": {
+      "sha256": "edc59076f27562a823fb6a3ff042448a935dc777d4dd19e553b6350d951996f7",
+      "bytes": 18241
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\freeze.json": {
+      "sha256": "02993f3b45378f8abaa55039b4835d2405cf90cc2d5652f1d07a72dc8b2897ae",
+      "bytes": 7863
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\benefit_router.joblib": {
+      "sha256": "7f247d72539a7145f5fb575b48d7d4dc5b7eaae6fa7f4f7805843f2aada42898",
+      "bytes": 2733
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\development_oof.npz": {
+      "sha256": "b4eaeb8a055ebb9344045db0122aff505873bf8367756f70952048382e97bc1d",
+      "bytes": 69161
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\expert_validation.jsonl": {
+      "sha256": "98d5d2824c06287c0e1d5fc7e35e0c23f7f82a4cf310eba826b63d62be611440",
+      "bytes": 645430
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\folds.json": {
+      "sha256": "3603a90093906f29e3e160b18b9ee4e2707c131aa63feab9b736bc1fed0cb7bc",
+      "bytes": 75963
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\post_selector.joblib": {
+      "sha256": "45f44f0c3c690e63cdf00897f08ce9bc8aec5fac67a0cdfb9b94140b4ce8f377",
+      "bytes": 2973
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\stack_lr.joblib": {
+      "sha256": "ecb79cce5013f2c20a5d3598dec4965c92cb014f0adc7442664032e483189872",
+      "bytes": 2985
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\meta\\reveal\\42\\0cfc8ed8b7529b6457c7\\stack_mlp.joblib": {
+      "sha256": "383714770b41acfd57bec8a6aaea301a67b5a43ae90261299b2b9bbd43dff15f",
+      "bytes": 37249
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\manifest.json": {
+      "sha256": "4ed0f8820f90be4443fe3e7147ab1834df652d17b311859db5079c28e795939a",
+      "bytes": 3486
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_fusion_all.jsonl": {
+      "sha256": "d94c32aa184240697aaefa83e05ed142eacf92093fde52fcb17d858fe8120af1",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_fusion_semantic_lexical.jsonl": {
+      "sha256": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_lexical.jsonl": {
+      "sha256": "d294f74d475404db9743447d46b153d492fe6851ed44bf6c7526a5bc2433f207",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_semantic_lr.jsonl": {
+      "sha256": "37930541d217aad66c92e8a30301196a30ab5c61ec41faefe96eb1f956b38d9c",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_semantic_lr_0_5.jsonl": {
+      "sha256": "fb378fd0418fc88b7930f497aaa669ebaaae67f0a2f78fb0a1ffa1847b633883",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_semantic_lr_balanced.jsonl": {
+      "sha256": "3fd9abfe85fceee0d042f7c0b82c8eaa028ce521f7d69f0e0e2c7a686104858f",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\base_semantic_mlp.jsonl": {
+      "sha256": "8ef2df1598359b2e390b7d7eca964dc3851b35d88640a170ce0cb53df19bb602",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\benefit_router.jsonl": {
+      "sha256": "be1adae978764728aa1fa5d829377262e1b31c0ee52a14e641448c4fe79b8907",
+      "bytes": 614469
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\confidence_router.jsonl": {
+      "sha256": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\full_grace.jsonl": {
+      "sha256": "597deb454887caacb7cd0eb8390b5a02e89ae82af76d0c8e56039183f2f0a7e3",
+      "bytes": 612199
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\gate_0_5.jsonl": {
+      "sha256": "49124fddf4fe47360b10fb918578ca5a6855f92cd79ebb99fd859f0a71f76852",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\gate_train_threshold.jsonl": {
+      "sha256": "d1daae72dca0fe88290e58729b6efa3329fd09f9f9a7cd64396aa6f2a2bf6189",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\gate_tuned.jsonl": {
+      "sha256": "cfc2d018933a0c264b71715f3a8df9e505512367be537502199adcbf88e9a282",
+      "bytes": 614473
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\post_selector.jsonl": {
+      "sha256": "3e8407af8555a6ff21f89e2655f1936e0f5c8a69ce18d4ea215d69f7bfc61945",
+      "bytes": 612199
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\stack_lr.jsonl": {
+      "sha256": "93632d5aaf96f55a7bbbfbb95ffabc9de572e2f97a3a5301bbf3f7249d5ca756",
+      "bytes": 612199
+    },
+    "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\runs\\h3v2\\notebook_sessions\\deepseek_v41_hieu_8192_seed42\\test\\reveal\\42\\stack_mlp.jsonl": {
+      "sha256": "a465f5ec3b40464ff569c163d6661a1261d623ab26d219ff4dadf133f1f1c910",
+      "bytes": 612199
+    }
+  },
+  "uncommitted_h3b_execution_or_notebook_files": [
+    "?? notebooks/01_train_lock_and_benchmark.ipynb",
+    "?? notebooks/02_test_pipeline_and_demo.ipynb",
+    "?? notebooks/03_evaluate_five_branches_on_test.ipynb",
+    "?? tools/h3b_notebook_display.py",
+    "?? tools/h3b_notebooks.py"
+  ],
+  "report_after_sha256": "59a95a910fedc5b4c82cc344ffede15e74cf028a5db59bbce4c927fd1fd64d44"
+}
