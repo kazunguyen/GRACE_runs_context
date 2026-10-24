@@ -1,0 +1,632 @@
+{
+  "arms": {
+    "base_fusion_all": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6116398243045388,
+        "accuracy_valid_only": 0.6116398243045388,
+        "balanced_accuracy": 0.6302268245906018,
+        "confusion_matrix_valid_only": {
+          "fn": 177,
+          "fp": 884,
+          "tn": 593,
+          "tp": 1078
+        },
+        "f1": 0.6701896176562014,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.28850124596766547,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5494393476044852,
+        "predicted_positive_rate_all": 0.7181551976573939,
+        "recall": 0.8589641434262948,
+        "recall_all_positives": 0.8589641434262948,
+        "specificity": 0.4014895057549086,
+        "valid_n": 2732
+      }
+    },
+    "base_fusion_semantic_lexical": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.5937042459736457,
+        "accuracy_valid_only": 0.5937042459736457,
+        "balanced_accuracy": 0.6158547934194164,
+        "confusion_matrix_valid_only": {
+          "fn": 140,
+          "fp": 970,
+          "tn": 507,
+          "tp": 1115
+        },
+        "f1": 0.6676646706586827,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.2716132445341439,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5347721822541966,
+        "predicted_positive_rate_all": 0.763177159590044,
+        "recall": 0.8884462151394422,
+        "recall_all_positives": 0.8884462151394422,
+        "specificity": 0.34326337169939064,
+        "valid_n": 2732
+      }
+    },
+    "base_lexical": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6035871156661786,
+        "accuracy_valid_only": 0.6035871156661786,
+        "balanced_accuracy": 0.624036824941264,
+        "confusion_matrix_valid_only": {
+          "fn": 156,
+          "fp": 927,
+          "tn": 550,
+          "tp": 1099
+        },
+        "f1": 0.6699177080158489,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.2824038908458722,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5424481737413623,
+        "predicted_positive_rate_all": 0.7415812591508053,
+        "recall": 0.8756972111553785,
+        "recall_all_positives": 0.8756972111553785,
+        "specificity": 0.37237643872714965,
+        "valid_n": 2732
+      }
+    },
+    "base_semantic_lr": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6156661786237189,
+        "accuracy_valid_only": 0.6156661786237189,
+        "balanced_accuracy": 0.608740124134471,
+        "confusion_matrix_valid_only": {
+          "fn": 598,
+          "fp": 452,
+          "tn": 1025,
+          "tp": 657
+        },
+        "f1": 0.5558375634517766,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.2207023196137495,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5924256086564472,
+        "predicted_positive_rate_all": 0.4059297218155198,
+        "recall": 0.5235059760956176,
+        "recall_all_positives": 0.5235059760956176,
+        "specificity": 0.6939742721733243,
+        "valid_n": 2732
+      }
+    },
+    "base_semantic_lr_0_5": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6156661786237189,
+        "accuracy_valid_only": 0.6156661786237189,
+        "balanced_accuracy": 0.608740124134471,
+        "confusion_matrix_valid_only": {
+          "fn": 598,
+          "fp": 452,
+          "tn": 1025,
+          "tp": 657
+        },
+        "f1": 0.5558375634517766,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.2207023196137495,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5924256086564472,
+        "predicted_positive_rate_all": 0.4059297218155198,
+        "recall": 0.5235059760956176,
+        "recall_all_positives": 0.5235059760956176,
+        "specificity": 0.6939742721733243,
+        "valid_n": 2732
+      }
+    },
+    "base_semantic_lr_balanced": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6178623718887262,
+        "accuracy_valid_only": 0.6178623718887262,
+        "balanced_accuracy": 0.6113102093993694,
+        "confusion_matrix_valid_only": {
+          "fn": 589,
+          "fp": 455,
+          "tn": 1022,
+          "tp": 666
+        },
+        "f1": 0.5606060606060606,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.22554153376972294,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5941123996431757,
+        "predicted_positive_rate_all": 0.4103221083455344,
+        "recall": 0.5306772908366534,
+        "recall_all_positives": 0.5306772908366534,
+        "specificity": 0.6919431279620853,
+        "valid_n": 2732
+      }
+    },
+    "base_semantic_mlp": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.5955344070278185,
+        "accuracy_valid_only": 0.5955344070278185,
+        "balanced_accuracy": 0.5659288371227345,
+        "confusion_matrix_valid_only": {
+          "fn": 1002,
+          "fp": 103,
+          "tn": 1374,
+          "tp": 253
+        },
+        "f1": 0.31409062693978895,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.19519527677784043,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.7106741573033708,
+        "predicted_positive_rate_all": 0.13030746705710103,
+        "recall": 0.20159362549800797,
+        "recall_all_positives": 0.20159362549800797,
+        "specificity": 0.930264048747461,
+        "valid_n": 2732
+      }
+    },
+    "benefit_router": {
+      "algorithmic_expert_query_ratio": 0.018667642752562226,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6134699853587116,
+        "accuracy_valid_only": 0.6134699853587116,
+        "balanced_accuracy": 0.6310810920164973,
+        "confusion_matrix_valid_only": {
+          "fn": 191,
+          "fp": 865,
+          "tn": 612,
+          "tp": 1064
+        },
+        "f1": 0.6683417085427136,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.28678621390381737,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5515811301192327,
+        "predicted_positive_rate_all": 0.7060761346998536,
+        "recall": 0.847808764940239,
+        "recall_all_positives": 0.847808764940239,
+        "specificity": 0.4143534190927556,
+        "valid_n": 2732
+      }
+    },
+    "confidence_router": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6116398243045388,
+        "accuracy_valid_only": 0.6116398243045388,
+        "balanced_accuracy": 0.6302268245906018,
+        "confusion_matrix_valid_only": {
+          "fn": 177,
+          "fp": 884,
+          "tn": 593,
+          "tp": 1078
+        },
+        "f1": 0.6701896176562014,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.28850124596766547,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5494393476044852,
+        "predicted_positive_rate_all": 0.7181551976573939,
+        "recall": 0.8589641434262948,
+        "recall_all_positives": 0.8589641434262948,
+        "specificity": 0.4014895057549086,
+        "valid_n": 2732
+      }
+    },
+    "full_grace": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.551610541727672,
+        "accuracy_valid_only": 0.551610541727672,
+        "balanced_accuracy": 0.525725129273023,
+        "confusion_matrix_valid_only": {
+          "fn": 995,
+          "fp": 230,
+          "tn": 1247,
+          "tp": 260
+        },
+        "f1": 0.2979942693409742,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.066831903052452,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5306122448979592,
+        "predicted_positive_rate_all": 0.17935578330893118,
+        "recall": 0.20717131474103587,
+        "recall_all_positives": 0.20717131474103587,
+        "specificity": 0.8442789438050101,
+        "valid_n": 2732
+      }
+    },
+    "gate_0_5": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6551976573938506,
+        "accuracy_valid_only": 0.6551976573938506,
+        "balanced_accuracy": 0.6499116600625259,
+        "confusion_matrix_valid_only": {
+          "fn": 521,
+          "fp": 421,
+          "tn": 1056,
+          "tp": 734
+        },
+        "f1": 0.6091286307053942,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.3024619033919619,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.6354978354978355,
+        "predicted_positive_rate_all": 0.42276720351390923,
+        "recall": 0.5848605577689243,
+        "recall_all_positives": 0.5848605577689243,
+        "specificity": 0.7149627623561273,
+        "valid_n": 2732
+      }
+    },
+    "gate_train_threshold": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6116398243045388,
+        "accuracy_valid_only": 0.6116398243045388,
+        "balanced_accuracy": 0.6302268245906018,
+        "confusion_matrix_valid_only": {
+          "fn": 177,
+          "fp": 884,
+          "tn": 593,
+          "tp": 1078
+        },
+        "f1": 0.6701896176562014,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.28850124596766547,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5494393476044852,
+        "predicted_positive_rate_all": 0.7181551976573939,
+        "recall": 0.8589641434262948,
+        "recall_all_positives": 0.8589641434262948,
+        "specificity": 0.4014895057549086,
+        "valid_n": 2732
+      }
+    },
+    "gate_tuned": {
+      "algorithmic_expert_query_ratio": 0.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6530014641288433,
+        "accuracy_valid_only": 0.6530014641288433,
+        "balanced_accuracy": 0.6422515759575105,
+        "confusion_matrix_valid_only": {
+          "fn": 615,
+          "fp": 333,
+          "tn": 1144,
+          "tp": 640
+        },
+        "f1": 0.5745062836624775,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.29608053229351294,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.65775950668037,
+        "predicted_positive_rate_all": 0.3561493411420205,
+        "recall": 0.5099601593625498,
+        "recall_all_positives": 0.5099601593625498,
+        "specificity": 0.7745429925524713,
+        "valid_n": 2732
+      }
+    },
+    "post_selector": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6303074670571011,
+        "accuracy_valid_only": 0.6303074670571011,
+        "balanced_accuracy": 0.6413236694386975,
+        "confusion_matrix_valid_only": {
+          "fn": 280,
+          "fp": 730,
+          "tn": 747,
+          "tp": 975
+        },
+        "f1": 0.6587837837837838,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.29081017519417107,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5718475073313783,
+        "predicted_positive_rate_all": 0.6240849194729137,
+        "recall": 0.7768924302788844,
+        "recall_all_positives": 0.7768924302788844,
+        "specificity": 0.5057549085985105,
+        "valid_n": 2732
+      }
+    },
+    "stack_lr": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6555636896046853,
+        "accuracy_valid_only": 0.6555636896046853,
+        "balanced_accuracy": 0.6461781850256387,
+        "confusion_matrix_valid_only": {
+          "fn": 589,
+          "fp": 352,
+          "tn": 1125,
+          "tp": 666
+        },
+        "f1": 0.5860096788385393,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.3013320830140594,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.6542239685658153,
+        "predicted_positive_rate_all": 0.3726207906295754,
+        "recall": 0.5306772908366534,
+        "recall_all_positives": 0.5306772908366534,
+        "specificity": 0.7616790792146242,
+        "valid_n": 2732
+      }
+    },
+    "stack_mlp": {
+      "algorithmic_expert_query_ratio": 1.0,
+      "fallback_n": 0,
+      "metrics": {
+        "accuracy_all": 0.6207906295754027,
+        "accuracy_valid_only": 0.6207906295754027,
+        "balanced_accuracy": 0.620425811985639,
+        "confusion_matrix_valid_only": {
+          "fn": 482,
+          "fp": 554,
+          "tn": 923,
+          "tp": 773
+        },
+        "f1": 0.5987606506584043,
+        "invalid_n": 0,
+        "invalid_positive_n": 0,
+        "invalid_rate": 0.0,
+        "mcc": 0.24015302749599052,
+        "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+        "n": 2732,
+        "precision": 0.5825169555388093,
+        "predicted_positive_rate_all": 0.4857247437774524,
+        "recall": 0.6159362549800796,
+        "recall_all_positives": 0.6159362549800796,
+        "specificity": 0.6249153689911984,
+        "valid_n": 2732
+      }
+    }
+  },
+  "benchmark_comparable": false,
+  "cost_note": "A shared all-query expert reference does not measure deployed router API savings.",
+  "dataset": "devign",
+  "expert_identity": {
+    "cohort_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "expert_spec": {
+      "context_limit_utf8_bytes": 8192,
+      "endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+      "max_tokens": 256,
+      "model": "DeepSeek-V4.1-Flash",
+      "parser": "exact_last_line_binary",
+      "provider": "OpenAI-compatible API",
+      "seed": 42,
+      "stream": false,
+      "temperature": 0.0,
+      "thinking": false
+    },
+    "manifest_sha256": "105b8537f417c9289e7de47c9ec3661870082dc6447fb60bb44fc4a57c725b12",
+    "ordered_prompt_hash": "3236c326a3eed81e400a6ea5e63562e512be0515cb73b7e53934e34a801327a9",
+    "predictions_sha256": "47db642cbebb7771e6e017b2bfc47cdb1a402127b3d6b205851e1216bda586e3",
+    "source_manifest": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\devign\\abbf356612344183\\run_manifest.json",
+    "source_predictions": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\devign\\abbf356612344183\\predictions.jsonl"
+  },
+  "expert_shift": {
+    "endpoint": {
+      "test": "https://token-api.fpt.ai/v1/chat/completions",
+      "validation": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions"
+    },
+    "model": {
+      "test": "DeepSeek-V4.1-Flash",
+      "validation": "deepseek-ai/deepseek-v4.1-flash-maas"
+    },
+    "provider": {
+      "test": "OpenAI-compatible API",
+      "validation": "Vertex AI"
+    },
+    "thinking": {
+      "test": false,
+      "validation": null
+    }
+  },
+  "files": {
+    "base_fusion_all": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "base_fusion_semantic_lexical": "b9ed04877720352d9815061b2475e13ecf457059c6e957350f381576855c29cd",
+    "base_lexical": "00f6a45bc2ffefcd8ad39dda717d9297325e9eb0f4392520c0ac7c957758aa5d",
+    "base_semantic_lr": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+    "base_semantic_lr_0_5": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+    "base_semantic_lr_balanced": "c18aa7546c35256602e066e55669f0a744360e9c1557dfbd61f35a9b91e032a4",
+    "base_semantic_mlp": "96e1c3a1ee8f73a753d8b11d4e2ca37b2ef8c5a0a05aed67a67628bc71c01da5",
+    "benefit_router": "f497b7f14f5ff36f9a6377f04b18d8305ec5610e4c1a6f9786da8080ae27bf9f",
+    "confidence_router": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "full_grace": "619de24b7f1b3588c902a00dc6e1f3b084d65f6ed6c5bb298aabf31795491a95",
+    "gate_0_5": "dd3f8cc259034461699c75b034b3c5b3b8c65b9a4063753b52c129030bf48aad",
+    "gate_train_threshold": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "gate_tuned": "63909594fb3b74ed929c14c25dc709a3e9be2cb13aa96c7f1ed04f06b6fe998e",
+    "post_selector": "55db5ec638d5ddcc20abd2ba598e7610e436df2c153f520e2b2bb5a6e14e423d",
+    "stack_lr": "fdf566ad6f9626806b12e94a94bbc8c81bca90086cbc96a1833e79fcc11d403c",
+    "stack_mlp": "ccb8444970eb8a095bcee65ad3412bbacdc6eb98c95c02a3beb7e3a6e2e3b0f6"
+  },
+  "limitations": "Iterative benchmark; validation used for model selection. Demo is illustrative, not a cohort benchmark.",
+  "locked_development_winner": "gate_tuned",
+  "locked_winner": "gate_tuned",
+  "n": 2732,
+  "paired_comparison": {
+    "full_grace": {
+      "bootstrap_repetitions": 1000,
+      "ci95_query_bootstrap": {
+        "f1": [
+          0.24188572489548846,
+          0.30795259357707405
+        ],
+        "mcc": [
+          0.18093392199781172,
+          0.2757155051514189
+        ],
+        "precision": [
+          0.08379890821624413,
+          0.16959842956308943
+        ],
+        "recall": [
+          0.2685125958646273,
+          0.3349346903253513
+        ]
+      },
+      "common_valid_n": 2732,
+      "delta_right_minus_left": {
+        "f1": 0.27651201432150324,
+        "mcc": 0.22924862924106093,
+        "precision": 0.12714726178241076,
+        "recall": 0.3027888446215139
+      },
+      "excluded_invalid_pair_n": 0,
+      "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+    },
+    "gate_tuned": {
+      "bootstrap_repetitions": 1000,
+      "ci95_query_bootstrap": {
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "mcc": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          0.0,
+          0.0
+        ],
+        "recall": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_valid_n": 2732,
+      "delta_right_minus_left": {
+        "f1": 0.0,
+        "mcc": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "excluded_invalid_pair_n": 0,
+      "note": "query bootstrap; repeated code/project dependence is not cluster-adjusted"
+    }
+  },
+  "scope": "test",
+  "seed": 42,
+  "status": "complete",
+  "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+  "trivial": {
+    "always_safe": {
+      "accuracy_all": 0.5406295754026355,
+      "accuracy_valid_only": 0.5406295754026355,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix_valid_only": {
+        "fn": 1255,
+        "fp": 0,
+        "tn": 1477,
+        "tp": 0
+      },
+      "f1": 0.0,
+      "invalid_n": 0,
+      "invalid_positive_n": 0,
+      "invalid_rate": 0.0,
+      "mcc": 0.0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+      "n": 2732,
+      "precision": 0.0,
+      "predicted_positive_rate_all": 0.0,
+      "recall": 0.0,
+      "recall_all_positives": 0.0,
+      "specificity": 1.0,
+      "valid_n": 2732
+    },
+    "always_vulnerable": {
+      "accuracy_all": 0.45937042459736455,
+      "accuracy_valid_only": 0.45937042459736455,
+      "balanced_accuracy": 0.5,
+      "confusion_matrix_valid_only": {
+        "fn": 0,
+        "fp": 1477,
+        "tn": 0,
+        "tp": 1255
+      },
+      "f1": 0.6295460245798845,
+      "invalid_n": 0,
+      "invalid_positive_n": 0,
+      "invalid_rate": 0.0,
+      "mcc": 0.0,
+      "metric_scope": "binary metrics condition on valid labels; invalids retained and reported separately",
+      "n": 2732,
+      "precision": 0.45937042459736455,
+      "predicted_positive_rate_all": 1.0,
+      "recall": 1.0,
+      "recall_all_positives": 1.0,
+      "specificity": 0.0,
+      "valid_n": 2732
+    }
+  },
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f"
+}

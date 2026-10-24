@@ -1,0 +1,17 @@
+{
+  "session": "deepseek_v41_hieu_8192_seed42",
+  "result": "unchanged from previously reviewed metrics",
+  "checks": [
+    {
+      "notebook": "01_train_lock_and_benchmark.ipynb",
+      "matched_dataset_arm_rows": 32,
+      "saved_cell_errors": 0
+    },
+    {
+      "notebook": "02_test_pipeline_and_demo.ipynb",
+      "matched_dataset_arm_rows": 32,
+      "saved_cell_errors": 0
+    }
+  ],
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f"
+}

@@ -1,0 +1,66 @@
+{
+  "benchmark_comparable": false,
+  "dataset": "devign",
+  "expert_identity": {
+    "cohort_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "expert_spec": {
+      "context_limit_utf8_bytes": 8192,
+      "endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+      "max_tokens": 256,
+      "model": "DeepSeek-V4.1-Flash",
+      "parser": "exact_last_line_binary",
+      "provider": "OpenAI-compatible API",
+      "seed": 42,
+      "stream": false,
+      "temperature": 0.0,
+      "thinking": false
+    },
+    "manifest_sha256": "105b8537f417c9289e7de47c9ec3661870082dc6447fb60bb44fc4a57c725b12",
+    "ordered_prompt_hash": "3236c326a3eed81e400a6ea5e63562e512be0515cb73b7e53934e34a801327a9",
+    "predictions_sha256": "47db642cbebb7771e6e017b2bfc47cdb1a402127b3d6b205851e1216bda586e3",
+    "source_manifest": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\devign\\abbf356612344183\\run_manifest.json",
+    "source_predictions": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble\\artifacts\\h3v2\\expert_inputs\\deepseek_v41_test_baseline_20261024\\devign\\abbf356612344183\\predictions.jsonl"
+  },
+  "expert_shift": {
+    "endpoint": {
+      "test": "https://token-api.fpt.ai/v1/chat/completions",
+      "validation": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions"
+    },
+    "model": {
+      "test": "DeepSeek-V4.1-Flash",
+      "validation": "deepseek-ai/deepseek-v4.1-flash-maas"
+    },
+    "provider": {
+      "test": "OpenAI-compatible API",
+      "validation": "Vertex AI"
+    },
+    "thinking": {
+      "test": false,
+      "validation": null
+    }
+  },
+  "files": {
+    "base_fusion_all": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "base_fusion_semantic_lexical": "b9ed04877720352d9815061b2475e13ecf457059c6e957350f381576855c29cd",
+    "base_lexical": "00f6a45bc2ffefcd8ad39dda717d9297325e9eb0f4392520c0ac7c957758aa5d",
+    "base_semantic_lr": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+    "base_semantic_lr_0_5": "37f25d2b50200e8952a5000824c6a7290a11f20be61574d644850b3a2742983b",
+    "base_semantic_lr_balanced": "c18aa7546c35256602e066e55669f0a744360e9c1557dfbd61f35a9b91e032a4",
+    "base_semantic_mlp": "96e1c3a1ee8f73a753d8b11d4e2ca37b2ef8c5a0a05aed67a67628bc71c01da5",
+    "benefit_router": "f497b7f14f5ff36f9a6377f04b18d8305ec5610e4c1a6f9786da8080ae27bf9f",
+    "confidence_router": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "full_grace": "619de24b7f1b3588c902a00dc6e1f3b084d65f6ed6c5bb298aabf31795491a95",
+    "gate_0_5": "dd3f8cc259034461699c75b034b3c5b3b8c65b9a4063753b52c129030bf48aad",
+    "gate_train_threshold": "a4ca1ecaa1c6f248df8b1dbcb96a56dd3d71df53075ff4d2ebcc2fb1b8f6fdcd",
+    "gate_tuned": "63909594fb3b74ed929c14c25dc709a3e9be2cb13aa96c7f1ed04f06b6fe998e",
+    "post_selector": "55db5ec638d5ddcc20abd2ba598e7610e436df2c153f520e2b2bb5a6e14e423d",
+    "stack_lr": "fdf566ad6f9626806b12e94a94bbc8c81bca90086cbc96a1833e79fcc11d403c",
+    "stack_mlp": "ccb8444970eb8a095bcee65ad3412bbacdc6eb98c95c02a3beb7e3a6e2e3b0f6"
+  },
+  "locked_winner": "gate_tuned",
+  "n": 2732,
+  "scope": "test",
+  "seed": 42,
+  "target_identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+  "winner_lock_sha256": "dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f"
+}
