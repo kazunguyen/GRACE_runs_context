@@ -1,6 +1,8 @@
 # Báo cáo các hướng cải tiến GRACE: H1, H2 và hai phiên bản H3
 
-Ngày đối chiếu mã nguồn và các tệp kết quả đã lưu: **20/10/2026**. Báo cáo theo [khung trình bày đã thống nhất](D:/JUNIOR/LabThayTho/REPORT_TO_TEACHER/khung-trinh-bay-bao-cao.md).
+Ngày đối chiếu mã nguồn và các tệp kết quả đã lưu: **20/10/2026**.
+
+> **Cập nhật đối soát 24/10/2026:** đã bổ sung phân tích paired cho H1/H3-A và session H3-B đã có test; xem Mục 6 và [bản đối soát riêng](bao_cao_doi_soat_4_huong_H_20261024.md). Các bảng snapshot cũ giữ nguồn và phạm vi riêng.
 
 ## Tổng quan và phạm vi đóng góp
 
@@ -8,11 +10,11 @@ Báo cáo trình bày ba hướng thay đổi trong GRACE; H1 có hai phiên b�
 
 | Hướng | Thành phần được thay đổi | Câu hỏi nghiên cứu chính | Trạng thái bằng chứng hiện có |
 |---|---|---|---|
-| **H1-V1 — Security Projection** | Projection affine 768→128 và metric learning theo nhãn | Bản triển khai đầu có cải thiện downstream so với whitening không? | Có run Qwen/context 8192 trên Devign và ReVeal; F1/MCC điểm thấp hơn baseline, chưa có so sánh ghép cặp cùng ID |
-| **H1-V2 — Security Projection V2** | Residual local metric learning quanh whitening 256 | Biểu diễn residual có chọn demo hữu ích hơn baseline không? | Retrieval proxy tăng; có run full GRACE trên ReVeal với metric điểm nhỉnh nhẹ, nhưng 9 invalid và chưa có paired CI; chưa có run V2 Devign |
-| **H2 — Guarded Evidence** | Chọn và đóng gói graph context | Giữ thao tác, phụ thuộc dữ liệu và điều kiện liên quan thành cụm có giúp LLM hơn graph prefix/slicing không? | Đã có kết quả full test DeepSeek-V4.1-Flash; chưa có baseline chạy bằng cùng model để kết luận hiệu quả cải tiến. Qwen hiện chỉ là số liệu tham chiếu |
+| **H1-V1 — Security Projection** | Projection affine 768→128 và metric learning theo nhãn | Bản triển khai đầu có cải thiện downstream so với whitening không? | Có run Qwen/context 8192; đã bổ sung paired analysis cùng ID ở Mục 6; không có bằng chứng V1 cải thiện |
+| **H1-V2 — Security Projection V2** | Residual local metric learning quanh whitening 256 | Biểu diễn residual có chọn demo hữu ích hơn baseline không? | Có paired ReVeal trên 2265 ID, ΔMCC khoảng +0,0019 và CI chứa 0; 9 invalid; chưa có run V2 Devign |
+| **H2 — Guarded Evidence** | Chọn và đóng gói graph context | Giữ thao tác, phụ thuộc dữ liệu và điều kiện liên quan thành cụm có giúp LLM hơn graph prefix/slicing không? | Đã có full test Vertex DeepSeek và baseline DeepSeek FPT mới; chưa có đối chứng chỉ đổi evidence với cùng code/demo/budget và cấu hình phục vụ |
 | **H3-A — Calibrated Cascade** | Gate và routing trước GRACE | Có thể tự xử lý một phần mẫu với ràng buộc bỏ sót trên validation, giảm số query cần GRACE không? | Có metric Devign và ReVeal khi dùng baseline H1 đã chọn làm expert; Devign bỏ qua 6/2.732 mẫu (0,22%), ReVeal không bỏ qua mẫu nào |
-| **H3-B — Benchmark Ensemble** | Classifier nhiều view, meta-router/selector/stacking phối hợp với GRACE | Khi nào nên dùng classifier, khi nào GRACE bổ sung giá trị? | Có expert validation DeepSeek V4.1 do Hiếu chạy; metric test tham chiếu baseline H1 Qwen. Chưa có H3-B winner test cùng backbone để kết luận |
+| **H3-B — Benchmark Ensemble** | Classifier nhiều view, meta-router/selector/stacking phối hợp với GRACE | Khi nào nên dùng classifier, khi nào GRACE bổ sung giá trị? | Đã có session train/meta-fit/lock/test DeepSeek; winner gate_tuned, query expert 0. Chưa xác nhận lợi ích kết hợp LLM; xem Mục 4.6 và 6 |
 
 Hai phiên bản H3 có mục tiêu thí nghiệm khác nhau: H3-A ưu tiên routing có ràng buộc; H3-B ưu tiên MCC rồi F1, chấp nhận không giảm số query cần LLM. H1-V1 là lần triển khai đầu; H1-V2 là lần cải tiến tiếp theo. Báo cáo tách metric và kết luận hai phiên bản; không gộp kết quả V1 thành bằng chứng cho V2.
 
@@ -25,7 +27,7 @@ GRACE đã kết hợp thông tin graph và demonstration; retrieval vốn đã 
 | Biểu diễn code | CodeT5 và giảm chiều theo thiết lập của bài báo | `genexample.py` nạp `RobertaModel` tại đường dẫn tên CodeT5, phụ thuộc `bert_whitening` không có đủ artifact | Dùng đúng T5Encoder, masked mean, vector 768d có hash checkpoint và thứ tự ID; whitening 256 được fit trên train |
 | Chọn demo | Kết hợp semantic/lexical/syntactic | Có top-k semantic và rerank `0.7 * code_score + 0.3 * ast_score` | Common top 50 → semantic top 5 → rerank → một demo train có nhãn |
 | Graph | Graph structure trong prompt | Phụ thuộc graph/preprocessing của tác giả | H1/H3 dùng bản graph cơ bản đã lưu; H2 cần graph giàu thuộc tính và có đối chứng riêng |
-| Backbone | GPT-4 trong thiết lập bài báo | `llmpre.py` gọi `gpt-4` | Các lượt H1/H3-A được dẫn ở đây ghi Qwen3-Coder-480B trên Vertex AI; validation H3-B dùng DeepSeek V4.1; metric test tham chiếu H1 Qwen được công khai bên dưới |
+| Backbone | GPT-4 trong thiết lập bài báo | `llmpre.py` gọi `gpt-4` | Các lượt H1/H3-A được dẫn ở đây ghi Qwen3-Coder-480B trên Vertex AI; H3-B dùng validation Vertex DeepSeek và test DeepSeek FPT; khác cấu hình phục vụ được ghi trong manifest |
 | Phạm vi so sánh | Kết quả công bố theo protocol bài báo | Chưa đủ artifact để xác nhận tái lập từng chi tiết | Đối chứng nội bộ cùng thiết lập; không quy chênh lệch với kết quả GPT-4 trong bài báo cho riêng cải tiến |
 
 Mã nguồn và hồ sơ đối chiếu trên máy: [genexample.py](D:/JUNIOR/LabThayTho/GRACE-original-code/genexample.py), [llmpre.py](D:/JUNIOR/LabThayTho/GRACE-original-code/llmpre.py), [H1 reference.py](D:/JUNIOR/LabThayTho/GRACE-H1-SecurityProjection/grace_h1/reference.py), [audit baseline H2](D:/JUNIOR/LabThayTho/GRACE-H2-GuardedEvidence/docs/BASELINE_AUDIT.md).
@@ -47,7 +49,7 @@ H1-V1 bổ sung projection affine 768→128, chuẩn hóa biểu diễn và clas
 | ReVeal | Baseline whitening — `0779c879b6d11431` | 2.274 / 0 | 1.483 / 561 / 156 / 74 | 68,47% | 11,65% | 32,17% | 17,11% | 0,0318 | 52,36% |
 | ReVeal | H1-V1 `h1_supcon_hard` — `d318d1344264b913` | 2.205 / 0 | 1.451 / 530 / 155 / 69 | 68,93% | 11,52% | 30,80% | 16,77% | 0,0275 | 52,02% |
 
-Theo metric điểm, H1-V1 có F1 thấp hơn baseline 1,60 điểm phần trăm trên Devign và 0,34 điểm trên ReVeal; MCC cũng thấp hơn trên cả hai tập. 12 raw row Devign và 69 raw row ReVeal thiếu model/provider nên bị loại trước khi xác nhận request Qwen đủ điều kiện. Vì số mẫu hợp lệ khác nhau, đây chưa phải so sánh ghép cặp trên cùng cohort; không diễn giải chênh lệch này như kết luận thống kê.
+Theo metric điểm, H1-V1 có F1 thấp hơn baseline 1,60 điểm phần trăm trên Devign và 0,34 điểm trên ReVeal; MCC cũng thấp hơn trên cả hai tập. 12 raw row Devign và 69 raw row ReVeal thiếu model/provider nên bị loại trước khi xác nhận request Qwen đủ điều kiện. Vì số mẫu hợp lệ khác nhau, các metric điểm trong bảng này chưa cùng cohort; paired analysis cập nhật ở Mục 6, không thay đổi số liệu snapshot.
 
 Nguồn metric và artifact theo run: [bảng metric H1-V1/V2](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/metric_cai_tien_vertex_qwen_context8192.md).
 
@@ -153,7 +155,7 @@ Nguồn: [training_selection.json](D:/JUNIOR/LabThayTho/GRACE-H1-SecurityProject
 | ReVeal — `0779c879b6d11431` | Baseline whitening | 2.274 / 0 | 1.483 / 561 / 156 / 74 | 68,47% | 11,65% | 32,17% | 17,11% | 0,0318 | 52,36% |
 | ReVeal — `98d7f32cd098d4c0` | H1 V2 `residual_local` | 2.265 / 9 | 1.493 / 544 / 155 / 73 | 69,14% | 11,83% | 32,02% | 17,28% | 0,0359 | 52,66% |
 
-Nguồn metric: bảng H1 và phần đánh giá H3-A trong [bảng metric tổng hợp](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/metric_cai_tien_vertex_qwen_context8192.md). Trên ReVeal, điểm của H1 V2 cao hơn baseline **0,17 điểm phần trăm F1** và MCC tăng **0,0041**. Tuy nhiên, V2 có 9 invalid còn baseline đủ 2.274 mẫu; đây là metric valid-only, chưa có paired CI trên cùng cohort cho đúng cặp run này, nên chưa đủ để kết luận V2 cải thiện downstream. Trên Devign hiện có baseline theo run đã chọn nhưng **chưa có benchmark H1 V2 tương ứng**, vì vậy không thể kết luận V2 trên dataset này.
+Nguồn metric: bảng H1 và phần đánh giá H3-A trong [bảng metric tổng hợp](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/metric_cai_tien_vertex_qwen_context8192.md). Trên ReVeal, điểm của H1 V2 cao hơn baseline **0,17 điểm phần trăm F1** và MCC tăng **0,0041**. Tuy nhiên, V2 có 9 invalid còn baseline đủ 2.274 mẫu; đây là metric valid-only; paired analysis mới trên 2265 ID cho CI ΔMCC chứa 0 (Mục 6), nên chưa đủ để kết luận V2 cải thiện downstream. Trên Devign hiện có baseline theo run đã chọn nhưng **chưa có benchmark H1 V2 tương ứng**, vì vậy không thể kết luận V2 trên dataset này.
 
 ### 1.7. H1-V2 — giới hạn và kết luận
 
@@ -262,9 +264,9 @@ Nguồn DeepSeek: [evaluation/raw/manifest Devign](D:/JUNIOR/LabThayTho/SHARE_36
 
 ### 2.7. Giới hạn và kết luận
 
-Hiện chưa có baseline chạy bằng DeepSeek-V4.1-Flash để đối chứng với nhánh H2. Các run Qwen `baseline_whitening` của H1 được giữ làm số liệu tham khảo lịch sử, không phải đối chứng hợp lệ để kết luận cải tiến có hiệu quả hay không. Khác biệt về model/provider và cấu hình prompt khiến phép so sánh chéo này không cô lập được tác động của H2.
+Đã có thêm baseline DeepSeek-V4.1-Flash/FPT test ngày 24/10; tuy nhiên chưa phải prefix control cùng builder/code/demo/cap/budget với H2 Vertex. Các run Qwen `baseline_whitening` của H1 được giữ làm số liệu tham khảo lịch sử, không phải đối chứng hợp lệ để kết luận cải tiến có hiệu quả hay không. Khác biệt về model/provider và cấu hình prompt khiến phép so sánh chéo này không cô lập được tác động của H2.
 
-Kết quả hiện tại xác nhận nhánh H2 đã hoàn tất full test trên Devign và ReVeal, nhưng chưa trả lời được câu hỏi H2 có tốt hơn baseline hay không. Cần chạy lại baseline bằng DeepSeek-V4.1-Flash, giữ cùng provider, test ID, prompt/config và quy trình đánh giá; sau đó mới so sánh paired các metric H2 với baseline để kết luận hiệu quả cải tiến.
+Kết quả hiện tại xác nhận nhánh H2 đã hoàn tất full test trên Devign và ReVeal, nhưng chưa trả lời được câu hỏi H2 có tốt hơn baseline hay không. Cần tạo baseline control theo cùng policy H2 và chốt cấu hình phục vụ cho hai arm; dùng paired analysis để đo phần evidence thay đổi. Không lấy khác biệt với baseline FPT khác policy làm tác động riêng của H2.
 
 ## 3. H3-A — Calibrated Cascade: routing có ràng buộc trước GRACE — [mã nguồn](https://github.com/kazunguyen/GRACE-H3-CalibratedCascade)
 
@@ -279,6 +281,16 @@ Dự án đã có cascade/filter từ trước. H3-A bổ sung gate chạy trên
 Gate được học trên CodeT5 cache và hiệu chuẩn xác suất. Gate chỉ tự trả 0 trong vùng mà dữ liệu chọn ngưỡng hỗ trợ giới hạn bỏ sót; các mẫu còn lại vẫn được dự đoán bằng GRACE. Nếu không có cutoff đạt điều kiện, toàn bộ mẫu được chuyển sang GRACE.
 
 [Guo et al., 2017](https://proceedings.mlr.press/v70/guo17a.html) là căn cứ để phân biệt điểm tin cậy (confidence) với calibration. H3-A dùng sigmoid Platt hai tham số, không phải temperature scaling trong bài báo. [Mozannar & Sontag, 2020](https://proceedings.mlr.press/v119/mozannar20b.html) cung cấp khuôn khổ tự dự đoán hoặc chuyển quyết định (defer) cho expert. H3-A dùng chính sách ngưỡng có ràng buộc, chưa triển khai surrogate loss nhất quán của công trình đó. GRACE vẫn có thể dự đoán sai.
+
+#### 3.2.1. Quan hệ với Selective GRACE và giả thuyết lợi thế của H3-A
+
+H3-A có nét tương đồng với phương pháp trong [Deep Learning-Assisted Pre-Filtering for Selective Graph-Structured LLM-Based Vulnerability Detection](https://github.com/kazunguyen/GRACE_runs_context/blob/main/Deep%20Learning-Assisted%20Pre-Filtering%20for%20Selective%20Graph-Structured%20LLM-Based%20Vulnerability%20Detection.pdf) của nhóm **Gia Khanh Tran và Minh Dung Vo** (APSIPA ASC 2026, Mục III-B–III-C, tr. 2–3): cả hai đều học classifier, hiệu chuẩn điểm và chọn ngưỡng để tự xử lý một phần mẫu trước khi chuyển phần còn lại sang GRACE. Bài tham chiếu dùng token, AST-like, semantic và graph-informed numeric views; routing có ba nhánh skip-low, direct-high và inspect. Vì vậy, riêng ý tưởng classifier có hiệu chuẩn và selective routing đã có tiền lệ; H3-A là một biến thể cần được đối chiếu với phương pháp đó.
+
+**Cơ sở để kỳ vọng H3-A có thể tốt hơn ở mục tiêu kiểm soát lỗi bỏ sót, nhưng chưa kiểm chứng:** bài tham chiếu chọn ngưỡng thấp theo target recall 0,995 quan sát trên validation; cùng split còn phục vụ early stopping, lựa chọn/fit calibrator và chọn ngưỡng, và bài đã nêu giới hạn lạc quan do tái sử dụng dữ liệu. H3-A tách validation thành phần fit Platt và phần chọn cutoff; cutoff phải thỏa cận trên Clopper–Pearson một phía cho tỷ lệ positive bị skip, với Bonferroni trên lưới cutoff. Sự tách vai trò dữ liệu và cách xét độ bất định có thể làm việc chấp nhận một vùng skip thận trọng hơn so với chỉ xét recall điểm trên tập chọn ngưỡng. Cận 1% của H3-A và target recall 0,995 của bài tham chiếu là hai tiêu chí khác nhau, không thể dùng riêng hai con số để xếp hạng phương pháp.
+
+H3-A mặc định tắt direct-high và chuyển các trường hợp chưa đủ điều kiện sang expert; cách này có thể phù hợp khi ưu tiên hạn chế quyết định tự động chưa có đủ bằng chứng. Logistic gate trên embedding frozen cũng có thể giảm chi phí học so với bộ prefilter nhiều encoder của bài tham chiếu; ưu thế tài nguyên phải được đo trên cùng phần cứng, tính cả khâu tạo đặc trưng. Các lập luận trên là giả thuyết về kiểm soát rủi ro và chi phí, chưa chứng minh MCC/F1, recall test hay tổng chi phí tốt hơn. Cận thống kê còn phụ thuộc giả định về mẫu và phân bố; GRACE ở nhánh inspect vẫn có thể sai.
+
+**Bằng chứng hiện tại và phép so sánh còn thiếu:** H3-A chỉ bỏ qua 6/2.732 mẫu Devign và không bỏ qua mẫu ReVeal; chưa cho thấy mức tiết kiệm có ích hơn phương pháp của nhóm Gia Khanh Tran và Minh Dung Vo. Muốn kiểm chứng lợi thế cần chạy hai phương pháp trên cùng cohort, retrieval pool, downstream expert/prompt/budget và cùng mục tiêu rủi ro; đo lỗi skip/direct-high, MCC/F1/recall và chi phí ở nhiều seed. Các kết quả của bài tham chiếu trên split/backbone riêng chưa phải đối chứng trực tiếp cho H3-A.
 
 ### 3.3. Thay đổi cụ thể đã triển khai
 
@@ -367,7 +379,7 @@ Ngoài ra, embedding semantic, dấu hiệu lexical và numeric có thể mang t
 
 H3-B kiểm tra hai giả thuyết: classifier dùng nhiều nhóm đặc trưng (view) có thể phân biệt tốt hơn một view; mô hình phối hợp học từ kết quả đúng/sai của hai predictor có thể chọn được những trường hợp GRACE bổ sung giá trị. Việc chọn mô hình ưu tiên MCC, sau đó đến F1; chi phí chỉ dùng để phân xử khi chất lượng gần ngang nhau. Hướng này không bắt buộc giảm số query gọi expert.
 
-Ý tưởng kết hợp nhiều view với selective routing đã có tiền lệ trong bài nghiên cứu về Selective GRACE của một nhóm khác tại APSIPA ASC 2026 ([bản PDF](D:/JUNIOR/LabThayTho/docs/papers/Grace-from-another-group.pdf); [ghi chú đối chiếu phương pháp và trang liên quan](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/docs/FILTER_IMPROVEMENT_RESEARCH.md)). H3-B dùng tiền lệ đó để đặt câu hỏi nghiên cứu, nhưng triển khai các view/classifier và cách học benefit riêng; không sao chép nguyên kiến trúc hay nhận mức giảm request của bài báo làm kết quả của dự án.
+Ý tưởng kết hợp nhiều view với selective routing có tiền lệ trong [Deep Learning-Assisted Pre-Filtering for Selective Graph-Structured LLM-Based Vulnerability Detection](https://github.com/kazunguyen/GRACE_runs_context/blob/main/Deep%20Learning-Assisted%20Pre-Filtering%20for%20Selective%20Graph-Structured%20LLM-Based%20Vulnerability%20Detection.pdf) của nhóm **Gia Khanh Tran và Minh Dung Vo** (APSIPA ASC 2026; [ghi chú đối chiếu phương pháp và trang liên quan](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/docs/FILTER_IMPROVEMENT_RESEARCH.md)). H3-B dùng tiền lệ đó để đặt câu hỏi nghiên cứu; đối chiếu cụ thể với routing của bài tham chiếu và các giả thuyết lợi thế được trình bày ngay dưới Sơ đồ 2. Các kết quả của bài tham chiếu giữ phạm vi split/backbone/protocol riêng.
 
 [Learning to defer — Mozannar & Sontag, 2020](https://proceedings.mlr.press/v119/mozannar20b.html) là căn cứ cho việc học quyết định defer theo từng expert cụ thể. H3-B dùng mục tiêu hồi quy về lợi ích của expert, không tuyên bố kế thừa bảo đảm lý thuyết của loss trong bài báo. Với stacking, nguyên tắc quan trọng là meta-model phải học từ dự đoán ngoài fold của base models; tài liệu chính thức [scikit-learn StackingClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html) mô tả rõ cách dùng cross-validated predictions để tránh fit trực tiếp trên prediction in-sample. Dự án triển khai dự đoán ngoài fold (out-of-fold, OOF) và cách chia nhóm riêng cho protocol này.
 
@@ -512,12 +524,12 @@ flowchart TD
   T --> POOL
   FROZEN --> SCORE
   FROZEN --> PRED
-  VALRUN["Hiếu chạy DeepSeek V4.1 trên Kaggle/Vertex: expert validation"] -. "chưa fit lại meta winner" .-> REPORTED
-  H1TEST["Metric test baseline H1 Qwen được tái sử dụng"] -. "số tham chiếu; không tạo prediction H3-B" .-> REPORTED
+  VALRUN["Hiếu chạy DeepSeek V4.1 trên Kaggle/Vertex: expert validation"] -. "đã dùng meta-fit; winner lock mới" .-> REPORTED
+  H1TEST["DeepSeek FPT test baseline mới; session đã có winner test"] -. "expert reference; metric winner ở Mục 4.6" .-> REPORTED
   REPORTED["Nguồn các bảng metric hiện tại trong báo cáo"]
 ```
 
-Sơ đồ trên là pipeline phương pháp trong H3-B. Hai mũi tên nét đứt chỉ nguồn số liệu đang được ghi vào báo cáo: DeepSeek của Hiếu là kết quả expert trên validation; metric test lấy từ baseline H1. Chưa có một lần chạy đồng backbone đi hết từ validation/meta-fit đến test cho winner H3-B. Trong GRACE expert, graph/Joern và retrieval/demo là downstream được giữ làm baseline của thí nghiệm H3-B; cải tiến H3-B nằm ở classifier nhiều view và cách chọn/kết hợp predictor, không phải một thuật toán tạo graph mới.
+Sơ đồ trên là pipeline phương pháp trong H3-B. Hai mũi tên nét đứt chỉ nguồn số liệu đang được ghi vào báo cáo: DeepSeek của Hiếu là expert validation; test baseline mới qua FPT và session đã có prediction winner. Cấu hình phục vụ hai split khác nhau được khai báo; không gộp thành xác nhận hai endpoint tương đương. Trong GRACE expert, graph/Joern và retrieval/demo là downstream được giữ làm baseline của thí nghiệm H3-B; cải tiến H3-B nằm ở classifier nhiều view và cách chọn/kết hợp predictor, không phải một thuật toán tạo graph mới.
 
 **Quy ước đọc các sơ đồ dưới đây**
 
@@ -573,6 +585,14 @@ flowchart TD
 ```
 
 Không có tách nhánh AND trong router: sau D, một mẫu **hoặc** trả gate ngay **hoặc** chuyển sang expert. Nếu chọn benefit-router, r là lợi ích expert do Ridge dự đoán từ đặc trưng trước expert. Nếu chọn confidence-router, r = 1 - 2|p - 0,5|. Mỗi arm có tau router riêng. Nhãn h = 1 nếu p >= tau h, ngược lại h = 0; tau h được chọn trong train.
+
+**Quan hệ với Selective GRACE của nhóm Gia Khanh Tran và Minh Dung Vo.** Sơ đồ 2 có nét tương đồng với [Deep Learning-Assisted Pre-Filtering for Selective Graph-Structured LLM-Based Vulnerability Detection](https://github.com/kazunguyen/GRACE_runs_context/blob/main/Deep%20Learning-Assisted%20Pre-Filtering%20for%20Selective%20Graph-Structured%20LLM-Based%20Vulnerability%20Detection.pdf) (Mục III-C, Eq. (4), Algorithm 1, tr. 3): cả hai đều quyết định trước khi gọi LLM, hoặc trả nhãn từ prefilter/classifier, hoặc chuyển mẫu sang GRACE. Bài tham chiếu dùng xác suất lỗ hổng đã hiệu chuẩn và hai ngưỡng thấp/cao để chia ba nhánh. Confidence-router H3-B dùng độ bất định của gate để chọn vùng defer; về ý tưởng, biến thể này gần với chính sách dùng độ tin cậy của bài tham chiếu. Sự có mặt của nhiều view, gate và router tự nó chưa tạo thành đóng góp mới so với tiền lệ này.
+
+**Tại sao benefit-router có thể tốt hơn — giả thuyết chưa được kiểm chứng đối đầu:** xác suất code có lỗ hổng và độ bất định của gate không trực tiếp cho biết expert có sửa được lỗi hay không. Trong bài tham chiếu, quyết định routing ở Eq. (4) dựa trên xác suất lỗ hổng đã hiệu chuẩn; H3-B bổ sung việc học lợi ích tương đối từ lỗi của chính gate và chính expert, với target +1 khi expert sửa lỗi gate, −1 khi expert làm sai mẫu gate vốn đúng và 0 khi cả hai cùng đúng/cùng sai. Ridge dùng 34 đặc trưng có trước khi gọi expert để ước lượng lợi ích đó. Nếu tín hiệu học được khái quát sang dữ liệu mới, router có thể tập trung query vào vùng expert thực sự hữu ích, tránh chuyển những ca mà gate chưa chắc nhưng expert cũng yếu; nhờ vậy có khả năng đạt MCC tốt hơn ở cùng tỷ lệ query hoặc cần ít query hơn để đạt cùng chất lượng. Đây là giả thuyết, không phải bảo đảm: target lỗi 0/1 chưa trực tiếp tối ưu MCC, và chất lượng router phụ thuộc dữ liệu cùng độ ổn định của expert.
+
+H3-B dùng train nested OOF để học/chọn classifier và meta OOF để học/chọn policy; cách này có thể giảm ảnh hưởng của score in-sample so với quy trình tái dùng một validation/calibration split cho nhiều bước trong bài tham chiếu. Tuy nhiên, development OOF vẫn được dùng để chọn cả ngưỡng và winner, nên chưa là xác nhận độc lập của toàn bộ quá trình lựa chọn. Các view TF-IDF/embedding frozen và model CPU cũng có thể giảm chi phí học so với các sequence encoder trong bài; chưa có phép đo tài nguyên cùng phần cứng và không thể suy từ model nhẹ sang chất lượng tốt hơn.
+
+**Kết quả hiện tại chưa chứng minh ưu thế của sơ đồ 2:** benefit-router chỉ gọi expert cho khoảng 1,87% mẫu Devign và 0,18% ReVeal; confidence-router không gọi expert ở cả hai test cohort. MCC điểm của hai router thấp hơn gate_tuned, và CI paired của chênh lệch đều chứa 0. Những số này là đối chứng nội bộ với gate, chưa là so sánh trực tiếp với nhóm Gia Khanh Tran và Minh Dung Vo. Cần chạy cả hai phương pháp trên cùng dữ liệu, expert/prompt/budget và nhiều seed; so chất lượng ở cùng query budget, kèm gate-only và full GRACE làm mốc. Winner và ngưỡng phải được khóa trên development trước khi dùng test chưa tham gia chọn cấu hình để kiểm chứng.
 
 **Sơ đồ 3 — Post-selector: bắt buộc lấy cả hai kết quả, sau đó mới chọn một bên**
 
@@ -649,6 +669,20 @@ b_i=\mathbf1[h(x_i)\ne y_i]-\mathbf1[g(x_i)\ne y_i].
 
 \(b_i=+1\) khi gate sai nhưng expert đúng; \(b_i=-1\) khi gate đúng nhưng expert sai; nếu cả hai cùng đúng hoặc cùng sai thì bằng 0. Ridge dự đoán lợi ích từ các đặc trưng có sẵn **trước khi gọi expert**, rồi ngưỡng được chọn theo OOF MCC/F1. Hồi quy lợi ích theo lỗi 0/1 không trực tiếp tối ưu MCC, nên vẫn cần chọn chính sách theo metric cuối.
 
+**Công thức quyết định của từng arm (ký hiệu dùng trong các sơ đồ).** Với vector đặc trưng code \(x_i\), classifier gate đã train trên official train xuất xác suất \(p_i=\sigma(f_\theta(x_i))\); nhãn gate là \(h_i=\mathbf1[p_i\ge\tau_h]\). Các LR/MLP semantic, lexical và fusion được fit bằng binary log-loss (cộng regularization); threshold \(\tau_h\) được chọn trên train OOF theo MCC rồi F1. Vì vậy “gate” là predictor đã khóa, không phải một router riêng.
+
+| Arm | Score và quyết định ở inference | Cách học thành phần phối hợp |
+|---|---|---|
+| Confidence-router | \(u_i=1-2|p_i-0.5|\) (0 ở biên tự tin, 1 tại 0,5). Nếu \(u_i\ge\tau_u\), gọi GRACE; nếu không, trả \(h_i\). GRACE invalid thì fallback về \(h_i\). | Không fit model router. Chỉ chọn \(\tau_u\) trên development OOF theo MCC/F1; expert output development tạo đối chứng và không dùng làm input của quyết định trước khi gọi. |
+| Benefit-router | Ridge dự đoán \(r_i=\hat b_i=\beta_0+\beta^T\tilde z_i\) từ 34 đặc trưng pre-expert đã chuẩn hóa. Nếu \(r_i\ge\tau_b\), gọi GRACE và dùng nhãn expert; ngược lại trả \(h_i\). Invalid thì fallback gate. | Trên development, target \(b_i=\mathbf1[h_i\ne y_i]-\mathbf1[g_i\ne y_i]\in\{-1,0,+1\}\); fit StandardScaler + Ridge, squared loss với \(\alpha=10\). Threshold chọn trên meta-OOF. \(r_i\) là lợi ích dự đoán, không phải xác suất. |
+| Post-selector | Sau khi có cả hai output hợp lệ, logistic selector tính \(s_i=\sigma(w^T\tilde q_i+c)\), với \(\tilde q_i\) là 38 đặc trưng post-expert. Nếu \(s_i\ge\tau_s\), chọn GRACE; nếu không, chọn gate. Invalid thì fallback gate. | Chỉ fit trên các mẫu development mà gate và expert bất đồng về đúng/sai; target \(t_i=1\) nếu expert đúng, \(0\) nếu gate đúng. StandardScaler + logistic regression, log-loss/L2, \(C=1\). Nếu phần fit không có đủ hai lớp thì dùng score hằng theo implementation. |
+| Stacking LR | \(z_i=\sigma(v^T\tilde q_i+d)\), nhãn cuối \(\mathbf1[z_i\ge\tau_{LR}]\). | Fit trên development để dự đoán nhãn thật \(y_i\), StandardScaler + logistic regression, binary log-loss/L2, \(C=1\). |
+| Stacking MLP | \(z_i=\sigma(v^T\mathrm{ReLU}(W\tilde q_i+a)+d)\), rồi threshold \(\tau_{MLP}\). | Fit trên development với target \(y_i\), binary log-loss; 38→32 ReLU→1, Adam (sklearn), alpha 0,01, batch 128, tối đa 150 iteration. |
+
+Ở selector/stacking, vector \(q_i\) gồm 34 pre-expert feature cùng expert value, valid flag và hai tương tác (expert value × \(p_i\), expert value − \(p_i\)); expert value là 0/1, hoặc 0,5 khi invalid. Nhưng invalid không được đưa qua selector/stacker để chọn nhãn: implementation dùng fallback gate. Meta-model tạo score OOF theo 3 fold development; chỉ sau đó mới dò threshold và so arm. Post-selector/stacking luôn cần expert nên expert-query ratio theo chính sách là 1, dù kết quả cuối cùng chọn gate.
+
+**Ví dụ về nhãn train của benefit-router:** nếu gate sai, GRACE đúng thì \(b=+1\); gate đúng, GRACE sai thì \(b=-1\); cả hai cùng đúng hoặc cùng sai thì \(b=0\). Đây là nhãn phụ để học *có nên defer không*; selector học *nên lấy output của ai*; stacker học trực tiếp *nhãn cuối là gì*. Tất cả nhãn phụ này lấy từ official development, không lấy từ test.
+
 Phần validation đủ điều kiện được chia 3 fold để tạo meta OOF, chọn arm/ngưỡng và refit. Như vậy, tập này đã dùng cho development/huấn luyện meta-model và không còn là tập xác nhận độc lập. Winner được khóa trước test; quy trình cho phép chọn gate-only hoặc full GRACE, không buộc ensemble phải thắng. Trong cấu hình đang xét, ngưỡng coi là gần ngang nhau (tie bands) là 0,001 và hệ số phạt chi phí (cost penalty) là 0.
 
 Nếu arm cần expert nhưng parse-invalid, output dùng gate với train-threshold đã khóa và ghi fallback. Request lỗi API phải được chạy tiếp (resume), không dùng fallback để che lỗi. Đối chứng full GRACE vẫn giữ invalid. Mã nguồn: [features.py](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/grace_h3v2/features.py), [base.py](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/grace_h3v2/base.py), [meta.py](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/grace_h3v2/meta.py), [workflow.py](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/grace_h3v2/workflow.py).
@@ -688,7 +722,7 @@ Run trên Kaggle dùng Vertex AI `deepseek-ai/deepseek-v4.1-flash-maas`, context
 
 Nguồn: [evaluation Devign](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/devign/evaluation.json), [manifest Devign](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/devign/run_manifest.json), [prediction Devign](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/devign/predictions.jsonl); [evaluation ReVeal](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/reveal/evaluation.json), [manifest ReVeal](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/reveal/run_manifest.json), [prediction ReVeal](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/additional_runs/kaggle_deepseek_v41_h3b_validation_20261024/reveal/predictions.jsonl). Prompt gốc: Devign run `f79c31718971e534`; ReVeal run `27ee63ea9ec23f93` trong snapshot H3-B.
 
-Các metric này mô tả chất lượng của nhánh expert trên validation. Vì validation được dùng làm development để học/chọn meta-model trong thiết kế H3-B, không dùng các dòng này như một lần đánh giá độc lập của winner meta. Kết quả DeepSeek của Hiếu chưa được dùng để fit lại meta-model trong bảng dưới đây.
+Các metric này mô tả chất lượng của nhánh expert trên validation. Vì validation được dùng làm development để học/chọn meta-model trong thiết kế H3-B, không dùng các dòng này như một lần đánh giá độc lập của winner meta. Kết quả DeepSeek của Hiếu đã được dùng trong session mới ở phần test; bảng development mixed bên dưới là lịch sử, không phải lock mới.
 
 **Lịch sử development trước lượt DeepSeek:** một recovery cũ ghép expert response từ Vertex AI và FPT AI Factory. Artifact ghi rõ `benchmark_comparable: false`; bảng sau chỉ lưu vết development cũ, không trộn với metric expert DeepSeek mới.
 
@@ -698,6 +732,71 @@ Các metric này mô tả chất lượng của nhánh expert trên validation. 
 | ReVeal | 25 / 2.171 | `gate_tuned` | 0,20 | 47,09 | 0,42518 |
 
 Đây là điểm OOF development của cấu hình `gate_tuned`, không phải điểm test và không phải prediction từ GRACE expert. Vì quá trình chọn candidate trước đó có các expert output trộn provider, không giữ winner cũ làm kết luận cho cấu hình DeepSeek mới. Nguồn: [mixed recovery manifest](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/runs/h3v2/mixed_model_recovery.json), [meta Devign](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/artifacts/h3v2/meta/devign/42/2eb7ab9d8de5956fec4d/manifest.json), [meta ReVeal](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/artifacts/h3v2/meta/reveal/42/7e7591975ceda0730644/manifest.json).
+
+#### Test — baseline DeepSeek mới và prediction cuối H3-B đã có
+
+**Cập nhật 24/10:** test baseline dùng lượt `abbf356612344183` (DeepSeek-V4.1-Flash/FPT), thay quyết định tái sử dụng H1 Qwen trước đây. Session `deepseek_v41_hieu_8192_seed42` đã có winner lock và prediction/evaluation test. Các hàng full_grace là metric baseline; gate_tuned là winner H3-B đã khóa trên development, không gọi expert ở test.
+
+| Dataset / arm | Ngưỡng | Valid / invalid | TN / FP / FN / TP | Acc (%) | P / R / F1 (%) | MCC | BA (%) | Query expert (%) |
+|---|---:|---:|---|---:|---|---:|---:|---:|
+| devign / `full_grace` | — | 2732 / 0 | 1247 / 230 / 995 / 260 | 55,16 | 53,06 / 20,72 / 29,80 | 0,0668 | 52,57 | 100,00 |
+| devign / `gate_0_5` | 0,50 | 2732 / 0 | 1056 / 421 / 521 / 734 | 65,52 | 63,55 / 58,49 / 60,91 | 0,3025 | 64,99 | 0,00 |
+| devign / `gate_tuned` | 0,53 | 2732 / 0 | 1144 / 333 / 615 / 640 | 65,30 | 65,78 / 51,00 / 57,45 | 0,2961 | 64,23 | 0,00 |
+| reveal / `full_grace` | — | 2274 / 0 | 1907 / 137 / 195 / 35 | 85,40 | 20,35 / 15,22 / 17,41 | 0,0971 | 54,26 | 100,00 |
+| reveal / `gate_0_5` | 0,50 | 2274 / 0 | 2022 / 22 / 200 / 30 | 90,24 | 57,69 / 13,04 / 21,28 | 0,2414 | 55,98 | 0,00 |
+| reveal / `gate_tuned` | 0,14 | 2274 / 0 | 1790 / 254 / 95 / 135 | 84,65 | 34,70 / 58,70 / 43,62 | 0,3705 | 73,13 | 0,00 |
+
+Nguồn: [session benchmark](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/benchmark_summary.json), [winner lock](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/winner_lock.json), [audit paired](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/audits/h_controls_20261024/audit_results.json).
+
+**So sánh đủ năm nhánh và các biến thể trên test:**
+
+| Dataset | Nhánh / arm | Acc (%) | P (%) | R (%) | F1 (%) | MCC | BA (%) | Query expert (%) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Devign | Gate-only — gate_tuned (winner, tau=0,53) | 65,30 | 65,78 | 51,00 | 57,45 | **0,2961** | 64,23 | 0,00 |
+| Devign | Gate-only control — gate_0_5 | 65,52 | 63,55 | 58,49 | 60,91 | 0,3025 | 64,99 | 0,00 |
+| Devign | Router — benefit | 61,35 | 55,16 | 84,78 | 66,83 | 0,2868 | 63,11 | 1,87 |
+| Devign | Router — confidence | 61,16 | 54,94 | 85,90 | **67,02** | 0,2885 | 63,02 | 0,00 |
+| Devign | Post-selector | 63,03 | 57,18 | 77,69 | 65,88 | 0,2908 | 64,13 | 100,00 |
+| Devign | Stacking LR | **65,56** | 65,42 | 53,07 | 58,60 | **0,3013** | **64,62** | 100,00 |
+| Devign | Stacking MLP | 62,08 | 58,25 | 61,59 | 59,88 | 0,2402 | 62,04 | 100,00 |
+| Devign | Full GRACE | 55,16 | 53,06 | 20,72 | 29,80 | 0,0668 | 52,57 | 100,00 |
+| ReVeal | Gate-only — gate_tuned (winner, tau=0,14) | 84,65 | 34,70 | **58,70** | **43,62** | **0,3705** | **73,13** | 0,00 |
+| ReVeal | Gate-only control — gate_0_5 | **90,24** | **57,69** | 13,04 | 21,28 | 0,2414 | 55,98 | 0,00 |
+| ReVeal | Router — benefit | 86,15 | 36,59 | 50,43 | 42,41 | 0,3534 | 70,30 | 0,18 |
+| ReVeal | Router — confidence | 86,15 | 36,68 | 50,87 | 42,62 | 0,3559 | 70,49 | 0,00 |
+| ReVeal | Post-selector | 86,37 | 37,10 | 50,00 | 42,59 | 0,3555 | 70,23 | 100,00 |
+| ReVeal | Stacking LR | **87,60** | **39,60** | 43,04 | 41,25 | 0,3437 | 67,83 | 100,00 |
+| ReVeal | Stacking MLP | 86,85 | 36,58 | 40,87 | 38,60 | 0,3133 | 66,45 | 100,00 |
+| ReVeal | Full GRACE | 85,40 | 20,35 | 15,22 | 17,41 | 0,0971 | 54,26 | 100,00 |
+
+Mỗi arm có 2.732 Devign hoặc 2.274 ReVeal dự đoán hợp lệ, không invalid/fallback. Tỷ lệ query là mức expert cần theo thuật toán của arm, không phải số request API mới sau cache.
+
+**Paired delta MCC so với gate_tuned** (arm trừ winner; 95% query-bootstrap CI, 2.000 lần):
+
+| Dataset | Arm | Delta MCC | CI 95% |
+|---|---|---:|---:|
+| Devign | Benefit-router | −0,0093 | [−0,0457; 0,0289] |
+| Devign | Confidence-router | −0,0076 | [−0,0438; 0,0297] |
+| Devign | Post-selector | −0,0053 | [−0,0405; 0,0292] |
+| Devign | Stacking LR | +0,0053 | [−0,0186; 0,0276] |
+| Devign | Stacking MLP | −0,0559 | [−0,0931; −0,0172] |
+| Devign | Full GRACE | −0,2292 | [−0,2765; −0,1817] |
+| ReVeal | Benefit-router | −0,0170 | [−0,0480; 0,0112] |
+| ReVeal | Confidence-router | −0,0146 | [−0,0454; 0,0127] |
+| ReVeal | Post-selector | −0,0149 | [−0,0475; 0,0139] |
+| ReVeal | Stacking LR | −0,0268 | [−0,0684; 0,0139] |
+| ReVeal | Stacking MLP | −0,0572 | [−0,1039; −0,0095] |
+| ReVeal | Full GRACE | −0,2734 | [−0,3500; −0,1955] |
+
+Theo tiêu chí đã định trước (MCC chính, F1 phụ), stacking LR nhỉnh hơn gate_tuned 0,0053 MCC điểm trên Devign nhưng CI chứa 0. Router và post-selector có F1/recall cao hơn trên Devign, đổi lại MCC thấp hơn. Trên ReVeal, gate_tuned cao nhất về MCC, F1, recall và balanced accuracy; các arm có accuracy cao hơn lại có recall thấp hơn. Không đổi winner theo các kết quả test hậu nghiệm.
+
+Nguồn kết quả và phương pháp đối soát: [notebook đánh giá năm nhánh](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/notebooks/03_evaluate_five_branches_on_test.ipynb). Notebook xác minh test IDs/code hashes trên toàn bộ arm và tính lại metric khớp với evaluation artifact.
+
+
+Validation vẫn là Vertex DeepSeek do Hiếu chạy, test qua FPT. Cùng temperature/seed/max_tokens khai báo; alias/endpoint khác và thinking validation chưa ghi. Giữ cờ expert_shift và giả định cùng backbone ở phạm vi công khai, không coi đó là chứng minh hai bên chắc chắn khác model hoặc hoàn toàn tương đương. Winner gate_tuned có query ratio 0; chưa xác nhận lợi ích của việc kết hợp GRACE. Các ngưỡng/manifest development ở snapshot trước cần phân biệt với lock mới (0,53 Devign; 0,14 ReVeal).
+
+<details>
+<summary>Lịch sử: quyết định tái sử dụng H1 trước lượt DeepSeek test 24/10</summary>
 
 #### Test — metric baseline H1 được tái sử dụng theo kế hoạch
 
@@ -712,28 +811,151 @@ Nguồn: [prediction H1 Devign](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_2
 
 Validation mới dùng DeepSeek, trong khi test tham chiếu H1 dùng Qwen. Không ghép hai split này thành một kết quả cùng backbone, không lấy chênh lệch metric giữa validation và test để quy cho H3-B. Các tệp kết quả validation không có nhãn thật dùng được để tự chấm lại; metric được giữ theo `evaluation.json` của run.
 
+
+</details>
+
 ### 4.7. Giới hạn và kết luận
 
-H3-B có implementation nhiều view, nested OOF, meta OOF, benefit-router, selector và stacking. Lượt Hiếu chạy bổ sung được expert reference DeepSeek V4.1 trên toàn bộ hai cohort validation H3-B với 0 invalid. Hai bảng test hiện tham chiếu benchmark H1 theo quyết định tái sử dụng. Những kết quả đó **chưa phải benchmark cuối của winner H3-B**: meta-model chưa được fit/chọn lại bằng bộ validation DeepSeek mới và chưa có test H3-B được chạy bằng cùng backbone DeepSeek.
+H3-B đã có lượt train/meta-fit/khóa winner và benchmark đủ Devign/ReVeal test trong session DeepSeek hiện tại. Winner là gate_tuned ở cả hai dataset. Kết quả của classifier vượt full GRACE trên cohort test này; chưa chứng minh router/selector/stacking với LLM tốt hơn classifier đã chọn. Không đổi winner sang một arm có điểm test cao hơn.
 
-Vì backbone validation và test khác nhau, không kết luận H3-B cải thiện trên test hoặc ensemble tốt hơn gate/full GRACE. Trước khi kết luận, cần dùng expert outputs cùng một model/provider để tạo lại meta OOF, khóa winner trên development, rồi đánh giá prediction H3-B và các baseline trên cùng test IDs; báo paired uncertainty và invalid/fallback. Test đã được xem trong các lượt nghiên cứu trước, nên vẫn cần holdout mới hoặc split theo project/time để xác nhận độ khái quát.
-
-Các giới hạn phương pháp còn lại gồm lựa chọn nhiều candidate/cutoff trên development, lệch phân phối giữa OOF và refit, trùng lặp/phụ thuộc theo project hoặc commit, và mặc định một seed. Kết quả H3-B là bằng chứng triển khai và một lượt expert validation được chạy đầy đủ; chưa phải bằng chứng hiệu quả của ensemble cuối.
+Các arm dùng expert còn chịu khác biệt cấu hình phục vụ validation/test đã khai báo; seed hiện tại là 42, test đã được xem và bootstrap mới chưa cluster-adjusted. Kết luận xác nhận cần cùng protocol, expert được kiểm rõ và dữ liệu chưa dùng để chọn phương án. Chi tiết paired CI, ablation và chi phí ở Mục 6.
 
 ## 5. Bằng chứng cần bổ sung trước khi xác nhận một hướng cải thiện
 
-| Hướng | Bằng chứng đã có | Phần cần hoàn thiện để kết luận |
+| Hướng | Bằng chứng đã có tới 24/10 | Phần cần hoàn thiện để kết luận |
 |---|---|---|
-| H1 V2 | Code/head, proxy validation, raw/prediction test, paired CI còn invalid | Hoàn tất request lỗi; kiểm soát response ở prompt giống nhau; LLM control residual CE và ablation loss; xác nhận thêm dataset/seed |
-| H2 | Exporter/evidence/guards/fusion/packer, protocol và job plan | Hoàn tất graph/syntax cho đủ cohort; kiểm tra guard/counterevidence; giữ cùng budget giữa các đối chứng; khóa lựa chọn từ validation trước khi chạy test |
-| H3-A | Devign full cohort, branch metrics, query ratio, paired CI | Xác nhận sự đánh đổi trên dataset khác; tách số request giảm nhờ cache khỏi số query giảm nhờ routing; ghi rõ mức tiết kiệm hiện còn nhỏ |
-| H3-B | Classifier/meta pipeline đã implement; expert validation Devign/ReVeal chạy đủ bằng DeepSeek V4.1; test hiện tái sử dụng baseline H1 Qwen | Tạo lại meta OOF bằng expert cùng backbone, khóa winner trên development và chạy H3-B + controls trên cùng test IDs; báo paired uncertainty |
+| H1 V2 | Paired ReVeal trên 2265 ID, ΔMCC khoảng +0,0019, CI chứa 0; có phân tích prompt giống/khác và demo rỗng | Downstream residual-CE, V2 Devign, repeat control, đánh giá code/demo độc lập và holdout mới |
+| H2 | Full test Vertex DeepSeek, đúng 2732/2274 target; đã có thêm baseline DeepSeek FPT nhưng khác policy/provider | Prefix control cùng builder/code/demo/cap/budget và cấu hình inference; ablation guard chỉ đổi thành phần cần đo |
+| H3-A | Paired benchmark với expert H1: 6/2732 query Devign được bỏ qua, ReVeal 0/2274; gate-only/control có metric | Khóa mục tiêu chất lượng–chi phí, báo ràng buộc validation và độ khái quát; không coi query ratio là latency/tiền thực đo |
+| H3-B | Session mới đã có winner gate_tuned và test đủ hai dataset; checksum/metric đã đối soát | Chứng minh expert bổ sung giá trị so với gate/base winner, kiểm cấu hình phục vụ, giữ winner trước test và xác nhận trên dữ liệu chưa dùng |
 
-Các số liệu trong báo cáo được lấy từ những tệp đã lưu tại thời điểm đối chiếu, không chạy lại huấn luyện hoặc LLM. Những README còn ghi “chưa chạy” phản ánh trạng thái khi tài liệu đó được viết; báo cáo căn cứ vào các tệp kết quả cụ thể đã dẫn. Không gộp baseline khác thiết lập hoặc khác thời điểm để xếp hạng bốn hướng.
+Các bảng trước phản ánh từng snapshot và có nguồn riêng; paired analysis ở Mục 6 là phần tính thêm offline. Không gộp baseline khác thiết lập hoặc khác thời điểm để xếp hạng bốn hướng.
 
+<!-- h-controls-20261024:start -->
 ## 6. Đối soát và đối chứng bốn hướng H theo yêu cầu của thầy — cập nhật 24/10/2026
 
 Bản đối soát chi tiết cho bốn hướng H: [đối soát và thiết kế đối chứng ngày 24/10/2026](https://github.com/kazunguyen/GRACE_runs_context/blob/2fca43f765ba14e235352a6c8438154b48d6b04d/bao_cao_doi_soat_4_huong_H_20261024.md).
+
+
+**Cập nhật 24/10/2026 — H1, H2, H3-A, H3-B.** Đây là phần bổ sung cho báo cáo cải tiến, tách khỏi báo cáo chung V1/V2 của Dũng–Hiếu. Áp dụng ba đợt và sáu điều kiện của thầy cho từng hướng; giữ kết quả âm và trường hợp chưa đủ bằng chứng. Trong lượt này chỉ đọc artifact, tính lại metric/CI/McNemar và cập nhật báo cáo; **không train hoặc gọi API mới**.
+
+### 6.1. Đợt 1 — Nền thực nghiệm và bằng chứng đã đối soát
+
+Sáu điều kiện được kiểm trong từng phép so sánh: **LLM; target IDs/code; kho retrieval; tham số suy luận; context/truncation; evaluator**. Không bắt buộc mọi hướng dùng cùng một LLM khi không so trực tiếp với nhau; nhưng hai arm của một đối chứng thành phần phải giữ các điều kiện không thuộc thành phần đang xét.
+
+| Hướng | Reference được dùng | Kết quả đối soát hiện có | Trạng thái |
+|---|---|---|---|
+| H1 | Whitening 256, cùng common top-50/top-5, rerank, một demo và graph policy | Raw Qwen/Vertex/context 8192 khớp prompt/code. Common-pool hash giống và graph query giống trên toàn bộ ID được ghép. V1 loại 12 Devign/69 ReVeal thiếu metadata request; V2 ReVeal có 9 invalid. | Có thể phân tích paired trên phần đủ bằng chứng; chưa coi chênh lệch là tác động thuần của retrieval vì có dao động ở prompt giống hệt. |
+| H2 | Cần graph-prefix control có cùng demo/code được khôi phục, cap 25/25 và tổng 8192 byte như H2 v3 | H2 Vertex DeepSeek đã có đủ 2732/2274 target, code hash khớp canonical. Baseline DeepSeek test FPT mới cũng đã có, nhưng khác provider/thinking khai báo và cách dựng graph/demo; H2 lấy demo theo run Reproduced-Code-Based, không mặc định bằng baseline H3-B. | Chưa đủ đối chứng chỉ thay evidence; không lấy chênh lệch H2 với Qwen hoặc FPT khác policy làm tác dụng H2. |
+| H3-A | Gate/routing đã khóa + cùng file expert H1 cho cả reference và cascade | Đã có phép tái dựng được chấp nhận: Devign dùng `9afe3268729648c6`, ReVeal dùng `0779c879b6d11431`. ReVeal là benchmark với expert H1, không phải hoàn tất run FPT cũ. | Có paired test; giảm query rất nhỏ hoặc bằng 0. |
+| H3-B | Winner trong session `deepseek_v41_hieu_8192_seed42`, so với full GRACE và các classifier controls | Đã có winner lock và prediction test của 16 arm cho cả hai dataset. Đã đối chiếu checksum lock/model manifest/prediction, code hash và metric lưu. Validation do Hiếu chạy Vertex; test baseline `abbf356612344183` qua FPT. | Benchmark hiện có đã đi qua train/meta-fit/lock/test; winner là `gate_tuned`, không phải một arm kết hợp LLM. |
+
+**Phân loại theo Mục 1 của thầy:** đã xác định ảnh hưởng của thiếu metadata/invalid, demo bị cắt rỗng, khác context/provider và overlap/exposure. Không có bất đồng giữa parser dòng cuối và prediction trong các raw H1 đủ điều kiện đã kiểm. Chưa đủ dữ liệu để chứng nhận mọi checkpoint lịch sử hoặc giải thích nguyên nhân provider trả response rỗng. Không suy từ việc đã sửa code sang khẳng định mọi run cũ không bị ảnh hưởng.
+
+Nhãn train/development được dùng đúng vai trò học/chọn tham số. Nhãn test chỉ dùng đánh giá sau khi có prediction; không đưa vào retrieval, renderer hoặc routing. Hai split validation/test cần khác nhau; yêu cầu cùng target áp dụng giữa các arm trên cùng split, không buộc validation trùng test.
+
+### 6.2. Kết quả offline đã tính thêm
+
+Dùng một evaluator cho các cặp trong phần bổ sung: nhãn canonical theo ID/code hash; giữ invalid trong coverage; metric paired trên giao ID hợp lệ của hai arm. Hai đối chứng hằng dùng đúng cohort đó. Precision/MCC không xác định được ghi N/A; bảng lịch sử giữ quy ước cũ để truy vết, không âm thầm sửa artifact.
+
+CI dưới đây dùng **5000 lần bootstrap ghép cặp theo query, seed 42**; McNemar exact hai phía dùng hai ô reference sai/phương án mới đúng và ngược lại. Đây là phân tích hậu kiểm trên test đã được xem, chưa chỉnh phụ thuộc project/commit, chưa hiệu chỉnh nhiều phép so sánh; không dùng như một xác nhận đăng ký trước. Δ lấy phương án mới trừ reference.
+
+| Cặp: phương án mới so với reference | ID chung hợp lệ | MCC reference / mới | ΔMCC | CI 95% ΔMCC | Sửa đúng / làm sai | McNemar p |
+|---|---:|---|---:|---|---:|---:|
+| H1-V1 / Devign | 2720 | 0,0571 / 0,0263 | -0,0308 | [-0,0520; -0,0105] | 60 / 97 | 0,0039 |
+| H1-V1 / ReVeal | 2205 | 0,0350 / 0,0275 | -0,0075 | [-0,0235; 0,0078] | 24 / 30 | 0,4966 |
+| H1-V2 / ReVeal | 2265 | 0,0340 / 0,0359 | 0,0019 | [-0,0148; 0,0186] | 51 / 38 | 0,2031 |
+| H3-A / Devign | 2732 | 0,0587 / 0,0595 | 0,0008 | [0,0000; 0,0025] | 1 / 0 | 1,0000 |
+| H3-A / ReVeal | 2274 | 0,0318 / 0,0318 | 0,0000 | [0,0000; 0,0000] | 0 / 0 | 1,0000 |
+| H3-B gate_tuned / Devign | 2732 | 0,0668 / 0,2961 | 0,2292 | [0,1844; 0,2743] | 580 / 303 | 0,0000 |
+| H3-B gate_tuned / ReVeal | 2274 | 0,0971 / 0,3705 | 0,2734 | [0,1981; 0,3477] | 201 / 218 | 0,4345 |
+
+
+H1-V1 Devign có MCC giảm trong phép đo này; hai cặp ReVeal H1 chưa cho bằng chứng lợi ích. H3-A Devign chỉ sửa một số rất ít ca, CI chạm 0; ReVeal bằng reference. Gate H3-B có tín hiệu tốt hơn full GRACE trên test hiện tại, nhưng cần phân biệt lợi ích của classifier/ngưỡng với lợi ích của việc kết hợp GRACE.
+
+#### 6.2.1. H1 — kiểm tra biến mà LLM thực sự nhận
+
+| Cặp H1 | Prompt giống hệt | Prediction khác trong phần prompt giống | Đổi ID demo nhưng prompt vẫn giống | Demo baseline / H1 bị cắt còn 0 ký tự |
+|---|---:|---:|---:|---:|
+| devign_V1 | 2168 | 0 | 137 | 1173 / 1173 |
+| reveal_V1 | 1865 | 0 | 80 | 634 / 634 |
+| reveal_V2 | 2179 | 77 | 39 | 658 / 658 |
+
+
+Đổi demo ID không bảo đảm đổi prompt: fitter có thể cắt phần demo tới rỗng. Ngược lại, prompt giống hệt vẫn có thể cho prediction khác qua hai lượt gọi. Vì vậy, cần lưu cả selected demo IDs, số ký tự/token thực sự xuất hiện và raw response; repeat prompt gốc là control cần thiết trước khi quy chênh lệch nhỏ cho projection. Không thay prediction lịch sử hoặc dùng cache khác run để che dao động.
+
+#### 6.2.2. H3-B — kết quả cuối của session đã có
+
+| Dataset / arm | Ngưỡng | Valid / invalid | TN / FP / FN / TP | Acc (%) | P / R / F1 (%) | MCC | BA (%) | Query expert (%) |
+|---|---:|---:|---|---:|---|---:|---:|---:|
+| devign / `full_grace` | — | 2732 / 0 | 1247 / 230 / 995 / 260 | 55,16 | 53,06 / 20,72 / 29,80 | 0,0668 | 52,57 | 100,00 |
+| devign / `gate_0_5` | 0,50 | 2732 / 0 | 1056 / 421 / 521 / 734 | 65,52 | 63,55 / 58,49 / 60,91 | 0,3025 | 64,99 | 0,00 |
+| devign / `gate_tuned` | 0,53 | 2732 / 0 | 1144 / 333 / 615 / 640 | 65,30 | 65,78 / 51,00 / 57,45 | 0,2961 | 64,23 | 0,00 |
+| reveal / `full_grace` | — | 2274 / 0 | 1907 / 137 / 195 / 35 | 85,40 | 20,35 / 15,22 / 17,41 | 0,0971 | 54,26 | 100,00 |
+| reveal / `gate_0_5` | 0,50 | 2274 / 0 | 2022 / 22 / 200 / 30 | 90,24 | 57,69 / 13,04 / 21,28 | 0,2414 | 55,98 | 0,00 |
+| reveal / `gate_tuned` | 0,14 | 2274 / 0 | 1790 / 254 / 95 / 135 | 84,65 | 34,70 / 58,70 / 43,62 | 0,3705 | 73,13 | 0,00 |
+
+
+Winner được chọn trên development là `gate_tuned`: ngưỡng **0,53 Devign**, **0,14 ReVeal**. Giữ nguyên winner đó dù một control có điểm test cao hơn; ví dụ Devign `gate_0_5` có MCC cao hơn `gate_tuned`, nhưng không chọn lại bằng test.
+
+`gate_tuned` dùng classifier/fusion và ngưỡng, **query expert = 0**. Do đó có thể báo classifier đạt kết quả tốt hơn full GRACE trong cấu hình này; chưa thể gọi đó là bằng chứng routing/stacking với LLM có ích. Các arm benefit-router, selector và stacking vẫn phải đối chiếu với gate độc lập được khóa cùng quy trình, không chỉ với full GRACE yếu hơn.
+
+So với base classifier/fusion đã chọn trên train, gate_tuned chỉ tăng MCC khoảng +0,0076 trên Devign và +0,0146 trên ReVeal; cả hai CI đều chứa 0. Vì vậy, ngay cả lợi ích của điều chỉnh ngưỡng so với base winner cũng chưa được xác nhận trên hai cặp này.
+
+Manifest giữ `expert_shift` và `benchmark_comparable=false` do endpoint/provider/alias model khác, thinking validation chưa ghi còn test ghi false. Cờ này nói cấu hình chưa xác minh tương đương, không phủ nhận metric đã tính hay chứng minh hai bên chắc chắn khác trọng số. Với arm không gọi expert, prediction không phụ thuộc response LLM lúc test; với arm kết hợp expert, cần kiểm tra sự ổn định dưới giả định cùng backbone và công bố khác biệt phục vụ.
+
+### 6.3. Đợt 2 — Ma trận đối chứng tối thiểu cho từng hướng
+
+Các dòng chưa có prediction được ghi là **cần chạy**. Không lấy kiểm thử code, proxy retrieval hay benchmark GRACE baseline làm kết quả cuối của cải tiến.
+
+| Hướng / giả thuyết chính | Cặp đối chứng và controls | Những thứ giữ cố định | Tiêu chí và việc còn thiếu |
+|---|---|---|---|
+| **H1-V2:** residual local có cải thiện việc chọn demo hữu ích cho LLM? | Whitening 256 ↔ residual-local 256; thêm residual-CE cùng kiến trúc. Nếu cần quy đóng góp loss mới thêm ablation geometry/local, ghi rõ arm nào chưa implement/chưa inference. | Encoder/cache, full train, common top-50, top-5/rerank, một demo, query graph, fitter, provider và params. Head/epoch chọn trên development; test không chọn objective/seed. | MCC downstream là chính; proxy P@5 chỉ hỗ trợ. Báo % đổi demo, % đổi prompt, % demo rỗng; repeat control trên prompt giống. V2 Devign và downstream residual-CE còn thiếu. |
+| **H2:** evidence có liên kết thao tác–guard giúp hơn graph prefix trong cùng budget? | Prefix control ↔ H2 đầy đủ; control bỏ phần guard/counterevidence giữ cùng thao tác/data evidence và không lấp chỗ trống; có thể thêm slicing thuần khi cần phân biệt. | Cùng target, demo IDs/code/label, instruction ngoài graph; khôi phục code theo cùng policy trước cả hai arm; cap 25/25, tổng 8192 byte, cùng nguồn graph và LLM. | Tạo baseline bằng đúng policy H2; control mới chưa có inference. Kiểm guard gắn đúng thao tác, closure, polarity/unknown; lấy ví dụ đúng và sai. Nếu đồng thời đổi cách khôi phục demo thì phải gọi là so toàn cấu hình. |
+| **H3-A:** routing giảm query mà giữ ràng buộc bỏ sót? | Full GRACE ↔ cascade đã khóa; gate-only là control bắt buộc. Random routing cùng query ratio là control đề nghị nếu muốn chứng minh chọn đúng mẫu. | Cùng expert output cho cùng prompt/ID, feature/model gate, threshold chọn trên validation, metric/fallback. Random control không dùng nhãn test. | Báo query ratio, FN tăng/giảm và upper bound trên validation; config hiện có `max_lost_positive_fraction=0.01`, không coi đó là bảo đảm test. Cần định trước mức giảm chất lượng chấp nhận và mức tiết kiệm đáng quan tâm. |
+| **H3-B:** expert có bổ sung giá trị vượt classifier tốt nhất đã khóa? | Winner khóa ↔ gate độc lập ↔ full GRACE; báo các router/selector/stacking như controls, không chọn winner theo test. Ablation view phải train/chọn lại trong development. | Cùng cohort, encoder/feature recipe, expert file, seed/folds; preprocessing/calibration fit trong fold train; train OOF và meta OOF không dùng test để chọn ngưỡng. | Session hiện tại đã có benchmark, winner không cần LLM. Phép xác nhận tiếp phải đo ΔMCC so với gate và chi phí tăng, không chỉ thắng full GRACE. Không bắt buộc winner phải là ensemble nếu classifier tốt hơn. |
+
+#### 6.3.1. Controls chung từ yêu cầu của thầy
+
+- **B0–B1:** code-only ↔ code + graph, không demo; **B1–B2:** thêm một demo đã đóng băng để kiểm tín hiệu. Dùng đúng cùng LLM/budget/evaluator. Đây là controls cho nhánh GRACE; không thay thế đối chứng graph trong cấu hình đã có demo.
+- **Graph trong ICL:** giữ cùng demo/code/instruction, bỏ graph và không retrieve lại hoặc nhồi nội dung khác vào phần trống. Muốn đo riêng representation thì dùng cùng node/edge, chỉ đổi cách render.
+- **Label flip:** chỉ đổi nhãn demo ở mọi vị trí do template sinh; giữ nguyên code/demo/order/graph. Với hai demo đổi cả hai. **Repeat original** dùng prompt giống hệt để đo dao động; order-swap là phép khác. Controls này áp dụng cho GRACE expert; gate-only không có nhãn demo để đảo.
+- **Subset:** chỉ giảm số target gọi LLM; giữ full retrieval bank và danh sách ứng viên đã khóa. Demo một mẫu dùng để kiểm luồng, không được báo như benchmark.
+
+#### 6.3.2. Đánh giá retrieval/evidence bằng mã nguồn
+
+Với H1, lấy cùng target và demo trước/sau; với H2, lấy cùng graph input và phần evidence được giữ/bỏ. Hồ sơ mỗi ca giữ code/ID/hash, vai trò biến, sink/thao tác, guard/nhánh thoát và lý do Unknown. Không chấm chất lượng retrieval bằng chính hàm score nó tối ưu, không dùng nhãn target để chọn demo đẹp hơn.
+
+Lượt Codex hỗ trợ đọc code phải ghi nguồn thực hiện và mức hỗ trợ. Nếu cần đánh giá độc lập, packet phải tạo từ selections thật, che tên arm/score, khóa đánh giá trước giải mã và giữ bất đồng; xác nhận một bảng tổng hợp không thay thế bằng chứng quá trình. Chưa tạo thêm phiếu hoặc kết quả chấm mới trong lượt này.
+
+### 6.4. Đợt 3 — Xác nhận, giải thích và điều kiện dừng
+
+Trước lượt xác nhận, khóa **một phép so sánh chính cho mỗi hướng** trên development, cùng tiêu chí và ngân sách. MCC/BA là thước đo khả năng phân biệt; F1, confusion matrix và tỷ lệ dự đoán 1 giải thích đánh đổi. Routing còn phải đạt mục tiêu query/cost dưới ràng buộc chất lượng. Giữ cả always-0/always-1 trên đúng ID, báo invalid/fallback và coverage theo nhãn.
+
+Bootstrap theo nhóm project/commit hoặc ít nhất code hash khi dữ liệu phụ thuộc; chạy seed/lượt độc lập cho cấu hình đã chọn, không lấy seed tốt nhất. Độ bất định do lấy mẫu và dao động LLM được báo riêng. Chi phí tách prepare/train/retrieval, số query theo thuật toán, request vật lý/cache/retry và latency/token/tiền; thiếu usage ghi thiếu, không suy từ query ratio.
+
+Test hiện tại đã được xem trong quá trình phát triển; paired CI mới chỉ tăng độ chặt của phân tích trên cohort này. Cần holdout chưa dùng chọn phương án hoặc split project/time trước kết luận khái quát. Nếu MCC vẫn gần 0 hoặc CI không xác nhận lợi ích, ưu tiên lỗi nhãn/overlap, graph/demo bị cắt và độ nhạy prompt; không thêm thành phần chỉ để tìm một F1 cao hơn.
+
+### 6.5. Việc đã làm và thứ tự tiếp tục
+
+| Ưu tiên | Đã làm trong lượt này | Việc tiếp theo |
+|---|---|---|
+| 1 | Chuẩn hóa metric paired, ghép ID, kiểm code/prompt/parser H1; tính CI và McNemar; kiểm checksum session H3-B. | Chốt một protocol/evaluator và danh sách cặp xác nhận; giữ các bảng cũ là snapshot, không gộp khác cohort. |
+| 2 | Cập nhật baseline DeepSeek test và benchmark H3-B thực tế; chỉ rõ gate thắng, chưa có lợi ích ensemble được xác nhận. | Phân tích các ca gate sửa đúng/làm sai so với expert; xác nhận expert có thêm giá trị so với gate trong một lượt đã khóa. |
+| 3 | Kiểm H2 đủ target/code, xác định baseline khác policy chưa cô lập evidence. | Dựng prefix control bằng cùng builder/policy H2, khóa từ validation rồi mới inference cặp. |
+| 4 | Phát hiện prompt H1 giống nhưng prediction khác và demo có thể rỗng; lượng hóa mức tiết kiệm H3-A. | Chạy controls repeat/graph/demo hoặc H1-V2 Devign theo giả thuyết đã chốt; không cần chạy toàn bộ tổ hợp. |
+| 5 | Lưu script, audit JSON, source SHA-256 và bản báo cáo trước sửa. | Xin thống nhất với thầy mốc nộp, dữ liệu xác nhận và trần chi phí trước lượt LLM/huấn luyện tiếp theo. |
+
+### 6.6. Artifact và cách tái lập phần offline
+
+- [Phản hồi và lộ trình của thầy](D:/JUNIOR/LabThayTho/HuuHieu03/GRACE/project_docs/docs/reports/GRACE_phanhoibaocaoDungHieu.docx).
+- [Script đối soát](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/tools/audit_h_controls_20261024.py) — dùng chung evaluator cho mọi cặp trong phần bổ sung, không train/gọi API.
+- [Audit JSON](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/audits/h_controls_20261024/audit_results.json) — metric hai arm/đối chứng hằng, ID hash, CI/McNemar, ca sửa đúng/làm sai, nguồn SHA-256 và trạng thái expert.
+- [Session H3-B](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/benchmark_summary.json) và [winner lock](D:/JUNIOR/LabThayTho/GRACE-H3-BenchmarkEnsemble/runs/h3v2/notebook_sessions/deepseek_v41_hieu_8192_seed42/winner_lock.json); nguồn validation do Hiếu chạy, test baseline mới `abbf356612344183`.
+- [Ledger](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/bang_quan_ly_run_cai_tien.md) và [metric hiện hành](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/metric_cai_tien_vertex_qwen_context8192.md); [bản báo cáo trước bổ sung](D:/JUNIOR/LabThayTho/SHARE_36_RUNS_CONTEXT8192_20261020_205918/audits/h_controls_20261024/before_reports).
+
+Chạy từ thư mục SHARE: `python tools/audit_h_controls_20261024.py`. Script tính lại từ prediction/raw/prompt hiện có; từ chối duplicate IDs, hash không khớp hoặc metric H3-B lệch prediction. Output mới có provenance riêng, không sửa response, nhãn hoặc lock gốc.
+<!-- h-controls-20261024:end -->
 
 ## Tài liệu tham khảo và hồ sơ phương pháp
 
