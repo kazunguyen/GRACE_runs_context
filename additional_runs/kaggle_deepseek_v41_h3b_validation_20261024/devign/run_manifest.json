@@ -1,0 +1,18 @@
+{
+  "provider": "Vertex AI",
+  "url": "https://aiplatform.googleapis.com/v1/projects/grace-research-2903/locations/global/endpoints/openapi/chat/completions",
+  "parameters": {
+    "model": "deepseek-ai/deepseek-v4.1-flash-maas",
+    "temperature": 0.0,
+    "seed": 42,
+    "max_tokens": 256,
+    "stream": false
+  },
+  "context_limit_utf8_bytes": 8192,
+  "parser": "exact_last_line_binary_canonical",
+  "dataset": "devign",
+  "split": "validation",
+  "total_samples": 2724,
+  "total_elapsed_seconds": 3339.65,
+  "environment": "Kaggle Cloud (Vertex AI MaaS)"
+}

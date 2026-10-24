@@ -1,0 +1,58 @@
+{
+  "baselines": {
+    "B2_baseline_1shot": {
+      "f1": 0.3614,
+      "recall": 0.2778,
+      "precision": 0.5172,
+      "accuracy": 0.47,
+      "mcc": -0.0292,
+      "balanced_accuracy": 0.4867
+    },
+    "B3_contrastive_2shot": {
+      "f1": 0.55,
+      "recall": 0.6111,
+      "precision": 0.5,
+      "accuracy": 0.46,
+      "mcc": -0.1118,
+      "balanced_accuracy": 0.4469
+    }
+  },
+  "validation_results": {
+    "devign": {
+      "metrics": {
+        "accuracy": 0.554,
+        "precision": 0.4811,
+        "recall": 0.3328,
+        "f1": 0.3934,
+        "mcc": 0.0614,
+        "balanced_accuracy": 0.5284,
+        "confusion_matrix": {
+          "tn": 1115,
+          "fp": 425,
+          "fn": 790,
+          "tp": 394
+        },
+        "n_valid": 2724,
+        "n_total": 2724
+      }
+    },
+    "reveal": {
+      "metrics": {
+        "accuracy": 0.8916,
+        "precision": 0.1444,
+        "recall": 0.0747,
+        "f1": 0.0985,
+        "mcc": 0.0499,
+        "balanced_accuracy": 0.5183,
+        "confusion_matrix": {
+          "tn": 1945,
+          "fp": 77,
+          "fn": 161,
+          "tp": 13
+        },
+        "n_valid": 2196,
+        "n_total": 2196
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "h3b_external_validation_run_provenance_v1",
+  "created": "2026-10-24",
+  "run_id": "hieu-kaggle-20261024",
+  "run_by": "Hiếu",
+  "project": "H3-BenchmarkEnsemble",
+  "arm": "baseline_whitening",
+  "split": "validation",
+  "provider": "Vertex AI",
+  "model": "deepseek-ai/deepseek-v4.1-flash-maas",
+  "environment": "Kaggle Cloud (Vertex AI MaaS)",
+  "context_limit_utf8_bytes": 8192,
+  "source_archive_path": "D:/JUNIOR/LabThayTho/SHARE_BASELINE_WHITENING_DEVIGN_REVEAL_VALIDATION_CONTEXT8192_20261023/H2_vertex_validation_kaggle_results.zip",
+  "source_archive_sha256": "17E8829944E927C4F2AAF77B1A6D76C818D075CB68350FEEC133CAE96CE57E43",
+  "source_bundle_path": "D:/JUNIOR/LabThayTho/SHARE_BASELINE_WHITENING_DEVIGN_REVEAL_VALIDATION_CONTEXT8192_20261023",
+  "source_run_ids": {
+    "devign": "f79c31718971e534",
+    "reveal": "27ee63ea9ec23f93"
+  },
+  "source_prompt_sha256": {
+    "devign": "58a0296e7c610f3fe7e3b8ab8e96d74489a437873f72b71956e90dbb6706b743",
+    "reveal": "e80d9e19359b65c39979b93bf02260b07658c80ec37ad4ada49d497dab9f2d36"
+  },
+  "cohorts": {
+    "devign": 2724,
+    "reveal": 2196
+  },
+  "note": "The Kaggle ZIP contains predictions, raw responses, evaluations and manifests; it does not include the executed notebook. Prediction rows do not carry usable ground-truth labels; reported metrics are preserved in evaluation.json."
+}
