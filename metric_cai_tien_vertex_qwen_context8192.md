@@ -1,6 +1,6 @@
 # Metrics cải tiến H1, H2, H3-A, H3-B — profile context 8192
 
-Nguồn nhánh và quyết định tái sử dụng: [bang_quan_ly_run_cai_tien.md](<bang_quan_ly_run_cai_tien.md>). Các bảng H1/H2/H3-A vẫn ghi metric lọc theo request Vertex Qwen/context 8192 cùng các ngoại lệ được chú thích riêng. Phần H3-B ở cuối ghi metric **GRACE baseline** đang được dùng: validation DeepSeek V4.1/Vertex do Hiếu chạy và test baseline DeepSeek V4.1/FPT `abbf356612344183`; chưa phải metric cuối cùng của H3-B. Các model và nguồn prediction được ghi riêng theo từng dòng, không gộp thành một backbone.
+Nguồn nhánh và quyết định tái sử dụng: [bang_quan_ly_run_cai_tien.md](<bang_quan_ly_run_cai_tien.md>). Các bảng H1/H2/H3-A vẫn ghi metric lọc theo request Vertex Qwen/context 8192 cùng các ngoại lệ được chú thích riêng. Phần H3-B ở cuối ghi riêng **GRACE baseline** (validation DeepSeek V4.1/Vertex do Hiếu chạy, test DeepSeek V4.1/FPT `abbf356612344183`) và **kết quả test H3-B của winner đã khóa, seed 42**. Lượt H3-B này có expert shift Vertex → FPT và `benchmark_comparable=False`. Các model và nguồn prediction được ghi riêng theo từng dòng, không gộp thành một backbone.
 
 Request đủ điều kiện phải có raw request_spec.provider = Vertex AI, model ID đúng publishers/qwen/models/qwen3-coder-480b-a35b-instruct-maas, prompt khớp theo record_id và context_limit = 8192; prompt_sha256 cũng được đối chiếu khi có. Nhãn thật được join theo record_id từ file dữ liệu Devign/ReVeal đã lưu trong project nguồn. Chỉ prediction 0/1 đi vào confusion matrix và metric; invalid vẫn được báo riêng. N0/N1 là phân phối nhãn tính theo từng request Qwen đủ điều kiện.
 
@@ -19,7 +19,7 @@ Bảng này tách riêng các run thuộc H1-V1 (`h1_supcon_hard`) và baseline 
 | reveal / test | Baseline | `baseline_whitening` | `0779c879b6d11431` | 2274 / 2274 | 2274 / 0 | 2044 / 230 | 1483 / 561 / 156 / 74 | 68.47 | 11.65 | 32.17 | 17.11 | 0.0318 | 52.36 | 100.00 | [raw](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/raw_responses_archive.jsonl>) · [prompt](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/prompts.jsonl>) · [prediction](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/predictions.jsonl>) |
 | reveal / test | H1-V1 | `h1_supcon_hard` | `d318d1344264b913` | 2205 / 2205 | 2205 / 0 | 1981 / 224 | 1451 / 530 / 155 / 69 | 68.93 | 11.52 | 30.80 | 16.77 | 0.0275 | 52.02 | 100.00 | [raw](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_supcon_hard/d318d1344264b913/raw_responses_archive.jsonl>) · [prompt](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_supcon_hard/d318d1344264b913/prompts.jsonl>) · [prediction](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_supcon_hard/d318d1344264b913/predictions.jsonl>) |
 
-12 Devign raw rows và 69 ReVeal raw rows của H1-V1 thiếu model/provider nên bị loại trước bước xác nhận request Qwen đủ điều kiện. Trên các metric điểm, H1-V1 thấp hơn baseline về F1 trên cả Devign (34.13 so với 35.73) và ReVeal (16.77 so với 17.11); các hàng có N hợp lệ khác nhau nên cần ghép cặp cùng ID trước khi kết luận thống kê.
+12 Devign raw rows và 69 ReVeal raw rows của H1-V1 thiếu model/provider nên bị loại trước bước xác nhận request Qwen đủ điều kiện. Trên các metric điểm, H1-V1 thấp hơn baseline về F1 trên cả Devign (34.13 so với 35.73) và ReVeal (16.77 so với 17.11); các hàng có N hợp lệ khác nhau. Đã có [paired analysis cùng ID](audits/h_controls_20261024/audit_results.json): ΔMCC −0,0308 Devign (CI không chứa 0), −0,0075 ReVeal (CI chứa 0); chưa xác nhận lợi ích H1-V1.
 
 ### H1-V2 — SecurityProjection, bản cải tiến thứ hai
 
@@ -32,7 +32,7 @@ Bảng này tách riêng H1-V2 (`h1_residual_local`) và cùng baseline đã kh�
 | reveal / test | Baseline | `baseline_whitening` | `0779c879b6d11431` | 2274 / 2274 | 2274 / 0 | 2044 / 230 | 1483 / 561 / 156 / 74 | 68.47 | 11.65 | 32.17 | 17.11 | 0.0318 | 52.36 | 100.00 | [raw](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/raw_responses_archive.jsonl>) · [prompt](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/prompts.jsonl>) · [prediction](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/baseline_whitening/0779c879b6d11431/predictions.jsonl>) | — |
 | reveal / test | H1-V2 | `h1_residual_local` | `98d7f32cd098d4c0` | 2274 / 2274 | 2265 / 9 | 2044 / 230 | 1493 / 544 / 155 / 73 | 69.14 | 11.83 | 32.02 | 17.28 | 0.0359 | 52.66 | 99.60 | [raw](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_residual_local/98d7f32cd098d4c0/raw_responses_archive.jsonl>) · [prompt](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_residual_local/98d7f32cd098d4c0/prompts.jsonl>) · [prediction](<additional_runs/improvements_20261021/GRACE-H1-SecurityProjection/runs/reveal/test/h1_residual_local/98d7f32cd098d4c0/predictions.jsonl>) | Có 9 invalid; metric trên 2.265 mẫu hợp lệ |
 
-Trên ReVeal, H1-V2 cao hơn baseline 0.17 điểm phần trăm F1 và MCC tăng 0.0041; H1-V2 có 9 invalid còn baseline đủ 2.274 mẫu. Đây là chênh lệch metric valid-only, chưa có paired CI trên cùng cohort cho đúng cặp run nên chưa đủ để khẳng định cải thiện. Baseline run `0779c879b6d11431` được tách riêng; không thay bằng hàng baseline gộp hai run lặp (4.548 physical requests / 2.274 unique record_id) trong bảng tổng hợp lịch sử.
+Trên ReVeal, H1-V2 cao hơn baseline 0.17 điểm phần trăm F1 và MCC tăng 0.0041; H1-V2 có 9 invalid còn baseline đủ 2.274 mẫu. Đây là chênh lệch metric valid-only riêng từng run. [Paired analysis trên 2265 ID chung](audits/h_controls_20261024/audit_results.json) cho ΔMCC +0,0019, CI95 [−0,0148; +0,0186], McNemar p=0,2031; chưa đủ để khẳng định cải thiện. Baseline run `0779c879b6d11431` được tách riêng; không thay bằng hàng baseline gộp hai run lặp (4.548 physical requests / 2.274 unique record_id) trong bảng tổng hợp lịch sử.
 
 ### H2 — GuardedEvidence
 
@@ -95,7 +95,9 @@ Nguồn và kiểm tra: [đối chiếu](<audits/h3a_h1_baseline_reuse_20261022/
 
 ### H3-B — BenchmarkEnsemble
 
-**Toàn bộ bảng dưới đây là metric GRACE baseline (arm `baseline_whitening`): đưa 100% mẫu thuộc cohort prompt của từng dataset/split qua GRACE gốc. Chưa kết hợp prediction với classifier, benefit-router, confidence-router, post-selector hoặc stacking của H3-B; đây CHƯA PHẢI metric cuối cùng của cải tiến H3-B.**
+#### GRACE baseline dùng cho phát triển và đối chiếu
+
+**Bảng baseline dưới đây là metric GRACE baseline (arm `baseline_whitening`): đưa 100% mẫu thuộc cohort prompt của từng dataset/split qua GRACE gốc. Chưa kết hợp prediction với classifier, benefit-router, confidence-router, post-selector hoặc stacking của H3-B; đây là metric baseline; metric đầu ra H3-B được ghi riêng ở bảng winner phía sau.**
 
 Validation dùng full cohort prompt do **Hiếu chạy trên Kaggle bằng Vertex DeepSeek V4.1**, khớp ID/code hash/prompt hash với H3-B. Hai split test hiện dùng **lượt test baseline mới `abbf356612344183` — DeepSeek-V4.1-Flash qua API FPT, context 8.192 bytes, `thinking=False`**, thay thế các metric H1/Qwen tái sử dụng trước đây. Devign/test có đủ 2.732 mẫu và ReVeal/test có đủ 2.274 mẫu của official test split.
 
@@ -109,3 +111,44 @@ Phạm vi validation là cohort prompt H3-B đủ điều kiện (2.724 Devign, 
 | reveal / test | 2044 / 230 | 2274 / 0 | 1907 / 137 / 195 / 35 | 85.40 | 20.35 | 15.22 | 17.41 | 0.0971 | 54.26 | DeepSeek-V4.1-Flash / FPT API / 8192; `thinking=False` | **TEST BASELINE — DÙNG RUN `abbf356612344183`.** 100% official test split, chỉ GRACE gốc; thay baseline H1 tái sử dụng. [evaluation](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/reveal/abbf356612344183/evaluation.json) · [prediction](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/reveal/abbf356612344183/predictions.jsonl) · [raw](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/reveal/abbf356612344183/raw_responses.jsonl) · [manifest](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/reveal/abbf356612344183/run_manifest.json) · [prompt gzip](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/inputs/reveal/prompts.jsonl.gz) |
 
 Validation metric giữ theo `evaluation.json` của lượt Kaggle. Test metric mới được tính từ prediction của run `abbf356612344183` và gold canonical sau inference; đã đối chiếu 5.006/5.006 ID, code hash, prompt hash, raw parse và checkpoint. [Summary và provenance baseline test](https://github.com/kazunguyen/GRACE_runs_context/blob/06f96ac8ba3873808863d74e42a79072a942bdb0/additional_runs/deepseek_v41_h3b_test_baseline_20261024/README.md). Không trộn các lượt H1/Qwen, DeepSeek V4 cũ, test24k hoặc arm summary H3-B offline vào bốn dòng baseline này.
+
+
+#### Kết quả H3-B — winner đã khóa, seed 42
+
+Cập nhật 24/10/2026 từ session `deepseek_v41_hieu_8192_seed42`. Đã đọc lại output lưu của cả hai notebook và đối chiếu đủ 32 hàng dataset/arm trong mỗi notebook với `benchmark_summary.json`: metric không đổi so với lần kiểm tra trước. Notebook 02 đã chạy lại full test thành công; cả hai notebook không có output cell lỗi. Hai notebook dùng chung session và winner lock, không phải hai lần thực nghiệm độc lập.
+
+Classifier/fusion được chọn bằng train nested OOF; policy đầu ra được chọn bằng validation OOF rồi khóa trước khi chấm test. Không chọn lại theo điểm test.
+
+**Bảng chọn thành phần classifier / fusion — nguồn: train nested OOF.**
+
+| Dataset | Seed | Winner classifier / fusion | Cutoff train | Artifact chọn |
+| --- | ---: | --- | ---: | --- |
+| devign | 42 | `fusion_all` | 0.36 | [manifest](<audits/h3b_locked_winner_seed42_20261024/devign/base_selection_manifest.json>) |
+| reveal | 42 | `fusion_semantic_lexical` | 0.17 | [manifest](<audits/h3b_locked_winner_seed42_20261024/reveal/base_selection_manifest.json>) |
+
+**Bảng chọn thành phần policy đầu ra H3-B — nguồn: validation OOF / development.**
+
+| Dataset | Seed | Winner policy | Cutoff validation | Artifact chọn |
+| --- | ---: | --- | ---: | --- |
+| devign | 42 | `gate_tuned` | 0.53 | [manifest](<audits/h3b_locked_winner_seed42_20261024/devign/meta_selection_manifest.json>) |
+| reveal | 42 | `gate_tuned` | 0.14 | [manifest](<audits/h3b_locked_winner_seed42_20261024/reveal/meta_selection_manifest.json>) |
+
+**Metric TEST của policy winner đã khóa.** Mỗi mẫu official test được tính một lần; coverage 100%, invalid 0, fallback 0 trên cả hai tập. `gate_tuned` chỉ dùng classifier/fusion với cutoff validation đã khóa, không dùng prediction expert khi tạo nhãn cuối.
+
+| Dataset / split | Seed | Policy winner | N0 / N1 | Valid / invalid | TN / FP / FN / TP | Accuracy (%) | Precision (%) | Recall (%) | F1 (%) | MCC | Balanced accuracy (%) | Expert query (%) theo thuật toán | Artifact |
+| --- | ---: | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| devign / test | 42 | `gate_tuned` | 1477 / 1255 | 2732 / 0 | 1144 / 333 / 615 / 640 | 65.30 | 65.78 | 51.00 | 57.45 | 0.2961 | 64.23 | 0.00 | [evaluation](<audits/h3b_locked_winner_seed42_20261024/devign/evaluation.json>) · [prediction](<audits/h3b_locked_winner_seed42_20261024/devign/gate_tuned.jsonl>) · [manifest](<audits/h3b_locked_winner_seed42_20261024/devign/manifest.json>) |
+| reveal / test | 42 | `gate_tuned` | 2044 / 230 | 2274 / 0 | 1790 / 254 / 95 / 135 | 84.65 | 34.70 | 58.70 | 43.62 | 0.3705 | 73.13 | 0.00 | [evaluation](<audits/h3b_locked_winner_seed42_20261024/reveal/evaluation.json>) · [prediction](<audits/h3b_locked_winner_seed42_20261024/reveal/gate_tuned.jsonl>) · [manifest](<audits/h3b_locked_winner_seed42_20261024/reveal/manifest.json>) |
+
+**Chênh lệch winner so với `full_grace` cùng cohort test**, baseline DeepSeek V4.1/FPT `abbf356612344183`. Dấu Δ = winner − baseline.
+
+| Dataset | Δ Accuracy (điểm %) | Δ F1 (điểm %) | Δ MCC | CI95 Δ F1 (điểm %) | CI95 Δ MCC |
+| --- | ---: | ---: | ---: | --- | --- |
+| devign | +10.14 | +27.65 | +0.2292 | [24.19; 30.80] | [0.1809; 0.2757] |
+| reveal | -0.75 | +26.21 | +0.2734 | [18.61; 33.23] | [0.1896; 0.3501] |
+
+CI dùng paired query bootstrap 1.000 lần; chưa hiệu chỉnh phụ thuộc theo code/project. Chỉ báo cáo seed 42, chưa phải trung bình nhiều seed. ReVeal tăng F1/MCC nhưng accuracy giảm so với baseline.
+
+**Phạm vi expert:** validation dùng Vertex DeepSeek V4.1, test reference dùng FPT DeepSeek V4.1 (`thinking=False`), context 8192 bytes. Session chạy với `ALLOW_EXPERT_SHIFT=True`; artifact ghi `expert_shift` và `benchmark_comparable=False`. Kết quả này không thuộc request Vertex Qwen. Winner `gate_tuned` không gọi expert ở đầu ra; tỷ lệ query 0% là theo thuật toán, không phải phép đo tiết kiệm latency/chi phí triển khai.
+
+Nguồn: [benchmark đầy đủ mọi arm](<audits/h3b_locked_winner_seed42_20261024/benchmark_summary.json>), [winner lock](<audits/h3b_locked_winner_seed42_20261024/winner_lock.json>), [checksum lock](<audits/h3b_locked_winner_seed42_20261024/winner_lock_checksum.json>), [đối chiếu output hai notebook](<audits/h3b_locked_winner_seed42_20261024/output_comparison.json>). SHA256 winner lock: `dd87b2d4c945cb7d785ed76f66f7266b23eb0dd520d7c4ae602f0e6f1347441f`.
