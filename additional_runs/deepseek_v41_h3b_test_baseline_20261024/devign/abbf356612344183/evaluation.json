@@ -1,0 +1,91 @@
+{
+  "schema": "grace_test_baseline_evaluation_v1",
+  "dataset": "devign",
+  "split": "test",
+  "arm": "baseline_whitening",
+  "run_id": "abbf356612344183",
+  "scope": "GRACE original baseline / full official test split",
+  "is_final_h3b_ensemble_metric": false,
+  "metrics": {
+    "n": 2732,
+    "valid_n": 2732,
+    "invalid_n": 0,
+    "confusion_matrix_valid_only": {
+      "tn": 1247,
+      "fp": 230,
+      "fn": 995,
+      "tp": 260
+    },
+    "accuracy_all": 0.551610541727672,
+    "accuracy_valid_only": 0.551610541727672,
+    "precision": 0.5306122448979592,
+    "recall": 0.20717131474103587,
+    "f1": 0.2979942693409742,
+    "mcc": 0.066831903052452,
+    "specificity": 0.8442789438050101,
+    "balanced_accuracy": 0.525725129273023,
+    "invalid_rate": 0.0,
+    "predicted_positive_rate_all": 0.17935578330893118,
+    "recall_all_positives": 0.20717131474103587
+  },
+  "label_counts": {
+    "0": 1477,
+    "1": 1255
+  },
+  "request_spec": {
+    "provider": "OpenAI-compatible API",
+    "model": "DeepSeek-V4.1-Flash",
+    "endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+    "project": null,
+    "location": null,
+    "inference": {
+      "temperature": 0.0,
+      "seed": 42,
+      "max_tokens": 256,
+      "stream": false,
+      "max_attempts": 5,
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "context_limit_utf8_bytes": 8192,
+    "parser": "exact_last_line_binary_v1",
+    "bundle_manifest_sha256": "0365d2b3131b44fc64227412ceb738f578c334849976ee4064a022db10bfb328",
+    "split": "test",
+    "arm": "baseline_whitening"
+  },
+  "audit": {
+    "n": 2732,
+    "id_order_code_prompt_hash_match": true,
+    "raw_response_prediction_match": true,
+    "request_checkpoints_match_raw": true,
+    "full_official_test_split": true,
+    "max_prompt_utf8_bytes": 8192,
+    "checkpoint_count": 2732,
+    "recorded_attempts": 2938,
+    "finish_reason_counts": {
+      "stop": 2732
+    },
+    "recorded_usage": {
+      "prompt_tokens": 6459169,
+      "completion_tokens": 5464,
+      "total_tokens": 6464633
+    },
+    "reasoning_tokens": 0
+  },
+  "canonical_labels": {
+    "source_repository": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble",
+    "rows_path": "data/devign/test.jsonl",
+    "rows_sha256": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c",
+    "identity": "723786f19feb026da6b77aa18a152c070eac04b3daa1a60a6bad2d0bd5c5edd4",
+    "data_manifest_sha256": "a3f86cbf6b3ac9aff681ac890711e7600e7546d52dc7fc55a73632bab902b0c4"
+  },
+  "artifact_hashes": {
+    "predictions.jsonl": "47db642cbebb7771e6e017b2bfc47cdb1a402127b3d6b205851e1216bda586e3",
+    "raw_responses.jsonl": "dc89c42e56da430f480a9dee65664675f541c381c6dd0f13ecdba20c8774fe09",
+    "run_manifest.json": "105b8537f417c9289e7de47c9ec3661870082dc6447fb60bb44fc4a57c725b12",
+    "export_manifest.json": "be5fb2afca0f8b4f1e46d10e818fee5cd216db3042d7343ae68d8eb7a90795c8",
+    "evaluated_predictions.jsonl": "36605ec43f8c7ded34b26b4bc3499b758fe5d5494dd139ca19e4ccb49f29b104",
+    "request_checkpoints.zip": "39fa5e61a1c7eedcd1c7f26f04dad120e6d3bc238c9b6ba4afa28727fbe04c0c"
+  }
+}

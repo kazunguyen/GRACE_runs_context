@@ -1,0 +1,71 @@
+{
+  "schema": "grace_test_baseline_summary_v1",
+  "run_id": "abbf356612344183",
+  "status": "complete",
+  "scope": "test baseline; not final H3-B ensemble",
+  "datasets": {
+    "devign": {
+      "metrics": {
+        "n": 2732,
+        "valid_n": 2732,
+        "invalid_n": 0,
+        "confusion_matrix_valid_only": {
+          "tn": 1247,
+          "fp": 230,
+          "fn": 995,
+          "tp": 260
+        },
+        "accuracy_all": 0.551610541727672,
+        "accuracy_valid_only": 0.551610541727672,
+        "precision": 0.5306122448979592,
+        "recall": 0.20717131474103587,
+        "f1": 0.2979942693409742,
+        "mcc": 0.066831903052452,
+        "specificity": 0.8442789438050101,
+        "balanced_accuracy": 0.525725129273023,
+        "invalid_rate": 0.0,
+        "predicted_positive_rate_all": 0.17935578330893118,
+        "recall_all_positives": 0.20717131474103587
+      },
+      "label_counts": {
+        "0": 1477,
+        "1": 1255
+      },
+      "evaluation": "devign/abbf356612344183/evaluation.json",
+      "canonical_label_sha256": "1a684c6b63b30013b072afdffa91bc222cf6ba17159b9f768b4009e80cd9794c"
+    },
+    "reveal": {
+      "metrics": {
+        "n": 2274,
+        "valid_n": 2274,
+        "invalid_n": 0,
+        "confusion_matrix_valid_only": {
+          "tn": 1907,
+          "fp": 137,
+          "fn": 195,
+          "tp": 35
+        },
+        "accuracy_all": 0.8540017590149517,
+        "accuracy_valid_only": 0.8540017590149517,
+        "precision": 0.20348837209302326,
+        "recall": 0.15217391304347827,
+        "f1": 0.17412935323383086,
+        "mcc": 0.09709584531805139,
+        "specificity": 0.9329745596868885,
+        "balanced_accuracy": 0.5425742363651833,
+        "invalid_rate": 0.0,
+        "predicted_positive_rate_all": 0.07563764291996482,
+        "recall_all_positives": 0.15217391304347827
+      },
+      "label_counts": {
+        "0": 2044,
+        "1": 230
+      },
+      "evaluation": "reveal/abbf356612344183/evaluation.json",
+      "canonical_label_sha256": "2be86b5a9047459b0d4342800851e1769ba0a591b423ae094c1111e8f914a5b9"
+    }
+  },
+  "replaces_h1_reuse_for_h3b_current_test_baseline": true,
+  "validation_source": "Hieu Kaggle Vertex DeepSeek V4.1 validation remains separate",
+  "single_configuration_validation_test_claim": false
+}

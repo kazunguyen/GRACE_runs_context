@@ -1,0 +1,43 @@
+{
+  "schema": "frozen_baseline_whitening_test_bundle_v1",
+  "created_date": "2026-10-24",
+  "split": "test",
+  "arm": "baseline_whitening",
+  "context_limit_utf8_bytes": 8192,
+  "cohorts": {
+    "devign": {
+      "dataset": "devign",
+      "split": "test",
+      "arm": "baseline_whitening",
+      "n": 2732,
+      "source_run_id": "1c092d22f44923fc",
+      "source_prompt_file_sha256": "a3e869ea7e1bb136444a9a7cdabc44f063720bf8b919d268c618d94faf276c16",
+      "packaged_prompt_file_sha256": "940ffa4398bae19ed186ffb4da2f5415c4162065f8ad37cde4d1d293065d87fa",
+      "ordered_prompt_set_sha256": "44e2746f5c612626d7d6cebf9fc4ff72e8492739bcec1121e7afa7725341fca5",
+      "valid_prompt_count": 2732,
+      "max_prompt_utf8_bytes": 8192,
+      "record_id_order_sha256": "12b8eded5ace5aae11fa7fadcc742fec0cdb236365ee5eec8c76f28a4219acf5"
+    },
+    "reveal": {
+      "dataset": "reveal",
+      "split": "test",
+      "arm": "baseline_whitening",
+      "n": 2274,
+      "source_run_id": "ee956918e7b19785",
+      "source_prompt_file_sha256": "d45893dea4187b58f2bd361a3cc681efb59f07dde7342e19a7e193b166d96591",
+      "packaged_prompt_file_sha256": "ec6cb68a94256c6d89a918cc1cc3000fc9fd9c29a4b37bb06d86943702902048",
+      "ordered_prompt_set_sha256": "05b1454a7574d604678b6e279738bcc834d486078b61bd3f1fdc5672042047af",
+      "valid_prompt_count": 2274,
+      "max_prompt_utf8_bytes": 8192,
+      "record_id_order_sha256": "be82dae07785cdaf9c47981b288ecb68d2257e8d17a55bce8c6f01a8abb19bbb"
+    }
+  },
+  "files": {
+    "inputs/devign/prompts.jsonl.gz": "940ffa4398bae19ed186ffb4da2f5415c4162065f8ad37cde4d1d293065d87fa",
+    "inputs/reveal/prompts.jsonl.gz": "ec6cb68a94256c6d89a918cc1cc3000fc9fd9c29a4b37bb06d86943702902048",
+    "request_config.json": "7a782c2cd643883b64a4a32a1597b3882ed26c61d3e732ad3036652709f8062c"
+  },
+  "ground_truth_included": false,
+  "source_repository": "D:\\JUNIOR\\LabThayTho\\GRACE-H3-BenchmarkEnsemble",
+  "notes": "Frozen H3-B baseline_whitening test prompts. This bundle performs inference only."
+}

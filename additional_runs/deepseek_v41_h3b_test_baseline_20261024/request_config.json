@@ -1,0 +1,28 @@
+{
+  "schema": "baseline_whitening_test_inference_v1",
+  "default_provider": "Vertex AI",
+  "vertex_model": "deepseek-ai/deepseek-v4.1-flash-maas",
+  "vertex_location": "global",
+  "temperature": 0.0,
+  "seed": 42,
+  "max_tokens": 256,
+  "stream": false,
+  "max_attempts": 5,
+  "retry_backoff_seconds": [
+    5,
+    120
+  ],
+  "context_limit_utf8_bytes": 8192,
+  "parser": "exact_last_line_binary_v1",
+  "api_env_vars": [
+    "LLM_API",
+    "LLM_MODEL",
+    "LLM_BASE_URL"
+  ],
+  "datasets": [
+    "devign",
+    "reveal"
+  ],
+  "split": "test",
+  "arm": "baseline_whitening"
+}

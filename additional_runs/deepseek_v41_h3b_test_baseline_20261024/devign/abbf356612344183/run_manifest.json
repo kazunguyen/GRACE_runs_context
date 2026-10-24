@@ -1,0 +1,88 @@
+{
+  "identity": {
+    "provider": "OpenAI-compatible API",
+    "model": "DeepSeek-V4.1-Flash",
+    "endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+    "project": null,
+    "location": null,
+    "inference": {
+      "temperature": 0.0,
+      "seed": 42,
+      "max_tokens": 256,
+      "stream": false,
+      "max_attempts": 5,
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "context_limit_utf8_bytes": 8192,
+    "parser": "exact_last_line_binary_v1",
+    "bundle_manifest_sha256": "0365d2b3131b44fc64227412ceb738f578c334849976ee4064a022db10bfb328",
+    "split": "test",
+    "arm": "baseline_whitening"
+  },
+  "run_id": "abbf356612344183",
+  "cohort": {
+    "dataset": "devign",
+    "split": "test",
+    "arm": "baseline_whitening",
+    "n": 2732,
+    "max_prompt_utf8_bytes": 8192,
+    "source_run_id": "1c092d22f44923fc"
+  },
+  "provider": {
+    "provider": "OpenAI-compatible API",
+    "model": "DeepSeek-V4.1-Flash",
+    "safe_endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+    "project": null,
+    "location": null
+  },
+  "ground_truth_included": false,
+  "invocations": [
+    {
+      "percent": 0.04,
+      "prefix_target_count": 1,
+      "started_unix": 1792816174.139915,
+      "terminal_requests_before": 1,
+      "finished_unix": 1792816174.1464334,
+      "new_requests": 0,
+      "terminal_requests_after": 1
+    },
+    {
+      "percent": 5.0,
+      "prefix_target_count": 136,
+      "started_unix": 1792816222.783377,
+      "terminal_requests_before": 1,
+      "finished_unix": 1792816275.984307,
+      "new_requests": 135,
+      "terminal_requests_after": 136
+    },
+    {
+      "percent": 100.0,
+      "prefix_target_count": 2732,
+      "started_unix": 1792817025.1237652,
+      "terminal_requests_before": 136,
+      "finished_unix": 1792817038.2339349,
+      "new_requests": 29,
+      "terminal_requests_after": 165
+    },
+    {
+      "percent": 100.0,
+      "prefix_target_count": 2732,
+      "started_unix": 1792817159.0715141,
+      "terminal_requests_before": 165,
+      "finished_unix": 1792819192.3447797,
+      "new_requests": 2567,
+      "terminal_requests_after": 2732
+    },
+    {
+      "percent": 100.0,
+      "prefix_target_count": 2732,
+      "started_unix": 1792822358.9669206,
+      "terminal_requests_before": 2732,
+      "finished_unix": 1792822362.1877217,
+      "new_requests": 0,
+      "terminal_requests_after": 2732
+    }
+  ]
+}

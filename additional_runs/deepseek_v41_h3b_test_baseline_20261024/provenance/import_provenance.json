@@ -1,0 +1,22 @@
+{
+  "source_package": "D:\\JUNIOR\\LabThayTho\\SHARE_BASELINE_WHITENING_DEVIGN_REVEAL_TEST_CONTEXT8192_20261024",
+  "source_run_id": "abbf356612344183",
+  "source_files_sha256": {
+    "outputs/devign/abbf356612344183/predictions.jsonl": "47db642cbebb7771e6e017b2bfc47cdb1a402127b3d6b205851e1216bda586e3",
+    "outputs/devign/abbf356612344183/raw_responses.jsonl": "dc89c42e56da430f480a9dee65664675f541c381c6dd0f13ecdba20c8774fe09",
+    "outputs/devign/abbf356612344183/run_manifest.json": "105b8537f417c9289e7de47c9ec3661870082dc6447fb60bb44fc4a57c725b12",
+    "outputs/devign/abbf356612344183/export_manifest.json": "be5fb2afca0f8b4f1e46d10e818fee5cd216db3042d7343ae68d8eb7a90795c8",
+    "outputs/reveal/abbf356612344183/predictions.jsonl": "7a1cd209aad587993adc88e5ee33af956d73f11719ad066b94ba4c75416e5152",
+    "outputs/reveal/abbf356612344183/raw_responses.jsonl": "452556dd97871ba98f5d73c13981dc2c0c777bb3a81d7543566b31f4e9eb245f",
+    "outputs/reveal/abbf356612344183/run_manifest.json": "28c870746db27ee400f2e3658a4105bbee3fceae58b3a11c8060a37140f33934",
+    "outputs/reveal/abbf356612344183/export_manifest.json": "35a4e68c2a6a1603dedfde1463739f258ee4fd051e662b4fdae260664d7d015f"
+  },
+  "source_notebook_sha256": "14fbcf28f6216446f90be21f7cb245af6ae9ad9db6dbd01794040714a414ddd5",
+  "original_output_files_preserved_byte_for_byte": true,
+  "per_request_checkpoints_archived": true,
+  "source_failed_smoke_run_excluded": "bc9b31e4c912a3e0",
+  "evaluation_only_gold_join": true,
+  "credential_scan": "passed; .env not included",
+  "inference_performer": "not recorded by manifests; no attribution inferred",
+  "source_run_provider": "API FPT, not Vertex AI"
+}

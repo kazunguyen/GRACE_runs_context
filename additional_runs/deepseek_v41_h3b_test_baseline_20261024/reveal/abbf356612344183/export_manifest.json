@@ -1,0 +1,22 @@
+{
+  "dataset": "reveal",
+  "split": "test",
+  "arm": "baseline_whitening",
+  "run_id": "abbf356612344183",
+  "provider": {
+    "provider": "OpenAI-compatible API",
+    "model": "DeepSeek-V4.1-Flash",
+    "safe_endpoint": "https://token-api.fpt.ai/v1/chat/completions",
+    "project": null,
+    "location": null
+  },
+  "requested_percent": 100.0,
+  "cohort_n": 2274,
+  "selected_prefix_n": 2274,
+  "status_counts_in_selected_prefix": {
+    "valid": 2274
+  },
+  "ground_truth_included": false,
+  "predictions_file": "predictions.jsonl",
+  "raw_responses_file": "raw_responses.jsonl"
+}
