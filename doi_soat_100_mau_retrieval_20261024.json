@@ -1,0 +1,168 @@
+{
+  "scope": "File and numerical audit, not a new human relevance assessment",
+  "datasets": {
+    "devign": {
+      "samples": 50,
+      "unique_target_ids": 50,
+      "target_labels": {
+        "0": 25,
+        "1": 25
+      },
+      "answer_key_samples": 50,
+      "paired_source_field_mismatches": [],
+      "contingency_categories": [
+        "Baseline",
+        "Security-Aware",
+        "Equal",
+        "Neither"
+      ],
+      "contingency_matrix": [
+        [
+          12,
+          3,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          7,
+          3,
+          5
+        ]
+      ],
+      "agreement_count": 24,
+      "kappa": 0.3150684931506849,
+      "dung_choice_matches_current_helper": 50,
+      "dung_rubric_cells_matching_current_helper": 300,
+      "adjudication_counts": {
+        "Neither": 30,
+        "Security-Aware": 7,
+        "Baseline": 10,
+        "Equal": 3
+      },
+      "human_consensus_status_counts": {
+        "NOT_ESTABLISHED": 50
+      },
+      "canonical_target_files_available": 0,
+      "metadata": {
+        "protocol": "Blind Human Review Protocol (Stage 2.3 / STT 10)",
+        "contract": "evaluation_contract.yaml",
+        "dataset": "devign",
+        "source_split": "data/splits/devign_dev_clean_100_ids.json",
+        "total_samples": 50,
+        "vuln_samples": 25,
+        "safe_samples": 25,
+        "seed": 42,
+        "baseline_method": "DemonstrationRetriever (Baseline B2: CodeT5 + GraphSim)",
+        "security_aware_method": "SecurityAwareRetriever (Proposed B3: lambda=0.3)",
+        "raters": [
+          "Hiếu",
+          "Dũng"
+        ]
+      },
+      "source_sha256": {
+        "blind_review_sheet_hieu.csv": "fa242fb6c252991d2a09f08f313796342fad5a548101bf347bfbc9d8d8d10335",
+        "blind_review_sheet_dung.csv": "6d403e7cbdeb4fb65b04969db2fa3ac29a1d0480cfa00e7ed0f7d62bc9def844",
+        "blind_review_answer_key.json": "5c2f13d8f08e744be75189529534e77b0115806dcbef7579ec3ebbc0e1f1daeb"
+      }
+    },
+    "reveal": {
+      "samples": 50,
+      "unique_target_ids": 50,
+      "target_labels": {
+        "1": 25,
+        "0": 25
+      },
+      "answer_key_samples": 50,
+      "paired_source_field_mismatches": [],
+      "contingency_categories": [
+        "Baseline",
+        "Security-Aware",
+        "Equal",
+        "Neither"
+      ],
+      "contingency_matrix": [
+        [
+          6,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          8,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          5,
+          0
+        ],
+        [
+          4,
+          6,
+          5,
+          5
+        ]
+      ],
+      "agreement_count": 24,
+      "kappa": 0.3271221532091097,
+      "dung_choice_matches_current_helper": 16,
+      "dung_rubric_cells_matching_current_helper": 163,
+      "adjudication_counts": {
+        "Security-Aware": 21,
+        "Neither": 10,
+        "Baseline": 10,
+        "Equal": 9
+      },
+      "human_consensus_status_counts": {
+        "ESTABLISHED_THROUGH_ADJUDICATION": 50
+      },
+      "canonical_target_files_available": 0,
+      "metadata": {
+        "protocol": "Blind Human Review Protocol (Stage 2.3 / STT 10)",
+        "contract": "evaluation_contract.yaml",
+        "dataset": "reveal",
+        "source_split": "data/splits/reveal_dev_clean_100_ids.json",
+        "total_samples": 50,
+        "vuln_samples": 25,
+        "safe_samples": 25,
+        "seed": 42,
+        "baseline_method": "DemonstrationRetriever (Baseline B2: CodeT5 + GraphSim)",
+        "security_aware_method": "SecurityAwareRetriever (Proposed B3: lambda=0.3)",
+        "raters": [
+          "Hiếu",
+          "Dũng"
+        ]
+      },
+      "source_sha256": {
+        "blind_review_reveal_sheet_hieu.csv": "fb59d5b029d4ce94139b4363513c9ddb7086f93e7bfd21949a1a1221c49835f8",
+        "blind_review_reveal_sheet_dung.csv": "cee9f0032e77e191b9c6f5b5572f040615dbf39c2f944af8e9e4b84e579e0f97",
+        "blind_review_reveal_answer_key.json": "f9e8f942b7109871f30f27476b2221dd976d0f84448e943e5deffdd550cc95e5"
+      }
+    }
+  },
+  "additional_stage2_prediction_audit": {
+    "source": "output/stage2/label_flip/label_flip_test_report.json",
+    "n": 100,
+    "flip_count": 31,
+    "repeat_difference_count": 0,
+    "correct_to_wrong": 13,
+    "wrong_to_correct": 18
+  },
+  "review_packet_source_limit": "Historical generator selects B3 members based on target labels and can substitute B2 when unavailable. Paired-sheet consistency does not establish packet identity with a valid B2-vs-B3 run."
+}

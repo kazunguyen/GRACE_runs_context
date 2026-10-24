@@ -1,0 +1,83 @@
+{
+  "devign": {
+    "test_samples_ours": 2732,
+    "test_samples_hieu_id_manifest": 2732,
+    "test_source_id_multiset_equal": false,
+    "test_ids_only_ours": 2732,
+    "test_ids_only_hieu": 2732,
+    "ours_test_labels": {
+      "0": 1477,
+      "1": 1255
+    },
+    "hieu_test_label_counts_declared": {
+      "0": 1477,
+      "1": 1255
+    },
+    "test_code_hash_comparison": "Not available: Hieu test ID file has no code hashes",
+    "train_samples_ours": 21854,
+    "train_samples_hieu": 21854,
+    "train_exact_code_label_multiset_equal": false,
+    "train_exact_code_label_only_ours": 20413,
+    "train_exact_code_label_only_hieu": 20413,
+    "train_strip_code_label_multiset_equal": false,
+    "test_normalized_legacy_id_multiset_equal": true,
+    "test_normalized_id_only_ours": 0,
+    "test_normalized_id_only_hieu": 0,
+    "train_normalized_code_label_multiset_equal": false,
+    "train_normalized_code_label_only_ours": 8,
+    "train_normalized_code_label_only_hieu": 8,
+    "train_same_legacy_id_code_differences": 8,
+    "train_code_differences_whitespace_only": 8,
+    "train_code_difference_examples": [
+      {
+        "id": "5946",
+        "ours_chars": 2178,
+        "hieu_chars": 2176,
+        "whitespace_removed_equal": true
+      },
+      {
+        "id": "6209",
+        "ours_chars": 723,
+        "hieu_chars": 721,
+        "whitespace_removed_equal": true
+      },
+      {
+        "id": "9594",
+        "ours_chars": 1864,
+        "hieu_chars": 1862,
+        "whitespace_removed_equal": true
+      }
+    ],
+    "normalization": "Normalize CRLF/CR to LF and strip outer whitespace before code hashing. Eight remaining differences have equal code after whitespace removal; raw prompt/embedding equality is not implied."
+  },
+  "reveal": {
+    "test_samples_ours": 2274,
+    "test_samples_hieu_id_manifest": 2274,
+    "test_source_id_multiset_equal": false,
+    "test_ids_only_ours": 2274,
+    "test_ids_only_hieu": 2274,
+    "ours_test_labels": {
+      "0": 2044,
+      "1": 230
+    },
+    "hieu_test_label_counts_declared": {
+      "0": 2044,
+      "1": 230
+    },
+    "test_code_hash_comparison": "Not available: Hieu test ID file has no code hashes",
+    "train_samples_ours": 18187,
+    "train_samples_hieu": 18187,
+    "train_exact_code_label_multiset_equal": true,
+    "train_exact_code_label_only_ours": 0,
+    "train_exact_code_label_only_hieu": 0,
+    "train_strip_code_label_multiset_equal": true,
+    "test_normalized_legacy_id_multiset_equal": true,
+    "test_normalized_id_only_ours": 0,
+    "test_normalized_id_only_hieu": 0,
+    "train_normalized_code_label_multiset_equal": true,
+    "train_normalized_code_label_only_ours": 0,
+    "train_normalized_code_label_only_hieu": 0,
+    "legacy_id_warning": "Legacy ReVeal IDs are non-unique; compared the complete multiset of normalized code SHA-256 and labels instead of joining by legacy ID."
+  },
+  "scope": "Compare current local HuuHieu03/GRACE assets against H3-B. Hiếu executing a frozen H3-B validation prompt pack is a separate provenance case, not evidence that the independent HuuHieu03 pipeline matches."
+}
